@@ -1,15 +1,10 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{FvDFH90}
+\begin{thebibliography}{{Mic}12b}
 
 \bibitem[{App}95]{AppleComputerInc1995}
 {Apple Computer Inc}.
 \newblock {\em {Macintosh Human Interface Guidelines}}.
 \newblock Addison-wesley Publishing, 1995.
-
-\bibitem[BCR10]{Bartolomei2010}
-Thiago~Tonelli Bartolomei, Krzysztof Czarnecki, and L~Ralf.
-\newblock {Swing to SWT and Back : Patterns for API Migration by Wrapping}.
-\newblock 2010.
 
 \bibitem[Bes10]{Besacier2010}
 Guillaume Besacier.
@@ -57,11 +52,6 @@ Paul Dietz and Darren Leigh.
   interface software and technology - UIST '01}, page 219, New York, New York,
   USA, November 2001. ACM Press.
 
-\bibitem[FvDFH90]{Foley1990}
-James~D. Foley, Andries van Dam, Steven~K. Feiner, and John~F. Hughes.
-\newblock {Computer graphics: principles and practice (2nd ed.)}.
-\newblock July 1990.
-
 \bibitem[GH95]{Gellersen1995}
 Hans-w Gellersen and {Hans-W. Gellersen}.
 \newblock {Modality Abstraction : Capturing Logical Interaction Design as
@@ -100,11 +90,6 @@ Glenn~E Krasner and Stephen~T Pope.
   in the Smalltalk-80 System}.
 \newblock Technical report, 1988.
 
-\bibitem[KSM99]{Kong1999a}
-L~Kong, E~Stroulia, and B~Matichuk.
-\newblock {Legacy interface migration: A task-centered approach}.
-\newblock {\em \ldots of the 8th International Conference on \ldots}, 1999.
-
 \bibitem[Kub11]{SebastienKubicki2011}
 Sébastien Kubicki.
 \newblock {\em {Contribution \`{a} la prise en consid\'{e}ration du contexte
@@ -113,24 +98,11 @@ Sébastien Kubicki.
   tangibles}}.
 \newblock PhD thesis, UNIVERSIT\'{E} DE VALENCIENNES, 2011.
 
-\bibitem[LVMB]{Limbourg}
-Quentin Limbourg, Jean Vanderdonckt, Benjamin Michotte, and Laurent Bouillon.
-\newblock {USIXML: A Language Supporting Multi-path Development of User
-  Interfaces}.
-\newblock In {\em Ifip International Federation For Information Processing},
-  pages 200--220.
-
 \bibitem[Mar97]{Markopoulos1997}
 Panagiotis Markopoulos.
 \newblock {A compositional model for the formal specification of user interface
   software}.
 \newblock {\em Doctor}, (March), 1997.
-
-\bibitem[McC92]{McClure1992}
-Carma McClure.
-\newblock {The three Rs of software automation: re-engineering, repository,
-  reusability}.
-\newblock March 1992.
 
 \bibitem[Mic11]{Microsoft2011}
 Microsoft.
@@ -153,28 +125,6 @@ Microsoft.
 {Mitsubishi Electric Research Laboratoriesb}.
 \newblock {MERL }.
 
-\bibitem[Moo95]{Mooney1995}
-James~D. Mooney.
-\newblock {Portability and reusability}.
-\newblock In {\em Proceedings of the 1995 ACM 23rd annual conference on
-  Computer science - CSC '95}, pages 150--156, New York, New York, USA,
-  February 1995. ACM Press.
-
-\bibitem[Moo96]{Moore1996}
-Melody~M. Moore.
-\newblock {Rule-Based Detection for Reverse Engineering User Interfaces}.
-\newblock page~42, November 1996.
-
-\bibitem[MPC06]{Macias2006}
-Jos\'{e}~A Mac\'{\i}as, \'{A}ngel~R Puerta, and Pablo Castells.
-\newblock {Model-Based User Interface Reengineering 2 User Interface Modeling}.
-\newblock pages 155--162, 2006.
-
-\bibitem[MR97]{Moore1997}
-Melody Moore and Spencer Rugaber.
-\newblock {Using Knowledge Representation to Understand Interactive Systems}.
-\newblock pages 60--67, May 1997.
-
 \bibitem[NC94]{Nigay1994a}
 Laurence Nigay and Jo\"{e}lle Coutaz.
 \newblock {\em {Conception et mod\'{e}lisation logicielles des syst\`{e}mes
@@ -193,36 +143,11 @@ Fabio Patern\`{o}, Carmen Santoro, and Rasmus Olsen.
 \newblock {Migratory Interactive Applications for Ubiquitous Environments}.
 \newblock pages 9--23, 2011.
 
-\bibitem[PSS09]{Paterno'2009}
-Fabio Patern\`{o}, Carmen Santoro, and Lucio~Davide Spano.
-\newblock {MARIA: A Universal, Declarative, Multiple Abstraction-Level Language
-  for Service-Oriented Applications in Ubiquitous Environments}.
-\newblock {\em ACM Transactions on Computer-Human Interaction}, 16(4):1--30,
-  November 2009.
-
 \bibitem[PZ10]{Paterno2010}
 Fabio Patern\`{o} and Giuseppe Zichittella.
 \newblock {Desktop-to-Mobile Web Adaptation through Customizable
   Two-Dimensional Semantic Redesign}.
 \newblock pages 79--94, 2010.
-
-\bibitem[RBB{\etalchar{+}}95]{Resnick1995}
-Lori~Alperin Resnick, Alex Borgida, Ronald~J Brachman, Charles~L Isbell,
-  Deborah~L Mcguinness, Peter~F Patel-schneider, and Kevin~C Zalondek.
-\newblock {CLASSIC Description and Reference Manual For the COMMON LISP
-  Implementation}.
-\newblock Technical report, 1995.
-
-\bibitem[RFJ08]{Ratiu2008}
-Daniel Ratiu, Martin Feilkas, and Jan Jurjens.
-\newblock {Extracting Domain Ontologies from Domain Specific APIs}.
-\newblock {\em 2008 12th European Conference on Software Maintenance and
-  Reengineering}, 1:203--212, 2008.
-
-\bibitem[SC12]{Silva2012}
-Carlos~Eduardo Silva and Jos\'{e}~Creissac Campos.
-\newblock {Can GUI Implementation Markup Languages Be Used for Modelling ?}
-\newblock In {\em Human-Centered Software Engineering}, pages 112--129, 2012.
 
 \bibitem[Ste12]{Steinberg2012}
 Gideon Steinberg.
@@ -271,40 +196,13 @@ Jean Vanderdonckt.
   interactive}.
 \newblock 1997.
 
-\bibitem[vD97]{VanDam1997}
-Andries van Dam.
-\newblock {Post-WIMP user interfaces}.
-\newblock {\em Communications of the ACM}, 40(2):63--67, February 1997.
-
-\bibitem[VLM{\etalchar{+}}04]{Vanderdonckt2004}
-Jean Vanderdonckt, Quentin Limbourg, Benjamin Michotte, Laurent Bouillon,
-  Daniela Trevisan, and Murielle Florins.
-\newblock {USIXML : a User Interface Description Language for Specifying
-  Multimodal User Interfaces The Reference Framework used for Multi-Directional
-  UI Development}.
-\newblock {\em Language}, pages 19--20, 2004.
-
 \bibitem[VNHF11]{Vlist2011}
 Bram J J Van~Der Vlist, Gerrit Niezen, Jun Hu, and Loe M~G Feijs.
 \newblock {Interaction Primitives : Describing Interaction Capabilities of
   Smart Objects in Ubiquitous Computing Environments}.
 \newblock Number September, pages 13--15, 2011.
 
-\bibitem[WB03]{Wu2003}
-Mike Wu and Ravin Balakrishnan.
-\newblock {Multi-finger and whole hand gestural interaction techniques for
-  multi-user tabletop displays}.
-\newblock In {\em Proceedings of the 16th annual ACM symposium on User
-  interface software and technology - UIST '03}, pages 193--202, New York, New
-  York, USA, November 2003. ACM Press.
-
-\bibitem[WGM08a]{Wang2008}
-Xin Wang, Yaser Ghanam, and Frank Maurer.
-\newblock {From Desktop to Tabletop : Migrating the User Interface of
-  AgilePlanner}.
-\newblock In {\em Engineering Interactive Systems 2008}, pages 263--270, 2008.
-
-\bibitem[WGM08b]{WGM08}
+\bibitem[WGM08]{WGM08}
 Xin Wang, Yaser Ghanam, and Frank Maurer.
 \newblock From desktop to tabletop: Migrating the user interface of
   agileplanner.

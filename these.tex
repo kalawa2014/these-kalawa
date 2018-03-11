@@ -11,7 +11,7 @@
 \usepackage{multirow}
 \usepackage[francais]{minitoc}
 \usepackage{tabularx}
-\usepackage{listings}
+%\usepackage{listings}
 %
 %\usepackage{a4wide, eurosym , graphics, graphicx, tabularx, pifont, colortbl, fancyhdr, fancybox}
 \usepackage[francais]{layout}
@@ -195,15 +195,15 @@ xleftmargin=.1\textwidth
 	\enlargethispage{5cm}
 	\include{Title}
 	
-	
-	%\label{resume}
-	%\input{resume/abstract}
+	\enlargethispage{5cm}
+	\label{resume}
+	\input{resume/abstract}
 	\date{}
-	%\cleardoublepage
+	\cleardoublepage
 
 	%\section*{Remerciements}
-	%\dominitoc
-	%\faketableofcontents
+	\dominitoc
+	\faketableofcontents
 	%\tableofcontentsb
 	%\listoffigures
 	%\listoftables
@@ -219,9 +219,9 @@ xleftmargin=.1\textwidth
 	\part{Domaine d'étude et état de l'art}
 	
 	\chapter{Migration des applications}
-	%\label{chap2}
-	%\minitoc
-	%\input{chap2/chapitre2}
+	\label{chap2}
+	\minitoc
+	\input{chap2/chapitre2}
 	
 	\chapter{Tables interactives et Migration des UI}
 	%\label{chap3}
@@ -256,7 +256,7 @@ xleftmargin=.1\textwidth
 	%%\input{chap8/chapitre8}
 	
 	
-	%\bibliographystyle{alpha}
-	%\bibliography{bib/biblio}
+	\bibliographystyle{alpha}
+	\bibliography{bib/biblio}
 	
 \end{document}

@@ -1,0 +1,25 @@
+\BOOKMARK [-1][-]{part.1}{I Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introduction}{part.1}% 2
+\BOOKMARK [-1][-]{part.2}{II Domaine d'\351tude et \351tat de l'art}{}% 3
+\BOOKMARK [0][-]{chapter.2}{Migration des applications}{part.2}% 4
+\BOOKMARK [1][-]{section.2.1}{Motivations}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Probl\350mes li\351s \340 la migration des UI vers une table interactive}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.1}{Cas d?une application desktop}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.2}{Probl\350mes li\351s \340 la migration du dialogue}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.3}{Probl\351matiques li\351es \340 la migration d'UI vers une table interactive}{section.2.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Sp\351cificit\351s de la migration d'UI vers les tables interactives}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.3.1}{Mod\350le d'interactions d'une table interactive}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.2}{Propri\351t\351s caract\351ristiques du mod\350le d'interactions des tables interactives }{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.3}{Principes de conception d'UI pour les tables interactives}{section.2.3}% 13
+\BOOKMARK [1][-]{section.2.4}{Concepts pour la migration d'UI}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.4.1}{Architecture des applications \340 migrer}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.2}{Mod\350le d'interactions abstraites}{section.2.4}% 16
+\BOOKMARK [1][-]{section.2.5}{Conclusion}{chapter.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Tables interactives et Migration des UI}{part.2}% 18
+\BOOKMARK [-1][-]{part.3}{III Contributions}{}% 19
+\BOOKMARK [0][-]{chapter.4}{Approches de migration des UI }{part.3}% 20
+\BOOKMARK [0][-]{chapter.5}{Mod\351lisation des UI }{part.3}% 21
+\BOOKMARK [0][-]{chapter.6}{M\351canismes de migration des UI}{part.3}% 22
+\BOOKMARK [0][-]{chapter.7}{Validations du processus}{part.3}% 23
+\BOOKMARK [-1][-]{part.4}{IV Conclusion et Perspectives}{}% 24
+\BOOKMARK [0][-]{chapter.8}{Conclusions et perspectives}{part.4}% 25

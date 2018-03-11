@@ -1,24 +1,48 @@
 %\section{Introduction}
 %\label{sec:chap2:1}
 
-Dans le but de motiver la migration des applications vers des tables interactives, ce chapitre s'appuie sur un exemple d'UI d'application conçue pour un desktop (décrit à la section~\ref{sec:chap2:2}) pour identifier les problématiques liées à la migration d'UI. Ensuite la section~\ref{sec:chap2:3} étudie les éléments caractéristiques des tables interactives dans l'objectif d'identifier des principes qui vont guider la migration d'une UI vers ces tables interactives. La section~\ref{sec:chap2:4} quant à elle aborde des concepts utiles pour la migration des UI. Enfin la section~\ref{sec:chap2:5} présente une synthèse des problématiques principales étudiées dans ce manuscrit.
+Dans le but de décrire les différentes étapes et les problèmes lier à la migration des interfaces
+Hommes-Machines en général, et vers une table interactive en particulier, nous avons pris le
+parti d?utiliser un exemple ?fil rouge?. Les motivations du choix de l?étude de cette cible sont décrites
+dans la section ~\ref{sec:chap2:2}, puis la section ~\ref{sec:chap2:3} décrit pas à pas l?application initialement conçue pour un desktop que nous souhaitons mettre en ?uvre une table surface. La section ~\ref{sec:chap2:4} présente les objectifs
+de cette thèse.
 
 \section{Motivations}
 \label{sec:chap2:2}
-Les tables interactives comme les desktops et les smartphones sont utilisées dans plusieurs domaines d'activités. La figure~\ref{fig:chap2:16} présente une répartition des applications conçues pour les tables interactives en 2011~\cite{SebastienKubicki2011}; la musique, la photo et les jeux constituent environ 55\% des domaines d'utilisation des tables interactives. La migration des applications existantes vers les tables interactives présente un intérêt car il existe une multitude d'applications de musique,  photo et jeux pour desktop. Par ailleurs, il existe un faible pourcentage d'applications sur les tables interactives pour des domaines tels que la cartographie(6\%) ou le brainstorming(2\%) qui peut être développé par la migration de ces applications vers une table interactive. De manière globale, les applications sont migrées d'un desktop ou d'un smartphone vers une table interactive dans le but d'avoir un contexte collaboratif, de bénéficier des moyens d'interactions tangibles ou d'une surface d'affichage plus grande.
+Les tables interactives comme les desktops et les smartphones sont utilisées dans plusieurs domaines d'activités\cite{SebastienKubicki2011}. Une table interactive peut servir comme plateforme de
+jeux, pour la consultation de photos, de cartes, de dessins, pour noter les idées lors d?une session
+de brainstorming, etc. Les tables interactives permettent de mettre en \oe{}uvre un espace de travail
+collaboratif.
 
-Dans cette section nous présentons (au paragraphe~\ref{sec:chap2:2:1}) un cas d'application desktop à migrer vers une table interactive, ensuite les problématiques générales liées à la migration d'UI des applications existantes (au paragraphe~\ref{sec:chap2:2:2} ) et enfin les questions soulevées par la migration d'une UI vers les tables interactives (au paragraphe~\ref{sec:chap2:2:3} ).
+Néanmoins, on remarque que les tables interactives ne se sont pas démocratisées comme les ta-
+blettes ou les smartphones. Évidemment, le prix de vente en est une des raisons peut constituer un
+frein à l?achat. Il est par exemple d?environ 6600? pour la version 2.0 commercialisées par Microsoft.
+Même si nous observons une nette baisse du prix par rapport à la première version celui-ci constitue
+indiscutablement un frein à l?achat. Par ailleurs, la faible diffusion de cette plateforme fait que les
+applications pour les tables interactives sont loin d?être aussi nombreuses que pour les tablettes ou les smartphones. Selon des données provenant de Distimo\footnote{Distimo : www.distimo.com}, en mars 2012 nous avons noté plus de
+350.000 applications développées aux Etats-Unis pour des desktops, 150.000 applications pour les smartphones et presque 100.000 spécifiquement pour les tablettes 4 (cf figure \ref{fig:chap2:1}) et aucune pour les tables interactives.
+
+Pour accroître le nombre d?applications disponibles et toucher un éventuel public, nous pensons que la migration des applications existantes peut être une piste sérieuse si la migration utilise effectivement les divers dispositifs d?interactions disponible sur la table. Dans cette thèse, nous étudions
+par conséquent les divers problèmes posés par le processus de migrations en espérant pouvoir en complément enrichir les applications d?une dimension collaborative et tangible.
+
+Nous présentons donc à la section 2.2 les problèmes liés à la migration d?une application desktop vers une table interactive puis les objectifs de nos travaux. Les hypothèses et les différentes approches permettant de faire migrer des UI sont présentés dans la section 2.3. L?ensemble de ce chapitre nouspermet de décrire le périmètre de nos travaux.
+
+
 \begin{figure}[ht]
 \begin{center}
-\includegraphics[scale=.9]{chap1/img-3}
-\caption{Répartition des domaines d'utilisation des tables interactives en
-2011}\label{fig:chap2:16}
+\includegraphics[scale=.5]{chap1/img-3}
+\caption{Applications disponibles sur les marchés de téléchargement par plateformes en mars
+	2012 aux États Unis, source Distimo}\label{fig:chap2:1}
 \end{center}
 \end{figure}
 
-\subsection{Cas de l'application CBA}
-\label{sec:chap2:2:1}
-Consid\'{e}rons le cas d'\'{e}tude d'une application con\c{c}ue pour un desktop qui permet l'\'{e}laboration des bandes dessin\'{e}es (BD) telle que \textit{Comics Book Application }(CBA). Cette application est con\c{c}ue pour \^{e}tre utilis\'{e}e par un dessinateur de BD qui est assis devant son \'{e}cran en utilisant sa souris et son clavier. La fen\^{e}tre principale de l'application
+\section{Problèmes liés à la migration des UI vers une table interactive}
+\label{sec:chap2:3}
+Cette section décrit le fonctionnement d?une application permettant l?élaboration de bande dessinée que nous souhaitons faire migrer vers une table interactive. Dans un second temps, nous présentons les problèmes liés à cette migration et les différents objectifs que nous souhaitons atteindre sont décrits à la fin de cette section.
+
+\subsection{Cas d?une application desktop}
+\label{sec:chap2:3:1}
+Considérons l'exemple suivant : soit une application conçue pour un desktop qui permet l?élaboration des bandes dessinées (BD) telle que \textit{Comics Book Application }(CBA). Cette application est con\c{c}ue pour \^{e}tre utilis\'{e}e par un dessinateur de BD qui est assis devant son \'{e}cran en utilisant sa souris et son clavier. La fen\^{e}tre principale de l'application
 CBA d\'{e}crite par la figure~\ref{fig:chap2:6} nous permet d'identifier trois zones majeures que sont la zone des menus correspondant aux composants graphiques situ\'{e}s en haut de la fen\^{e}tre principale, l'espace de travail qui contient les cadres d'une page de bande dessin\'{e}e et la zone de l\'{e}gende correspondant aux groupes, aux formulaires et listes \`{a} gauche de la fen\^{e}tre.
 
 \begin{figure}[ht]
@@ -30,24 +54,92 @@ CBA d\'{e}crite par la figure~\ref{fig:chap2:6} nous permet d'identifier trois z
 \end{figure}
 
 
-\subsection{Problématiques liées à la migration des UI}
-\label{sec:chap2:2:2}
-La migration des UI des applications existantes vers une nouvelle plateforme tout en conservant le NF peut se faire en concevant une nouvelle UI pour la plateforme en se basant sur le NF et sur les spécificités de la plateforme d'arrivée. Il est aussi possible de migrer une UI en l'adaptant à sa cible en tenant compte ou non des spécificités de cette cible. Ces deux types de migration d'UI (adaptation ou nouvelle conception) soulèvent plusieurs problèmes.
-\subsubsection{Problématiques liées à une reconception de l'UI}
-La reconception de l'UI suppose de s'appuyer sur le NF de l'application de départ, particulièrement sur les liens entre ce NF et l'UI à migrer et sur les spécificités de la plateforme d'arrivée (les dispositifs d'interactions, les bibliothèques graphiques, les critères ergonomiques, etc.). En effet, il est possible de déduire une UI en se basant sur les liens entre le NF et l'UI, il existe des travaux qui préconisent la génération des UI à partir des descriptions des web services par exemple\cite{Kassoff2003}. 
-La conception de l'UI en se basant sur le NF suppose de savoir comment déduire une UI à partir d'une description abstraite du NF:
+
+Nous considérons de manière globale que les applications à migrer doivent respecter une décomposition minimale permettant de séparer aisément l'UI et le Noyau Fonctionnel (NF). Si cette
+hypothèse est vérifiée, les différents aspects des UI des applications peuvent être décrites de manière
+générale comme suit :
 \begin{itemize}
-	\item les composants graphiques qui composent l'UI, 
-	\item la structure et le layout de ces composants graphiques, 
-	\item le comportement de l'UI (c'est-à-dire l'enchainement des fenêtres et des activités de l'UI),
-	\item et évaluer le respect des critères ergonomiques de l'UI générée.
+	\item le \textbf{dialogue} entre l?utilisateur et le système permet d?organiser les interactions et les comportements d?une UI graphique,
+	\item la \textbf{structure} et le \textbf{positionnement} des éléments graphiques qui décrivent l?organisation et les types de données d?une UI, 
+	\item le \textbf{style} pour décrire les tailles, les couleurs et les polices d?une UI graphique.
 \end{itemize}
 
-\subsubsection{Problématiques liées à une adaptation de l'UI}
-L'adaptation de l'UI pendant la migration suppose de s'appuyer sur les spécifications de l'UI à migrer décrites par des modèles abstraits et d'adapter ces modèles à la plateforme d'arrivée. Les modèles servent à décrire les différents aspects de l'UI tels que les tâches ou les activités décrites par l'UI, le placement ou le layout des éléments de l'UI, les interactions entre l'utilisateur et l'UI, les styles de présentations des aspects visuels (tailles et couleurs des textes, etc.) Le problème lié à la migration est: comment transformer les différents aspects d'une UI pour qu'ils soient conforme aux spécificités de la plateforme cible? En effet la migration d'une UI desktop vers un smartphone peut entrainer le changement de layout et/ou du placement des éléments de l'UI de départ. Et la différence des moyens d'interactions entre un desktop et une table interactive implique une adaptation du modèle d'interaction de l'UI de départ par exemple.
+Nous considérons ces trois aspects comme autant de dimensions qui permettent de construire
+l?espace des problèmes lié à la migration d?une UI prévue pour un desktop pour que l?application
+s?exécute sur une table interactive. Pour chacune de ces dimensions nous étudions les problèmes soulevés par l?utilisation des objets tangibles/physiques comme moyen d?interactions. Dans le cadre des
+tables interactives, une \textbf{interaction tangible} consiste à utiliser des objets physiques (généralement
+en contact avec l?écran ou la surface d?affichage) comme des dispositifs de manipulation directes ou
+comme des moyens d?accès à des fonctionnalités. Pour une application ?conception de bandes dessinées? (CBA) sur une table interactive, il est envisageable d?utiliser un stylo pour écrire dans les bulles
+de dialogue d?une bande dessinée. Dans ce cas le stylo est un \textbf{objet tangible} de manipulation directe.
+Par ailleurs, il est également possible que les concepteurs des bandes dessinées souhaitent utiliser un
+cube comme \textbf{objet tangible} dans le but sélectionner des images (représentant des personnages par
+exemple). Chaque face du cube sera associée à une catégorie de liste d?images ou d?objets graphiques
+utilisables dans une bande dessinée.
 
-\fbox{\parbox{0.9\textwidth}{
-De manière générale, les migrations d'UI basées sur l'adaptation de l'existant évoquent des problèmes liées aux transformations des différents aspects de l'UI pour la plateforme d'arrivée.}}
+Nous étudions aussi les problèmes soulevés par la transformation d?une UI mono-utilisateur en UI
+multi-utilisateurs co-localisées. Dans le cadre des tables interactives, les applications peuvent naturellement être utilisées par plusieurs personnes ce qui est plus difficilement imaginable sur un smartphone. Il est alors nécessaire de re-concevoir l?UI de l?application qui est alors destinée à plusieurs personnes (UI multi-utilisateurs) mais qui partagent le même écran (utilisateur co-localisé). L?appli-
+cation ?conception de bandes dessinées? que l?on souhaite faire migrer sur table interactive peut être
+utilisée simultanément par plusieurs créateurs de bandes dessinées qui ainsi collaborent pour conce-
+voir ensemble une nouvelle BD.
+
+Dans les sections 2.2.2, 2.2.3 et 2.2.4, nous illustrons ces problèmes pour les différents aspects de
+l?application CBA décrite par la figure 2.2 ci-dessus.
+
+\subsection{Problèmes liés à la migration du dialogue}
+\label{sec:chap2:3:2}
+Le dialogue est une dimension des UI de départ qui varie fortement dans le cadre de la migration
+vers les tables interactives. En effet le nombre d?utilisateurs et les modalités d?interactions changent
+entre la source et la cible. Dans ce cadre, la transformation du dialogue de départ soulève des questions par rapport à l?utilisation des objets tangibles, à l?équivalence des interactions et au nombre
+d?utilisateurs. Cette section expose ces questions.
+
+\subsubsection{Utilisation des objets tangibles comme moyen d?interactions}
+Dans le cadre de l?application CBA, les dessinateurs de BD peuvent utiliser différents objets
+(cube, disque, etc.) pour afficher un menu de manière contextuelle dans le but d?effectuer une tâche de
+changement de couleur ou de police d?un texte. De manière générale, il est indispensable d?identifier
+dans l?UI départ les composants graphiques ou les fonctionnalités que les utilisateurs utiliseront par
+des \textbf{interactions tangibles}.
+
+Les objets physiques peuvent aussi servir d?instruments de manipulations directes ou pour entrer
+des données. L?exemple d?un stylo pour sélectionner des options ou pour écrire dans le cadre de
+l?application CBA est envisageable. Dans ce cas, la migration des dialogues impacte à la fois l?UI et
+le NF. En effet, les \textbf{interactions tangibles} peuvent aussi nécessiter l?ajout dans le NF des traitements
+inexistants dans l?application de départ et la transformation de l?UI. Par exemple l?écriture à main
+levée avec un stylo à main levée peut nécessiter l?ajout d?un module de reconnaissance d?écriture si la
+plateforme cible n?offre pas cette fonctionnalité.
+
+L?utilisation des objets tangibles comme moyen d?interaction pour les UI de la cible soulève un
+sous-ensemble de la dimension des problèmes liés à l?équivalence des interactions entre la source et
+la cible.
+
+
+\subsubsection{Équivalences des interactions entre la source et de la cible pendant la migration}
+
+Pour établir des équivalences entre les plateformes source et cible, il est indispensable d?étudier
+les instruments qui permettent aux utilisateurs de dialoguer avec les UI sur ces plateformes. En effet
+les différents instruments d?interactions offrent différentes modalités aux utilisateurs des applications.
+Dans le cas de la migration de l?application CBA du desktop vers une table interactive, il est indispensable de transposer par les interactions du clavier et de la souris sur les tables par des interactions
+tactiles ou par un objet tangible.
+
+
+La transposition des dialogues de la source sur une table interactive impose des transformations
+des interactions initiaux présentes entre l?UI desktop et l?utilisateur et entre l?UI et le noyau fonctionnel. Dans le but d?assurer la cohérence des dialogues après la migration, il est alors indispensable
+de s?assurer que les nouveaux dialogues permettent toujours une utilisation de l?application. Pour ce
+faire, nous pensons que les équivalences d?interactions doivent :
+
+\begin{itemize}
+	\item Garantir que l?ensemble des fonctionnalités de l?application desktop restent accessible sur les
+	tables interactives après la migration. En effet, une migration ne doit pas altérer les fonctionnalités de l?application initiale sauf si la personne en charge de la migration le souhaite.
+	\item Assurer que les dialogues modifiant les données d?une application prennent en compte les interactions de plusieurs utilisateurs.
+\end{itemize}
+
+\subsubsection{Transformation du dialogue de la source pour une plateforme multi-utilisateurs et co-localisée}
+
+
+
+%L'adaptation de l'UI pendant la migration suppose de s'appuyer sur les spécifications de l'UI à migrer décrites par des modèles abstraits et d'adapter ces modèles à la plateforme d'arrivée. Les modèles servent à décrire les différents aspects de l'UI tels que les tâches ou les activités décrites par l'UI, le placement ou le layout des éléments de l'UI, les interactions entre l'utilisateur et l'UI, les styles de présentations des aspects visuels (tailles et couleurs des textes, etc.) Le problème lié à la migration est: comment transformer les différents aspects d'une UI pour qu'ils soient conforme aux spécificités de la plateforme cible? En effet la migration d'une UI desktop vers un smartphone peut entrainer le changement de layout et/ou du placement des éléments de l'UI de départ. Et la différence des moyens d'interactions entre un desktop et une table interactive implique une adaptation du modèle d'interaction de l'UI de départ par exemple.
+
+%\fbox{\parbox{0.9\textwidth}{
+%De manière générale, les migrations d'UI basées sur l'adaptation de l'existant évoquent des problèmes liées %aux transformations des différents aspects de l'UI pour la plateforme d'arrivée.}}
 
  
 \subsection{Problématiques liées à la migration d'UI vers une table interactive}

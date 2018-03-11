@@ -1,0 +1,37 @@
+\relax 
+\newlabel{chap1}{{}{1}}
+\@writefile{lof}{\contentsline {xsect}{Introduction}{1}}
+\@writefile{lot}{\contentsline {xsect}{Introduction}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Pourcentage des domaines d'utilisation des tables interactives en 2011}}{1}}
+\newlabel{fig:1}{{1}{1}}
+\@writefile{lof}{\contentsline {xsect}{Applications \`{a} migrer: cas de l'application CBA}{1}}
+\@writefile{lot}{\contentsline {xsect}{Applications \`{a} migrer: cas de l'application CBA}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Applications \`{a} migrer: cas de l'application CBA}{1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Fen\^{e}tre principale de l'application CBA}}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Sélection des composants graphiques}{2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Cas d'un groupe de composants graphiques}{2}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Les équivalences d'une liste d'image}}{3}}
+\newlabel{tbl:1}{{1}{3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2} Cas d'un composant graphique}{3}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Les équivalences entre JSpinner sur une table Microsoft Surface}}{3}}
+\newlabel{tbl:2}{{2}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Migration de la structure de l'UI de départ}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Migration de la structure d'une UI Desktop sur une table interactive}}{4}}
+\newlabel{fig:2}{{3}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Utilisation des objets tangibles comme moyens d'interactions}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Personnalisation des aspects visuels de l'UI de l'application CBA}{4}}
+\newlabel{tab:3}{{2.1.2}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Migration de l'aspect visuelle d'un formulaire}}{5}}
+\@writefile{lof}{\contentsline {xsect}{Assistance du concepteur pendant la migration}{5}}
+\@writefile{lot}{\contentsline {xsect}{Assistance du concepteur pendant la migration}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Assistance du concepteur pendant la migration}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Sélection des objets interactifs}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Placement et édition manuelle}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Discussion }{6}}
+\@writefile{lof}{\contentsline {xsect}{Conclusion}{7}}
+\@writefile{lot}{\contentsline {xsect}{Conclusion}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{7}}
+\bibstyle{alpha}
+\bibdata{bib/biblio}
+\global\mtcsecondpartfalse

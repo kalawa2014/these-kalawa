@@ -1,0 +1,1067 @@
+\section{Introduction}
+\label{sec:chap7:1}
+Les systèmes interactifs (SI) à migrer peuvent avoir une décomposition fonctionnelle minimale de la figure %\ref{fig:chap3:1} 
+qui comprend une interface utilisateur (UI) et un noyau fonctionnel (NF). La migration des SI vers la table interactive est un processus qui impacte à la fois le NF et l'UI. 
+
+
+\subsection{Introduction}
+La solution de migration assist\'{e}e que nous proposons est constitu\'{e}e 
+de trois phase~: la phase d'extraction \`{a} partir de la structure 
+analysable ({\it UIStruture}) d'une repr\'{e}sentation ({\it AUIStructure}) qui est d\'{e}crite dans le 
+chapitre pr\'{e}c\'{e}dent, la phase d'adaptation de la structure de l'UI 
+aux r\`{e}gles ergonomiques de la table interactive et enfin la phase de 
+projection du mod\`{e}le d'UI adapt\'{e}, cette phase permet aussi aux 
+concepteurs de personnaliser l'UI finale. 
+
+\subsection{Adaptation de la structure de l'UI }
+\label{subsec:adaptation}
+Cette phase a pour finalit\'{e} la production d'une structure d'UI 
+adapt\'{e}e aux r\`{e}gles ergonomiques de la table interactive. 
+L'adaptation du mod\`{e}le de structure ({\it AUIStructure}) extraite de l'UI \`{a} migrer se 
+fait en fonction des r\`{e}gles ergonomiques que nous pr\'{e}sentons \`{a} 
+la section \ref{subsubsec:mylabel1}. La section 
+\ref{subsubsec:identification} pr\'{e}sente une formalisation des r\`{e}gles 
+d'adaptation de la structure et enfin la section 
+\ref{subsubsec:mylabel2} est une synth\`{e}se du processus 
+d'adaptation de la structure.
+
+\subsubsection{R\`{e}gles ergonomiques pour l'adaptation du mod\`{e}le AUIStructure}
+\label{subsubsec:mylabel1}
+\paragraph{R\`{e}gles ergonomique pour l'adaptation des groupes d'interacteurs}
+Les guidelines G1, G38, G39 et G40 sont rattach\'{e}es de G18 qui 
+pr\'{e}conise de prendre en compte le nombre d'utilisateur et le partage de 
+l'\'{e}cran pendant la mise en \oe uvre de l'UI. En effet ce principe impact 
+la structuration des groupes d'interacteurs (G38, G38, G40) en fonction de 
+leur contenu, elle impacte aussi l'accessibilit\'{e} de ces groupes qui 
+doivent \^{e}tre 360\textdegree utilisable (G1). Les r\`{e}gles 
+d'adaptations relatives \`{a} ces principes doivent consid\'{e}rer les types 
+de Container ({\it Window, Simple, Panel }et{\it Table}). 
+
+\paragraph{Guidelines d'utilisation des objets tangibles}
+Les guidelines G15, G16 et G18 sont rattach\'{e}es \`{a} G5 pr\'{e}conise la 
+consid\'{e}ration des objets physiques comme moyen d'interaction. Elles 
+pr\'{e}cisent les cadres d'utilisation des objets tagu\'{e}s ou non. Les 
+r\`{e}gles associ\'{e}es \`{a} ces guidelines ne sont pas appliqu\'{e}es 
+dans tous les pendant cet \'{e}tape du processus, le concepteur doit 
+pr\'{e}ciser dans s'il souhaite les appliquer avant la g\'{e}n\'{e}ration de 
+l'UI propos\'{e}e.
+
+\subsubsection{Identification des r\`{e}gles d'adaptation}
+\label{subsubsec:identification}
+Les r\`{e}gles identifi\'{e}es dans cette section permettent de 
+g\'{e}n\'{e}rer la structure de l'UI pour la table interactive, cette 
+structure est d\'{e}crite par l'ensemble $TargetUIStructure$ \`{a} l'aide 
+des widgets de la plateforme cible.
+
+\paragraph{R\`{e}gles d'adaptation des containers de type Table}
+Les containers de type {\it Table} sont compos\'{e}s des {\it UIComponent} ayant des donn\'{e}es du 
+m\^{e}me type (cf. chapitre 5.4.2.4), ils d\'{e}crivent un groupe 
+d'interacteurs permettant de structurer des ressources de l'UI. Ce groupe se 
+concr\'{e}tise en menu, ensemble de raccourcis ou en liste de donn\'{e}es de 
+type (texte, image, etc.) sur une table interactive. La guideline G40 
+pr\'{e}conise de garder le regroupement des donn\'{e}es structur\'{e}e pour 
+facilit\'{e} son utilisation (la recherche d'information par exemple), en la 
+combinant \`{a} la guideline G1 qui pr\'{e}conise l'utilisation des 
+composants graphiques en 360\textdegree , nous d\'{e}duisons les r\`{e}gles 
+d'adaptation 1 et 2 pour adapter les containers de type {\it Table} ayant des contenu 
+que l'on souhaite rendre accessible \`{a} tous les utilisateurs de la table. 
+
+La r\`{e}gle 1 concerne le cas o\`{u} les interacteurs fils d'un container 
+de type {\it Table} contiennent des donn\'{e}es de type {\it Images, MediaElement ou Object} alors chaque interacteur fils 
+doit \^{e}tre accessible \`{a} tout le monde (contenus dans un Widget ayant 
+les primitives d'interactions intrins\`{e}ques {\bf Widget Move }et {\bf 
+Widget Rotation).}
+
+{\bf R\`{e}gle 1~:}$\, \forall \, container\, \in AUIStructure\wedge 
+containerty??e=Table$
+\[
+\forall i\in containercontains\wedge \left( i.content.dataType\in \left\{ 
+{\begin{array}{l}
+ Image,\, \\ 
+ MediaElement, \\ 
+ Object \\ 
+ \end{array}} \right\} \right)\wedge \, \exists \mathbf{w'}\in 
+EquivalentWidget\left( i \right)\wedge \left\{ {\begin{array}{l}
+ Widget\, Move, \\ 
+ Widget\, Rotation\, \\ 
+ \end{array}} \right\}\in \mathbf{w'}getIntrinsicInteraction()\, \, \wedge 
+\, \exists \mathbf{w}\in EquivalentWidget\left( container \right)\wedge 
+\left\{ {\begin{array}{l}
+ Widget\, Move, \\ 
+ Widget\, Rotation\, \\ 
+ \end{array}} \right\}\notin \mathbf{w}getIntrinsicInteraction()\, 
+\]
+\[
+\mathbf{w'}:est\, le\, widget\, \`{a}\, choisir\, pour\, concr\'{e}tiser\, 
+les\, fils\, de\, container
+\]
+\[
+\mathbf{w}:est\, le\, widget\, \`{a}\, choisir\, pour\, concr\'{e}tiser\, 
+le\, container\, de\, type\, Table
+\]
+\[
+container:{est\, l}^{'}interacteur\`{a}\, consid\'{e}rer\, pendant\, la\, 
+g\'{e}n\'{e}ration\, de\, TargetAUIStructure
+\]
+La r\`{e}gle 2 permet d'adapter les containers de type {\it Table} contenant des 
+interacteurs activable quelques soit le type de donn\'{e}es des interacteurs 
+fils. Si tous les interacteurs fils ont les primitives 
+d'interactions~effectives {\bf Widget Selection ou Navigation, Widget 
+Display, Activation,} alors choisir un Widget qui permet de rendre le 
+container accessible \`{a} tout le monde ({\bf Widget Move }et {\bf Widget 
+Rotation).} 
+
+{\bf R\`{e}gle 2~:} $\forall container\in AUIStructure\wedge 
+containertype=Table$
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+La r\`{e}gle 3 permet d'associer un objet physique \`{a} un container de 
+type {\it Table}. Cette r\`{e}gle permet d'activer un menu par un objet ou un tag par 
+exemple conform\'{e}ment aux guidelines G5, G15 et G16. Elle est optionnelle 
+et d\'{e}pend du concepteur car tous les menus peuvent ne pas \^{e}tre 
+activ\'{e}s par un objet physique.
+
+{\bf R\`{e}gle 3~:} $TRIAL RESTRICTION$
+
+Associer le Table \`{a} un objet physique pour l'afficher sur la table 
+pendant la concr\'{e}tisation de {\it container}.
+
+\paragraph{R\`{e}gles d'adaptation des containers de type Panel}
+Les containers de type {\it Panel} repr\'{e}sentent un groupe d'interacteurs qui est 
+compos\'{e} que des {\it UIComponent} avec des types de donn\'{e}es diff\'{e}rentes ou 
+compos\'{e} \`{a} la fois de {\it Container} et d'{\it UIComponent}. Sur la table interactive, nous 
+consid\'{e}rons qu'un {\it Panel} est groupe qui contient des interacteurs destin\'{e}s 
+\`{a} un utilisateur et le concepteur peut d\'{e}cider de l'afficher par un 
+objet physique par exemple. De mani\`{e}re concr\`{e}te un container de type 
+Panel peut \^{e}tre un formulaire, une description d'un objet ou un ensemble 
+de commandes pour acc\'{e}der \`{a} des fonctionnalit\'{e}s. Les Guidelines 
+G1, G40 et G5 permettent d'\'{e}crire la r\`{e}gle 4 et la r\`{e}gle 5. La 
+r\`{e}gle 5 est optionnelle et ne s'applique que lorsque le concepteur le 
+souhaite.
+
+{\bf R\`{e}gle 4~:} $TRIAL RESTRICTION$
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+{\bf R\`{e}gle 5~:}$TRIAL RESTRICTION$
+
+Associer le panel \`{a} un objet physique pour l'afficher sur la table 
+pendant la concr\'{e}tisation de {\it container}.
+
+{\bf Exception~5:} Dans le cas o\`{u} un ou plusieurs {\it Panel} est fils d'un autre 
+Panel, seuls le {\it Panel} le plus proche de la racine est consid\'{e}r\'{e} par les 
+r\`{e}gles 4 et 5.
+
+\paragraph{R\`{e}gle d'adaptation des containers de type Simple}
+Les containers de type {\it Simple} ne contiennent que des containers, ils doivent 
+\^{e}tre transform\'{e}s pour que chaque container puisse \^{e}tre 
+utilis\'{e} par tous les utilisateurs suivant la guideline G1. 
+
+Cependant dans le cas o\`{u} tous les containers fils est de type Simple, 
+ils sont supprim\'{e}s et leurs fils sont consid\'{e}r\'{e}s comme fils du 
+container courant, et r\'{e}cursivement. Cette exception permet de 
+consid\'{e}rer que les groupes d'interacteurs pouvant \^{e}tre manipul\'{e}s 
+par les utilisateurs de l'UI sur la table interactive.
+
+{\bf R\`{e}gle 6~: }$TRIAL RESTRICTION$
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+{\bf Exception 6~: }$TRIAL RESTRICTION$
+
+Si $TRIAL RESTRICTION$Alors remplacer les containers i par leur fils, si 
+l'un des fils n'est pas un {\it Container} alors {\it container.type}$=${\it Panel} et appliquer la r\`{e}gle 4 
+\'{e}ventuellement la r\`{e}gle 5 en fonction des pr\'{e}f\'{e}rences du 
+concepteur.
+
+La figure ci-dessous illustre le cas trait\'{e} par l'exception \`{a} la 
+r\`{e}gle 6
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=5.97in,height=2.23in]{Chapitre1.eps}}
+\caption{Art\'{e}fact d'UI}
+\label{fig1}
+\end{figure}
+
+\paragraph{R\`{e}gle d'adaptation des containers de type Window}
+Les containers de type {\it Window} sont les racines du mod\`{e}le {\it AUIStructure}. La fen\^{e}tre 
+principale d'une UI est adapt\'{e}e \`{a} la table interactive pour que les 
+diff\'{e}rents \'{e}l\'{e}ments qui la compose puis \^{e}tre utilis\'{e}s en 
+respectant G1. Tous fils imm\'{e}diats d'une fen\^{e}tre principale doivent 
+\^{e}tre conformes \`{a} G1. 
+
+Les autres fen\^{e}tres d'une UI (bo\^{\i}te de dialogue, formulaire, etc.) 
+qui sont repr\'{e}sent\'{e}s par les containers de types {\it Window} sont 
+transform\'{e}s en un groupe non dissociable mais conforme \`{a} G1.
+
+La r\`{e}gle 7 s'applique pour les fen\^{e}tres principales des applications 
+\`{a} migrer, elle permet rendre accessible tous les fils conforme \`{a} G1. 
+Cette r\`{e}gle modifie le mod\`{e}le de structure de l'UI \`{a} migrer, le 
+mod\`{e}le de structure d'UI pour la table surface doit avoir qu'un seul 
+container de type {\it Window} apr\`{e}s l'application de cette r\`{e}gle. 
+
+{\bf R\`{e}gle 7~}: 
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+{\bf Exception~7: }$TRIAL RESTRICTION$ 
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+{\it container} est plac\'{e} comme fils de la fen\^{e}tre principale dans 
+{\it TargetAUIStructure et }$TRIAL RESTRICTION$
+
+La figure ci-dessous illustre un exemple de cas trait\'{e} par l'exception 
+\`{a} la r\`{e}gle 7.
+
+TRIAL RESTRICTION
+
+\paragraph{Adaptation des interacteurs de type UIComponent }
+Tous les interacteurs de type UIComponent non concern\'{e} par les 
+r\`{e}gles ci-dessus sont r\'{e}utilis\'{e}s dans {\it TargetAUIStructure} et concr\'{e}tis\'{e}s en 
+choisissant le {\it Widget} propos\'{e} par la fonction de classement des widgets 
+\'{e}quivalents$TRIAL RESTRICTION${\bf .}
+
+\paragraph{Adaptation d'AUIStructure en TargetAUIStructure}
+Les r\`{e}gles ci-dessus modifient le mod\`{e}le de structure de l'UI de 
+d\'{e}part en supprimant des interacteurs (cf. R\`{e}gle 6) ou en changeant 
+la position des interacteurs dans l'arbre de structure (cf. R\`{e}gle 7). 
+L'algorithme r\'{e}cursif $TRIAL RESTRICTION$ permet l'adaptation de chaque 
+interacteur appartenant \`{a} {\it AUIStructure} pour g\'{e}n\'{e}rer le mod\`{e}le 
+{\it TargetAUIStructure}. Cet algorithme utilise les R\`{e}gles 1, 2, 4, 6 et 7 pour adapter les 
+containers. 
+
+\underline {{\bf Algorithme}} $TRIAL RESTRICTION$\underline { }
+
+\underline {{\bf Entr\'{e}e}}~:
+
+\begin{itemize}
+\item $TRIAL RESTRICTION$
+\end{itemize}
+\underline {{\bf Sortie}}~:
+
+\begin{itemize}
+\item $TRIAL RESTRICTION$
+\end{itemize}
+\underline {{\bf D\'{e}but}}
+
+\underline {{\bf Si}} $TRIAL RESTRICTION$ \underline {{\bf Alors}}
+
+\underline {{\bf Si}} $TRIAL RESTRICTION$ \underline {{\bf Alors}}
+
+$TRIAL RESTRICTION
+\quad
+TRIAL RESTRICTION$ \underline {{\bf Alors}}
+\[
+TRIAL RESTRICTION
+\]
+\underline {{\bf Si}} $TRIAL RESTRICTION$ \underline {{\bf Alors}}
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\underline {{\bf Sinon Si}} $TRIAL RESTRICTION$ \underline {{\bf Alors}}
+
+\underline {{\bf Si}}$TRIAL RESTRICTION$ \underline {{\bf Alors}}
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\underline {{\bf Sinon }}
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\underline {{\bf Sinon Si}} $TRIAL RESTRICTION$ \underline {{\bf 
+Alors}}
+\[
+TRIAL RESTRICTION
+\]
+\underline {{\bf Return}} $TRIAL RESTRICTION$
+
+\underline {{\bf Fin}}
+
+Le mod\`{e}le {\it TargetAUIStructure }obtenu \`{a} l'issue de cette phase d'adaptation respect ont 
+les propri\'{e}t\'{e}s suivantes~:
+
+\begin{enumerate}
+\item Il n'existe qu'un seul container de type {\it Window} appartenant \`{a} {\it TargetAUIStructure}
+\item Tous les containers de type {\it Simple} sont des fils du container racine de type {\it Window} ou fils d'un container de type {\it Panel}.
+\item Aucun container de type {\it Simple} n'est fils d'un container de type {\it Simple}
+\end{enumerate}
+\subsubsection{G\'{e}n\'{e}ration de l'UI propos\'{e}e}
+\label{subsubsec:mylabel2}
+L'UI propos\'{e}e est d\'{e}crite par sa structure {\it TargetUIStructure} et son comportement 
+{\it TargetUIBehavior} qui sont g\'{e}n\'{e}rer \`{a} partir du mod\`{e}le de structure adapt\'{e} 
+{\it TargetAUIStructure }et de {\it UIBehavior }(cf. Chapitre 4)$. $La concr\'{e}tisation du mod\`{e}le{\it TargetAUIStructure} en structure 
+ex\'{e}cutable {\it TargetUIStructure} se fait en utilisant les r\`{e}gles d'adaptation ci-dessus. 
+Les r\`{e}gles (R\`{e}gle 3 {\&} R\`{e}gle 5) permettant l'utilisation des 
+objets tangibles comme moyen d'interactions sont appliqu\'{e}es pendant 
+cette phase. En laissant le choix aux concepteurs d'appliquer ou non les 
+r\`{e}gles 3 et 5, le processus de g\'{e}n\'{e}ration de {\it TargetUIStructure} parcours l'arbre 
+{\it TargetAUIStructure } et pour chaque interacteurs retrouve les widgets \'{e}quivalents de la 
+table interactive. 
+
+La structure ex\'{e}cutable g\'{e}n\'{e}rer est constitu\'{e}e des widgets 
+de la table interactive et elle est affich\'{e}e \`{a} l'\'{e}cran mais non 
+utilisable car les composants graphiques ne sont pas plac\'{e}s suivant un 
+layout pr\'{e}cis, les ressources de l'UI de ne sont pas d\'{e}finies, et 
+elle n'est pas reli\'{e}e aux contr\^{o}leurs.
+
+Les Handler du composant {\it TargetUIBehavior }sont g\'{e}n\'{e}rer \`{a} partir des primitives 
+d'interactions effectives des interacteurs du mod\`{e}le de structure. 
+
+Le composant {\it TargetUIBehaviorComponent }qui d\'{e}crit les m\'{e}thodes permettant la mise jour de la 
+vue est adapt\'{e} aux widgets \'{e}quivalents choisis pendant la 
+g\'{e}n\'{e}ration en modifiant automatiquement les m\'{e}thodes de type 
+``{\it inputContainer}''.
+
+\paragraph{Exemple d'applications de r\`{e}gles d'adaptation}
+La figure ci-dessous pr\'{e}sente une illustration de l'application des 
+r\`{e}gles d\'{e}finies \`{a} la section \ref{subsubsec:identification} pour 
+la migration d'une UI Desktop vers une UI Table surface. Cette figure montre 
+les types de containers de l'UI de d\'{e}part et les r\`{e}gles qui 
+permettent leur adaptation sur la table interactive. En appliquant les 
+r\`{e}gles 2 et 3 sur un container de type Table par exemple, on obtient un 
+container de type Table et activable par un Tag (ou un objet physique). 
+
+TRIAL RESTRICTION
+
+\subsection{Projection de la structure de l'UI adapt\'{e}}
+\subsubsection{S\'{e}lection des widgets}
+La s\'{e}lection est un processus qui permet de retrouver l'ensemble des 
+widgets \'{e}quivalents \`{a} un interacteur dans la biblioth\`{e}que 
+graphique de la plateforme d'arriv\'{e}e. Ce processus se base sur des 
+op\'{e}rateurs de comparaison qui permettent d'\'{e}tablir les 
+\'{e}quivalences entre les interacteurs et les widgets. Cette section 
+pr\'{e}sente les diff\'{e}rents op\'{e}rateurs de comparaison et 
+l'algorithme de s\'{e}lection des widgets \'{e}quivalents.
+
+\paragraph{Les op\'{e}rateurs de comparaison}
+La comparaison entre les interacteurs et les widgets se basent sur les 
+caract\'{e}ristiques qui leurs sont communes telles que les primitives 
+d'interactions (effectives et intrins\`{e}ques), le type et la 
+cardinalit\'{e} de donn\'{e}es. 
+
+La comparaison des cardinalit\'{e} est effectu\'{e}e pour v\'{e}rifier si 
+les widgets \'{e}quivalents supportent le m\^{e}me nombre de donn\'{e}es que 
+l'interacteur \`{a} migrer. Elle est possible gr\^{a}ce \`{a} la fonction 
+$TRIAL RESTRICTION$
+\[
+TRIAL RESTRICTION
+\]
+La prise en compte de la caract\'{e}ristique types de donn\'{e}es pour 
+comparer les interacteurs et les widgets \`{a} pout but de v\'{e}rifier si 
+l'adaptation des widgets \'{e}quivalents n\'{e}cessite l'ajout d'un 
+adaptateur de types de donn\'{e}es. En effet si la cardinalit\'{e} et les 
+primitives d'interaction d'un {\it Widget} correspondent \`{a} ceux d'un interacteur 
+alors ce Widget sera propos\'{e} au concepteur comme \'{e}quivalent m\^{e}me 
+si son utilisation n\'{e}cessite un travail suppl\'{e}mentaire (\'{e}criture 
+du code pour adaptateur de type).~
+
+La fonction $TRIAL RESTRICTION$ permet v\'{e}rifier l'\'{e}galit\'{e} des 
+types de donn\'{e}es des interacteurs et des widgets. $TRIAL RESTRICTION$
+\[
+TRIAL RESTRICTION
+\]
+La prise en compte des primitives d'interaction par les op\'{e}rateurs 
+implique la comparaison des sous-ensembles des primitives d'interactions qui 
+permettent de caract\'{e}riser respectivement les interactions 
+intrins\`{e}ques des widgets et les interactions effectives des 
+interacteurs. Nous d\'{e}finissons trois op\'{e}rateurs de comparaisons de 
+ces sous-ensembles de primitives d'interaction: 
+
+\begin{itemize}
+\item l'\'{e}galit\'{e} des deux sous ensemble: $TRIAL RESTRICTION$si toutes les primitives d'interaction effectives de l'interacteur se retrouvent dans le sous-ensemble des primitives effectives du Widget et si les deux sous ensembles de primitives d'interactions ont la m\^{e}me cardinalit\'{e}. Ceci est possible si une instance de {\it Widget} utilise toutes ses primitives d'interaction intrins\`{e}ques.
+\item l'inclusion des primitives d'interaction effective d'un interacteur dans le sous-ensemble des primitives d'interaction d'un {\it Widget: }$TRIAL RESTRICTION$si toutes les primitives d'interaction du sous ensemble de gauche se retrouvent dans le sous-ensemble de droite. Ceci est possible si une instance de {\it Widget} n'utilise pas toutes ses primitives d'interaction intrins\`{e}ques.
+\item l'inclusion des primitives d'interaction intrins\`{e}que d'un {\it Widget} dans le sous-ensemble des primitives d'interaction effective d'un interacteur$TRIAL RESTRICTION$. Ceci est possible si la biblioth\`{e}que graphique ne contient pas de widgets avec le sous ensemble de primitives d'interaction intrins\`{e}ques \'{e}quivalent \`{a} l'interacteur. Dans ces cas on consid\`{e}re les widgets qui n'impl\'{e}mentent pas les primitives d'interactions concernant les propri\'{e}t\'{e}s graphiques tout en conservant les autres primitives d'interactions. Les primitives d'interaction {\bf Widget Move}, {\bf Widget Rotation} et {\bf Widget Resize} sont les seules qui peuvent \^{e}tre omis par l'op\'{e}rateur de comparaison$TRIAL RESTRICTION$.
+\end{itemize}
+Les op\'{e}rateurs de comparaison combinent les trois caract\'{e}ristiques 
+en consid\'{e}rant d'abord la cardinalit\'{e} des donn\'{e}es, car il n'y a 
+pas d'\'{e}quivalence entre un interacteur et un Widget s'ils n'ont pas la 
+m\^{e}me cardinalit\'{e}. Ensuite, les op\'{e}rateurs consid\`{e}rent les 
+types des donn\'{e}es des interacteurs et enfin les sous-ensembles de 
+primitives d'interaction. La combinaison des ces op\'{e}rateurs des 
+caract\'{e}ristiques nous permet de relever quatre cas d'\'{e}quivalences 
+signifiant pour le processus de migration~: le cas d'une \'{e}quivalence 
+stricte (6.2.1.1) suivant les trois 
+caract\'{e}ristiques ci-dessus, le cas d'une \'{e}quivalence large 
+(6.2.1.2), le cas d'une \'{e}quivalence simple 
+(6.2.1.3) et le cas d'une \'{e}quivalence faible 
+(\ref{para:mylabel1}).
+
+\begin{enumerate}
+\item Equivalence stricte 
+\end{enumerate}
+Il ya une \'{e}quivalence stricte entre un interacteur et un Widget s'ils 
+ont des cardinalit\'{e}s \'{e}gales, les m\^{e}me types de donn\'{e}es et 
+des primitives d'interaction \'{e}gales. La fonction$TRIAL RESTRICTION $permet 
+de v\'{e}rifier cette \'{e}quivalence, $TRIAL RESTRICTION$
+\[
+TRIAL RESTRICTION
+\]
+\begin{enumerate}
+\item Equivalence large
+\end{enumerate}
+Il y a une \'{e}quivalence large entre un interacteur et un Widget s'ils ont 
+des cardinalit\'{e}s \'{e}gales, les m\^{e}mes types de donn\'{e}es et si 
+les primitives d'interaction de l'interacteur sont incluses dans celles du 
+Widget. La fonction $TRIAL RESTRICTION$ permet de v\'{e}rifier cette 
+\'{e}quivalence.$TRIAL RESTRICTION$
+\[
+TRIAL RESTRICTION
+\]
+\begin{enumerate}
+\item Equivalence simple
+\end{enumerate}
+Il y a une \'{e}quivalence simple entre un interacteur et un Widget s'ils 
+ont des cardinalit\'{e}s \'{e}gales, les types de donn\'{e}es 
+diff\'{e}rentes et si les primitives d'interaction de l'interacteur sont 
+\'{e}gales ou incluses dans celles du Widget. La fonction $TRIAL 
+RESTRICTION$ permet de v\'{e}rifier cette \'{e}quivalence. $TRIAL 
+RESTRICTION$
+\[
+TRIAL RESTRICTION
+\]
+\begin{enumerate}
+\item Equivalence faible
+\end{enumerate}
+La fonction $TRIAL RESTRICTION$ permet de v\'{e}rifier cette 
+\'{e}quivalence. $TRIAL RESTRICTION$
+\[
+TRIAL RESTRICTION
+\]
+\paragraph{Le processus de s\'{e}lection des widgets \'{e}quivalents}
+\label{para:mylabel1}
+L'algorithme utilis\'{e} par ce processus \`{a} pour objectif de retrouver 
+les widgets \'{e}quivalents \`{a} chaque interacteur appartenant \`{a} 
+{\it AUIStructure} en se basant sur les quatre op\'{e}rateurs d\'{e}crit ci-dessus. Les 
+Widgets \'{e}quivalents sont plac\'{e}s dans le tableau de Widget 
+\'{e}quivalent qui \`{a} quatre colonnes~repr\'{e}sentant les diff\'{e}rents 
+op\'{e}rateurs utilis\'{e}s pour la recherche. La colonne {\bf strong} qui 
+contient la liste des widgets strictement \'{e}quivalents, la colonne {\bf 
+large} qui contient la liste des widgets d'\'{e}quivalence large, la colonne 
+{\bf simple} qui contient la liste des widgets d'\'{e}quivalence simple et 
+la colonne {\bf low }contient la liste des widgets d'\'{e}quivalence faible. 
+Les widgets de ce tableau seront class\'{e}s en fonction des guidelines et 
+du co\^{u}t qu'ils impliquent pour le concepteur en charge de migration. Le 
+processus de s\'{e}lection parcourt pour chaque interacteur d'{\it AUIStructure} l'ensemble 
+des {\it Widgets} d'une biblioth\`{e}que graphique.
+
+\paragraph{Algorithme de s\'{e}lection}
+\label{para:algorithme}
+$TRIAL RESTRICTION:$ Biblioth\`{e}que graphique d'une table interactive
+
+$TRIAL RESTRICTION$Le tableau de Widget \'{e}quivalent
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+Si $TRIAL RESTRICTION$ Alors
+\[
+TRIAL RESTRICTION
+\]
+Sinon Si $TRIAL RESTRICTION$ Alors
+\[
+TRIAL RESTRICTION
+\]
+Sinon Si $TRIAL RESTRICTION$ Alors
+\[
+TRIAL RESTRICTION
+\]
+Sinon Si $TRIAL RESTRICTION$ Alors
+\[
+TRIAL RESTRICTION
+\]
+\paragraph{Exemple de s\'{e}lection}
+\label{para:exemple}
+Consid\'{e}rons quelques widgets appartenant \`{a} cette 
+interface~utilisateur de l'application d\'{e}crit dans le sc\'{e}nario du 
+chapitre 1. La figure pr\'{e}sente~: un container d\'{e}crivant le menu 
+principale ({\it File, Edition, etc.)}, un container contenant les widgets pour d\'{e}crire la liste 
+d'image \`{a} utiliser, et une liste contenant les images utilisable pour la 
+conception des bande dessin\'{e}es.
+
+TRIAL RESTRICTION
+
+Pour chaque interacteur correspondant aux Widgets d\'{e}crits ci-dessus, 
+nous appliquons l'algorithme d\'{e}crit \`{a} la section 
+\ref{para:algorithme} pour rechercher les widgets \'{e}quivalents 
+dans la biblioth\`{e}que graphique XAML Surface (cf. annexe). Le tableau des 
+widgets \'{e}quivalents obtenu correspond au tableau. Ce tableau nous montre 
+que~:
+
+\begin{table}[htbp]
+\begin{center}
+\caption{Equivalent Widget}
+\begin{tabular}{|p{84pt}|p{66pt}|l|p{56pt}|l|}
+\hline
+{\bf Interactor Id/Name}& 
+{\bf Strong}& 
+{\bf Large}& 
+{\bf Simple}& 
+{\bf Low} \\
+\hline
+Id$=$5 \par Name$=$gridImage& 
+Grid& 
+ScatterViewItem& 
+& 
+ \\
+\hline
+Id$=$6 \par Name$=$listBox& 
+& 
+SurfaceListBox& 
+LibraryContainer \par LibraryBar& 
+ \\
+\hline
+Id$=$1 \par Name$=$mainMenu& 
+Grid& 
+ScatterViewItem& 
+& 
+ \\
+\hline
+Id$=$2 \par Name$=$menuItemFile& 
+ElementMenu \par Grid& 
+ScatterViewItem& 
+LibraryContainer \par LibraryBar& 
+ \\
+\hline
+Id$=$3 \par Name$=$menuItemOpen& 
+ElementMenuItem \par Button& 
+& 
+Image& 
+ \\
+\hline
+Id$=$4 \par Name$=$menuItemClose& 
+ElementMenuItem \par Button& 
+& 
+Image& 
+ \\
+\hline
+\end{tabular}
+\label{tab1}
+\end{center}
+\end{table}
+
+\begin{itemize}
+\item le container {\it gridImage} est strictement \'{e}quivalent \`{a} {\it Grid}, le {\it Widget} {\it ScatterViewItem} a en plus les primitives d'interaction {\bf Widget Move} et {\bf Widget Resize}. L'op\'{e}rateur {\bf {\it simpleEquivalent}} ne trouve rien de plus que l'op\'{e}rateur {\bf {\it largeEquivalent}} car l'interacteur de d\'{e}part ({\it gridImage}) ne contient pas de donn\'{e}es~; par cons\'{e}quent il n'a pas de type de donn\'{e}e. L'op\'{e}rateur {\bf {\it lowEquivalent}} ne trouve rien car les autres colonnes du tableau ne sont pas vides. 
+\item L'interacteur {\it listBox} n'a pas de Widget strictement \'{e}quivalent dans la biblioth\`{e}que XAML Surface car il n'impl\'{e}mente pas la primitive d'interaction {\bf Data Move In} qui est intrins\`{e}que \`{a} une {\it ListBox}. L'op\'{e}rateur {\bf {\it largeEquivalent}} retrouve {\it SurfaceListBox} car il d\'{e}crit des primitives d'interactions en plus. L'op\'{e}rateur simpleEquivalent permet de retrouver des widgets qui supportent d'autres types de donn\'{e}es. L'op\'{e}rateur {\bf {\it lowEquivalent}} ne trouve rien car les autres colonnes du tableau ne sont pas vides.
+\item Le container contenant les \'{e}l\'{e}ments du menu principal ({\it mainMenu}) est strictement \'{e}quivalent \`{a} un {\it Grid}, il a une \'{e}quivalence large avec un {\it ScatterViewItem} (qui impl\'{e}mente les primitives d'interaction {\bf Widget Move} et {\bf Widget Resize} en plus), et n'as pas de widgets \'{e}quivalent simplement ou d'une \'{e}quivalence faible. Le choix du {\it ScatterViewItem} permettra d'avoir un menu d\'{e}pla\c{c}able et utilisable partout sur la table interactive. L'op\'{e}rateur {\bf {\it lowEquivalent}} ne trouve rien car les autres colonnes du tableau ne sont pas vides.
+\item Les \'{e}l\'{e}ments du menu ({\it menuItemFile, menuItemEdit}) ont des widgets \'{e}quivalents suivants les op\'{e}rateurs d'\'{e}quivalence stricte, large ou simple. L'op\'{e}rateur {\bf {\it lowEquivalent}} ne trouve rien car les autres colonnes du tableau ne sont pas vides.
+\end{itemize}
+
+L'algorithme de s\'{e}lection permet d'avoir l'ensemble des widgets 
+\'{e}quivalents pour un interacteur donn\'{e} dans le tableau des widgets 
+\'{e}quivalents. L'utilisation des \'{e}l\'{e}ments de cet ensemble pour la 
+migration est guid\'{e}e par les guidelines de la plateforme d'arriv\'{e}e 
+qui permettra d'abord de classer les widgets \'{e}quivalents, ensuite de 
+proposer une version d'UI migr\'{e}e et enfin pour faciliter la 
+personnalisation de cette proposition.
+
+\subsubsection{Classement des widgets}
+\label{subsubsec:classement}
+Le processus de classement des widgets \`{a} pour but d'assister les 
+d\'{e}veloppeurs dans le choix des widgets de la plateforme d'arriv\'{e}e. 
+Ce processus d\'{e}termine les `{\it meilleurs widgets'} de la classe d'\'{e}quivalence d'un 
+interacteur \`{a} l'aide d'une fonction qui prend en compte deux 
+crit\`{e}res~: les principes du guidelines et la charge de travail pour le 
+programmeur. Cette fonction permet de consid\'{e}rer le classement des 
+widgets \'{e}quivalents \`{a} un interacteur comme une instance d'un 
+probl\`{e}me d'optimisation qui consiste \`{a} trouver les widgets qui sont 
+conformes aux principes des guidelines (maximiser les crit\`{e}res conformes 
+aux guidelines) et qui r\'{e}duit la charge de travail pour le 
+d\'{e}veloppeur (minimiser la charge de travail). 
+
+Cette section d\'{e}crit la prise en compte des guidelines 
+(\ref{para:prise}) et la charge de travail pour le programmeur 
+(\ref{subsubsec:charge}) comme crit\`{e}re pour le classement des 
+widgets utilis\'{e}e par l'algorithme de classement 
+(\ref{subsubsec:algorithme}).
+
+\paragraph{Prise en compte des guidelines}
+\label{para:prise}
+La prise en compte des guidelines se fait en se basant sur les primitives 
+d'interactions intrins\`{e}ques et les types de donn\'{e}es qui 
+caract\'{e}risent les widgets de mani\`{e}re ind\'{e}pendante des 
+biblioth\`{e}ques graphiques. Elle se fait d'abord en traduisant ses 
+principes sous formes de r\`{e}gles appliqu\'{e}es sur les 
+caract\'{e}ristiques des composants graphiques dans le but de les classer. 
+Ensuite en calculant la conformit\'{e} de chaque widgets aux principes des 
+guidelines formalis\'{e}es en r\`{e}gles.
+
+\paragraph{Traduction des principes du guidelines en r\`{e}gles de classement des 
+widgets \'{e}quivalents.}
+Les principes des guidelines \`{a} consid\'{e}rer par le processus de 
+classement sont celles qui facilitent le choix des widgets \'{e}quivalents. 
+En consid\'{e}rant les 2 premiers principes d\'{e}crits par le chapitre 4~:
+
+\begin{itemize}
+\item {\bf G1}:{\it ``Provide a 360-Degree User Interface''}
+\item {\bf G2}$:`` ${\it Make Experiences Natural and Better than Real}$''$ 
+\end{itemize}
+La traduction de ces deux principes pour le processus de classement des 
+widgets \'{e}quivalents conform\'{e}ment aux deux \'{e}tapes 
+pr\'{e}sent\'{e}s \`{a} la section (4.3.5) se fait en identifiant les 
+\'{e}l\'{e}ments de l'UI qui permettront de faciliter le choix des widgets 
+ensuite nous pr\'{e}ciseront comment ces \'{e}l\'{e}ments faciliterons le 
+classement des widgets \'{e}quivalents.
+
+{\bf G1} s'applique sur les primitives d'interactions car en 
+privil\'{e}giant les widgets qui ont des primitives d'interactions 
+interaction {\bf Widget Move }et {\bf Widget Rotation,} tous les 
+utilisateurs auront aux widgets qui l'ont ind\'{e}pendamment de leur 
+orientation ou de leur position autour de la table interactive. 
+
+{\bf R\`{e}gle 1}: Les primitives d'interaction {\bf Widget Move }et {\bf 
+Widget Rotation} sont privil\'{e}gi\'{e}s pour les containers.
+
+{\bf G2} s'applique sur les types des donn\'{e}es car le choix des widgets 
+ayant des types de donn\'{e}es images, son ou vid\'{e}o permet de 
+r\'{e}v\'{e}ler leur contenu \`{a} l'utilisateur. 
+
+{\bf R\`{e}gle 2}: Les types {\bf Image}, {\bf MediaElement et Object} sont 
+mieux consid\'{e}r\'{e}s pour widgets ayant des contenus sur une table 
+interactive.
+
+Ces deux r\`{e}gles pr\'{e}cisent les \'{e}l\'{e}ments du mod\`{e}le des 
+primitives d'interaction sur les quels peuvent s'appliquer les guidelines G1 
+et G2 des guidelines de la table interactive. La conformit\'{e} par rapport 
+\`{a} ces r\`{e}gles est d\'{e}termin\'{e}e par les fonctions d\'{e}crites 
+ci-dessous.
+
+\paragraph{Conformit\'{e} des widgets aux principes du guideline}
+Pour marquer l'importance de certaines caract\'{e}ristiques (primitives 
+d'interaction et type de donn\'{e}es) par rapport \`{a} d'autres, un poids 
+est attribu\'{e} \`{a} celles qui sont conforme aux principes du guidelines. 
+Le choix de la valeur du poids se fait par le programmeur avant la migration 
+et ce choix permet de d\'{e}terminer s'il pr\'{e}f\`{e}re maximiser la 
+conformit\'{e} aux principes du guidelines par rapport \`{a} la charge de 
+travail ou s'il pr\'{e}f\`{e}re l'inverse. 
+
+L'ensemble des poids des primitives d'interactions d'un Widget est 
+d\'{e}termin\'{e} par la fonction$TRIAL RESTRICTION$ en utilisant le tableau 
+ci-dessous.
+
+L'ensemble des poids des types des donn\'{e}es d'un Widget est 
+d\'{e}termin\'{e} par la fonction $TRIAL RESTRICTION$ en utilisant le 
+tableau ci-dessous.
+
+Ce tableau pr\'{e}cise un poids non nul pour les primitives d'interactions 
+et les types de donn\'{e}es conformes aux R\`{e}gle 1 et 2 ci-dessus. 
+
+Warning: TRIAL RESTRICTION -- Table omitted!
+
+Nous formalisons le calcul de la conformit\'{e} d'un Widget aux principes 
+des guidelines par la fonction$TRIAL RESTRICTION$. Cette fonction est la 
+somme des fonctions repr\'{e}sentant les caract\'{e}ristiques suivantes 
+prises en compte pour d\'{e}terminer la conformit\'{e} aux principes des 
+guidelines~:
+
+\begin{itemize}
+\item la prise en compte des primitives d'interaction se fait par la fonction$TRIAL RESTRICTION$, elle permet de faire la somme des poids des primitives d'interaction intrins\`{e}ques qui sont conformes aux principes des guidelines. Les widgets \'{e}quivalents \`{a} un interacteur sont identifi\'{e}s par le processus dans la table {\bf {\it EquivalentWidget}}.
+\end{itemize}
+\[
+TRIAL RESTRICTION
+\]
+\begin{itemize}
+\item La prise en compte des types de donn\'{e}es est effectu\'{e}e par la fonction$TRIAL RESTRICTION$, cette fonction fait la somme des poids des types de donn\'{e}es des widgets \'{e}quivalents \`{a} un interacteur.
+\end{itemize}
+\[
+TRIAL RESTRICTION
+\]
+La fonction $TRIAL RESTRICTION$ pour tout $TRIAL RESTRICTION${\bf 
+}appartenant \`{a} la classe des widgets \'{e}quivalents \`{a} un 
+interacteur.
+
+\subsubsection{Charge de travail du programmeur}
+\label{subsubsec:charge}
+Le choix d'un Widget conforme aux principes des guidelines peut entrainer 
+soit l'ajout d'un connecteur pour l'adaptation de type de donn\'{e}es, soit 
+l'ajout des nouvelles donn\'{e}es pour l'interface utilisateur , soit 
+l'ajout de codes suppl\'{e}mentaires pour la prise en compte des nouvelles 
+primitives d'interactions. L'ajout d'un connecteur .....[Mehta, Medvidovic, 
+and Phadke 2000] consiste \`{a} g\'{e}n\'{e}rer un code qui permet de faire 
+un changement de type entre le type de donn\'{e}es de l'interacteur et le 
+type de donn\'{e}es support\'{e} par les widgets \'{e}quivalents, cette 
+t\^{a}che est automatisable pour l'ensemble des types de donn\'{e}es d'une 
+biblioth\`{e}que graphique, elle n'entraine pas une charge de travail pour 
+le programmeur.
+
+Cependant, l'ajout des donn\'{e}es suppl\'{e}mentaires engendr\'{e} par le 
+choix d'un Widget n'est pas automatisable car l'utilisateur doit trouver ou 
+cr\'{e}er ces donn\'{e}es et ensuite faire le `{\it mapping'} avec les types de 
+donn\'{e}es d\'{e}part. Par exemple le remplacement d'un menu classique dont 
+les \'{e}tiquettes sont des chaines de caract\`{e}res avec un menu dont les 
+\'{e}tiquettes sont des icones (Images) n\'{e}cessite la recherche ou la 
+cr\'{e}ation de ces ic\^{o}nes. 
+
+Par ailleurs, l'ajout de code suppl\'{e}mentaire pour la prise en compte des 
+nouvelles primitives d'interaction est une t\^{a}che manuelle car les codes 
+\`{a} ajouter d\'{e}pendent des primitives d'interactions intrins\`{e}ques 
+\`{a} impl\'{e}ment\'{e}es.
+
+\paragraph{Calcule de la charge de travail}
+\label{para:calcule}
+Les crit\`{e}res permettant le calcul de la charge de travail engendr\'{e}e 
+par le choix d'un Widget sont~: la diff\'{e}rence entre le type de 
+donn\'{e}es de l'interacteur et celui des widgets \'{e}quivalent, et les 
+primitives d'interaction intrins\`{e}ques en plus des widgets 
+\'{e}quivalents. A chacun de ces crit\`{e}res, le programmeur associe un 
+co\^{u}t en se basant sur ses comp\'{e}tences pour r\'{e}aliser une 
+t\^{a}che. L'estimation de ce co\^{u}t peut se faire en se basant sur la 
+technique {\it Pomodoro} ....[Gobbo and Vaccari 2008] qui est utilis\'{e}e en {\it Extreme Programming} 
+.................................[Beck 2000] pour permettre aux programmeurs 
+d'optimiser leur temps de programmation en \'{e}valuant au mieux le temps de 
+diff\'{e}rentes t\^{a}ches \`{a} effectuer.
+
+La fonction$TRIAL RESTRICTION${\bf , }calcule la charge de travail 
+engendr\'{e}e par le choix d'un widget \'{e}quivalent \`{a} un interacteur. 
+C'est une somme des co\^{u}ts de chaque crit\`{e}re v\'{e}rifi\'{e} par le 
+widget \`{a} choisir. Les crit\`{e}res sont~:
+
+\begin{itemize}
+\item la n\'{e}cessit\'{e} des donn\'{e}es suppl\'{e}mentaires \`{a} la suite d'un changement de type. Ce crit\`{e}re est v\'{e}rifi\'{e} si l'interacteur et le widget \`{a} choisir n'ont pas le m\^{e}me type de donn\'{e}es et si le type de donn\'{e}es du widget est {\bf Image}, {\bf MediaElement }ou {\bf Object.~}Le co\^{u}t de ce crit\`{e}re est donn\'{e} par la fonction$TRIAL RESTRICTION$ \`{a} l'aide du tableau ci-dessous qui permet aussi au programmeur de pr\'{e}ciser avant la migration le co\^{u}t de chaque op\'{e}tation.
+\item L'utilisation des primitives d'interactions intrins\`{e}ques des widgets \'{e}quivalent. Ce crit\`{e}re est calcul\'{e} par la fonction$TRIAL RESTRICTION$ en utilisant le tableau ci-dessous. 
+\end{itemize}
+Dans ce tableau, le co\^{u}t de chaque t\^{a}che manuelle est estim\'{e} par 
+le programmeur avant de commencer une migration. De nouvelles op\'{e}rations 
+manuelles peuvent \^{e}tre d\'{e}finies, cette liste n'est pas exhaustive.
+
+Warning: TRIAL RESTRICTION -- Table omitted!
+
+La charge de travail est calcul\'{e}e par la fonction~:
+\[
+TRIAL RESTRICTION
+\]
+\subsubsection{Algorithme de classement }
+\label{subsubsec:algorithme}
+L'algorithme de classement d\'{e}termine le rang de chaque widget de la 
+classe d'\'{e}quivalence d'un interacteur en faisant la diff\'{e}rence entre 
+la conformit\'{e} aux guidelines et le charge de travail. La fonction$TRIAL 
+RESTRICTION$d\'{e}termine la valeur de l'objectif d'un widget appartenant 
+\`{a} une classe d'\'{e}quivalence. Cette valeur permet de classer le widget 
+dans la classe d'\'{e}quivalence de l'interacteur.$TRIAL RESTRICTION$ 
+\[
+TRIAL RESTRICTION.
+\]
+Le `{\it meilleurs widget'} en consid\'{e}rant les principes du guidelines est celui qui a le max 
+de la fonction$TRIAL RESTRICTION$
+\[
+TRIAL RESTRICTION.
+\]
+\paragraph{Exemple de classement}
+Consid\'{e}rons les interacteurs {\it id}$=${\it 6} et {\it id}$=${\it 1} de l'exemple d\'{e}crit \`{a} la 
+section \ref{para:exemple} et les widgets de leurs classes 
+d'\'{e}quivalence. 
+
+Consid\'{e}rons que le programmeur souhaite utilis\'{e}s les widgets les 
+plus conformes aux principes des guidelines et pour cela fixe la valeur du 
+poids des primitives d'interactions \`{a} P$=$2 et les co\^{u}ts C$_{i\, 
+}=$1, 0\textless i\textless 6
+
+Le widget {\it SurfaceListBox} de la classe d'\'{e}quivalence de l'interacteur id$=$6 a pour 
+type de donn\'{e}es {\it String.} 
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+Les widgets {\it LibraryContainer }et{\it LibraryBar} ont pour type de donn\'{e}es {\it Object}.
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+Le widget ScatterView a en plus les primitives d'interactions Widget 
+Rotation et Widget Move.
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+Le widget Grid n'a pas de primitives d'interactions en plus ou des type de 
+donn\'{e}es diff\'{e}rents
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+Warning: TRIAL RESTRICTION -- Table omitted!
+
+$^{\ast }${\it Les `meilleurs' widgets}
+
+Le classement des widgets \'{e}quivalents facilite leur choix pour la 
+prochaine \'{e}tape du processus de migration. Cette \'{e}tape consiste 
+\`{a} proposer \`{a} aux concepteurs une premi\`{e}re version d'UI pour la 
+table interactive. La mise en \oe uvre de cette premi\`{e}re version se fait 
+utilisant le classement propos\'{e} \`{a} cette \'{e}tape et en 
+consid\'{e}rant les principes des guidelines relatives \`{a} la structure de 
+l'UI et aux interactions. 
+
+\subsection{Personnalisation de l'UI propos\'{e}e}
+\label{subsec:personnalisation}
+La personnalisation de l'UI migr\'{e}e sur la table interactive \`{a} pour 
+objectifs de produire une UI finale conforme aux attentes des concepteurs et 
+qui respecte les crit\`{e}res ergonomiques li\'{e}s aux tables interactives. 
+Cette \'{e}tape fait intervenir les concepteurs pour modifier et 
+fa\c{c}onner la structure, les interactions et l'aspect visuel de l'UI 
+g\'{e}n\'{e}rer automatiquement \`{a} la phase pr\'{e}c\'{e}dente. Le 
+processus de personnalisation assiste les concepteurs pour chaque action de 
+modification de l'UI propos\'{e}e. Cette section pr\'{e}sente les 
+diff\'{e}rentes actions des concepteurs et l'assistance apport\'{e}e par le 
+processus \`{a} l'aide des guidelines.
+
+\subsubsection{Op\'{e}rations de modification de la structure}
+La personnalisation de la structure d'UI propos\'{e}e permet aux concepteurs 
+de remplacer, repositionner, redimensionner les composants graphiques$.$ Elle 
+permet aussi d'effectuer les op\'{e}rations manuelles d\'{e}crite \`{a} la 
+section \ref{para:calcule} telles que l'ajout de nouvelles 
+ressources d'UI, l'ajout de code par exemple. Cette \'{e}tape permet enfin 
+l'\'{e}dition des aspects visuels de l'UI (couleurs, taille, police, etc.) 
+gr\^{a}ce \`{a} un \'{e}diteur graphique. Les op\'{e}rations manuelles de 
+personnalisation de l'UI sont \'{e}valu\'{e}es par rapport \`{a} leurs 
+conformit\'{e}s aux des guidelines de la table interactive. 
+
+\paragraph{Remplacer des composants}
+Cette op\'{e}ration permet de changer un ou plusieurs composants graphiques 
+choisis pendant la phase pr\'{e}c\'{e}dente. Cette op\'{e}ration utilise les 
+r\`{e}gles de classements des widgets \'{e}quivalents pour \'{e}valuer la 
+conformit\'{e} aux guidelines (G1 et G2) et la charge de travail. 
+
+\paragraph{Supprimer un composant graphique}
+Cette op\'{e}ration permet de r\'{e}duire les composants graphiques dans le 
+but de bloquer l'acc\`{e}s \`{a} des fonctionnalit\'{e}s non 
+d\'{e}sir\'{e}es par l'utilisateur sur la table interactive. La guideline 
+G19 justifie cette op\'{e}ration car elle pr\'{e}conise la r\'{e}duction des 
+fonctionnalit\'{e}s~; le choix des fonctionnalit\'{e}s \`{a} conserver 
+d\'{e}pend des applications \`{a} migrer et des objectifs de concepteur. Les 
+composants graphiques supprim\'{e}s dans la structure {\it TargetUIStructure} sont aussi 
+supprim\'{e}s dans le mod\`{e}le de structure {\it TargetAUIStructure.}
+
+L'assistance permet \`{a} l'utilisateur de v\'{e}rifier si deux interacteurs 
+activent la m\^{e}me m\'{e}thode du contr\^{o}leur. En effet les primitives 
+d'interactions effectives du mod\`{e}le {\it TargetAUIStructure} permettent de retrouver l'ensemble 
+des interacteurs qui permettent d'activer la m\^{e}me m\'{e}thode du 
+Contr\^{o}leur. La $TRIAL RESTRICTION$ ci-dessous est utilis\'{e}e par 
+les concepteurs avant la suppression d'un composant graphique pour retrouver 
+les composants graphiques activants les m\^{e}mes fonctionnalit\'{e}s.
+\[
+TRIAL RESTRICTION
+\]
+\[
+TRIAL RESTRICTION
+\]
+{\bf Si}$TRIAL RESTRICTION$ 
+
+{\bf Alors}$TRIAL RESTRICTION$
+
+\paragraph{Dupliquer un groupe de composants graphiques}
+Cette op\'{e}ration \`{a} pour objectifs multiplier les composants 
+graphiques pour permettre \`{a} tous les utilisateurs autour de la table d'y 
+avoir acc\`{e}s facilement. Elle est pr\'{e}conis\'{e}e par les guidelines 
+G7, G8 et G18. La duplication concerne les containers de type {\it Panel} ou {\it Table} et leurs 
+fils car ils peuvent \^{e}tre concr\'{e}tis\'{e}s comme des menus, ou des 
+groupes permettant la consultation des contenus. Les composants graphiques 
+dupliqu\'{e}s dans la structure {\it TargetUIStructure} sont aussi dupliqu\'{e}s dans le mod\`{e}le 
+de structure {\it TargetAUIStructure.}
+
+L'assistance pour la duplication permet aux concepteurs de s\'{e}lectionner 
+les interacteurs repr\'{e}sentant des menus ou des contenus \`{a} dupliquer.
+
+\begin{itemize}
+\item Les menus sont d\'{e}crits \`{a} l'aide des {\it Container} de type Table et qui contiennent des {\it UIComponent} ayant que les primitives d'interactions effectives de cet ensemble $TRIAL RESTRICTION$ 
+\item Les groupes de composant permettant la consultation des contenus sont d\'{e}crits \`{a} l'aides des {\it Container} de type Table ou Panel qui contiennent des {\it UIComponent} avec des contenu ($TRIAL RESTRICTION)$ et n'ayant les primitives d'interaction effective$TRIAL RESTRICTION$.
+\end{itemize}
+\subsubsection{Op\'{e}rations de personnalisation des interactions}
+Cette cat\'{e}gorie regroupe les op\'{e}rations qui permettent de 
+d\'{e}finir l'utilisation des dispositifs d'interactions et les 
+op\'{e}rations manuelles impos\'{e}es par le choix des widgets 
+\'{e}quivalents. 
+
+\paragraph{Associer un objet physique \`{a} un groupe de widgets }
+Cette op\'{e}ration permet l'utilisation des objets tangibles comme moyens 
+d'interaction pour afficher des composants graphiques ou pour activer. En 
+effet les recommandations des guidelines G15 et G16 permet d'utiliser les 
+objets physiques pour afficher un menu ou un formulaire. Elle concerne que 
+les {\it Container} de type {\it Table} et de type {\it Panel.}
+
+\paragraph{Compl\'{e}ter les codes }
+Cette op\'{e}ration permet aux concepteurs de compl\'{e}ter les codes non 
+g\'{e}n\'{e}rer automatiquement \`{a} la phase de g\'{e}n\'{e}ration de 
+{\it TargetUIStructure}.
+
+\subsubsection{Op\'{e}rations de personnalisation de l'aspect visuelle de l'UI}
+L'ensemble des op\'{e}rations de personnalisation de l'aspect visuelle de 
+l'UI pour permettre une utilisation naturelle de l'UI. 
+
+\paragraph{D\'{e}finir un layout}
+Cette op\'{e}ration permet de placer les \'{e}l\'{e}ments d'un {\it Container} de type 
+{\it Panel} car ils sont empil\'{e}s ou dispos\'{e}s al\'{e}atoirement en fonction du 
+l'impl\'{e}mentation du g\'{e}n\'{e}rateur de l'UI propos\'{e}e. Le 
+concepteur doit d\'{e}finir le layout de chaque container de type {\it Panel} 
+manuellement. Elle est conforme \`{a} la guideline G40 qui pr\'{e}conise de 
+structurer les widgets d'un container qui est conforme \`{a} G1.
+
+\paragraph{Ajouter les ressources de l'UI}
+Cette op\'{e}ration permet aux concepteurs d'ajouter des ic\^{o}nes, des 
+images ou d'autres ressources pour permettre une utilisation naturelle de 
+l'UI, elle s'inspire de G4 qui pr\'{e}conise l'utilisation des composants 
+graphiques ayant des contenus qui facilitent l'interaction.
+
+\paragraph{D\'{e}finir le style de textes et les couleurs}
+Ces op\'{e}rations permettent la personnalisation des textes descriptifs 
+(\'{e}tiquettes, info-bulles, etc.). Elles sont d'\^{e}tre conformes aux 
+guidelines G34, G35, G36, G45, G46, G47, G48, G50, G51.
+
+\subsubsection{Synchronisation du mod\`{e}le TargetAUIStructure et TargetUIStructure}
+Les op\'{e}rations d\'{e}crites ci-dessus sont effectu\'{e}es par le 
+concepteur sur l'UI permettent d'abord de modifier {\it TargetUIStructure, }cependant les 
+op\'{e}rations de personnalisation de la structure ont ensuite un impacte 
+sur le mod\`{e}le de structure{\it TargetAUIStructure.} La synchronisation du mod\`{e}le et sa 
+concr\'{e}tisation permettent de garder une coh\'{e}rence pour les 
+op\'{e}rations de modifications suivantes.
+
+\subsection{Synth\`{e}se }
+Le processus de migration assist\'{e}e des UI pr\'{e}sent\'{e} dans ce 
+chapitre et d\'{e}cri par la \tablename~\ref{tab1} est 
+compos\'{e} de cinq \'{e}tapes dont une manuelle et quatre automatisables. 
+Les \'{e}tapes automatisables sont l'extraction de la structure et des 
+primitives d'interactions effectives, la s\'{e}lection (et le classement), 
+la proposition de l'UI et la concr\'{e}tisation de l'application finale. 
+L'\'{e}tape de personnalisation fait intervenir le concepteur.
+
+La premi\`{e}re \'{e}tape du processus fait partie de la phase d'extraction 
+la structure et des primitives d'interaction effective \`{a} partir de la 
+structure analysable dans le but de d\'{e}crire l'UI ind\'{e}pendamment de 
+la biblioth\`{e}que graphique. 
+
+La deuxi\`{e}me \'{e}tape du processus est la s\'{e}lection des widgets 
+\'{e}quivalents aux interacteurs de le la structure {\it AUIStructure} gr\^{a}ce aux 
+op\'{e}rateurs de comparaison, et ensuite le classement des widgets 
+\'{e}quivalents en prenant en compte les principes des guidelines. Cette 
+\'{e}tape de la migration est automatique dans le but de facilit\'{e} le 
+choix des widgets aux programmeurs en charge de la migration.
+
+La troisi\`{e}me \'{e}tape du processus consiste \`{a} g\'{e}n\'{e}rer l'UI 
+pour la plateforme d'arriv\'{e}e \`{a} l'aide des widgets \'{e}quivalents et 
+en prenant en comptes les guidelines qui permettent l'adaptation de la 
+structure, des interactions, du l'organisation des diff\'{e}rents widgets 
+pour la plateforme cible.
+
+La quatri\`{e}me \'{e}tape du processus fait intervenir le concepteur en 
+charge de la migration en personnalisant l'UI propos\'{e}e par le processus 
+de la phase pr\'{e}c\'{e}dente. Chaque op\'{e}ration de personnalisation de 
+l'UI se fera en v\'{e}rifiant sa conformit\'{e} aux principes des 
+guidelines. 
+
+\begin{center}
+
+TRIAL RESTRICTION
+
+\end{center}
+
+\subsubsection{Prise en compte des guidelines d'une table interactive }
+Les \'{e}tapes du processus de migration vers la table interactive montre 
+que les guidelines de la table interactive sont prise en compte pendant les 
+\'{e}tapes de classement des widgets \'{e}quivalents, de proposition de l'UI 
+et pendant la personnalisation de l'UI propos\'{e}e. Ces guidelines 
+permettent de respecter les crit\`{e}res ergonomiques de conception 
+.()..()()()(..)....()..()()()(..)........[Bastien and Scapin 1995] (R\'{e}f. 
+Chapitre 3). La prise en compte de ces guidelines nous a permis de 
+d\'{e}duire des r\`{e}gles de classement des widgets, des r\`{e}gles 
+d'adaptation et des r\`{e}gles de g\'{e}n\'{e}ration de l'UI. 
+
+Les r\`{e}gles de classement des widgets \'{e}quivalents permettent de 
+pr\'{e}ciser les composants graphiques qui sont le plus conformes aux 
+guidelines. En consid\'{e}rant le mod\`{e}le de guidelines propos\'{e}s par 
+............()........[Vanderdonckt 1999], on note que les r\`{e}gles de 
+classements sont conformes aux guidelines qui manipule les interacteurs ( 
+repr\'{e}sent\'{e} par la Classe {\it AbstractInteractorObject}) qui ont les primitives d'interactions et 
+les types de donn\'{e}es conseill\'{e}s.
+
+Les r\`{e}gles d'adaptation de la structure et de g\'{e}n\'{e}ration de 
+structure manipulent \`{a} la fois les interacteurs et dispositifs 
+d'interactions conform\'{e}ment \`{a} ............()........[Vanderdonckt 
+1999]. Les op\'{e}rations de personnalisations utilisent et manipulent aussi 
+sur les interacteurs, les composants graphiques et les moyens 
+d'interactions. Ceci nous montre que si les guidelines sont d\'{e}crites 
+dans un mod\`{e}le proche de ............()........[Vanderdonckt 1999], 
+elles peuvent \^{e}tre prise en compte dans un processus de migration d'UI 
+vers une table interactive sous forme de r\`{e}gles et elles peuvent 
+guid\'{e}es les op\'{e}rations du concepteur pendant la migration. 
+
+Le mod\`{e}le de guidelines ci-dessous est celui que nous avons utilis\'{e} 
+pour d\'{e}crire les guidelines de la table Microsoft Surface. 

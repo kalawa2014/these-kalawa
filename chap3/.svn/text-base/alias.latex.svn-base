@@ -1,0 +1,17 @@
+\subsection{Migration d'UI avec ALIAS}
+\label{sec:chap3:2:1}
+ALIAS ~\cite{alias2009} est un méta modèle pour décrire le NF, l'UI et les liens de données qui existent entre NF et UI. Il est conçu pour la composition d'UI dirigée par le NF~\cite{Caramel2009}. Les applications décrite suivant à l'aide de composants, le méta modèle AliasComponent décrit les ports des composants d'UI sous forme d'entrée, sortie ou action.
+\begin{figure}[ht]
+\begin{center}
+\label{fig:chap3:8}
+\caption{Méta-Modèle AliasComponent}
+\includegraphics[angle=270, scale=0.4]{chap3/img-8}
+\end{center}
+\end{figure}
+\paragraph{Description de l'UI à migrer}
+Les applications sont abstraites
+\paragraph{Génération de l'UI cible}
+
+\paragraph{Résumé}
+[Todo]
+

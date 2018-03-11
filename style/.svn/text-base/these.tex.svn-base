@@ -1,0 +1,473 @@
+\documentclass[twoside, a4paper, 11pt]{StyleThese}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%LES PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[french]{babel}
+\usepackage{a4wide, eurosym , graphics, graphicx, tabularx, pifont, colortbl, fancyhdr, fancybox}
+\usepackage[francais]{minitoc}
+\usepackage{listings}
+\makeatletter\newread\cb@read    % To correct a bug of french package.
+%\usepackage[style=alphabetic,natbib=true,backref=true,hyperref=true]{biblatex} 
+%\usepackage[style=numeric,autopunct=true,babel=hyphen,hyperref=true,backref=false,maxnames=7]{biblatex}
+%\usepackage[oneside,citeonce(page),firstcite(page)]{footbib}       
+%\usepackage[citefull=all,super,authorformat=smallcaps,authorformat=and,titleformat=italic,opcit,idem]{jurabib}
+\usepackage{bibtopic}
+
+
+\usepackage[francais]{layout}
+\usepackage{lscape}
+\usepackage[pdftex,linkbordercolor={1 .8 .8},citebordercolor={.7 1 .5}]{hyperref}  
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{subfig}
+\usepackage{multirow}
+%\usepackage{wrapfig}
+\usepackage{pifont}
+\usepackage{amsmath,amssymb,lettrine}
+\usepackage{pslatex}
+%\usepackage[toc,page]{appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%LES CATEGORIES DE BIBLIOGRAPHIE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\bibliography{these}
+%\defbibheading{AOP}{\section*{Bibliographie programmation orientée aspects}}
+%\defbibheading{FOP}{\section*{Bibliographie programmation orientée feature}}
+%\defbibheading{Contexte}{\section*{Bibliographie Contexte}}
+%\defbibheading{iam}{\section*{Bibliographie informatique ambiante : visions et challenges}}
+%\defbibheading{intergiciels}{\section*{Bibliographie intergiciels adaptatifs et sensibles au contexte}}
+%%\defbibheading{ihm}{\section*{Bibliographie Interactions Hommes Machines}}
+%\defbibheading{robotics}{\section*{Bibliographie Robotique et Systèmes réactifs}}
+%\defbibheading{models}{\section*{Bibliographie Modèles}}
+%\defbibheading{autres}{\section*{Bibliographie Autres}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%LA FORME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\addtolength{\topmargin}{-1cm}
+%\addtolength{\oddsidemargin}{+1.1cm}
+%\addtolength{\evensidemargin}{-1.8cm}
+%\addtolength{\textwidth}{1.1cm}
+%\addtolength{\textheight}{2cm}
+
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%LES ENVIRONNEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{changemargin}[2]%
+{\begin{list}{}{%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+}\item }%
+{\end{list}}
+
+%\newcommand{\mycite}[1]{\cite{#1}\footcite{#1}}
+\newcommand{\mycite}[1]{\cite{#1}}
+
+%\newcommand{\lettrine}[1]{%
+%\creerlettrine#1/%
+%\addtolength{\indletB}{3pt}% pour avoir un peu d’espace
+%\setlength{\larligH}{\textwidth-\indletH}%
+%\setlength{\larligB}{\textwidth-\indletB}%
+%\parshape=3%
+%\indletH\larligH\indletB\larligB0cm\textwidth%
+%\noindent\hspace{-\indletH}%
+%\raisebox{-\baselineskip}[0pt][0pt]{\usebox{\lalettrine}}}
+
+%\definecolor{rougepourri}{rgb}{0.9,0.1,0.0}
+\definecolor{rougepourri}{rgb}{0,0,0}
+\newcommand{\todo}[1]{\textcolor{rougepourri}{#1}}
+
+\newcounter{def}
+\newcommand{\definition}[2][ ]{\refstepcounter{def}\begin{center}
+\b{
+\begin{minipage}{0.8\textwidth}
+\textbf{Définition \thedef\ : #1} \par \hspace{1.5em}
+#2
+\end{minipage} } \end{center} }
+
+\newcommand{\langAA}[0]{
+\lstset{basicstyle=\small,columns=fullflexible,frame=leftline,language=lisp,
+numbers=left,numberstyle=\tiny,stepnumber=3,numbersep=10pt,
+emph=[1]{Pointcut,Advice,if,else,call,del,for,nop,;,do,done,in},emphstyle=[1]\bf,
+xleftmargin=.1\textwidth
+% literate={->}{{$\rightarrow$}}1
+}}
+
+\newsavebox{\nomepigraphe}
+\newenvironment{epigraphe}[1]
+{% clause begin
+%\vspace*{-1.5cm}%
+\small\sffamily% mise en évidence
+\savebox{\nomepigraphe}{#1}% une boîte pour sauvegarder
+% l’ origine de la citation
+\slshape% tout est penché
+\begin{changemargin}{0pt}{-1cm}% on se met au large
+\begin{flushright}}% tout est poussé à droite
+{% clause end
+\\[4pt]\usebox{\nomepigraphe}.% insertion de l’origine
+\end{flushright}%
+\end{changemargin}\par\vspace*{0.6cm}}
+
+% pour avoir les subsubsection numérotées et dans la toc :
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+\newenvironment{narrow}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}}%
+\item[]}{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%\enlargethispage{5cm}
+\include{Title}
+
+\date{}
+\cleardoublepage
+
+\section*{Remerciements}
+Mes remerciements s'adressent en premier lieu à Stéphane Lavirotte qui m'a encadré durant cette thèse. Je te remercie pour tes conseils, ta patience, tes relectures (en particulier, je te remercie de ne pas avoir compté le nombre de "s" et de "," que tu auras ajouté à mes écrits ...). Merci pour avoir toujours été présent, ton aide et tes encouragements. J'ai pris beaucoup de plaisir à travailler avec toi durant ces 3 années. Je remercie également Michel Riveill d'avoir suivi et dirigé cette thèse. Merci d'avoir été présent quand j'avais besoin de conseils et d'avoir toujours su trouver la "question qui tue". Je remercie également tout particulièrement Jean-Yves Tigli et Gaëtan Rey, pour m'avoir suivi, encouragé, relu et aidé tout au long de cette thèse, et ce, toujours dans une ambiance formidable. Gaëtan, merci de m'avoir aidé à finir cette thèse avec plus de sérénité et de m'avoir intégré à l'IUT. \\\par
+Je remercie Philippe Roose, Yves Denneulin d'avoir accepté d'être les rapporteurs de cette thèse et pour leurs retours. Je les remercie également, ainsi que Jean-Michel Bruel et Pascal Estrailler de m'avoir fait l'honneur de participer à ma soutenance de thèse.\\\par
+Je remercie également l'ensemble de l'"Ubiquarium team" pour l'ambiance incroyable qu'il y a eu tout au long de ces années. En particulier, je remercie "vinvin" et "simone". Vinvin (aka vinouze), merci pour le nombre de "meilleur film du monde" que tu as trouvé (même si je persiste à dire que :"non, transformers n'est pas le meilleur film du monde ...") et ton initiation à "ultra vomit". Simone, merci pour l'ambiance que tu as apporté et les discussions que l'on a eu. Mélaine, merci pour l'aide apportée sur le tisseur et ces évals. Sana merci d'avoir toujours eu le sourire. Enfin, "Mimi", merci pour les rigolades que l'on a eu et d'avoir su garder Kali comme un chef !\\\par
+Durant ces trois années, j'ai fait parti de l'équipe Rainbow (ancienne et nouvelle version), j'en remercie tous les membres pour la superbe ambiance qui y règne. J'aimerai également remercier Sébastien et Mireille pour leurs conseils et leur aide durant le projet Faros. Ma thèse a également été réalisée en collaboration avec le CSTB. Aussi, je remercie Eric Pascual pour l'aide qu'il m'a apporté et Daniel Cheung pour les discussions intéressantes que nous avons eues et le terreau fertile apporté par sa thèse qui a donné naissance à la mienne. \\\par
+Parallèlement à mes travaux de recherche, j'ai eu l'occasion d'enseigner en tant que moniteur. Je remercie Marc Ga\"etano d'avoir bien voulu être mon tuteur et surtout de m'avoir montré comment enseigner. J'ai beaucoup apprécié les libertés données dans la rédaction de TP et examens que tu m'as laissé... tout cela dans une ambiance magique. Je tiens d'ailleurs ici à préciser que je t'ai "tué" plus souvent que tu ne m'as "tué". Je remercie pareillement les différentes "dream team d'env info" auxquelles j'ai pu participer. Christian, merci pour toute l'aide apportée dans la gestion de l'enseignement d'IaI. Je remercie également Jean-Yves et Stéphane de m'avoir fait confiance et proposé de faire des enseignements d'applications réparties et d'IAm jusqu'au cours en amphithéatre.\\\par 
+Enfin, je tiens à remercier ma famille. Tout d'abord mes parents, merci de m'avoir toujours laissé libre et soutenu dans mes choix, même dans les moments difficiles. Merci d'avoir fait de moi ce que je suis aujourd'hui. Mon Hélène, merci pour ta présence passée et à venir, tes conseils, ton amour et de m'avoir supporté malgré les grandes soirées d'écriture, les coups de blues ou ma mauvaise humeur. Ta présence m'a toujours permi de repartir du bon pied.
+
+
+
+\setcounter{page}{2}
+\pagenumbering{arabic}
+\input{part/abstract}
+
+\dominitoc
+\tableofcontents
+
+
+\input{part/plan}
+
+%%%%%%%%% PART 1 %%%%%%%%% 
+\part{Introduction et analyse de l'état de l'art} \label{part:state}
+\chapter{Introduction}
+\label{chap:intro}
+\begin{epigraphe}{Bernard Werber}
+\og Croire ou ne pas croire, cela n'a aucune importance. Ce qui est intéressant,\\ c'est de se poser de plus en plus de questions \fg
+\end{epigraphe} 
+\minitoc
+\input{part/intro}
+\input{part/state}
+
+%%%%%%%%% PART 2 %%%%%%%%% 
+\part{Contribution} \label{part:contrib}
+\chapter[Une architecture 4-couches]{Une architecture 4-couches multi-dynamiques}
+\label{chap:archi}
+\begin{epigraphe}{Le Corbusier}
+\og L'architecture, c'est une tournure d'esprit et non un métier. \fg
+\end{epigraphe} 	
+\minitoc
+\input{part/contrib/robotique}
+\input{part/contrib/iam}
+
+
+\chapter[Mécanisme d'adaptation]{Mécanisme d'adaptation : la séparation des préoccupations poussée à son paroxysme}
+\label{chap:adapt}
+\begin{epigraphe}{Daniel Desbiens}
+\og Non, ne nous trompons pas! C'est un exercice continuel d'adaptation et d'évolution\\ qui nous attend et menace notre équilibre de façon constante. \fg
+\end{epigraphe} 	
+\minitoc
+\input{part/contrib/Generique}
+%\input{part/contrib/AA}
+%\input{part/contrib/Forces&faiblesses}
+%
+%\chapter{Cascades d'Aspects d'Assemblage}à
+%\begin{epigraphe}{Charlie et la chocolaterie}
+%\og La cascade elle, est plus importante elle mélange le chocolat, le rend léger et mousseux.\\ Soit dit en passant aucune fabrique ne mélange sont chocolat.\fg
+%\end{epigraphe} 
+%\minitoc
+%\input{part/contrib/Cascades}
+
+%%%%%%%%% PART 3 %%%%%%%%% 
+\part{Validation et application} \label{part:val}
+\chapter[Mise en \oe uvre]{Mise en \oe uvre de l'architecture sur 4 niveaux et du mécanisme d'adaptation}
+\begin{epigraphe}{Georges Braque}
+\og C'est l'imprévisible qui crée l'événement. \fg{}
+\end{epigraphe} 
+\minitoc
+\input{part/contrib/implem}
+
+%%%%%%%%% PART 4 %%%%%%%%% 
+\part{Conclusions et perspectives} \label{part:conc}
+\chapter{Conclusions et perspectives}
+\label{chap:adapt}
+\begin{epigraphe}{Winston Churchill}
+\og Ce n'est pas la fin. Ce n'est même pas le commencement de la fin.\\ Mais, c'est peut-être la fin du commencement. \fg
+\end{epigraphe}
+\minitoc
+\input{part/conclu}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%LES PLUS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\printbibliography
+
+%\footbibliographystyle{plain}
+%\footbibliography{these}
+
+\bibliographystyle{plain}
+%\bibliography{these}
+
+%\begin{bibunit}[plain]
+%\putbib[these]
+%\end{bibunit}
+\newpage
+\chapter{Bibliographie détaillée par catégorie}
+\begin{btSect}{theseAOP}
+\section{Bibliographie programmation orientée Aspect}
+\btPrintCited
+\end{btSect}
+
+\begin{btSect}{theseFOP}
+\section{Bibliographie programmation orientée feature}
+\btPrintCited
+\end{btSect}
+
+\begin{btSect}{theseCtx}
+\section{Bibliographie Contexte}
+\btPrintCited
+\end{btSect}
+
+\begin{btSect}{theseIAm}
+\section{Bibliographie Informatique ambiante, vision et challenges}
+\btPrintCited
+\end{btSect}
+
+\begin{btSect}{theseInt}
+\section{Bibliographie Intergiciels}
+\btPrintCited
+\end{btSect}
+
+\begin{btSect}{theseRob}
+\section{Bibliographie Robotique}
+\btPrintCited
+\end{btSect}
+
+\begin{btSect}{theseMod}
+\section{Bibliographie Modèles}
+\btPrintCited
+\end{btSect}
+
+\begin{btSect}{theseAut}
+\section{Bibliographie Autres}
+\btPrintCited
+\end{btSect}
+
+%\printbibliography[heading=AOP,keyword=AOP]
+%\printbibliography[heading=FOP,keyword=FOP]
+%\printbibliography[heading=Contexte,keyword=contexte]
+%\printbibliography[heading=iam,keyword=informatique ambiante]
+%\printbibliography[heading=intergiciels,keyword=intergiciels]
+%\printbibliography[heading=robotics,keyword=robotics]
+%\printbibliography[heading=models,keyword=models]
+%\printbibliography[heading=autres,keyword=autres]
+
+
+\listoffigures
+\listoftables
+% That's all folks!
+
+\appendix
+%\chapter{Cascades d'AAs utilisée dans le chapitre mise en \oe uvre} 
+%
+%\section{Comportement de gestion des fenêtres en fonction de la température}
+%\label{sec:comportement}
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Advice:
+%  schema moyenne () :
+%	MoyenneTemp:BasicBean.Moyenne
+%	BBuffer: BasicBean.BooleanBuffer
+%\end{lstlisting}
+%\caption{Partie décision du comportement de gestion des fenêtres en fonction de la température.} \label{lst:exis2}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Pointcut:
+%	temperature:=/temperature[[:digit:]].*/
+%	moyenne:=/MoyenneTemp.*/
+%
+%Advice:
+%	schema calcul_moyenneTemp (temperature,moyenne) :
+%		temperature.^Value_Evented_NewValue -> moyenne.SetValue
+%\end{lstlisting}
+%\caption{Partie perception du comportement de gestion des fenetres en fonction de la température.} \label{lst:exis2}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Pointcut:
+%	fenetre:=/fenetre[[:digit:]].*/
+%	moyenne:=/MoyenneTemperature.^AverageEvent/
+%	X:=/XTemp.*/
+%Advice:
+%	schema gestion_fenetreTemp (fenetre,moyenne,X) :
+%		threshold: BasicBeans.Threshold(threshold=10)
+%			
+%		
+%		moyenne -> if(threshold.IsReached){X.SetTrue}else{X.setFalse}
+%		moyenne -> threshold.SetValue
+%		X.^StateChange -> fenetre.SetState
+%\end{lstlisting}
+%\caption{Partie action du comportement de gestion des fenetres en fonction de la température.} \label{lst:exis2}
+%\end{figure}
+%
+%\section{Comportement de gestion des fenêtres en fonction de la pluie}
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Advice:
+%  schema moyenne () :
+%	MoyennePluie:BasicBean.Moyenne
+%	XPluie: WComp.	
+%\end{lstlisting}
+%\caption{Partie décision du comportement de gestion des fenêtres en fonction de la pluie.} \label{lst:exis2}
+%\end{figure}
+%
+%
+%
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Pointcut:
+%	pluie:=/humidite[[:digit:]].*/
+%	moyenne:=/MoyennePluie.*/
+%
+%Advice:
+%	schema calcul_moyennePluie (pluie,moyenne) :
+%		pluie.^Value_Evented_NewValue -> moyenne.SetValue
+%\end{lstlisting}
+%\caption{Partie perception du comportement de gestion des fenetres en fonction de la pluie.} \label{lst:exis2}
+%\end{figure}
+%
+%
+%
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Pointcut:
+%	fenetre:=/fenetre[[:digit:]].*/
+%	moyenne:=/MoyennePluie.^AverageEvent/
+%	XPluie:=/XPluie.*/
+%Advice:
+%	schema gestion_fenetrePluie (fenetre,moyenne,XPluie) :
+%		threshold: BasicBeans.Threshold(threshold=10)	
+%		
+%		moyenne -> if(threshold.IsReached)
+%			{fenetre.Close ; XPluie.SetTrue} else {XPluie.setFalse}
+%\end{lstlisting}
+%\caption{Partie action du comportement de gestion des fenetres en fonction de la pluie.} \label{lst:exis2}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Pointcut:
+%	fenetre:=/fenetre[[:digit:]].*/
+%	XPluie:=/XPluie.*/
+%Advice:
+%	schema gestion_fenetrePluiePrioritaire (XPluie,fenetre) :
+%		fenetre.SetState -> (if(XPluie.GetState)call)
+%\end{lstlisting}
+%\caption{Partie action prioritaire du comportement de gestion des fenetres en fonction de la pluie.} \label{lst:exis2}
+%\end{figure}
+%
+%\section{Comportement de monitoring}
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Pointcut:
+%	fenetre:=/fenetre[[:digit:]].*/
+%	PC:=/GardienComputer.display/
+%Advice:
+%	schema monitoring (fenetre,PC) :
+%		fenetre.^StateChange -> PC
+%\end{lstlisting}
+%\caption{Comportement de monitoring} \label{lst:exis2}
+%\end{figure}
+%
+%\section{Comportement de alerte inondation}
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Advice:
+%	schema Aberrations_inondation () :
+%		filtre: BasicBean.FiltreAberations
+%		alerte: BasicBeans.Alerte(mesg="inondation") 
+%		
+%		filtre.^Status_Evented_New_Value -> alerte.Start
+%\end{lstlisting}
+%\caption{Partie decision du comportement d'alerte} \label{lst:exis2}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Pointcut:
+%	filtre:=/FiltreAberation[[:digit:]].*/
+%	inondation:=/DetecteurEau[[:digit:]].^FloodEvent/
+%	
+%Advice:
+%	schema inondation (filtre,inondation) :
+%		inondation -> filtre.SetValue
+%\end{lstlisting}
+%\caption{Partie perception du comportement d'alerte} \label{lst:exis2}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Pointcut:
+%	alerte:=/alerte[[:digit:]].*/
+%	PC:=/GardienComputer.display/
+%	
+%Advice:
+%	schema inondation_alerte (filtre,PC) :
+%		alerte.^SendMesg -> PC
+%\end{lstlisting}
+%\caption{Partie action du comportement d'alerte} \label{lst:exis2}
+%\end{figure}
+%
+%\section{Comportement d'alerte inondation pour le personnel}
+%\begin{figure}[h!]
+%\langAA
+%\begin{lstlisting}
+%Pointcut:
+%	filtre:=/FiltreAberation[[:digit:]].*/
+%	phone:=/GardienComputer.display/
+%	alerte:=/alerte[[:display:]].*/
+%Advice:
+%	schema innondation_alertePhone (filtre,phone,alerte) :
+%		alerte.^SendMesg -> Phone
+%\end{lstlisting}
+%\caption{Comportement d'alerter le personnel} \label{lst:exis2}
+%\end{figure}
+%\chapter{Bibliographie détaillée par catégorie}
+
+\end{document}

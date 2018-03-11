@@ -1,0 +1,143 @@
+\documentclass [twoside, a4paper, 11pt] {StyleThese}% {theseUL} % [phd]Pour les Phd, remplacer "msc" par "phd"
+\usepackage[ansinew]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{graphicx}
+\usepackage{a4wide, eurosym , graphics, graphicx, tabularx, pifont, colortbl, fancyhdr, fancybox}
+\usepackage[table]{xcolor}
+\usepackage{multicol}
+%\usepackage{glossary}
+\usepackage{makeidx}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage[francais]{minitoc}
+\usepackage{tabularx}
+\usepackage{listings}
+%
+%\usepackage{a4wide, eurosym , graphics, graphicx, tabularx, pifont, colortbl, fancyhdr, fancybox}
+\usepackage[francais]{layout}
+\usepackage{lscape}
+%\usepackage[pdftex,linkbordercolor={1 .8 .8},citebordercolor={.7 1 .5}]{hyperref}  
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{subfig}
+\usepackage{multirow}
+%\usepackage{wrapfig}
+\usepackage{pifont}
+\usepackage{amsmath,amssymb,lettrine}
+\usepackage{pslatex}
+%\usepackage{fancybox}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Si on crée des commandes, les ajouter ici. Exemple :
+
+\newcommand{\mapletext}[1]{
+\noindent \begin{tabular}{|p{0pt}p{5in}}
+\cline{1-1}&#1\\
+\cline{1-1}
+\end{tabular}
+\bigskip
+}
+\newcolumntype{Y}{>{\small\centering\arraybackslash}X}
+\newenvironment{tabvcenter}{\null\vfill}{\vfill}
+\newenvironment{tabcenter}{\null\vfill}{\vfill}{\centering}
+
+
+\newtheorem{prop}{Propriété}
+	\newtheorem{guide}{Guideline}
+
+
+\newcounter{def}
+\setcounter{def}{0}
+\newcommand{\primitive}[2]{\refstepcounter{def}
+
+\begin{center}
+\shadowbox{
+\begin{minipage}{0.8\textwidth}
+\textbf{Primitive d'interaction \thedef\ : #1} \par \hspace{1.5em}
+#2
+\end{minipage} } \end{center} }
+
+\newcounter{idrul}
+\setcounter{idrul}{0}
+
+\newcommand{\idRule}[2]{\stepcounter{idrul}
+
+\fbox{\parbox{0.9\textwidth}{
+\textbf{Règle \theidrul\ : #1} \par 
+#2
+}}}
+%\fbox{\parbox{0.9\textwidth}{
+
+\hypersetup{
+    %bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat?s bookmarks
+    pdftoolbar=true,        % show Acrobat?s toolbar?
+    pdfmenubar=true,        % show Acrobat?s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\dominitoc
+\faketableofcontents
+%\tableofcontentsb
+%\listoffigures
+%\listoftables
+\pagenumbering{arabic}
+\chapter*{Acknowledgements}
+%\chapter*{Introduction}
+%\label{chap1}
+%\input{chap1/chapitre1}
+
+%\part{Domaine d'étude et état de l'art}
+%
+%\chapter{Tables interactives et Migration d'UI}
+%\label{chap2}
+%\minitoc
+%%\input{chap2/chapitre2}
+%\chapter{Approches de migration d'UI}
+%\label{chap3}
+%\minitoc
+%%\input{chap3/chapitre3}
+%\part{Contributions}
+\chapter{Modélisation des interactions abstraites }
+\label{chap4}
+\minitoc
+\input{chap4/chapitre4}
+%
+%\chapter{Prise en compte des guidelines }
+%\label{chap5}
+%\minitoc
+%%\input{chap5/chapitre5}
+%
+%\chapter{Prototype}
+%\label{chap6}
+%\minitoc
+%\input{chap6/chapitre6}
+%
+%\part{Conclusion et Perspectives}
+%\chapter{Conclusion}
+%\label{chap7}
+%\minitoc
+%%\input{chap7/chapitre7}
+
+
+\bibliographystyle{alpha}
+\bibliography{bib/biblio}
+
+\end{document}

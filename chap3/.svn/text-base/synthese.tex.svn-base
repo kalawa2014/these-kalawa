@@ -1,0 +1,39 @@
+\subsubsection{Synthèse des approches de migrations spécifiques}Le processus de
+migration ad-hoc de l'application AgilPlanner destinée à un desktop vers une
+table interactive présente les points suivants par à nos problématiques: 
+
+\begin{itemize}
+\item la plateforme ciblée par le processus est une table interactive comme dans
+notre cas. Les guidelines identifiées dans ce processus sont proches et
+conformes des guidelines que nous avons décrites au chapitre~\ref{chap2}.
+\item le processus de migration est certes manuel mais il est structuré en
+plusieurs étapes. Les étapes de ce processus sont réutilisables pour d'autre
+applications.
+\end{itemize}
+Les grandes lignes des guidelines identifiées par ce processus sont
+réutilisables pour des applications similaires. Cependant dans certains cas les
+guidelines doivent être plus formelles et basées sur des modèles abstraits de
+l'UI pour être facilement réutilisables.
+
+\paragraph{}Les processus de migration qui consiste à amener les applications
+existantes sur des tables interactives sans concevoir à nouveau l'UI de départ
+quand à lui est \textbf{réutilisable} et flexible. Cependant ce processus n'est
+pas facile à mettre en place et ne permet pas la \textbf{prise en compte de
+toutes guidelines} pour les table interactives.
+\subsubsection{Synthèse des approches basées sur des modèles}
+Ces approches ont pour but d'adapter des UI des applications sur différents
+types plateformes en prenant en compte les spécificités des plateformes ciblées.
+En s'appuyant sur des modèles d'UI, les approches décrivent des mécanismes
+réutilisables pour d'autres applications. Ces approches sont aussi réutilisables
+pour des tables interactives mais en adaptant les modèles et les
+transformations. 
+\paragraph{}La réutilisation des approches basées sur des modèles dans notre
+contexte présente les limites suivantes:
+\begin{itemize}
+\item les modèles d'interactions abstraites permettant de décrire les activités
+des UI ne sont pas exhaustives et doivent être multimodale
+\item les correspondances entre le modèle CUI et les éléments des bibliothèques
+graphiques sont faites de manières statiques à l'aide d'une table d'équivalence.
+Ces correspondances sont limitées par ces tables d'équivalence dans le cas où
+elles ne sont pas exhaustives.
+\end{itemize}

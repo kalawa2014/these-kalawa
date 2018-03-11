@@ -1,0 +1,16 @@
+@inproceedings{Masso2006,
+address = {New York, New York, USA},
+author = {Mass\'{o}, Jos\'{e} Pascual Molina and Vanderdonckt, Jean and L\'{o}pez, Pascual Gonz\'{a}lez},
+booktitle = {Proceedings of the 11th international conference on Intelligent user interfaces - IUI '06},
+doi = {10.1145/1111449.1111483},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Modele de tache/molina-iui2006.pdf:pdf},
+isbn = {1595932879},
+keywords = {UI Migration,migration,virtual environment},
+mendeley-tags = {UI Migration},
+month = jan,
+pages = {140},
+publisher = {ACM Press},
+title = {{Direct manipulation of user interfaces for migration}},
+url = {http://dl.acm.org/citation.cfm?id=1111449.1111483},
+year = {2006}
+}

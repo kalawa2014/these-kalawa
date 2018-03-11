@@ -1,0 +1,4896 @@
+%!PS-Adobe-3.0
+%%Title: Visio-Dessin1.vsd
+%%Creator: PScript5.dll Version 5.2.2
+%%CreationDate: 10/15/2012 19:18:14
+%%For: kalawa
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%Orientation: Landscape
+%%PageOrder: Special
+%%DocumentNeededResources: (atend)
+%%DocumentSuppliedResources: (atend)
+%%DocumentData: Clean7Bit
+%%TargetDevice: () (52.3) 320
+%%LanguageLevel: 1
+%%EndComments
+
+%%BeginDefaults
+%%PageBoundingBox: 21 54 565 824
+%%ViewingOrientation: 0 1 -1 0
+%%EndDefaults
+
+
+%%BeginProlog
+%%BeginResource: file Pscript_WinNT_ErrorHandler 5.0 0
+/currentpacking where{pop/oldpack currentpacking def/setpacking where{pop false
+setpacking}if}if/$brkpage 64 dict def $brkpage begin/prnt{dup type/stringtype
+ne{=string cvs}if dup length 6 mul/tx exch def/ty 10 def currentpoint/toy exch
+def/tox exch def 1 setgray newpath tox toy 2 sub moveto 0 ty rlineto tx 0
+rlineto 0 ty neg rlineto closepath fill tox toy moveto 0 setgray show}bind def
+/nl{currentpoint exch pop lmargin exch moveto 0 -10 rmoveto}def/=={/cp 0 def
+typeprint nl}def/typeprint{dup type exec}readonly def/lmargin 72 def/rmargin 72
+def/tprint{dup length cp add rmargin gt{nl/cp 0 def}if dup length cp add/cp
+exch def prnt}readonly def/cvsprint{=string cvs tprint( )tprint}readonly def
+/integertype{cvsprint}readonly def/realtype{cvsprint}readonly def/booleantype
+{cvsprint}readonly def/operatortype{(--)tprint =string cvs tprint(-- )tprint}
+readonly def/marktype{pop(-mark- )tprint}readonly def/dicttype{pop
+(-dictionary- )tprint}readonly def/nulltype{pop(-null- )tprint}readonly def
+/filetype{pop(-filestream- )tprint}readonly def/savetype{pop(-savelevel- )
+tprint}readonly def/fonttype{pop(-fontid- )tprint}readonly def/nametype{dup
+xcheck not{(/)tprint}if cvsprint}readonly def/stringtype{dup rcheck{(\()tprint
+tprint(\))tprint}{pop(-string- )tprint}ifelse}readonly def/arraytype{dup rcheck
+{dup xcheck{({)tprint{typeprint}forall(})tprint}{([)tprint{typeprint}forall(])
+tprint}ifelse}{pop(-array- )tprint}ifelse}readonly def/packedarraytype{dup
+rcheck{dup xcheck{({)tprint{typeprint}forall(})tprint}{([)tprint{typeprint}
+forall(])tprint}ifelse}{pop(-packedarray- )tprint}ifelse}readonly def/courier
+/Courier findfont 10 scalefont def end errordict/handleerror{systemdict begin
+$error begin $brkpage begin newerror{/newerror false store vmstatus pop pop 0
+ne{grestoreall}if errorname(VMerror)ne{showpage}if initgraphics courier setfont
+lmargin 720 moveto errorname(VMerror)eq{userdict/ehsave known{clear userdict
+/ehsave get restore 2 vmreclaim}if vmstatus exch pop exch pop PrtVMMsg}{
+(ERROR: )prnt errorname prnt nl(OFFENDING COMMAND: )prnt/command load prnt
+$error/ostack known{nl nl(STACK:)prnt nl nl $error/ostack get aload length{==}
+repeat}if}ifelse systemdict/showpage get exec(%%[ Error: )print errorname
+=print(; OffendingCommand: )print/command load =print( ]%%)= flush}if end end
+end}dup 0 systemdict put dup 4 $brkpage put bind readonly put/currentpacking
+where{pop/setpacking where{pop oldpack setpacking}if}if
+%%EndResource
+%%BeginProcSet: Pscript_Res_Emul 5.0 0
+/defineresource where{pop}{userdict begin/defineresource{userdict/Resources 2
+copy known{get begin}{15 dict dup begin put}ifelse exch readonly exch
+currentdict 1 index known not{dup 30 dict def}if load 3 -1 roll 2 index put
+end}bind readonly def/findresource{userdict/Resources get exch get exch get}
+bind readonly def/resourceforall{pop pop pop pop}bind readonly def
+/resourcestatus{userdict/Resources 2 copy known{get exch 2 copy known{get exch
+known{0 -1 true}{false}ifelse}{pop pop pop false}ifelse}{pop pop pop pop false}
+ifelse}bind readonly def end}ifelse
+%%EndProcSet
+userdict /Pscript_WinNT_Incr 230 dict dup begin put
+%%BeginResource: file Pscript_FatalError 5.0 0
+userdict begin/FatalErrorIf{{initgraphics findfont 1 index 0 eq{exch pop}{dup
+length dict begin{1 index/FID ne{def}{pop pop}ifelse}forall/Encoding
+{ISOLatin1Encoding}stopped{StandardEncoding}if def currentdict end
+/ErrFont-Latin1 exch definefont}ifelse exch scalefont setfont counttomark 3 div
+cvi{moveto show}repeat showpage quit}{cleartomark}ifelse}bind def end
+%%EndResource
+userdict begin/PrtVMMsg{vmstatus exch sub exch pop gt{[
+(La mémoire disponible est insuffisante pour imprimer ce document.)100 500
+(Essayez une ou plusieurs des opérations suivantes, puis recommencez :)100 485
+(Choisissez le format d'impression Optimiser pour portabilité.)115 470
+(Assurez-vous que la valeur de l'option Mémoire PostScript disponible indiquée sur la page Paramètres du périphérique est exacte.)
+115 455(Réduisez le nombre de polices utilisées dans le document.)115 440
+(Imprimez-le en plusieurs fois.)115 425 12/Times-Roman showpage
+(%%[ PrinterError: Low Printer VM ]%%)= true FatalErrorIf}if}bind def end
+version cvi 2016 ge{/VM?{pop}bind def}{/VM? userdict/PrtVMMsg get def}ifelse
+105000 VM?
+%%BeginResource: file Pscript_Win_Basic 5.0 0
+/d/def load def/,/load load d/~/exch , d/?/ifelse , d/!/pop , d/`/begin , d/^
+/index , d/@/dup , d/+/translate , d/$/roll , d/U/userdict , d/M/moveto , d/-
+/rlineto , d/&/currentdict , d/:/gsave , d/;/grestore , d/F/false , d/T/true ,
+d/N/newpath , d/E/end , d/Ac/arc , d/An/arcn , d/A/ashow , d/D/awidthshow , d/C
+/closepath , d/V/div , d/O/eofill , d/L/fill , d/I/lineto , d/-c/curveto , d/-M
+/rmoveto , d/+S/scale , d/Ji/setfont , d/Lc/setlinecap , d/Lj/setlinejoin , d
+/Lw/setlinewidth , d/Lm/setmiterlimit , d/sd/setdash , d/S/show , d/LH/showpage
+, d/K/stroke , d/W/widthshow , d/R/rotate , d/L2? false/languagelevel where{pop
+languagelevel 2 ge{pop true}if}if d L2?{/xS/xshow , d/yS/yshow , d/zS/xyshow ,
+d}if/b{bind d}bind d/bd{bind d}bind d/xd{~ d}bd/ld{, d}bd/bn/bind ld/lw/Lw ld
+/lc/Lc ld/lj/Lj ld/sg/setgray ld/ADO_mxRot null d/self & d/OrgMx matrix
+currentmatrix d/reinitialize{: OrgMx setmatrix[/TextInit/GraphInit/UtilsInit
+counttomark{@ where{self eq}{F}?{cvx exec}{!}?}repeat cleartomark ;}b
+/initialize{`{/Pscript_Win_Data where{!}{U/Pscript_Win_Data & put}?/ADO_mxRot ~
+d/TextInitialised? F d reinitialize E}{U/Pscript_Win_Data 230 dict @ ` put
+/ADO_mxRot ~ d/TextInitialised? F d reinitialize}?}b/terminate{!{& self eq
+{exit}{E}?}loop E}b/suspend/terminate , d/resume{` Pscript_Win_Data `}b U `
+/lucas 21690 d/featurebegin{countdictstack lucas[}b/featurecleanup{stopped
+{cleartomark @ lucas eq{! exit}if}loop countdictstack ~ sub @ 0 gt{{E}repeat}
+{!}?}b E/snap{transform 0.25 sub round 0.25 add ~ 0.25 sub round 0.25 add ~
+itransform}b/dsnap{dtransform round ~ round ~ idtransform}b/nonzero_round{@ 0.5
+ge{round}{@ -0.5 lt{round}{0 ge{1}{-1}?}?}?}b/nonzero_dsnap{dtransform
+nonzero_round ~ nonzero_round ~ idtransform}b U<04>cvn{}put/rr{1 ^ 0 - 0 ~ -
+neg 0 - C}b/irp{4 -2 $ + +S fx 4 2 $ M 1 ^ 0 - 0 ~ - neg 0 -}b/rp{4 2 $ M 1 ^ 0
+- 0 ~ - neg 0 -}b/solid{[]0 sd}b/g{@ not{U/DefIf_save save put}if U/DefIf_bool
+2 ^ put}b/DefIf_El{if U/DefIf_bool get not @{U/DefIf_save get restore}if}b/e
+{DefIf_El !}b/UDF{L2?{undefinefont}{!}?}b/UDR{L2?{undefineresource}{! !}?}b
+/freeVM{/Courier findfont[40 0 0 -40 0 0]makefont Ji 2 vmreclaim}b/hfRedefFont
+{findfont @ length dict `{1 ^/FID ne{d}{! !}?}forall & E @ ` ~{/CharStrings 1
+dict `/.notdef 0 d & E d}if/Encoding 256 array 0 1 255{1 ^ ~/.notdef put}for d
+E definefont !}bind d/hfMkCIDFont{/CIDFont findresource @ length 2 add dict `{1
+^ @/FID eq ~ @/XUID eq ~/UIDBase eq or or{! !}{d}?}forall/CDevProc ~ d/Metrics2
+16 dict d/CIDFontName 1 ^ d & E 1 ^ ~/CIDFont defineresource ![~]composefont !}
+bind d
+%%EndResource
+%%BeginResource: file Pscript_Win_Utils_L1 5.0 0
+/rf{N rp L}b/fx{1 1 dtransform @ 0 ge{1 sub 1}{1 add -0.25}? 3 -1 $ @ 0 ge{1
+sub 1}{1 add -0.25}? 3 1 $ 4 1 $ idtransform 4 -2 $ idtransform}b/BZ{4 -2 $
+snap + +S fx rf}b/rs{N rp C K}b/rc{N rp clip N}b/UtilsInit{}b/setcolorspace{!}b
+/scol{[/setgray/setrgbcolor/setcolor/setcmykcolor/setcolor/setgray]~ get cvx
+exec}b/colspRefresh{}b/AddFontInfoBegin{/FontInfo 8 dict @ `}bind d/AddFontInfo
+{/GlyphNames2Unicode 16 dict d/GlyphNames2HostCode 16 dict d}bind d
+/AddFontInfoEnd{E d}bind d
+%%EndResource
+end
+%%EndProlog
+
+%%BeginSetup
+statusdict begin (%%[ ProductName: ) print product print ( ]%%)= flush end
+[ 0 1 -1 0 0 0 ] false Pscript_WinNT_Incr dup /initialize get exec
+featurebegin{
+%%BeginNonPPDFeature: JobTimeout 0
+0 /languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/JobTimeout  4 -1 roll put setuserparams}{statusdict/setjobtimeout get exec}ifelse
+%%EndNonPPDFeature
+}featurecleanup
+
+featurebegin{
+%%BeginNonPPDFeature: WaitTimeout 300
+300 /languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/WaitTimeout 4 -1 roll put setuserparams}{statusdict/waittimeout 3 -1 roll put}ifelse
+%%EndNonPPDFeature
+}featurecleanup
+
+featurebegin{
+%%BeginFeature: *Resolution 600dpi
+
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *PageSize A4
+statusdict /a4tray get exec
+%%EndFeature
+}featurecleanup
+1 setlinecap 1 setlinejoin
+/mysetup [ 0 72 600 V 72 600 V 0 20.99905 54 ] def 
+%%EndSetup
+
+userdict begin /VMsave save def end
+%%Page: 1 1
+%%PageBoundingBox: 21 54 565 824
+%%EndPageComments
+%%BeginPageSetup
+/DeviceRGB dup setcolorspace /colspABC exch def
+mysetup concat colspRefresh
+%%EndPageSetup
+
+VMsave restore
+mysetup concat colspRefresh
+30000 VM?
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_WinNT_Compat 5.0 0
+userdict/Pscript_WinNT_Compat 19 dict dup begin/bd{bind def}bind def/ld{load
+def}bd/$x matrix def/ANSIVec[16#0/grave 16#1/acute 16#2/circumflex 16#3/tilde
+16#4/macron 16#5/breve 16#6/dotaccent 16#7/dieresis 16#8/ring 16#9/cedilla 16#A
+/hungarumlaut 16#B/ogonek 16#C/caron 16#D/dotlessi 16#27/quotesingle 16#60
+/grave 16#7C/bar 16#82/quotesinglbase 16#83/florin 16#84/quotedblbase 16#85
+/ellipsis 16#86/dagger 16#87/daggerdbl 16#88/circumflex 16#89/perthousand 16#8A
+/Scaron 16#8B/guilsinglleft 16#8C/OE 16#91/quoteleft 16#92/quoteright 16#93
+/quotedblleft 16#94/quotedblright 16#95/bullet 16#96/endash 16#97/emdash 16#98
+/tilde 16#99/trademark 16#9A/scaron 16#9B/guilsinglright 16#9C/oe 16#9F
+/Ydieresis 16#A0/space 16#A1/exclamdown 16#A4/currency 16#A5/yen 16#A6
+/brokenbar 16#A7/section 16#A8/dieresis 16#A9/copyright 16#AA/ordfeminine 16#AB
+/guillemotleft 16#AC/logicalnot 16#AD/hyphen 16#AE/registered 16#AF/macron
+16#B0/degree 16#B1/plusminus 16#B2/twosuperior 16#B3/threesuperior 16#B4/acute
+16#B5/mu 16#B6/paragraph 16#B7/periodcentered 16#B8/cedilla 16#B9/onesuperior
+16#BA/ordmasculine 16#BB/guillemotright 16#BC/onequarter 16#BD/onehalf 16#BE
+/threequarters 16#BF/questiondown 16#C0/Agrave 16#C1/Aacute 16#C2/Acircumflex
+16#C3/Atilde 16#C4/Adieresis 16#C5/Aring 16#C6/AE 16#C7/Ccedilla 16#C8/Egrave
+16#C9/Eacute 16#CA/Ecircumflex 16#CB/Edieresis 16#CC/Igrave 16#CD/Iacute 16#CE
+/Icircumflex 16#CF/Idieresis 16#D0/Eth 16#D1/Ntilde 16#D2/Ograve 16#D3/Oacute
+16#D4/Ocircumflex 16#D5/Otilde 16#D6/Odieresis 16#D7/multiply 16#D8/Oslash
+16#D9/Ugrave 16#DA/Uacute 16#DB/Ucircumflex 16#DC/Udieresis 16#DD/Yacute 16#DE
+/Thorn 16#DF/germandbls 16#E0/agrave 16#E1/aacute 16#E2/acircumflex 16#E3
+/atilde 16#E4/adieresis 16#E5/aring 16#E6/ae 16#E7/ccedilla 16#E8/egrave 16#E9
+/eacute 16#EA/ecircumflex 16#EB/edieresis 16#EC/igrave 16#ED/iacute 16#EE
+/icircumflex 16#EF/idieresis 16#F0/eth 16#F1/ntilde 16#F2/ograve 16#F3/oacute
+16#F4/ocircumflex 16#F5/otilde 16#F6/odieresis 16#F7/divide 16#F8/oslash 16#F9
+/ugrave 16#FA/uacute 16#FB/ucircumflex 16#FC/udieresis 16#FD/yacute 16#FE/thorn
+16#FF/ydieresis]def currentdict{dup type/operatortype eq{[exch]cvx def}{pop
+pop}ifelse}forall/initialize{currentdict exch begin begin}bind def/terminate{
+/@FL where not{pop end end}{pop}ifelse}bind def/suspend/terminate load def
+/resume/initialize load def/RS{/pagesave where{pop pagesave restore}{$x matrix
+invertmatrix concat}ifelse}def/SS{/pagesave save def}def/CB{pop pop pop pop}def
+/B{pop pop pop pop}def/:/gsave load def/;/grestore load def/N/newpath load def
+end put
+%%EndResource
+end reinitialize
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+/languagelevel where {pop languagelevel} {1} ifelse
+2 ge dup {currentglobal exch true setglobal globaldict} {userdict} ifelse
+/GpPBeg1 {
+    gsave initclip
+    16 dict begin
+    /c {curveto} def /l {lineto} def /m {moveto} def
+    /rc {rcurveto} def /rl {rlineto} def
+    /NP {newpath} def /CP {closepath} def /SC {setrgbcolor} def
+    /GSE {end grestore} def
+} put
+{setglobal} if
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 1216 1012 m 1216 850 947 718 616 718 c 285 718 16 850 16 1012 c 16 1175 285 1306 616 1306 c 947 1306 1216 1175 1216 1012 c CP 
+eoclip
+/ds
+<aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+1555>
+ def
+15 717 translate
+0 32 590 { 0 32 1202 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+NP 0 0 m 0 4533 l 6417 4533 l 6417 0 l CP 
+604 718 m 568 719 l 547 720 l 531 721 l 518 722 l 506 723 l 495 724 l 468 727 l 461 728 l 453 729 l 439 731 l 409 736 l 404 737 l 398 738 l 378 742 l 374 743 l 369 744 l 365 745 l 360 746 l 328 754 l 325 755 l 321 756 l 318 757 l 310 759 l 307 760 l 303 761 l 291 765 l 287 766 l 272 771 l 270 772 l 255 777 l 253 778 l 250 779 l 248 780 l 242 782 l 240 783 l 237 784 l 235 785 l 232 786 l 228 788 l 225 789 l 223 790 l 220 791 l 216 793 l 213 794 l 201 800 l 198 801 l 172 814 l 171 815 l 165 818 l 164 819 l 158 822 l 157 823 l 151 826 l 150 827 l 148 828 l 147 829 l 143 831 l 142 832 l 140 833 l 139 834 l 135 836 l 134 837 l 132 838 l 131 839 l 129 840 l 127 842 l 125 843 l 124 844 l 122 845 l 121 846 l 119 847 l 117 849 l 115 850 l 113 852 l 111 853 l 109 855 l 107 856 l 104 859 l 102 860 l 98 864 l 96 865 l 91 870 l 89 871 l 65 895 l 64 897 l 60 901 l 59 903 l 55 907 l 54 909 l 52 911 l 51 913 l 50 914 l 49 916 l 47 918 l 46 920 l 45 921 l 44 923 l 43 924 l 42 926 l 41 927 l 38 933 l 37 934 l 29 950 l 28 953 l 27 955 l 25 961 l 24 963 l 22 969 l 19 981 l 18 986 l 17 992 l 16 1001 l 16 1024 l 17 1024 l 17 1033 l 18 1033 l 18 1039 l 19 1039 l 19 1044 l 20 1044 l 20 1048 l 21 1048 l 21 1052 l 22 1052 l 22 1056 l 23 1056 l 23 1059 l 24 1059 l 24 1062 l 25 1062 l 25 1064 l 26 1064 l 26 1067 l 27 1067 l 27 1070 l 28 1070 l 28 1072 l 29 1072 l 29 1074 l 30 1074 l 30 1077 l 31 1077 l 31 1079 l 32 1079 l 32 1081 l 33 1081 l 33 1083 l 34 1083 l 34 1085 l 35 1085 l 35 1087 l 36 1087 l 36 1089 l 37 1089 l 38 1090 l 38 1092 l 39 1092 l 39 1094 l 40 1094 l 40 1096 l 41 1096 l 42 1097 l 42 1099 l 43 1099 l 43 1101 l 44 1101 l 46 1103 l 46 1105 l 47 1105 l 48 1106 l 48 1108 l 49 1108 l 50 1109 l 50 1111 l 51 1111 l 52 1112 l 52 1114 l 53 1114 l 56 1117 l 56 1119 l 57 1119 l 60 1122 l 60 1124 l 61 1124 l 66 1129 l 66 1131 l 67 1131 l 88 1152 l 90 1153 l 95 1158 l 97 1159 l 102 1164 l 104 1165 l 106 1167 l 108 1168 l 110 1170 l 112 1171 l 115 1174 l 117 1175 l 119 1177 l 121 1178 l 122 1179 l 124 1180 l 125 1181 l 127 1182 l 128 1183 l 130 1184 l 131 1185 l 133 1186 l 135 1188 l 139 1190 l 140 1191 l 142 1192 l 143 1193 l 147 1195 l 148 1196 l 150 1197 l 151 1198 l 157 1201 l 158 1202 l 164 1205 l 165 1206 l 177 1212 l 178 1213 l 196 1222 l 199 1223 l 211 1229 l 214 1230 l 218 1232 l 221 1233 l 225 1235 l 228 1236 l 230 1237 l 233 1238 l 235 1239 l 238 1240 l 240 1241 l 243 1242 l 245 1243 l 251 1245 l 253 1246 l 256 1247 l 258 1248 l 279 1255 l 281 1256 l 285 1257 l 297 1261 l 301 1262 l 307 1264 l 311 1265 l 314 1266 l 318 1267 l 321 1268 l 325 1269 l 328 1270 l 356 1277 l 361 1278 l 365 1279 l 370 1280 l 374 1281 l 409 1288 l 421 1290 l 428 1291 l 440 1293 l 454 1295 l 462 1296 l 469 1297 l 496 1300 l 520 1302 l 534 1303 l 550 1304 l 573 1305 l 662 1306 l 662 1305 l 684 1304 l 700 1303 l 714 1302 l 736 1300 l 763 1297 l 771 1296 l 785 1294 l 793 1293 l 823 1288 l 843 1284 l 849 1283 l 853 1282 l 858 1281 l 862 1280 l 867 1279 l 871 1278 l 876 1277 l 900 1271 l 903 1270 l 911 1268 l 914 1267 l 918 1266 l 921 1265 l 925 1264 l 931 1262 l 935 1261 l 947 1257 l 951 1256 l 954 1255 l 956 1254 l 971 1249 l 973 1248 l 979 1246 l 981 1245 l 987 1243 l 989 1242 l 992 1241 l 994 1240 l 997 1239 l 999 1238 l 1002 1237 l 1004 1236 l 1007 1235 l 1011 1233 l 1014 1232 l 1018 1230 l 1021 1229 l 1033 1223 l 1036 1222 l 1052 1214 l 1053 1213 l 1065 1207 l 1066 1206 l 1072 1203 l 1073 1202 l 1079 1199 l 1080 1198 l 1084 1196 l 1085 1195 l 1087 1194 l 1088 1193 l 1092 1191 l 1093 1190 l 1095 1189 l 1096 1188 l 1098 1187 l 1099 1186 l 1101 1185 l 1102 1184 l 1104 1183 l 1105 1182 l 1107 1181 l 1108 1180 l 1110 1179 l 1112 1177 l 1114 1176 l 1116 1174 l 1118 1173 l 1120 1171 l 1122 1170 l 1124 1168 l 1126 1167 l 1129 1164 l 1131 1163 l 1135 1159 l 1137 1158 l 1142 1153 l 1144 1152 l 1163 1133 l 1164 1131 l 1170 1125 l 1171 1123 l 1174 1120 l 1175 1118 l 1178 1115 l 1179 1113 l 1181 1111 l 1182 1109 l 1183 1108 l 1184 1106 l 1185 1105 l 1186 1103 l 1187 1102 l 1188 1100 l 1189 1099 l 1191 1095 l 1192 1094 l 1194 1090 l 1195 1089 l 1199 1081 l 1200 1078 l 1203 1072 l 1204 1069 l 1205 1067 l 1209 1055 l 1212 1043 l 1213 1038 l 1214 1032 l 1215 1023 l 1216 1002 l 1215 1002 l 1215 993 l 1214 993 l 1214 986 l 1213 986 l 1213 981 l 1212 981 l 1212 978 l 1211 978 l 1211 974 l 1210 974 l 1210 970 l 1209 970 l 1209 966 l 1208 966 l 1208 964 l 1207 964 l 1207 961 l 1206 961 l 1206 958 l 1205 958 l 1205 955 l 1204 955 l 1204 953 l 1203 953 l 1203 951 l 1202 951 l 1202 949 l 1201 949 l 1201 946 l 1200 946 l 1200 944 l 1199 944 l 1199 942 l 1198 942 l 1198 940 l 1197 940 l 1197 938 l 1196 938 l 1196 936 l 1195 935 l 1194 935 l 1194 933 l 1193 933 l 1193 931 l 1192 930 l 1191 930 l 1191 928 l 1190 928 l 1190 926 l 1189 925 l 1188 925 l 1188 923 l 1187 922 l 1186 922 l 1186 920 l 1185 919 l 1184 919 l 1184 917 l 1183 916 l 1182 916 l 1182 914 l 1181 913 l 1180 913 l 1180 911 l 1177 908 l 1176 908 l 1176 906 l 1173 903 l 1172 903 l 1172 901 l 1167 896 l 1166 896 l 1166 894 l 1143 871 l 1141 870 l 1137 866 l 1135 865 l 1130 860 l 1128 859 l 1126 857 l 1124 856 l 1121 853 l 1119 852 l 1117 850 l 1115 849 l 1113 847 l 1111 846 l 1110 845 l 1108 844 l 1107 843 l 1105 842 l 1104 841 l 1102 840 l 1100 838 l 1098 837 l 1097 836 l 1093 834 l 1092 833 l 1090 832 l 1089 831 l 1085 829 l 1084 828 l 1082 827 l 1081 826 l 1075 823 l 1074 822 l 1068 819 l 1067 818 l 1057 813 l 1056 812 l 1034 801 l 1031 800 l 1019 794 l 1016 793 l 1012 791 l 1009 790 l 1007 789 l 1004 788 l 1000 786 l 997 785 l 995 784 l 992 783 l 990 782 l 984 780 l 982 779 l 979 778 l 977 777 l 962 772 l 960 771 l 945 766 l 941 765 l 929 761 l 925 760 l 922 759 l 918 758 l 915 757 l 911 756 l 908 755 l 868 745 l 858 743 l 854 742 l 824 736 l 794 731 l 787 730 l 779 729 l 765 727 l 738 724 l 728 723 l 704 721 l 688 720 l 669 719 l 636 718 l CP 
+eoclip
+0.8039 0.8039 0.8039 setrgbcolor
+NP 1215 1012 m 1215 1005 l 1214 997 l 1213 990 l 1212 983 l 1208 968 l 1203 954 l 1196 939 l 1188 926 l 1179 912 l 1168 899 l 1156 886 l 1143 873 l 1128 861 l 1113 849 l 1096 837 l 1078 826 l 1059 816 l 1040 805 l 1019 796 l 997 786 l 974 778 l 951 770 l 927 762 l 902 755 l 876 748 l 849 742 l 822 737 l 794 733 l 766 729 l 737 725 l 707 723 l 677 721 l 647 720 l 616 719 l 585 720 l 555 721 l 525 723 l 495 726 l 466 729 l 438 733 l 410 737 l 383 743 l 356 748 l 330 755 l 305 762 l 281 770 l 257 778 l 235 787 l 213 796 l 192 806 l 172 816 l 153 826 l 136 837 l 119 849 l 103 861 l 89 873 l 76 886 l 64 899 l 53 912 l 44 926 l 36 939 l 29 954 l 24 968 l 20 983 l 19 990 l 18 997 l 17 1005 l 17 1012 l 17 1020 l 18 1027 l 19 1035 l 20 1042 l 24 1057 l 29 1071 l 36 1085 l 44 1099 l 53 1113 l 64 1126 l 76 1139 l 89 1152 l 104 1164 l 119 1176 l 136 1187 l 154 1199 l 172 1209 l 192 1219 l 213 1229 l 235 1238 l 257 1247 l 281 1255 l 305 1263 l 330 1270 l 356 1276 l 383 1282 l 410 1288 l 438 1292 l 466 1296 l 495 1299 l 525 1302 l 555 1304 l 585 1305 l 616 1305 l 647 1305 l 677 1304 l 707 1302 l 737 1299 l 766 1296 l 794 1292 l 822 1288 l 849 1282 l 876 1276 l 902 1270 l 927 1263 l 951 1255 l 974 1247 l 997 1238 l 1019 1229 l 1040 1219 l 1060 1209 l 1078 1199 l 1096 1187 l 1113 1176 l 1128 1164 l 1143 1152 l 1156 1139 l 1168 1126 l 1179 1113 l 1188 1099 l 1196 1085 l 1203 1071 l 1208 1057 l 1212 1042 l 1213 1035 l 1214 1027 l 1215 1020 l CP 
+1217 1020 m 1216 1028 l 1215 1035 l 1214 1043 l 1210 1058 l 1205 1072 l 1198 1086 l 1190 1100 l 1180 1114 l 1169 1128 l 1157 1141 l 1144 1153 l 1130 1166 l 1114 1178 l 1097 1189 l 1079 1200 l 1061 1211 l 1041 1221 l 1020 1231 l 998 1240 l 975 1249 l 952 1257 l 927 1265 l 902 1272 l 876 1278 l 850 1284 l 822 1290 l 794 1294 l 766 1298 l 737 1301 l 707 1304 l 677 1306 l 647 1307 l 616 1307 l 585 1307 l 554 1306 l 524 1304 l 495 1301 l 466 1298 l 437 1294 l 409 1290 l 382 1284 l 356 1278 l 330 1272 l 304 1265 l 280 1257 l 257 1249 l 234 1240 l 212 1231 l 191 1221 l 171 1211 l 152 1200 l 135 1189 l 118 1178 l 102 1166 l 88 1153 l 74 1141 l 62 1127 l 52 1114 l 42 1100 l 34 1086 l 27 1072 l 22 1057 l 18 1043 l 17 1035 l 16 1028 l 15 1020 l 15 1012 l 15 1005 l 16 997 l 17 990 l 18 982 l 22 967 l 27 953 l 34 938 l 42 924 l 52 911 l 62 897 l 74 884 l 88 871 l 102 859 l 118 847 l 135 836 l 152 825 l 171 814 l 191 804 l 212 794 l 234 785 l 257 776 l 280 768 l 305 760 l 330 753 l 356 746 l 382 741 l 409 735 l 437 731 l 466 727 l 495 723 l 524 721 l 555 719 l 585 718 l 616 717 l 647 718 l 677 719 l 707 721 l 737 723 l 766 727 l 794 731 l 822 735 l 850 740 l 876 746 l 902 753 l 927 760 l 952 768 l 975 776 l 998 785 l 1020 794 l 1041 804 l 1060 814 l 1079 825 l 1097 836 l 1114 847 l 1130 859 l 1144 872 l 1157 884 l 1170 897 l 1180 911 l 1190 925 l 1198 939 l 1205 953 l 1210 967 l 1214 982 l 1215 990 l 1216 997 l 1217 1005 l 1217 1012 l CP 
+clip
+/ds
+<5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+2aaa>
+ def
+12 714 translate
+0 32 596 { 0 32 1208 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+NP 1204 1000 m 1204 838 935 706 604 706 c 273 706 4 838 4 1000 c 4 1163 273 1294 604 1294 c 935 1294 1204 1163 1204 1000 c CP 
+eoclip
+/readimage {currentfile exch string readhexstring pop} def
+12288 readimage
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefeffffff
+/datasrc exch def
+/languagelevel where {pop languagelevel} {1} ifelse 1 eq
+{0.8039 0.8039 0.8039 SC}
+{/pd 20 dict def
+pd /PaintType 1 put
+pd /PatternType 1 put
+pd /TilingType 1 put
+pd /BBox [0 0 32 128] put
+pd /XStep 32 put
+pd /YStep 128 put
+pd /PaintProc {begin 32 128 8 [1 0 0 1 0 0] datasrc false 3 colorimage end} put
+pd [-0.0000 -18.4340 -9.3896 0 1226.8457 1294.3906] makepattern
+setpattern
+} ifelse
+NP 3 1295 m 1205 1295 l 1205 705 l 3 705 l CP 
+eofill
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+2.0831 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1204 1000 m 1204 838 935 706 604 706 c 273 706 4 838 4 1000 c 4 1163 273 1294 604 1294 c 935 1294 1204 1163 1204 1000 c CP 
+stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 31500 VM?
+11 dict begin
+/FontName /TTA0Fo00 def
+/FontMatrix [1 2048 div 0 0 1 2048 div 0 0 ] def
+/Encoding  256 array 0 1 255 {1 index exch /.notdef put} for  def
+/PaintType 0 def
+/FontType 1 def
+/FontBBox { 0 0 0 0 } def
+AddFontInfoBegin
+AddFontInfo
+AddFontInfoEnd
+currentdict
+end
+
+currentfile eexec
+9e67edc6f3ddb54d987dfb0ad4392351758f10eff40ef287a1387512b853
+046f6e589e2c97d48fdb38d54b68757f1dc48a239a5da408c2bfd473eac0
+3ab6b0025b87770e5f3b06904c282a51ee189ce871258447b47d83c5fad2
+326aa26e4c7f0ff21a841a463c859f102729802bbfa6ac0c2766f6b09317
+a247f37b339b99b7588bee2e861ed9de7a8990c512001ce21da50f4516f7
+553cc5df31ac42402c2b4e2b106773ccdac45a8dee89d3d35ce4f9afb022
+79592359efd5293f35df57216c84236a1347e922a61c45691be2c137b65f
+08f4b3113b88e58dce4bd559387db7a00fe16460e5ab8fc835ea6ed9b938
+610bff26bc7ddabb1ac7ebb89a27558ffb6d582905647551d9e9275b36d4
+1740c86aee7f26b1cf84eb15ad5d19daedc87a082eff5b2a3f531edcbbba
+43254bd641732e77edf27321824826d9e5fc7f75fe7f743e6f92c79bf681
+7ff35c9387441b8ef3a5ee9d9a65a93c599ee0464a859e635e7ba3bc9490
+0f0f6aefa85254d48c175b3f62c27d294fb96276fcb246b1f2d587aa7b46
+cfd746c338e219ff9a3a9a1a6ffaf5ea0c52ab586fa40238328f3aec918b
+837017788d692a84a694c1928e2149c695db17bb50cab795c47ee0bf3027
+8da4a78f82a3ff003ee44a80fa13c8856e3323b61974267d776b82f2e6f0
+a61bb93fbd381a0422052743c34dc8d420a36d7a627691cc8c2aad2eb0a8
+de8ef37cb31dd07a90ea5df7e5ae3781e6f365b23a09612ba67a4ad84fe5
+0fd9a0ad965faec441604cc99eaa8168e2ab748f983a23b9a2d654b2a537
+8c12b8a9532d6a102ecb99b207f9bcd9ec9d01ed34cd0677d86355683296
+cb5b5c3d366135fbccac19b4762586f6daa30e501f17e67a528ceada78eb
+276790069d5a714d25fc406e59ea405d5e0eb6bc5e2cab24d0fff50a041a
+f486aedd490e751e5f09983863d0d66ea02e355e0b4a13c3fed879c22cc0
+a6396eb014db236f61c4516fe60ef089151c54487e062f31c737bd736e5c
+9130fdbf952245ea64fcf5310662639c024be1dc842fb73e6b7bfdfa66e5
+68734ba97dac4f1eaa3ffdf57e1a81fc05a9001a0a4f14abc87260c767eb
+a023a7996a56a28bac3fb337049010d42a9413555695441ba1d62d22f2d1
+208ef8572b86b2fa2bf37d0ffed06e4116991d716c84a39699d8c760a36c
+6508ba48631e7745ce4139a721158c5aa1c6441a6b93848da18ed84da821
+44debf25b2013f2e089379d3083a7b56ecab6d4a8dfbe6bb0658a5f4f9b7
+bcb42b4e34ce6175f3d9a389a9cd91c981552bd602e3f0a59d452825ab36
+bcbe4046c0eff0194a8bb97e5fc09cb875badfb0652c35f27cb0a4f72533
+a147e1faead66e79f951be137d9e8a45477cc5d8693023118dfb1acf1344
+c24400f4f47fb82ed043d49281f1982c2f6ef8369b9fc373800d8fc4f235
+550e3e12498ccffcdc0986fd24d96d86e06448225c25a432048d73d7ad53
+a16bc898b5754c1e0acce3628f4d34076fbdcd4e78545d68cf48ce6fd77e
+867c7e6e5d10eb98d2b5f5533ca38c187ae0a8284673543eb5cbdd344b01
+b22ef36b8cae5efc77406fbcb557c31bc0bbf018909355d186bd7c976b98
+fd16e5fbd0b845d0b2d7f1b4fe239192a866b9322ba4b6095ce564d5ddd4
+eaa70f4ae280014d88b77b32e32830f585013312132fc33c4ceb4616ff8f
+9670e17cf6bda1b22fa864872d3ac04faf9d1c27e461b53cda309b84f0d4
+66216d13b373df9b030775b11e35eaaa7ee01a1bf08b85bc54d1ddebd2c4
+4e9ddf31824bda9474290f74ed9f382f2796a8bb74d15fba8a4d41b6ce68
+a44205fb605713f2aa1d8c195b447bc735238c6efcd21a4195d1b6876ce2
+40386dbbc2a4e6c7454f9f0fe1d00ae0ad043cf2f5f779e2ec3761e3d26d
+36fc4c67e67670463420367b442e247d23bbf66f4f415d147fb86fcc077a
+234c46c1404ebe7b735781fb5b14246bd73cae4eaca47808f2cbf3036270
+25118d92b5d05a5a5e29b63d940413adcd3a2d13d1563611252f3d509531
+70783e3f5547a16a043b72cd0fac91b4a2c6e9535759b663acddba0e4f0e
+a2247d43cd672c4e0006b2f17e3f0ab842dca96f24f406bbd86d148c82b9
+193ea2b30a375a1cdbc9599a657bd30eb039cf97dc39c5372d47a4764891
+16e3e05999cc9e718b42c9198c1130a1b3b20225ce49af1c397fad4cf061
+9825449270a752462d80f06c880d103cc2f448e81b68d48cab6699c9c03b
+c7f8487d3e1debc42a31f1d6b44f89ebc3b7edddb858a3548ad319c7ff2d
+49094fad16af0b2945e80de93102ddbbd096fc7c725cdacf27949bd5f6ef
+024c42a565ed7e6e4a53f355414dad1305e04740fc4e2d51aa1aaffaaa0b
+628135ca9a8cb0090026d93f392d289662bf1f622aa8b8e4c160785f1034
+49d20111aec2aa782dc1531fd5249828c77c34c2100137c28a96a26b74d8
+5a30317da8c07621caec0d03d8dbf24e0cf5ee142f14a3a077e1ec64d29f
+202b941f63c9c945c4c94d364db9e340349a49878830dee7dd1a00c9282c
+c56ebdccae11fb2e46b3c7c82b039f3d1c2b5870b6e9dd8e0b39319c3e99
+93d25045f3f44f52c6fbe5b7ba572205aa97ab4100135cad53fcddad4bf0
+53d2a55484e4a5dd6d1f97f74f5ab95609edf3ddc6639c6b435f2b5ccd29
+d7f40031df37b7ac87239ed1b6fb82b30d66214848161e4b490387f95fdf
+e3a08010add0f480c0a3b2d8a4167d0b410168b3dd85c1243d89a667cafc
+356a149444c6a30bf2509556f3b6111831bd7ff72e51e029e1c32c1736a7
+419692a15bf1da3f3bbd8a845e5ae39498a8a64f6441404a8644ffb6a977
+868e3001c477e0c07885be99a7a6b0f6fe64cc3e380dffd631cad8516cb3
+f93027ae7ff3439aa0a217a396e605d740d78a39cc32173b0633061c1aa2
+ae012c0debb152964ec243981e583f25cb350e8559ecda14bd5a7e3ee628
+6820804e2339639a563bea36e074b15c23aaf80527c2c2a2738627561bae
+044ac720f00b0f0e961c5c84e97087ec44087799ca2f6e49c0f3187e1e06
+84f3abe4d05c0e53b9aa1b7221efff8d26ad2501ec79ba02cd44b0bf39d8
+5566b29cebf26788288ec232fb66989b02ef189beea43ef827fcefcff70f
+5327e7e0b6e108050b556cb0c57e6f45e0b757d8055e289d31b12311d91b
+1212ad78792be5cb39288768f60babecf1c57cc5084522df62bc3ca20600
+2af6ac01775e7ba0e5f195cfb7858ed9d3dadd329412e5c307b0ec97bf56
+9e305ecb988b202dfb99eca9d86c51ca46c14c6567752c336391e5f40225
+b07c02ccd7193f4b639ab8afd5e691d4f8c09cf996c739aeddd60fe128d3
+804efdc52ff04abf52c0c61f80026d60a4a2eb346f489a82cf1e835c8a64
+1b930efa903589629ee48974bf0155e772e28c2ba2695452874f65223275
+5733c81b22a43f80e2d6515bd823d47a7c4b054eeb2c76692231add66555
+aad15286761b474d3f5104277254f936276a3bc8385310415923612bc418
+489425f154d01d42569c7bd4ec4db38728e805eecfb6e5a8b1c372394e7e
+8f3923fe524ad881bc563b097d51f9c138db603914abe7912118b06c2964
+6d4e7c3feea96fa95d06602310e767df27dd23e3af6b4fc7da47db7c0927
+1f142b0bda37cbfb64c85de6c0046467a3481845d0b99fa63d2977b3d1ab
+25002afee1eacf375d765a82da8c273dd785b8b3af938b688d26d18bf26d
+4fa28115084509148549a25efd1d5f5bc62f2c4f4fc0ba7d13fe85bc1357
+8d99afefdfdd38464e330a24852d900d7036ca81fead6cd13790672391f7
+d64824722e0faf9773e39f765be357d14e42e1c47f343ed621c363833cc8
+367d4bac1311447267c02f26b8c12488d0e5eb8e53aae883181821a56ce6
+4bbdc5d829a42fd7dd01b3f2f77588de3de17e6a6977eba58643d2f85ace
+b1f2f770f266866be2514f44ee20dd9387818e9e7073f0454c5c651b4572
+1779123234c29e6fe985018a5b2bf9b5839f3d3ceeefa33f0aea77733dd3
+adcded188f3731724e2293b86033517a51451a2310b57cb80e5a372072ad
+b9395d6749dfc209759512dc29aa6f5136d0db576e291e859beceefcffb9
+b73e49e5cecd475628713cf624806fded8983b3689a798c0a32eff69beb5
+3fd898e39639d00f8249c03d457a29dbb9030bab13f3b9a9bc8bf6daed3c
+167bd56cba9f1a88465da8b102f75021f3c8d32bf3eade4015a84dcc6acb
+d5174df0d81a63ead1e501ce4ea551057dd22077beb8b20de7c2f9ebfdda
+18eca427a3480df7c5aac15081740e41b540370ee79806206df99c144060
+6d4fd49b99cb5b612e21fd1fcac7be27cd1008ef078efd779ed5d8a3e5b1
+6a3abd099cf23f7edfd71c7358e1ee3980275b003dd746395665461d23a1
+3bfed24c923c2784ec4c4d9facc4ddf0576d3ef3cb7aa49cc0f94279a9c8
+e356f7ec6f1a09cd057d81ff658a105641b4a0475ad9bc57961e7e60e50f
+2575fe7d638dcf851046789e1e762e9d9eff65ea09eb2dfbb786bd175b84
+57a388e3a28134a1279a096ca0ace6834d0bfdd6c5c5ea1b95c9b0daa30a
+42a62b136454a53d3b5b6778f3ca2f64f6d9a9d30f96c1fccf22b2fbf0e0
+a082e856b901f2925ea05118599ef1231408b20aef7490eeb760c0c65f0b
+9a9cf7621fcd25661dcafc46ff5b3c5f8e06a450595d3a775e1c8aa52b94
+c61842b272803da3989c434dcda16b117066e7c1892c31d97e67f2bddb55
+7f7e114bac4a25fc8b8942fa76ab660e8ccba3334f01921d6299fb37ca6d
+5b8dafd3b8e5064f6cfa48e6ae8bc70b7c4e9301aa664c8091220c9a6a53
+48e17c0f57dd13d9a7eae6cd558ac547e1efc19ebe68f010f1400943f7f3
+6010d201eef7311e8b416642ba2352200b3af93a486f6f67537666589ede
+b7b32bfacc65452ecc80734e73f1308a4ba1cf8530d69e2b6229de5a2158
+54932dde6042d81b9318aab3293d0e69c210ad3a023ebd0449dffbd88844
+f14acd831d48af67a02494ae11c8933b5b92195e5b4d62eaec3b6fe932c5
+b2cfdb75e7eac7748e1fce8cbc6a70ab178469cb1a537b07ba9f579c539a
+c02ac4ceeb3920bcf958de34707bcfb2eee8ea8ec9608503749f2983a91d
+c827c267c374e04b8d829b9e54f149303fda4f35f0e88a5fefea603b1588
+db74956dd72406dd98cff4acdef3fe7670a5c23f4e0b1cb1984aec95e098
+ef376222d9f24406737b5378bcbf64604dcbc88c6f168f6a32d79d36f3de
+83d8ef148b86d72eba62e2d077423fe6a6c1a149f0015b4052ee7e747d9b
+0cebd3fbf8e385db36603b018f57e1fb75eac93cd754f3a0b60903398ec1
+f4b034c12ef62730eae59d7f46595bc44a3ca15ed5c6caf4581fe0ba1dbc
+5a36087428deb495b837434f425e5077bbabbc9725c6ffb1618254d90c0e
+04b64498e52081ca918f9da36353c199714558a0ed25ff04637152616e7c
+a7e5663685c5f3d2c3bf10a644a82d79b8149379ad957153a9c922742134
+27950114a62e985e72acc2fad22d7be25299a1152338ab22d4e2a9262962
+f3ac577e801adde1d23929c6d735acafee79a11d7ac1e75104e5dda13255
+8a8e7e7119321422c762c56fefeec24ccd706cf9bb2e8b3310cf35350899
+2f3f4620b6a8e4f5a17d31335eb0885b39cd78ae0e3a6e401202bf6a81cb
+9f72b4dc6add6aee0ecb6dcf732bd1465ad7c343b963e61bbefc4a188494
+10bbe531a12f8095405480762e6b05efce4549a5cb4b0d2e26268d62e755
+0dafa0b26f6c4ce0ff70b568e6df24b37f3f8ccaa640d228f2efe27a9bbf
+0714804bd7fa22e95993c8e7b15324c59d03cf7be0b8b790a37b22898718
+2ca1b15eeacf7f22015f7f67367098f5a0b6da1cc4206cd29e7293d6789a
+53ac5b940fd7103d623a7dc2793462ba7819456d669c7f63bc450571a157
+91c1ca81866a4c4b246b868709e419242b2df2a70838ff0dda4bf891ac9b
+b9667731aa5dfeff96b27a1faca4225f2719d428e252e26be37cad4ffb0a
+4578844ebca78eef48d2c739164b65e7c84dc0e4065dd3a2b797658c8079
+ee3c954a04f9612cdf9acab6a3ddb60d8b409a482a44e1453bed5135fd0b
+d971dbe9277c96cfda5501804641ec33878d99fa5caeb904f126369b8af2
+063d47f8a433ac721fdc570352131ef9547f36d58a47fefbfc2bef837fe6
+dbc90c1a6aea74946552c2ffd0adb90bbc743616190f3025b7326bab5016
+e8e51298165ecc583a14a600530eec3498c07f7ce9099c4a4c10bc6155c7
+f746c3550d971a0ebc230e03142b2ab697be765b8cb231175920a3760b28
+31a24f6a8720f21e2bfc6c631df5711f3f66df73a85110249b857ca44c5c
+546793a90000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+/TTA0Fo00 findfont /Encoding get
+dup 1 /uni0047 put
+dup 2 /uni0075 put
+dup 3 /uni0069 put
+dup 4 /uni0064 put
+dup 5 /uni0065 put
+dup 6 /uni006C put
+dup 7 /uni006E put
+dup 8 /uni0073 put
+dup 9 /uni0020 put
+dup 10 /uni0070 put
+dup 11 /uni006F put
+dup 12 /uni0072 put
+dup 13 /uni0054 put
+dup 14 /uni0055 put
+dup 15 /uni0049 put
+pop
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Text 5.0 0
+/TextInit{TextInitialised? not{/Pscript_Windows_Font & d/TextInitialised? T d
+/fM[1 0 0 1 0 0]d/mFM matrix d/iMat[1 0 0.212557 1 0 0]d}if}b/copyfont{1 ^
+length add dict `{1 ^/FID ne{d}{! !}?}forall & E}b/EncodeDict 11 dict d/bullets
+{{/bullet}repeat}b/rF{3 copyfont @ ` ~ EncodeDict ~ get/Encoding ~ 3 ^/0 eq{&
+/CharStrings known{CharStrings/Eth known not{! EncodeDict/ANSIEncodingOld get}
+if}if}if d E}b/mF{@ 7 1 $ findfont ~{@/Encoding get @ StandardEncoding eq{! T}{
+{ISOLatin1Encoding}stopped{! F}{eq}?{T}{@ ` T 32 1 127{Encoding 1 ^ get
+StandardEncoding 3 -1 $ get eq and}for E}?}?}{F}?{1 ^ ~ rF}{0 copyfont}? 6 -2 $
+! ! ~ !/pd_charset @ where{~ get 128 eq{@ FDV 2 copy get @ length array copy
+put pd_CoverFCRange}if}{!}? 2 ^ ~ definefont fM 5 4 -1 $ put fM 4 0 put fM
+makefont Pscript_Windows_Font 3 1 $ put}b/sLT{: Lw -M currentpoint snap M 0 - 0
+Lc K ;}b/xUP null d/yUP null d/uW null d/xSP null d/ySP null d/sW null d/sSU{N
+/uW ~ d/yUP ~ d/xUP ~ d}b/sU{xUP yUP uW sLT}b/sST{N/sW ~ d/ySP ~ d/xSP ~ d}b/sT
+{xSP ySP sW sLT}b/sR{: + R 0 0 M}b/sRxy{: matrix astore concat 0 0 M}b/eR/; , d
+/AddOrigFP{{&/FontInfo known{&/FontInfo get length 6 add}{6}? dict `
+/WinPitchAndFamily ~ d/WinCharSet ~ d/OrigFontType ~ d/OrigFontStyle ~ d
+/OrigFontName ~ d & E/FontInfo ~ d}{! ! ! ! !}?}b/mFS{makefont
+Pscript_Windows_Font 3 1 $ put}b/mF42D{0 copyfont `/FontName ~ d 2 copy ~ sub 1
+add dict `/.notdef 0 d 2 copy 1 ~{@ 3 ^ sub Encoding ~ get ~ d}for & E
+/CharStrings ~ d ! ! & @ E/FontName get ~ definefont}b/mF42{15 dict ` @ 4 1 $
+FontName ~ d/FontType 0 d/FMapType 2 d/FontMatrix[1 0 0 1 0 0]d 1 ^ 254 add 255
+idiv @ array/Encoding ~ d 0 1 3 -1 $ 1 sub{@ Encoding 3 1 $ put}for/FDepVector
+Encoding length array d/CharStrings 2 dict `/.notdef 0 d & E d 0 1 Encoding
+length 1 sub{@ @ 10 lt{! FontName length 1 add string}{100 lt{FontName length 2
+add string}{FontName length 3 add string}?}? @ 0 FontName @ length string cvs
+putinterval @ 3 -1 $ @ 4 1 $ 3 string cvs FontName length ~ putinterval cvn 1 ^
+256 mul @ 255 add 3 -1 $ 4 ^ findfont mF42D FDepVector 3 1 $ put}for & @ E
+/FontName get ~ definefont ! ! ! mF}b/mF_OTF_V{~ ! ~ ! 4 -1 $ ! findfont 2 ^ ~
+definefont fM @ @ 4 6 -1 $ neg put 5 0 put 90 matrix R matrix concatmatrix
+makefont Pscript_Windows_Font 3 1 $ put}b/mF_TTF_V{3{~ !}repeat 3 -1 $ !
+findfont 1 ^ ~ definefont Pscript_Windows_Font 3 1 $ put}b/UmF{L2?
+{Pscript_Windows_Font ~ undef}{!}?}b/UmF42{@ findfont/FDepVector get{/FontName
+get undefinefont}forall undefinefont}b
+%%EndResource
+end reinitialize
+F /F0 0 /0 F /TTA0Fo00 mF 
+/F0S84YFFFFFF7B F0 [132.898 0 0 -133 0 0 ] mFS
+F0S84YFFFFFF7B Ji 
+55 1046 M <01>S 
+140 1046 M <02>S  212 1046 M <03>S  245 1046 M <04>S  316 1046 M <05>S  383 1046 M <06>S  416 1046 M <03>S  449 1046 M <07>S  520 1046 M <05>S  587 1046 M <08>S  641 1046 M <09>S  671 1046 M <0A>S  742 1046 M <0B>S  814 1046 M <02>S  885 1046 M <0C>S  933 1046 M <09>S  963 1046 M <0D>S 
+1029 1046 M <0E>S  1116 1046 M <0F>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 6020 1012 m 6020 850 5751 718 5420 718 c 5089 718 4820 850 4820 1012 c 4820 1175 5089 1306 5420 1306 c 5751 1306 6020 1175 6020 1012 c CP 
+eoclip
+/ds
+<aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5554>
+ def
+4819 717 translate
+0 32 590 { 0 32 1202 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+NP 0 0 m 0 4533 l 6417 4533 l 6417 0 l CP 
+5408 718 m 5372 719 l 5351 720 l 5335 721 l 5322 722 l 5311 723 l 5299 724 l 5272 727 l 5258 729 l 5250 730 l 5243 731 l 5213 736 l 5198 739 l 5192 740 l 5187 741 l 5183 742 l 5178 743 l 5174 744 l 5169 745 l 5165 746 l 5160 747 l 5132 754 l 5129 755 l 5125 756 l 5122 757 l 5118 758 l 5115 759 l 5111 760 l 5108 761 l 5104 762 l 5089 767 l 5085 768 l 5082 769 l 5080 770 l 5062 776 l 5060 777 l 5054 779 l 5052 780 l 5049 781 l 5047 782 l 5041 784 l 5037 786 l 5034 787 l 5032 788 l 5029 789 l 5025 791 l 5022 792 l 5018 794 l 5015 795 l 5003 801 l 5000 802 l 4984 810 l 4983 811 l 4971 817 l 4970 818 l 4964 821 l 4963 822 l 4957 825 l 4956 826 l 4952 828 l 4951 829 l 4949 830 l 4948 831 l 4944 833 l 4943 834 l 4941 835 l 4940 836 l 4938 837 l 4937 838 l 4935 839 l 4934 840 l 4932 841 l 4931 842 l 4929 843 l 4928 844 l 4926 845 l 4924 847 l 4922 848 l 4920 850 l 4918 851 l 4916 853 l 4914 854 l 4912 856 l 4910 857 l 4907 860 l 4905 861 l 4901 865 l 4899 866 l 4894 871 l 4892 872 l 4872 892 l 4871 894 l 4865 900 l 4864 902 l 4861 905 l 4860 907 l 4857 910 l 4856 912 l 4854 914 l 4853 916 l 4852 917 l 4851 919 l 4850 920 l 4849 922 l 4848 923 l 4847 925 l 4846 926 l 4844 930 l 4843 931 l 4840 937 l 4839 938 l 4837 942 l 4836 945 l 4832 953 l 4830 959 l 4829 961 l 4826 970 l 4823 982 l 4822 987 l 4821 994 l 4820 1004 l 4820 1021 l 4821 1021 l 4821 1031 l 4822 1031 l 4822 1038 l 4823 1038 l 4823 1043 l 4824 1043 l 4824 1047 l 4825 1047 l 4825 1051 l 4826 1051 l 4826 1055 l 4827 1055 l 4827 1058 l 4828 1058 l 4828 1061 l 4829 1061 l 4829 1064 l 4830 1064 l 4830 1066 l 4831 1066 l 4831 1069 l 4832 1069 l 4832 1072 l 4833 1072 l 4833 1074 l 4834 1074 l 4834 1076 l 4835 1076 l 4835 1078 l 4836 1078 l 4836 1080 l 4837 1080 l 4837 1082 l 4838 1082 l 4838 1085 l 4839 1085 l 4839 1087 l 4840 1087 l 4841 1088 l 4841 1090 l 4842 1090 l 4842 1092 l 4843 1092 l 4843 1094 l 4844 1094 l 4845 1095 l 4845 1097 l 4846 1097 l 4846 1099 l 4847 1099 l 4848 1100 l 4848 1102 l 4849 1102 l 4850 1103 l 4850 1105 l 4851 1105 l 4852 1106 l 4852 1108 l 4853 1108 l 4855 1110 l 4855 1112 l 4856 1112 l 4857 1113 l 4857 1115 l 4858 1115 l 4861 1118 l 4861 1120 l 4862 1120 l 4865 1123 l 4865 1125 l 4866 1125 l 4873 1132 l 4873 1134 l 4874 1134 l 4890 1150 l 4892 1151 l 4898 1157 l 4900 1158 l 4905 1163 l 4907 1164 l 4910 1167 l 4912 1168 l 4914 1170 l 4916 1171 l 4918 1173 l 4920 1174 l 4922 1176 l 4924 1177 l 4925 1178 l 4927 1179 l 4928 1180 l 4930 1181 l 4932 1183 l 4934 1184 l 4935 1185 l 4937 1186 l 4938 1187 l 4940 1188 l 4941 1189 l 4945 1191 l 4946 1192 l 4948 1193 l 4949 1194 l 4953 1196 l 4954 1197 l 4956 1198 l 4957 1199 l 4963 1202 l 4964 1203 l 4970 1206 l 4971 1207 l 4987 1215 l 4988 1216 l 4998 1221 l 5001 1222 l 5013 1228 l 5016 1229 l 5020 1231 l 5023 1232 l 5027 1234 l 5030 1235 l 5034 1237 l 5037 1238 l 5039 1239 l 5042 1240 l 5044 1241 l 5050 1243 l 5052 1244 l 5055 1245 l 5057 1246 l 5063 1248 l 5065 1249 l 5098 1260 l 5102 1261 l 5111 1264 l 5115 1265 l 5118 1266 l 5126 1268 l 5129 1269 l 5133 1270 l 5136 1271 l 5156 1276 l 5161 1277 l 5165 1278 l 5170 1279 l 5174 1280 l 5179 1281 l 5183 1282 l 5213 1288 l 5219 1289 l 5226 1290 l 5244 1293 l 5251 1294 l 5259 1295 l 5273 1297 l 5291 1299 l 5301 1300 l 5312 1301 l 5324 1302 l 5338 1303 l 5354 1304 l 5377 1305 l 5466 1306 l 5466 1305 l 5489 1304 l 5505 1303 l 5518 1302 l 5540 1300 l 5567 1297 l 5575 1296 l 5582 1295 l 5590 1294 l 5597 1293 l 5627 1288 l 5642 1285 l 5648 1284 l 5653 1283 l 5657 1282 l 5662 1281 l 5666 1280 l 5671 1279 l 5675 1278 l 5680 1277 l 5708 1270 l 5711 1269 l 5715 1268 l 5718 1267 l 5722 1266 l 5725 1265 l 5729 1264 l 5732 1263 l 5736 1262 l 5748 1258 l 5752 1257 l 5761 1254 l 5763 1253 l 5778 1248 l 5780 1247 l 5786 1245 l 5788 1244 l 5791 1243 l 5793 1242 l 5799 1240 l 5801 1239 l 5804 1238 l 5808 1236 l 5811 1235 l 5815 1233 l 5818 1232 l 5820 1231 l 5823 1230 l 5835 1224 l 5838 1223 l 5864 1210 l 5865 1209 l 5871 1206 l 5872 1205 l 5878 1202 l 5879 1201 l 5885 1198 l 5886 1197 l 5888 1196 l 5889 1195 l 5893 1193 l 5894 1192 l 5896 1191 l 5897 1190 l 5901 1188 l 5902 1187 l 5904 1186 l 5906 1184 l 5908 1183 l 5909 1182 l 5911 1181 l 5912 1180 l 5914 1179 l 5915 1178 l 5917 1177 l 5919 1175 l 5921 1174 l 5923 1172 l 5925 1171 l 5927 1169 l 5929 1168 l 5932 1165 l 5934 1164 l 5938 1160 l 5940 1159 l 5945 1154 l 5947 1153 l 5970 1130 l 5971 1128 l 5975 1124 l 5976 1122 l 5979 1119 l 5980 1117 l 5983 1114 l 5984 1112 l 5985 1111 l 5986 1109 l 5988 1107 l 5989 1105 l 5990 1104 l 5991 1102 l 5992 1101 l 5993 1099 l 5994 1098 l 5997 1092 l 5998 1091 l 6007 1073 l 6009 1067 l 6010 1065 l 6013 1056 l 6017 1040 l 6018 1034 l 6019 1025 l 6020 999 l 6019 999 l 6019 991 l 6018 991 l 6018 985 l 6017 985 l 6017 980 l 6016 980 l 6016 977 l 6015 977 l 6015 973 l 6014 973 l 6014 969 l 6013 969 l 6013 966 l 6012 966 l 6012 963 l 6011 963 l 6011 960 l 6010 960 l 6010 958 l 6009 958 l 6009 955 l 6008 955 l 6008 952 l 6007 952 l 6007 950 l 6006 950 l 6006 948 l 6005 948 l 6005 946 l 6004 946 l 6004 944 l 6003 944 l 6003 942 l 6002 942 l 6002 940 l 6001 940 l 6001 938 l 6000 938 l 6000 936 l 5999 936 l 5999 934 l 5998 933 l 5997 933 l 5997 931 l 5996 931 l 5996 929 l 5995 929 l 5995 927 l 5994 926 l 5993 926 l 5993 924 l 5992 923 l 5991 923 l 5991 921 l 5990 920 l 5989 920 l 5989 918 l 5988 917 l 5987 917 l 5987 915 l 5985 913 l 5984 913 l 5984 911 l 5982 909 l 5981 909 l 5981 907 l 5978 904 l 5977 904 l 5977 902 l 5974 899 l 5973 899 l 5973 897 l 5946 870 l 5944 869 l 5939 864 l 5937 863 l 5933 859 l 5931 858 l 5929 856 l 5927 855 l 5925 853 l 5923 852 l 5920 849 l 5918 848 l 5917 847 l 5915 846 l 5914 845 l 5912 844 l 5910 842 l 5908 841 l 5907 840 l 5905 839 l 5904 838 l 5902 837 l 5901 836 l 5899 835 l 5898 834 l 5894 832 l 5893 831 l 5891 830 l 5890 829 l 5886 827 l 5885 826 l 5881 824 l 5880 823 l 5874 820 l 5873 819 l 5865 815 l 5864 814 l 5834 799 l 5831 798 l 5823 794 l 5820 793 l 5816 791 l 5813 790 l 5809 788 l 5806 787 l 5802 785 l 5796 783 l 5794 782 l 5791 781 l 5789 780 l 5783 778 l 5781 777 l 5769 773 l 5767 772 l 5746 765 l 5742 764 l 5733 761 l 5729 760 l 5726 759 l 5722 758 l 5719 757 l 5715 756 l 5712 755 l 5708 754 l 5705 753 l 5681 747 l 5676 746 l 5672 745 l 5667 744 l 5663 743 l 5658 742 l 5654 741 l 5648 740 l 5628 736 l 5598 731 l 5584 729 l 5576 728 l 5569 727 l 5551 725 l 5543 724 l 5532 723 l 5508 721 l 5492 720 l 5473 719 l 5441 718 l CP 
+eoclip
+0.8039 0.8039 0.8039 setrgbcolor
+NP 6019 1012 m 6019 1005 l 6018 997 l 6017 990 l 6016 983 l 6012 968 l 6007 954 l 6000 939 l 5992 926 l 5983 912 l 5972 899 l 5960 886 l 5947 873 l 5933 861 l 5917 849 l 5900 837 l 5883 826 l 5864 816 l 5844 805 l 5823 796 l 5801 786 l 5779 778 l 5755 770 l 5731 762 l 5706 755 l 5680 748 l 5653 742 l 5626 737 l 5598 733 l 5570 729 l 5541 725 l 5511 723 l 5481 721 l 5451 720 l 5420 719 l 5389 720 l 5359 721 l 5329 723 l 5299 726 l 5270 729 l 5242 733 l 5214 737 l 5187 743 l 5160 748 l 5134 755 l 5109 762 l 5085 770 l 5062 778 l 5039 787 l 5017 796 l 4996 806 l 4977 816 l 4958 826 l 4940 837 l 4923 849 l 4908 861 l 4893 873 l 4880 886 l 4868 899 l 4857 912 l 4848 926 l 4840 939 l 4833 954 l 4828 968 l 4824 983 l 4823 990 l 4822 997 l 4821 1005 l 4821 1012 l 4821 1020 l 4822 1027 l 4823 1035 l 4824 1042 l 4828 1057 l 4833 1071 l 4840 1085 l 4848 1099 l 4857 1113 l 4868 1126 l 4880 1139 l 4893 1152 l 4908 1164 l 4923 1176 l 4940 1187 l 4958 1199 l 4977 1209 l 4996 1219 l 5017 1229 l 5039 1238 l 5062 1247 l 5085 1255 l 5109 1263 l 5134 1270 l 5160 1276 l 5187 1282 l 5214 1288 l 5242 1292 l 5270 1296 l 5299 1299 l 5329 1302 l 5359 1304 l 5389 1305 l 5420 1305 l 5451 1305 l 5481 1304 l 5511 1302 l 5541 1299 l 5570 1296 l 5598 1292 l 5626 1288 l 5653 1282 l 5680 1276 l 5706 1270 l 5731 1263 l 5755 1255 l 5779 1247 l 5801 1238 l 5823 1229 l 5844 1219 l 5864 1209 l 5883 1198 l 5900 1187 l 5917 1176 l 5933 1164 l 5947 1152 l 5960 1139 l 5972 1126 l 5983 1113 l 5992 1099 l 6000 1085 l 6007 1071 l 6012 1057 l 6016 1042 l 6017 1035 l 6018 1027 l 6019 1020 l CP 
+6021 1020 m 6020 1028 l 6019 1035 l 6018 1043 l 6014 1058 l 6009 1072 l 6002 1086 l 5994 1100 l 5984 1114 l 5974 1128 l 5962 1141 l 5948 1153 l 5934 1166 l 5918 1178 l 5901 1189 l 5884 1200 l 5865 1211 l 5845 1221 l 5824 1231 l 5802 1240 l 5779 1249 l 5756 1257 l 5732 1265 l 5706 1272 l 5680 1278 l 5654 1284 l 5627 1290 l 5599 1294 l 5570 1298 l 5541 1301 l 5512 1304 l 5482 1306 l 5451 1307 l 5420 1307 l 5389 1307 l 5359 1306 l 5329 1304 l 5299 1301 l 5270 1298 l 5241 1294 l 5214 1290 l 5186 1284 l 5160 1278 l 5134 1272 l 5109 1265 l 5084 1257 l 5061 1249 l 5038 1240 l 5016 1231 l 4995 1221 l 4976 1211 l 4957 1200 l 4939 1189 l 4922 1178 l 4906 1166 l 4892 1153 l 4879 1141 l 4867 1127 l 4856 1114 l 4846 1100 l 4838 1086 l 4831 1072 l 4826 1057 l 4822 1043 l 4821 1035 l 4820 1028 l 4819 1020 l 4819 1012 l 4819 1005 l 4820 997 l 4821 990 l 4822 982 l 4826 967 l 4831 953 l 4838 938 l 4846 924 l 4856 911 l 4867 897 l 4879 884 l 4892 871 l 4906 859 l 4922 847 l 4939 836 l 4957 825 l 4976 814 l 4995 804 l 5016 794 l 5038 785 l 5061 776 l 5084 768 l 5109 760 l 5134 753 l 5160 746 l 5186 741 l 5214 735 l 5242 731 l 5270 727 l 5299 723 l 5329 721 l 5359 719 l 5389 718 l 5420 717 l 5451 718 l 5481 719 l 5511 721 l 5541 723 l 5570 727 l 5599 731 l 5626 735 l 5654 740 l 5680 746 l 5706 753 l 5731 760 l 5756 768 l 5779 776 l 5802 785 l 5824 794 l 5845 804 l 5865 814 l 5884 825 l 5901 836 l 5918 847 l 5934 859 l 5948 872 l 5962 884 l 5974 897 l 5985 911 l 5994 925 l 6002 939 l 6009 953 l 6014 967 l 6018 982 l 6019 990 l 6020 997 l 6021 1005 l 6021 1012 l CP 
+clip
+/ds
+<5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aaa8>
+ def
+4816 714 translate
+0 32 596 { 0 32 1208 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+NP 6008 1000 m 6008 838 5739 706 5408 706 c 5077 706 4808 838 4808 1000 c 4808 1163 5077 1294 5408 1294 c 5739 1294 6008 1163 6008 1000 c CP 
+eoclip
+/readimage {currentfile exch string readhexstring pop} def
+12288 readimage
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefeffffff
+/datasrc exch def
+/languagelevel where {pop languagelevel} {1} ifelse 1 eq
+{0.8039 0.8039 0.8039 SC}
+{/pd 20 dict def
+pd /PaintType 1 put
+pd /PatternType 1 put
+pd /TilingType 1 put
+pd /BBox [0 0 32 128] put
+pd /XStep 32 put
+pd /YStep 128 put
+pd /PaintProc {begin 32 128 8 [1 0 0 1 0 0] datasrc false 3 colorimage end} put
+pd [-0.0000 -18.4340 -9.3896 0 6031.0576 1294.3906] makepattern
+setpattern
+} ifelse
+NP 4807 1295 m 6009 1295 l 6009 705 l 4807 705 l CP 
+eofill
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+2.0831 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 6008 1000 m 6008 838 5739 706 5408 706 c 5077 706 4808 838 4808 1000 c 4808 1163 5077 1294 5408 1294 c 5739 1294 6008 1163 6008 1000 c CP 
+stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 4893 966 M <01>S 
+4977 966 M <02>S  5049 966 M <03>S  5082 966 M <04>S  5153 966 M <05>S  5220 966 M <06>S  5253 966 M <03>S  5286 966 M <07>S  5357 966 M <05>S  5425 966 M <08>S  5478 966 M <09>S  5508 966 M <0A>S  5579 966 M <0B>S  5651 966 M <02>S  5723 966 M <0C>S  5770 966 M <09>S  5800 966 M <0E>S 
+5887 966 M <0F>S  5923 966 M <09>S  
+4500 VM?
+
+currentfile eexec
+9e67edc6b8413059d4eb9a5f030bb86028b5b4ba8e3b3186475f33e408e5
+8582fafc7c54479a14654ee4d46ca9b830eb087a9499acf89c6cf00106c1
+d6ae2d6259113b9eb242f114dad5220d6b164a87ab4caa357123ff37f7b6
+9175bc281fabb2f98898eb22504f1e62f40ced125be1142a3e44753e44e4
+1d60e7c1589270959c6be37a26b88d4cc1e251fb0b98b3dd9573a075afa4
+1d1a69c18881b380fd1cb9834ef7b6fbee0e0d74385872195d26f2cd6e2c
+64cd755bbe535a357aec0c2dde231a9d715a8bd7ccfa7e748f4c057f06a8
+57ed74c9adc3322637b13fb1d0d4461a39ef32ae9f7ad0cc1c3dd020c7c4
+9712c7c472025923a2d3d491ac00cfeb9ca546fee2cad79a2fd40a1b5349
+8858dde6058da30ae3f515f175a93e0ed7cdd5590e482fc580d10e32eeb1
+17c7d8a2352022fd52fb446a51a8a116b036abc552f7ae0ff51a58976712
+4511274a3d234cd709e124a4fb4a9c7216edc68faf0274dd20179c8437a2
+2a647e2292c1f7fc5d07fcc1134cd3631b68144c5f39092c7cc5f65acd8b
+2d733332a4a43b1ece820bc25bc03bd91f94a9520fbb74924247db1b7522
+51f4a99350025f54d0cee58250aea5bed6e48ee2bf70511ced4363ad3664
+0c14b3312f56abeaca3258c742261fbeec95b32a0d9adaabb4a79b3f0ff7
+853ba2d096d6bb780ec1a71c24df5f012a9174f01453eadf33ed83bb265f
+2750843e402079d2a0e420156c5aae38d1c5fa90dc624a3c44ac2906c6ca
+1e0632a35eadd86b73a90f05ad9c38e93fd6e8056de64cb000b609850a46
+8cdd382a1af7b1f23725223f55d2bc514a78cb9e469875a12ddfd5ac3778
+02c28e76896e8c0d5028e41bd9bd0449b95b2094689c15faa7bbb85d249d
+e492f1fbf878b8ed2a18004a513072a1f4686d6d5620f6ae5148ee4c12a2
+cb9ad3c3cd74359625a229f191a847977c2b460a4a129ff19b016158e8fd
+49e6202fd5a405b8dd5a4953cf7647230dd4e6c89918bc7035fee1b6c1ec
+18a394cf4ce9801eec7dc744435e47e9e3891e1ce70d966e9acb8ecf34d2
+9c80df33d2c5fd1714af8dd12dbe214ef0d67a5221c86e0b78711a65a786
+eba98348be9bb1666f72118f138b12f15b6098904f056d2ef01984ce052b
+efb60cc029c666dae22245fc8f10fac410818431c3d86b46f288936401fa
+53613737021167a73d35d9cb1de0d15eeb8b7fff29a525ceb21e1c9f88ed
+489debf85b1c3336e1fea3f21ac3b4eec1a8cb7ec233c47abf7d527a5137
+c23027833fd0169e17e4258d4cbdde3d9b62e4fd8e614967d04ce79e2899
+0cc354f97e4b9a258909482ceaa165a88d8fe855e2470bed7302ff8a29a4
+ac0efd7a74d77fb900d368d66d6a3e19cf3eb7cc602a8457929e4fe023ee
+a7cfb47fdf030119254d58e5cd84917cea1f8053f944c51ebb9595afcd97
+59706f11ec1c4bc74f2b5f5b80c84a56114608abf1b72952a058f79e5171
+1e0105154919bb8374da55d821565d1aeb2404dcaf84694014e87a21a680
+2e19d9d50a16b93da91daf733c49122af33397048fbfd9e4c76a45521e81
+29553c9c88c59fb453d22c3918251d08173cc354a0ec54cd0f1907332241
+f5d0e652cf0245de0b61179f52de20469f0db19d7d931208f1857c35272c
+1a339c258779b39d70fe3ff20a897993b9fd1da6677ff9468b0b5eb30acb
+a6c4b1e0c02f36d0a78d386cd4e6ef255b84d23d127b008c5a4f58c3c4c5
+a34bf33c4d53f2a78053d66ecf726987812132401ee3fd374b37435514e7
+6cc60afe0b25e97d1972e1484a46cf2078bf3013a9adc17b7fa3287c4c05
+576a12980860e09ee4ecee5500ed1127a0203c235a5201ec4683af507252
+9e918aec280b4ffcfc66923ec2db01f020006e57ee52460603ac80124350
+0dc2e26f4e5436bc0c469f08b186ddf9ea4576646cc550a5e23931db638d
+d2e23f91933082eaa2ae046fe3cabd1900ea8184352a8f602f51f5b9ac1b
+4bb0693888016c7e6fcb0f711c59bd1d4033af6c73af17e4a142887e924b
+f0999efc55bd15b7c14fd996cc34eeaa93fd311281a240be1f0c32fc25bf
+38833ad535e211646590e07b31f366c457e45254cd03be54336b612b57a2
+c5cb13d85a8d573a1734bc5e1d4f68206ad1d3eb4e421479be528d3f6794
+243901ae267c37db26806d11f1f73f139dd960b04a48f6d7eeeee3406d91
+ca3b93234fc5afb42190db5f7240c9640c39c46ff62baa552a8c9ce231d6
+f96f0900a88a1d0d0cc5deec1a1bf1b445c78da43ee15f685fd7af5ab131
+20ede133df1bc942fcfed0ca22a5406c3e12c54eaad7cff338f3445f63ee
+fb546bb64bdc000dd5e5ca148d1df9541b545796e0e9b7ae5d99dfaa6e93
+149b258d0c558a4dd6e85d26a2b24b237edb257f9eb8e2fd04c70febdf4d
+61afb4a1e81ee3cdeda2478d0d7eac652ba76b36f54e0e9f49b17f61ca90
+2d0b5092ee3aa14519256b7907d0d7b4090c3616b25df6631257acc49f3e
+c4b111ca50943048676b809ef2e74c83d331965f42566cf737a95e22c4bb
+85b421870281bd754ab725e562800c378dfc2102d50000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+/TTA0Fo00 findfont /Encoding get
+dup 16 /uni0063 put
+dup 17 /uni0061 put
+dup 18 /uni0062 put
+dup 19 /uni0074 put
+dup 20 /uni0076 put
+pop
+5045 1126 M <10>S 
+5101 1126 M <0B>S  5173 1126 M <06>S  5206 1126 M <06>S  5238 1126 M <11>S  5304 1126 M <12>S  5376 1126 M <0B>S  5447 1126 M <0C>S  5495 1126 M <11>S  5561 1126 M <13>S  5607 1126 M <03>S  5640 1126 M <14>S  5703 1126 M <05>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 2335 2966 m 2335 2803 2067 2672 1735 2672 c 1404 2672 1136 2803 1136 2966 c 1136 3128 1404 3260 1735 3260 c 2067 3260 2335 3128 2335 2966 c CP 
+eoclip
+/ds
+<aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5551>
+ def
+1135 2671 translate
+0 32 590 { 0 32 1201 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+NP 0 0 m 0 4533 l 6417 4533 l 6417 0 l CP 
+1696 2672 m 1671 2673 l 1655 2674 l 1641 2675 l 1629 2676 l 1618 2677 l 1608 2678 l 1600 2679 l 1582 2681 l 1554 2685 l 1530 2689 l 1515 2692 l 1509 2693 l 1499 2695 l 1495 2696 l 1490 2697 l 1486 2698 l 1481 2699 l 1445 2708 l 1442 2709 l 1438 2710 l 1435 2711 l 1431 2712 l 1428 2713 l 1424 2714 l 1418 2716 l 1414 2717 l 1381 2728 l 1379 2729 l 1373 2731 l 1371 2732 l 1365 2734 l 1363 2735 l 1360 2736 l 1358 2737 l 1355 2738 l 1353 2739 l 1350 2740 l 1348 2741 l 1345 2742 l 1341 2744 l 1338 2745 l 1334 2747 l 1331 2748 l 1317 2755 l 1314 2756 l 1300 2763 l 1299 2764 l 1285 2771 l 1284 2772 l 1278 2775 l 1277 2776 l 1271 2779 l 1270 2780 l 1268 2781 l 1267 2782 l 1263 2784 l 1262 2785 l 1260 2786 l 1259 2787 l 1255 2789 l 1254 2790 l 1252 2791 l 1251 2792 l 1249 2793 l 1247 2795 l 1245 2796 l 1244 2797 l 1242 2798 l 1241 2799 l 1239 2800 l 1237 2802 l 1235 2803 l 1233 2805 l 1231 2806 l 1229 2808 l 1227 2809 l 1224 2812 l 1222 2813 l 1218 2817 l 1216 2818 l 1212 2822 l 1210 2823 l 1183 2850 l 1182 2852 l 1179 2855 l 1178 2857 l 1174 2861 l 1173 2863 l 1171 2865 l 1170 2867 l 1169 2868 l 1168 2870 l 1167 2871 l 1166 2873 l 1164 2875 l 1163 2877 l 1162 2878 l 1159 2884 l 1158 2885 l 1156 2889 l 1155 2890 l 1152 2896 l 1151 2899 l 1147 2907 l 1145 2913 l 1144 2915 l 1142 2921 l 1141 2925 l 1140 2928 l 1138 2936 l 1137 2942 l 1136 2949 l 1136 2982 l 1137 2982 l 1137 2989 l 1138 2989 l 1138 2995 l 1139 2995 l 1139 2999 l 1140 2999 l 1140 3003 l 1141 3003 l 1141 3007 l 1142 3007 l 1142 3011 l 1143 3011 l 1143 3013 l 1144 3013 l 1144 3016 l 1145 3016 l 1145 3019 l 1146 3019 l 1146 3022 l 1147 3022 l 1147 3024 l 1148 3024 l 1148 3027 l 1149 3027 l 1149 3029 l 1150 3029 l 1150 3031 l 1151 3031 l 1151 3033 l 1152 3033 l 1152 3035 l 1153 3035 l 1153 3037 l 1154 3037 l 1154 3039 l 1155 3039 l 1155 3041 l 1156 3041 l 1156 3043 l 1157 3043 l 1157 3045 l 1158 3045 l 1159 3046 l 1159 3048 l 1160 3048 l 1160 3050 l 1161 3050 l 1162 3051 l 1162 3053 l 1163 3053 l 1163 3055 l 1164 3055 l 1166 3057 l 1166 3059 l 1167 3059 l 1168 3060 l 1168 3062 l 1169 3062 l 1170 3063 l 1170 3065 l 1171 3065 l 1173 3067 l 1173 3069 l 1174 3069 l 1177 3072 l 1177 3074 l 1178 3074 l 1181 3077 l 1181 3079 l 1182 3079 l 1189 3086 l 1189 3088 l 1190 3088 l 1204 3102 l 1206 3103 l 1213 3110 l 1215 3111 l 1220 3116 l 1222 3117 l 1225 3120 l 1227 3121 l 1229 3123 l 1231 3124 l 1233 3126 l 1235 3127 l 1237 3129 l 1239 3130 l 1241 3132 l 1243 3133 l 1244 3134 l 1246 3135 l 1247 3136 l 1249 3137 l 1250 3138 l 1252 3139 l 1253 3140 l 1255 3141 l 1256 3142 l 1258 3143 l 1259 3144 l 1263 3146 l 1264 3147 l 1266 3148 l 1267 3149 l 1271 3151 l 1272 3152 l 1278 3155 l 1279 3156 l 1285 3159 l 1286 3160 l 1298 3166 l 1299 3167 l 1315 3175 l 1318 3176 l 1330 3182 l 1333 3183 l 1337 3185 l 1340 3186 l 1344 3188 l 1347 3189 l 1351 3191 l 1354 3192 l 1356 3193 l 1362 3195 l 1364 3196 l 1367 3197 l 1369 3198 l 1375 3200 l 1377 3201 l 1395 3207 l 1397 3208 l 1403 3210 l 1407 3211 l 1419 3215 l 1423 3216 l 1429 3218 l 1437 3220 l 1440 3221 l 1444 3222 l 1447 3223 l 1479 3231 l 1484 3232 l 1488 3233 l 1493 3234 l 1497 3235 l 1512 3238 l 1518 3239 l 1528 3241 l 1558 3246 l 1566 3247 l 1587 3250 l 1614 3253 l 1625 3254 l 1637 3255 l 1650 3256 l 1667 3257 l 1689 3258 l 1788 3259 l 1788 3258 l 1808 3257 l 1824 3256 l 1836 3255 l 1858 3253 l 1885 3250 l 1899 3248 l 1907 3247 l 1914 3246 l 1944 3241 l 1974 3235 l 1978 3234 l 1983 3233 l 1987 3232 l 1992 3231 l 2028 3222 l 2031 3221 l 2035 3220 l 2038 3219 l 2042 3218 l 2045 3217 l 2049 3216 l 2061 3212 l 2065 3211 l 2080 3206 l 2082 3205 l 2097 3200 l 2099 3199 l 2102 3198 l 2104 3197 l 2110 3195 l 2112 3194 l 2115 3193 l 2117 3192 l 2120 3191 l 2124 3189 l 2127 3188 l 2131 3186 l 2134 3185 l 2138 3183 l 2141 3182 l 2151 3177 l 2154 3176 l 2176 3165 l 2177 3164 l 2185 3160 l 2186 3159 l 2194 3155 l 2195 3154 l 2199 3152 l 2200 3151 l 2204 3149 l 2205 3148 l 2207 3147 l 2208 3146 l 2212 3144 l 2213 3143 l 2215 3142 l 2216 3141 l 2218 3140 l 2219 3139 l 2221 3138 l 2222 3137 l 2224 3136 l 2225 3135 l 2227 3134 l 2228 3133 l 2230 3132 l 2232 3130 l 2234 3129 l 2236 3127 l 2238 3126 l 2240 3124 l 2242 3123 l 2244 3121 l 2246 3120 l 2249 3117 l 2251 3116 l 2256 3111 l 2258 3110 l 2264 3104 l 2266 3103 l 2281 3088 l 2282 3086 l 2289 3079 l 2290 3077 l 2293 3074 l 2294 3072 l 2298 3068 l 2299 3066 l 2300 3065 l 2301 3063 l 2302 3062 l 2303 3060 l 2304 3059 l 2305 3057 l 2307 3055 l 2309 3051 l 2310 3050 l 2312 3046 l 2313 3045 l 2322 3027 l 2323 3024 l 2324 3022 l 2329 3007 l 2332 2995 l 2333 2989 l 2334 2982 l 2335 2949 l 2334 2949 l 2334 2942 l 2333 2942 l 2333 2937 l 2332 2937 l 2332 2933 l 2331 2933 l 2331 2929 l 2330 2929 l 2330 2925 l 2329 2925 l 2329 2921 l 2328 2921 l 2328 2918 l 2327 2918 l 2327 2915 l 2326 2915 l 2326 2913 l 2325 2913 l 2325 2910 l 2324 2910 l 2324 2907 l 2323 2907 l 2323 2905 l 2322 2905 l 2322 2903 l 2321 2903 l 2321 2901 l 2320 2901 l 2320 2899 l 2319 2899 l 2319 2896 l 2318 2896 l 2318 2894 l 2317 2894 l 2317 2892 l 2316 2892 l 2316 2890 l 2315 2889 l 2314 2889 l 2314 2887 l 2313 2887 l 2313 2885 l 2312 2884 l 2311 2884 l 2311 2882 l 2310 2882 l 2310 2880 l 2309 2880 l 2309 2878 l 2307 2876 l 2306 2876 l 2306 2874 l 2305 2873 l 2304 2873 l 2304 2871 l 2303 2870 l 2302 2870 l 2302 2868 l 2301 2867 l 2300 2867 l 2300 2865 l 2298 2863 l 2297 2863 l 2297 2861 l 2293 2857 l 2292 2857 l 2292 2855 l 2289 2852 l 2288 2852 l 2288 2850 l 2261 2823 l 2259 2822 l 2255 2818 l 2253 2817 l 2248 2812 l 2246 2811 l 2244 2809 l 2242 2808 l 2240 2806 l 2238 2805 l 2236 2803 l 2234 2802 l 2232 2800 l 2230 2799 l 2229 2798 l 2227 2797 l 2226 2796 l 2224 2795 l 2222 2793 l 2220 2792 l 2219 2791 l 2217 2790 l 2216 2789 l 2212 2787 l 2211 2786 l 2209 2785 l 2208 2784 l 2204 2782 l 2203 2781 l 2201 2780 l 2200 2779 l 2194 2776 l 2193 2775 l 2187 2772 l 2186 2771 l 2174 2765 l 2173 2764 l 2153 2754 l 2150 2753 l 2140 2748 l 2137 2747 l 2133 2745 l 2130 2744 l 2126 2742 l 2123 2741 l 2119 2739 l 2116 2738 l 2114 2737 l 2108 2735 l 2106 2734 l 2100 2732 l 2098 2731 l 2092 2729 l 2090 2728 l 2075 2723 l 2073 2722 l 2070 2721 l 2066 2720 l 2054 2716 l 2050 2715 l 2044 2713 l 2040 2712 l 2037 2711 l 2033 2710 l 2030 2709 l 2026 2708 l 2023 2707 l 1995 2700 l 1990 2699 l 1986 2698 l 1981 2697 l 1977 2696 l 1942 2689 l 1918 2685 l 1897 2682 l 1889 2681 l 1882 2680 l 1855 2677 l 1844 2676 l 1832 2675 l 1819 2674 l 1803 2673 l 1781 2672 l CP 
+eoclip
+0.8039 0.8039 0.8039 setrgbcolor
+NP 2334 2966 m 2334 2958 l 2334 2951 l 2333 2943 l 2331 2936 l 2327 2921 l 2322 2907 l 2316 2893 l 2308 2879 l 2298 2865 l 2287 2852 l 2276 2839 l 2262 2826 l 2248 2814 l 2232 2802 l 2216 2791 l 2198 2780 l 2179 2769 l 2159 2759 l 2138 2749 l 2117 2740 l 2094 2731 l 2071 2723 l 2046 2715 l 2021 2708 l 1995 2702 l 1969 2696 l 1942 2690 l 1914 2686 l 1885 2682 l 1856 2679 l 1827 2676 l 1797 2674 l 1766 2673 l 1735 2673 l 1705 2673 l 1674 2674 l 1644 2676 l 1615 2679 l 1586 2682 l 1557 2686 l 1529 2691 l 1502 2696 l 1476 2702 l 1450 2708 l 1425 2715 l 1400 2723 l 1377 2731 l 1354 2740 l 1333 2749 l 1312 2759 l 1292 2769 l 1273 2780 l 1255 2791 l 1239 2802 l 1223 2814 l 1209 2826 l 1195 2839 l 1183 2852 l 1173 2865 l 1163 2879 l 1155 2893 l 1149 2907 l 1143 2921 l 1140 2936 l 1138 2943 l 1137 2951 l 1137 2958 l 1137 2966 l 1137 2973 l 1137 2981 l 1138 2988 l 1140 2996 l 1143 3010 l 1149 3025 l 1155 3039 l 1163 3053 l 1173 3066 l 1183 3080 l 1195 3092 l 1209 3105 l 1223 3117 l 1239 3129 l 1255 3141 l 1273 3152 l 1292 3162 l 1312 3173 l 1333 3182 l 1354 3192 l 1377 3200 l 1400 3208 l 1425 3216 l 1450 3223 l 1476 3230 l 1502 3235 l 1529 3241 l 1557 3245 l 1586 3249 l 1615 3252 l 1644 3255 l 1674 3257 l 1705 3258 l 1735 3258 l 1766 3258 l 1797 3257 l 1827 3255 l 1856 3253 l 1885 3249 l 1914 3245 l 1942 3241 l 1969 3236 l 1995 3230 l 2021 3223 l 2046 3216 l 2071 3208 l 2094 3200 l 2117 3192 l 2138 3182 l 2159 3173 l 2179 3162 l 2198 3152 l 2216 3141 l 2232 3129 l 2248 3117 l 2262 3105 l 2276 3092 l 2288 3079 l 2298 3066 l 2308 3053 l 2316 3039 l 2322 3025 l 2327 3010 l 2331 2996 l 2333 2988 l 2334 2981 l 2334 2973 l CP 
+2336 2973 m 2336 2981 l 2335 2989 l 2333 2996 l 2329 3011 l 2324 3025 l 2317 3040 l 2309 3054 l 2300 3067 l 2289 3081 l 2277 3094 l 2264 3107 l 2249 3119 l 2234 3131 l 2217 3142 l 2199 3154 l 2180 3164 l 2160 3175 l 2139 3184 l 2117 3194 l 2095 3202 l 2071 3210 l 2047 3218 l 2022 3225 l 1996 3232 l 1969 3238 l 1942 3243 l 1914 3248 l 1886 3251 l 1856 3255 l 1827 3257 l 1797 3259 l 1766 3260 l 1735 3260 l 1704 3260 l 1674 3259 l 1644 3257 l 1614 3255 l 1585 3251 l 1557 3247 l 1529 3243 l 1502 3237 l 1475 3232 l 1449 3225 l 1424 3218 l 1400 3210 l 1376 3202 l 1353 3193 l 1332 3184 l 1311 3174 l 1291 3164 l 1272 3154 l 1254 3142 l 1237 3131 l 1222 3119 l 1207 3107 l 1194 3094 l 1182 3081 l 1171 3067 l 1162 3054 l 1153 3040 l 1147 3025 l 1141 3011 l 1138 2996 l 1136 2988 l 1135 2981 l 1135 2973 l 1134 2966 l 1135 2958 l 1135 2950 l 1136 2943 l 1138 2935 l 1141 2921 l 1147 2906 l 1154 2892 l 1162 2878 l 1171 2864 l 1182 2851 l 1194 2838 l 1207 2825 l 1222 2812 l 1237 2801 l 1254 2789 l 1272 2778 l 1291 2767 l 1311 2757 l 1332 2747 l 1353 2738 l 1376 2729 l 1400 2721 l 1424 2713 l 1449 2706 l 1475 2700 l 1502 2694 l 1529 2689 l 1557 2684 l 1585 2680 l 1615 2677 l 1644 2674 l 1674 2672 l 1705 2671 l 1735 2670 l 1766 2671 l 1797 2672 l 1827 2674 l 1856 2677 l 1885 2680 l 1914 2684 l 1942 2688 l 1969 2694 l 1996 2700 l 2022 2706 l 2047 2713 l 2071 2721 l 2095 2729 l 2118 2738 l 2139 2747 l 2160 2757 l 2180 2767 l 2199 2778 l 2217 2789 l 2234 2801 l 2249 2812 l 2264 2825 l 2277 2838 l 2289 2851 l 2300 2864 l 2309 2878 l 2317 2892 l 2324 2906 l 2329 2921 l 2333 2935 l 2335 2943 l 2336 2951 l 2336 2958 l 2336 2966 l CP 
+clip
+/ds
+<5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aaa2>
+ def
+1131 2667 translate
+0 32 597 { 0 32 1209 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+NP 2323 2954 m 2323 2791 2055 2660 1723 2660 c 1392 2660 1124 2791 1124 2954 c 1124 3116 1392 3248 1723 3248 c 2055 3248 2323 3116 2323 2954 c CP 
+eoclip
+/readimage {currentfile exch string readhexstring pop} def
+12288 readimage
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5
+f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfb
+fbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3
+f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8
+f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefeffffff
+f0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7
+f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfc
+fcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4
+f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fa
+fafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfefefefefefefffffff0f0f0f1f1f1f1f1
+f1f2f2f2f2f2f2f3f3f3f3f3f3f4f4f4f4f4f4f5f5f5f5f5f5f6f6f6f6f6f6f7f7f7f7f7f7f8f8f8
+f8f8f8f8f8f8f8f8f8f9f9f9f9f9f9fafafafafafafbfbfbfbfbfbfcfcfcfcfcfcfdfdfdfdfdfdfe
+fefefefefeffffff
+/datasrc exch def
+/languagelevel where {pop languagelevel} {1} ifelse 1 eq
+{0.8039 0.8039 0.8039 SC}
+{/pd 20 dict def
+pd /PaintType 1 put
+pd /PatternType 1 put
+pd /TilingType 1 put
+pd /BBox [0 0 32 128] put
+pd /XStep 32 put
+pd /YStep 128 put
+pd /PaintProc {begin 32 128 8 [1 0 0 1 0 0] datasrc false 3 colorimage end} put
+pd [-0.0000 -18.4340 -9.3896 0 2346.4113 3247.6857] makepattern
+setpattern
+} ifelse
+NP 1123 3249 m 2324 3249 l 2324 2659 l 1123 2659 l CP 
+eofill
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+2.0831 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 2323 2954 m 2323 2791 2055 2660 1723 2660 c 1392 2660 1124 2791 1124 2954 c 1124 3116 1392 3248 1723 3248 c 2055 3248 2323 3116 2323 2954 c CP 
+stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 1800 VM?
+
+currentfile eexec
+9e67edc6b8413059d4eb9a5f030bb86028b5b4ba8e3b3186475f33e408e5
+8582fafc7c54479a14654ee4d46ca9b830eb087a9499acf89c6cf00106c1
+d6ae2d6259113b9eb242f114d878f0fa9a286c3bc2d5c9f1f8690987ef4b
+7f97ada121cbf9e0a9b64cc036de8ee49f45a4678224efc8fbfd76966012
+067967b668cad701027cd95e96e7c5cd4300552487732a064eea9cd734c5
+8dd406856e3633d31239d7f66cda049f24c316a852cedb62e259c80a946e
+58d34eb7fa508a6e8162492c2e35428fa5f5f7f0c8a8771c966d7d1dfa9c
+e0da49d9f0cd1f947d38dc0bd73bf4a7006d31066889d6307ff1d4acf23a
+9c768099f2a80c17d956230bde709adabb4fd3ad53c2f57bce13d64ab0d6
+bd6b67a4e5acb51da8ac887750d764783dffdbe83716aadb35e37f713deb
+5c6086961d2def12e83aba20eea791fc7afd7aa8d0b67954add01d000b12
+ac84ead41e963cd4a10acf23dc4b020be2ec28e6522119fc1cb6290be918
+6ee0f5e6f3aee86acf5779f8b3be20a1fd2494c6035f65b04eb42ab4a437
+6350a56b5eef9c48fc0292172229fc42fd0daf2483e8627a46b98ab50170
+c9632721b55b4725c52a377231e7a69e4329be10ffdc2ab63d33de72165b
+594c70b471184b2cd53c6f348fa473872a8c418968ac59da22578a338237
+166732cad0b1ed6b899e05cfa321752d8c39bccb3463a944508a66532043
+0f6f616af592df26785c60771fe64053930b1a932311ed65bb57e7f3fed7
+810630f65100dd9468a3135e5b425e091fc620afc9177479562428185cc4
+66248726ce35721e5397d07d9fb56181ab1560c130af9b3cd2c949aeb77d
+e56bdb5ef26958d632d5ad079de6b844db780aa8d3fafda7feed436bb8b1
+8155b820e59766aecef61afe13fcf2f2f1f819a92e32ce95c8fedbc543e6
+931f73a040b704b1da831b7cee47af92d70f8ff4862c4591442c57a32c2a
+f80ed09ca98b8d7adf00598bb6cc977c328f5f268c2a4c1f72653af8f7d2
+a124f371c538578ec8c556a98fbbc68893ca5e2c74a8d4fae5dbaf787ae8
+b5c618c49bf91782354c65c9ea8f89714c17eac0a4e6d46eadf3415bd779
+2e6dcdd0eb8bd021f987843230a2457aa5f1016ecebb80c93db399ffaa0f
+f17486970fa44a3e5e05aa5cc651b98de195b7aa53c532475b84953fa77f
+1b189734df8505adfe4e1d709b095638e236f7d190a7d82a36802a661300
+d2027319ec66d791b8cf594c9712e192f311f386919d7b79d3dd0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+/TTA0Fo00 findfont /Encoding get
+dup 21 /uni0041 put
+dup 22 /uni0067 put
+pop
+1243 2919 M <15>S 
+1324 2919 M <02>S  1395 2919 M <13>S  1442 2919 M <0C>S  1489 2919 M <05>S  1556 2919 M <08>S  1609 2919 M <09>S  1639 2919 M <16>S  1703 2919 M <02>S  1774 2919 M <03>S  1807 2919 M <04>S  1878 2919 M <05>S  1946 2919 M <06>S  1978 2919 M <03>S  2011 2919 M <07>S  2083 2919 M <05>S  2150 2919 M <08>S 
+2203 2919 M <09>S  
+1800 VM?
+
+currentfile eexec
+9e67edc6b8413059d4eb9a5f030bb86028b5b4ba8e3b3186475f33e408e5
+8582fafc7c54479a14654ee4d46ca9b830eb087a9499acf89c6cf00106c1
+d6ae2d6259113b9eb242f114d92b73fc28601d5b2587451e57d2a2c3ebd9
+bb6e24c3f121856d0d62c5c9bc3f02b6ed0333df94073dbe096797c45342
+827f276be849b6d66c661f7943cc61bf9f80794ee4429aae9d5f0f7e6eba
+966d5b3f7ee7a53e38db966afb20afad82a2e347e53585f9bb613096dac9
+6179a3447a187d4377a12ac6bc104342b71af77573398117279a16a66f96
+5be8ae41f9e301a48dba078c7e0b20b05a52aefef9343005ed89f0b27f9a
+dd75c873d54376208c3063f2ad65fbfb5791b0fe44aad84ccb5689119fa7
+9e488b65a331de437270073309c75af8182357fc1e66a0aeb50cd0c59fa6
+bd5abfbc784553610de97b37963e0b157e4f460e4ce0bc2ca317b6f5a549
+6af8878405b5c8c22a60b555a7ab29dd32a1199a6b50e75edf803e5d6c30
+ec99f06cde6f308f938a50afb8d90dde34c908e1bcc3dd56e19c90072bc2
+a051fc2d368a4e6a94ce1aa26222f0dd37d634cfb132322675cfb144d4b5
+cff3b65ad64829b36bf116daa2a88a23416ce83c197d3f5a6f4d3e2170b6
+2e709f8b907e6b6e8eeb437b1dda1d785195495d44b0ea803851472d898b
+bfa134d7bf625dd6e57c89c3761c47210dbaeef5b36a91fa4d8f53089a3c
+08c598eeafa0fe62b9b7123a86a5615d69ef262324c1eb37fcce1de8d3b1
+b203c956026e9ac1cb326461ea3885d79ce056b4504984382e68044faec9
+2757e6ade00d02afd742e5e80cbbdf57e52f154adf7267fa43ed4fe53706
+e1e9c0a2063118de0cb7402405aee788746e6ded020a25312ed333764db7
+d5c2fbefa0cee61c767b66ce6f9831eaecf3941ce382741114abe06cc7ff
+d479f1b3520b37e6c78cd7e9d24512b948350d82b1732e844dbd2cea864b
+836b86d4c44534f78fcead1aa4668ce065378d9e10c6895950065b6a1949
+357652102a5da06cc1833cbd2fa57191190a156597fe3f4bbe0c5437d26f
+9bc7cdcb5b2f1ec70c50b9129ad0b78bbaf7828ce47c6851c495d715bf07
+ee66fb273be222c4b06393195d67f0c3f3c313fa607953949e3286079dfa
+6f6a4bacf4dcac2654da670c5efd1aa0714bd7f8c299a36c547beac350bf
+29bc721102830a7401405c77e89c6a7474f3db6811f2c8e316c81f88f17b
+c87c1096191f195863f12078000472719677711d2272c306fe23cb506b7d
+c50c263252822bac4dba5e2c9a7630f6888888d17d2467c1be87a430b30000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+/TTA0Fo00 findfont /Encoding get
+dup 23 /uni0053 put
+dup 24 /uni0066 put
+pop
+1176 3079 M <0A>S 
+1247 3079 M <0B>S  1319 3079 M <02>S  1391 3079 M <0C>S  1438 3079 M <09>S  1468 3079 M <06>S  1501 3079 M <05>S  1568 3079 M <08>S  1621 3079 M <09>S  1651 3079 M <0E>S  1738 3079 M <0F>S  1774 3079 M <09>S  1804 3079 M <17>S  1867 3079 M <02>S  1939 3079 M <0C>S  1986 3079 M <18>S  2028 3079 M <11>S 
+2094 3079 M <10>S  2150 3079 M <05>S  2217 3079 M <08>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 1647 437 m 2397 437 l 2397 463 l 1647 463 l CP 
+clip
+/ds
+<aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5545>
+ def
+1620 410 translate
+0 32 80 { 0 32 804 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+0 setlinecap
+0 setlinejoin
+2 setmiterlimit
+25.9972 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1635 438 m 2385 438 l stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 52542 VM?
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_T3Hdr 5.0 0
+{version cvi 2016 ge{32/FontType resourcestatus{pop pop true}{false}ifelse}
+{false}ifelse}exec/Is2016andT32? exch def/T32DefSBCMap{/CIDInit/ProcSet
+findresource begin 10 dict begin begincmap/CIDSystemInfo 3 dict dup begin
+/Registry(Adobe)def/Ordering(Identity1)def/Supplement 0 def end def/CMapType 0
+def/WMode 0 def 1 begincodespacerange<00><ff>endcodespacerange 1 begincidrange
+<00><ff>0 endcidrange endcmap/DrvSBCMap currentdict/CMap defineresource pop end
+end}bind def Is2016andT32?{T32DefSBCMap}def/T32RsrcBegin{Is2016andT32?{
+/BitmapFontInit/ProcSet findresource begin}if}bind def/T32RsrcEnd{Is2016andT32?
+{end}if}bind def/AddT32Char{6 1 roll 0 get 7 1 roll pop pop 5 1 roll pop
+findfont/TT32R get addglyph}bind def/AddT3Char{findfont dup 5 2 roll 1 index
+length 0 gt{cvx 1 index exch 4 exch put dup(imagemask)cvx cvn 5 exch put cvx}
+{pop cvx}ifelse 3 -1 roll/CharProcs get 3 1 roll put dup/Encoding get 5 -1 roll
+4 index put/Metrics get 3 1 roll put}bind def/AddT3T32Char Is2016andT32?{
+/AddT32Char}{/AddT3Char}ifelse load def/GreNewFontT32{5 dict begin exch
+/FontMatrix exch def exch/FontBBox exch def exch pop exch pop/CIDFontType 4 def
+dup currentdict end/CIDFont defineresource 3 -1 roll dup/DrvSBCMap dup/CMap
+resourcestatus{pop pop}{T32DefSBCMap}ifelse 5 -1 roll[exch]composefont dup
+length dict copy dup/FID undef begin exch/TT32R exch def currentdict end
+definefont/BitmapFontInit/ProcSet findresource begin/TT32R get[14 0 0 0 0 0]<>0
+4 -1 roll addglyph end}bind def/GreNewFontT3{11 dict begin pop/FontType 3 def
+/FontMatrix exch def/FontBBox exch def/Encoding exch def/CharProcs 257 dict def
+CharProcs/.notdef{}put/Metrics 257 dict def Metrics/.notdef 3 -1 roll put
+AddFontInfoBegin AddFontInfo AddFontInfoEnd/BuildChar{userdict begin/char exch
+def dup/charname exch/Encoding get char get def dup/Metrics get charname 2 copy
+known{get aload pop}{pop/.notdef get aload pop}ifelse setcachedevice begin
+Encoding char get CharProcs exch 2 copy known{get}{pop/.notdef get}ifelse end
+exec end}def currentdict end definefont pop}bind def/GreNewFont{Is2016andT32?
+{GreNewFontT32}{GreNewFontT3}ifelse}bind def/UDF3{Is2016andT32?{/BitmapFontInit
+/ProcSet findresource begin dup/CIDFont findresource removeall/CIDFont
+undefineresource undefinefont end}{pop UDF}ifelse}bind def
+%%EndResource
+end reinitialize
+/TTA10b00
+[83 0 0 0 0 0 ] 
+ 256 array 0 1 255 {1 index exch /.notdef put} for 
+[0 0 0 0 ] 
+[1 83 div 0 0 -1 83 div 0 0 ]
+/__TTA10b00
+GreNewFont
+T32RsrcBegin
+
+1
+/uni0043 [44 0 4 -53 42 1 ] 
+/uni0043 [38 54 true [1 0 0 1 -4 53 ]  0 0]
+[<00007ff000
+0003ffff00
+000fffffc0
+003ffffff0
+007ffffff8
+00fffffff8
+01ffe00ffc
+03ff0003fc
+07fe0000fc
+07fc00003c
+0ff8000018
+1ff0000000
+1fe0000000
+3fc0000000
+3fc0000000
+3f80000000
+7f80000000
+7f80000000
+7f00000000
+7f00000000
+ff00000000
+ff00000000
+ff00000000
+ff00000000
+ff00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+ff00000000
+ff00000000
+ff00000000
+ff00000000
+ff00000000
+ff00000000
+7f00000000
+7f80000000
+7f80000000
+7f80000000
+3fc0000000
+3fc0000000
+1fe0000000
+1ff0000000
+0ff800001c
+0ffc00007c
+07fe0000fc
+03ff8007fc
+03fffffffc
+01fffffff8
+007ffffff0
+003fffffe0
+000fffff80
+0003fffc00
+00001f8000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+2
+/uni006F [44 0 4 -39 40 1 ] 
+/uni006F [36 40 true [1 0 0 1 -4 39 ]  0 0]
+[<000fff8000
+007fffe000
+00fffff800
+03fffffc00
+07fffffe00
+0ffe07ff00
+1ff801ff80
+1fe0007f80
+3fc0003fc0
+3f80001fc0
+7f80001fe0
+7f00000fe0
+7f00000fe0
+fe00000ff0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe00000fe0
+ff00000fe0
+7f00000fe0
+7f00001fe0
+7f80001fc0
+3f80003fc0
+3fc0007f80
+1ff000ff80
+1ffc03ff00
+0ffffffe00
+07fffffc00
+03fffff800
+00ffffe000
+003fff8000
+0003f80000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+3
+/uni006D [66 0 6 -39 60 0 ] 
+/uni006D [54 39 true [1 0 0 1 -6 39 ]  0 0]
+[<7c03fe0003fe00
+fc0fff800fff80
+fc3fffc03fffc0
+fc7fffe07fffe0
+fcfffff0fffff0
+fdff7ff9ff7ff0
+fff80ffbf80ff8
+fff003ffe007f8
+ffe003ffc003fc
+ffc001ff8001fc
+ff8001ff0001fc
+ff0001fe0001fc
+fe0000fe0001fc
+fe0000fe0001fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fe0000fc
+fe0000fc0000fc
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+4
+/uni0070 [44 0 6 -39 40 15 ] 
+/uni0070 [34 54 true [1 0 0 1 -6 39 ]  0 0]
+[<7803ff0000
+fc0fffc000
+fc1ffff000
+fc7ffff800
+fcfffffc00
+fdff9ffc00
+fffc03fe00
+fff001ff00
+ffe000ff00
+ffc0007f00
+ff80007f80
+ff00003f80
+fe00003f80
+fe00003f80
+fe00003f80
+fe00003fc0
+fe00001fc0
+fe00001fc0
+fe00001fc0
+fe00001fc0
+fe00001fc0
+fe00001fc0
+fe00001fc0
+fe00003fc0
+fe00003f80
+fe00003f80
+fe00003f80
+fe00007f80
+ff00007f80
+ff80007f00
+ffc000ff00
+ffe001fe00
+fff803fe00
+fffc0ffc00
+fffffff800
+fefffff800
+fe7ffff000
+fe1fffc000
+fe0fff0000
+fe01f80000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+7c00000000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+5
+/uni0072 [29 0 6 -39 28 0 ] 
+/uni0072 [22 39 true [1 0 0 1 -6 39 ]  0 0]
+[<7c07f8
+fc1ff8
+fc3ffc
+fc7ffc
+fcfffc
+fdfff8
+fffc18
+fff000
+ffe000
+ffc000
+ff8000
+ff8000
+ff0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+fe0000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+6
+/uni0074 [28 0 1 -49 25 1 ] 
+/uni0074 [24 50 true [1 0 0 1 -1 49 ]  0 0]
+[<006000
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+7ffffe
+7fffff
+ffffff
+ffffff
+ffffff
+7fffff
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01f800
+01fc00
+01fc00
+01fc00
+01fc00
+01fe00
+00ff07
+00ffff
+00ffff
+007fff
+003fff
+000ffe
+0001f0
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+7
+/uni0065 [41 0 4 -39 37 1 ] 
+/uni0065 [33 40 true [1 0 0 1 -4 39 ]  0 0]
+[<000ffe0000
+007fff8000
+01ffffe000
+03fffff000
+07fffff800
+0ff807fc00
+1ff001fe00
+1fc000fe00
+3f80007f00
+3f80007f00
+7f00003f00
+7f00003f80
+7e00003f80
+fe00003f80
+fe00001f80
+fe00001f80
+ffffffff80
+ffffffff80
+ffffffff80
+ffffffff80
+ffffffff00
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+7f00000000
+7f00000000
+7f80000000
+3f80000000
+3fc0000000
+1fe0000f00
+1ff8007f00
+0fffffff00
+07ffffff00
+03fffffe00
+00fffffc00
+003fffe000
+0003fc0000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+8
+/uni006E [44 0 6 -39 38 0 ] 
+/uni006E [32 39 true [1 0 0 1 -6 39 ]  0 0]
+[<7c03ff00
+fc0fffc0
+fc3fffe0
+fc7ffff0
+fcfffff8
+fdffbffc
+fff807fc
+fff003fc
+ffe001fe
+ffc000fe
+ff8000fe
+ff0000fe
+fe00007e
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007e
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+9
+/uni0020 [19 0 0 0 1 1 ] 
+/uni0020 [1 1 true [1 0 0 1 0 0 ]  0 0]
+[<00
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+10
+/uni0064 [44 0 4 -56 37 1 ] 
+/uni0064 [33 57 true [1 0 0 1 -4 56 ]  0 0]
+[<0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+0000001f80
+003ff01f80
+00fffc1f80
+01ffff1f80
+07ffff9f80
+0fffffdf80
+0ffe7fff80
+1ff00fff80
+1fe003ff80
+3fc001ff80
+3f8000ff80
+7f80007f80
+7f00003f80
+7f00001f80
+ff00001f80
+fe00001f80
+fe00001f80
+fe00001f80
+fe00001f80
+fe00001f80
+fe00001f80
+fe00001f80
+fe00001f80
+fe00001f80
+fe00001f80
+fe00001f80
+fe00001f80
+ff00001f80
+7f00003f80
+7f00007f80
+7f8000ff80
+3f8001ff80
+3fc003ff80
+3fe007ff80
+1ff81fff80
+0fffffdf80
+0fffff9f80
+07ffff1f80
+01fffc1f80
+00fff80f80
+000fc00000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+11
+/uni0073 [32 0 3 -39 29 1 ] 
+/uni0073 [26 40 true [1 0 0 1 -3 39 ]  0 0]
+[<007ff000
+01fffc00
+07ffff00
+0fffff00
+1fffff00
+3fe03f00
+3f800700
+3f000100
+7f000000
+7f000000
+7f000000
+7f000000
+7f000000
+3f800000
+3fc00000
+3ff00000
+1ffc0000
+0fff8000
+07ffe000
+03fff800
+00fffe00
+001fff00
+0007ff00
+0000ff80
+00007fc0
+00003fc0
+00001fc0
+00001fc0
+00001fc0
+00001fc0
+00001fc0
+60001fc0
+f8003f80
+fe00ff80
+ffffff00
+fffffe00
+7ffffc00
+3ffff800
+0fffe000
+00fe0000
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+F /F1 0 /0 F /TTA10b00 mF 
+/F1S52 F1 [82.813 0 0 -82.813 0 0 ] mFS
+F1S52 Ji 
+1681 298 M <01>S 
+1725 298 M <02>S  1769 298 M <03>S  1836 298 M <04>S  1879 298 M <02>S  1923 298 M <05>S  1952 298 M <06>S  1980 298 M <07>S  2022 298 M <03>S  2088 298 M <07>S  2130 298 M <08>S  2174 298 M <06>S  2201 298 M <09>S  2220 298 M <0A>S  2264 298 M <07>S  2306 298 M <0B>S  2338 298 M <09>S 
+
+13932 VM?
+T32RsrcBegin
+
+12
+/uni0062 [44 0 6 -56 40 1 ] 
+/uni0062 [34 57 true [1 0 0 1 -6 56 ]  0 0]
+[<fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe00000000
+fe03ff0000
+fe0fffc000
+fe1ffff000
+fe7ffff800
+fefffffc00
+ffff9ffc00
+fff803fe00
+fff001ff00
+ffe000ff00
+ffc0007f00
+ff80007f80
+ff00007f80
+fe00003f80
+fe00003f80
+fe00003f80
+fe00003fc0
+fe00001fc0
+fe00001fc0
+fe00001fc0
+fe00001fc0
+fe00001fc0
+fe00001fc0
+fe00001fc0
+fe00003fc0
+fe00003f80
+fe00003f80
+fe00003f80
+fe00003f80
+ff00007f80
+ff80007f00
+ffc000ff00
+ffe001fe00
+fff803fe00
+fffe0ffc00
+fdfffff800
+fcfffff800
+fc7ffff000
+fc1fffc000
+fc0fff0000
+0001f80000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+13
+/uni006A [20 0 -2 -54 14 15 ] 
+/uni006A [16 69 true [1 0 0 1 2 54 ]  0 0]
+[<003e
+007f
+00ff
+00ff
+00ff
+00ff
+007f
+007e
+0000
+0000
+0000
+0000
+0000
+0000
+0000
+003e
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007f
+007e
+007e
+00fe
+00fe
+01fe
+7ffc
+fffc
+fff8
+fff0
+ffe0
+3f00
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+14
+/uni0076 [37 0 1 -39 36 0 ] 
+/uni0076 [35 39 true [1 0 0 1 -1 39 ]  0 0]
+[<7e000007c0
+ff00000fe0
+7f00000fe0
+7f00000fe0
+7f80001fc0
+3f80001fc0
+3f80001fc0
+3fc0003f80
+1fc0003f80
+1fc0003f00
+1fe0007f00
+0fe0007f00
+0fe0007e00
+0ff000fe00
+07f000fe00
+07f000fc00
+03f801fc00
+03f801fc00
+03f801f800
+01fc03f800
+01fc03f800
+01fc03f000
+00fe07f000
+00fe07e000
+00fe07e000
+007f0fe000
+007f0fc000
+003f0fc000
+003f9fc000
+003f9f8000
+001f9f8000
+001fff8000
+001fff0000
+000fff0000
+000fff0000
+000ffe0000
+0007fe0000
+0007fc0000
+0003fc0000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+15
+/uni0069 [19 0 5 -54 14 0 ] 
+/uni0069 [9 54 true [1 0 0 1 -5 54 ]  0 0]
+[<3e00
+7f00
+7f80
+ff80
+ff80
+ff80
+7f00
+7f00
+0000
+0000
+0000
+0000
+0000
+0000
+0000
+3e00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+7f00
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+16
+/uni0075 [44 0 6 -39 37 1 ] 
+/uni0075 [31 40 true [1 0 0 1 -6 39 ]  0 0]
+[<7c00003e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe00007e
+fe0000fe
+fe0001fe
+ff0001fe
+7f0003fe
+7f800ffe
+7fc01ffe
+3ff07ffe
+3fffff7e
+1ffffe7e
+0ffffc7e
+07fff07e
+01ffe07e
+003f0000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+17
+/uni006C [19 0 6 -56 13 0 ] 
+/uni006C [7 56 true [1 0 0 1 -6 56 ]  0 0]
+[<fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+fe
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+1770 398 M <02>S 
+1814 398 M <0C>S  1858 398 M <0D>S  1877 398 M <07>S  1919 398 M <06>S  1947 398 M <0B>S  1979 398 M <09>S  1998 398 M <0E>S  2036 398 M <0F>S  2055 398 M <05>S  2084 398 M <06>S  2112 398 M <10>S  2156 398 M <07>S  2197 398 M <11>S  2216 398 M <0B>S  2249 398 M <09>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 1647 1028 m 2397 1028 l 2397 1054 l 1647 1054 l CP 
+clip
+/ds
+<5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aa8a>
+ def
+1620 1001 translate
+0 32 80 { 0 32 804 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+0 setlinecap
+0 setlinejoin
+2 setmiterlimit
+25.9972 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1635 1029 m 2385 1029 l stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 6966 VM?
+T32RsrcBegin
+
+18
+/uni0055 [53 0 7 -53 46 1 ] 
+/uni0055 [39 54 true [1 0 0 1 -7 53 ]  0 0]
+[<7c0000003c
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+fe000000fe
+ff000000fe
+7f000001fe
+7f000001fc
+7f800003fc
+3fc00003f8
+3fe00007f8
+1ff0000ff0
+1ff8003ff0
+0fff01ffe0
+07ffffffc0
+03ffffff80
+01ffffff00
+007ffffc00
+001fffe000
+0001fe0000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+19
+/uni0061 [40 0 4 -39 34 1 ] 
+/uni0061 [30 40 true [1 0 0 1 -4 39 ]  0 0]
+[<007ffc00
+03ffff00
+0fffffc0
+3fffffe0
+3ffffff0
+3fe03ff0
+3f000ff8
+3c0007f8
+300003f8
+000003f8
+000001fc
+000001fc
+000001fc
+000001fc
+000001fc
+000001fc
+000001fc
+007ffffc
+01fffffc
+07fffffc
+1ffffffc
+3ffe01fc
+7fc001fc
+7f8001fc
+ff0001fc
+fe0001fc
+fe0001fc
+fe0001fc
+fe0001fc
+fe0001fc
+fe0003fc
+fe0007fc
+ff001ffc
+7f803ffc
+7ff3fffc
+3ffffefc
+1ffffcfc
+0ffff0fc
+03ffc0fc
+007e0000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+20
+/uni0067 [39 0 2 -39 37 15 ] 
+/uni0067 [35 54 true [1 0 0 1 -2 39 ]  0 0]
+[<001fffffc0
+007fffffc0
+01ffffffe0
+03ffffffe0
+07ffffffe0
+0ff80fffc0
+0fe003f800
+1fc001f800
+1fc001fc00
+1f8000fc00
+1f8000fc00
+3f8000fe00
+3f8000fe00
+3f8000fe00
+3f8000fe00
+1f8000fc00
+1f8000fc00
+1fc001fc00
+1fe003fc00
+0ff007f800
+07fc1ff000
+07fffff000
+0fffffe000
+1fffff8000
+1fbfff0000
+3f07f00000
+3f00000000
+3e00000000
+3f00000000
+3f00000000
+3fc0000000
+3ffffe0000
+1ffffff000
+0ffffffc00
+07fffffe00
+07ffffff00
+1fe1ffff80
+1fc0007fc0
+3f80003fc0
+7f00001fc0
+7e00001fc0
+fe00000fc0
+fe00000fc0
+fe00001fc0
+fe00001fc0
+fe00003f80
+ff00007f80
+7fc000ff00
+7ffc0fff00
+3ffffffe00
+1ffffff800
+07fffff000
+01ffff8000
+001ff80000
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+1689 988 M <12>S 
+1742 988 M <06>S  1770 988 M <0F>S  1789 988 M <11>S  1808 988 M <0F>S  1828 988 M <0B>S  1860 988 M <13>S  1900 988 M <06>S  1928 988 M <0F>S  1947 988 M <02>S  1991 988 M <08>S  2035 988 M <09>S  2054 988 M <0A>S  2097 988 M <07>S  2139 988 M <0B>S  2171 988 M <09>S  2190 988 M <06>S 
+2218 988 M <13>S  2258 988 M <14>S  2297 988 M <0B>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 1688 1618 m 2438 1618 l 2438 1644 l 1688 1644 l CP 
+clip
+/ds
+<aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5515>
+ def
+1661 1591 translate
+0 32 80 { 0 32 804 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+0 setlinecap
+0 setlinejoin
+2 setmiterlimit
+25.9972 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1676 1619 m 2426 1619 l stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 2322 VM?
+T32RsrcBegin
+
+21
+/uni0066 [25 0 1 -57 26 0 ] 
+/uni0066 [25 57 true [1 0 0 1 -1 57 ]  0 0]
+[<0000f800
+0007ff00
+001fff80
+003fff80
+007fff80
+007fff80
+00ff0180
+00fe0000
+00fe0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+7ffffc00
+7ffffe00
+7ffffe00
+7ffffe00
+7ffffe00
+7ffffe00
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+01fc0000
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+1680 1479 M <12>S 
+1734 1479 M <06>S  1762 1479 M <0F>S  1781 1479 M <11>S  1800 1479 M <0F>S  1819 1479 M <0B>S  1852 1479 M <13>S  1892 1479 M <06>S  1920 1479 M <0F>S  1939 1479 M <02>S  1983 1479 M <08>S  2026 1479 M <09>S  2045 1479 M <0A>S  2089 1479 M <07>S  2131 1479 M <0B>S  2163 1479 M <09>S  2182 1479 M <15>S 
+2207 1479 M <02>S  2251 1479 M <05>S  2280 1479 M <03>S  2347 1479 M <07>S  2388 1479 M <0B>S  2421 1479 M <09>S  
+2322 VM?
+T32RsrcBegin
+
+22
+/uni2019 [21 0 2 -57 15 -36 ] 
+/uni2019 [13 21 true [1 0 0 1 -2 57 ]  0 0]
+[<01e0
+03f8
+07f8
+07f8
+07f8
+07f8
+07f8
+07f8
+07f0
+07f0
+0fe0
+0fe0
+1fc0
+1f80
+3f80
+3f00
+7e00
+7e00
+7c00
+f800
+f800
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+1914 1579 M <0A>S 
+1957 1579 M <16>S  1978 1579 M <02>S  2022 1579 M <0C>S  2066 1579 M <0D>S  2086 1579 M <07>S  2127 1579 M <06>S  2155 1579 M <0B>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 3776 747 m 4526 747 l 4526 773 l 3776 773 l CP 
+clip
+/ds
+<5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aa2a>
+ def
+3749 720 translate
+0 32 80 { 0 32 804 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+0 setlinecap
+0 setlinejoin
+2 setmiterlimit
+25.9972 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 3764 748 m 4514 748 l stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 2322 VM?
+T32RsrcBegin
+
+23
+/uni004E [54 0 7 -53 47 0 ] 
+/uni004E [40 53 true [1 0 0 1 -7 53 ]  0 0]
+[<000000001c
+7fc000007f
+ffe000007f
+ffe000007f
+fff000007f
+fff000007f
+fff800007f
+fff800007f
+fdfc00007f
+fdfe00007f
+fcfe00007f
+fcff00007f
+fe7f00007f
+fe7f80007f
+fe3f80007f
+fe3fc0007f
+fe1fc0007f
+fe1fe0007f
+fe0ff0007f
+fe0ff0007f
+fe07f8007f
+fe07f8007f
+fe03fc007f
+fe01fc007f
+fe01fe007f
+fe00fe007f
+fe00ff007f
+fe007f807f
+fe007f807f
+fe003fc07f
+fe003fc07f
+fe001fe07f
+fe000fe07f
+fe000ff07f
+fe0007f07f
+fe0007f87f
+fe0003f87f
+fe0003fc7f
+fe0001fc7f
+fe0001fe7f
+fe0000ff7f
+fe00007f7f
+fe00007fff
+fe00003fff
+fe00003fff
+fe00001fff
+fe00001fff
+fe00000fff
+fe00000fff
+fe000007ff
+fe000003ff
+fe000003fe
+fc000000fe
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+3770 707 M <17>S 
+3823 707 M <02>S  3867 707 M <03>S  3934 707 M <0C>S  3978 707 M <05>S  4007 707 M <07>S  4048 707 M <09>S  4067 707 M <0A>S  4111 707 M <16>S  4132 707 M <10>S  4175 707 M <06>S  4203 707 M <0F>S  4222 707 M <11>S  4241 707 M <0F>S  4261 707 M <0B>S  4293 707 M <13>S  4333 707 M <06>S 
+4361 707 M <07>S  4402 707 M <10>S  4446 707 M <05>S  4475 707 M <0B>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 4050 1510 m 4800 1510 l 4800 1536 l 4050 1536 l CP 
+clip
+/ds
+<aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5455>
+ def
+4023 1483 translate
+0 32 80 { 0 32 804 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+0 setlinecap
+0 setlinejoin
+2 setmiterlimit
+25.9972 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 4038 1511 m 4788 1511 l stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 4137 1370 M <01>S 
+4182 1370 M <02>S  4226 1370 M <10>S  4269 1370 M <04>S  4313 1370 M <11>S  4332 1370 M <13>S  4372 1370 M <14>S  4411 1370 M <07>S  4453 1370 M <0B>S  4486 1370 M <09>S  4504 1370 M <07>S  4546 1370 M <08>S  4590 1370 M <06>S  4618 1370 M <05>S  4647 1370 M <07>S  4688 1370 M <09>S  
+9288 VM?
+T32RsrcBegin
+
+24
+/uni0054 [40 0 1 -52 40 0 ] 
+/uni0054 [39 52 true [1 0 0 1 -1 52 ]  0 0]
+[<fffffffffe
+fffffffffe
+fffffffffe
+fffffffffe
+fffffffffe
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+0000fe0000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+25
+/uni00E2 [40 0 4 -57 34 1 ] 
+/uni00E2 [30 58 true [1 0 0 1 -4 57 ]  0 0]
+[<0003e000
+0007f000
+000ff800
+001ffc00
+003f7c00
+003e7e00
+007e3f00
+00fc1f80
+01f81f80
+01f80fc0
+03f007e0
+07e003e0
+03c001e0
+00000000
+00000000
+00000000
+00000000
+00000000
+007ffc00
+03ffff00
+0fffffc0
+3fffffe0
+3ffffff0
+3fe03ff0
+3f000ff8
+3c0007f8
+300003f8
+000003f8
+000001fc
+000001fc
+000001fc
+000001fc
+000001fc
+000001fc
+000001fc
+007ffffc
+01fffffc
+07fffffc
+1ffffffc
+3ffe01fc
+7fc001fc
+7f8001fc
+ff0001fc
+fe0001fc
+fe0001fc
+fe0001fc
+fe0001fc
+fe0001fc
+fe0003fc
+fe0007fc
+ff001ffc
+7f803ffc
+7ff3fffc
+3ffffefc
+1ffffcfc
+0ffff0fc
+03ffc0fc
+007e0000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+26
+/uni0063 [35 0 4 -39 32 1 ] 
+/uni0063 [28 40 true [1 0 0 1 -4 39 ]  0 0]
+[<001ffc00
+007fff00
+01ffffc0
+03ffffe0
+07fffff0
+0ffe1ff0
+1ff003f0
+3fe000f0
+3fc00070
+3f800020
+7f000000
+7f000000
+7f000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+ff000000
+7f000000
+7f800010
+7f800070
+3fc000f0
+3fe003f0
+1ff80ff0
+0ffffff0
+07fffff0
+03ffffe0
+01ffff80
+007ffe00
+0007e000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+27
+/uni0068 [44 0 6 -56 38 0 ] 
+/uni0068 [32 56 true [1 0 0 1 -6 56 ]  0 0]
+[<fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe03ff00
+fe0fffc0
+fe3fffe0
+fe7ffff0
+fefffff8
+ffffbffc
+fff807fc
+fff003fc
+ffe001fe
+ffc000fe
+ff8000fe
+ff0000fe
+fe00007e
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007e
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+4049 1470 M <18>S 
+4090 1470 M <19>S  4130 1470 M <1A>S  4165 1470 M <1B>S  4209 1470 M <07>S  4250 1470 M <0B>S  4283 1470 M <09>S  4302 1470 M <07>S  4343 1470 M <06>S  4371 1470 M <09>S  4390 1470 M <12>S  4443 1470 M <06>S  4471 1470 M <0F>S  4490 1470 M <11>S  4510 1470 M <0F>S  4529 1470 M <0B>S  4561 1470 M <13>S 
+4601 1470 M <06>S  4629 1470 M <07>S  4671 1470 M <10>S  4714 1470 M <05>S  4743 1470 M <0B>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 3460 2186 m 4210 2186 l 4210 2212 l 3460 2212 l CP 
+clip
+/ds
+<5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+a8aa>
+ def
+3433 2159 translate
+0 32 80 { 0 32 804 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+0 setlinecap
+0 setlinejoin
+2 setmiterlimit
+25.9972 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 3448 2187 m 4198 2187 l stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 2322 VM?
+T32RsrcBegin
+
+28
+/uni0050 [43 0 7 -52 39 0 ] 
+/uni0050 [32 52 true [1 0 0 1 -7 52 ]  0 0]
+[<7ffffc00
+ffffff00
+ffffffc0
+ffffffe0
+fffffff0
+fe00fff8
+fe000ffc
+fe0003fe
+fe0001fe
+fe0001fe
+fe0000ff
+fe0000ff
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe00007f
+fe0000ff
+fe0000fe
+fe0001fe
+fe0001fe
+fe0003fc
+fe000ffc
+fe001ff8
+fffffff0
+ffffffe0
+ffffffc0
+ffffff00
+fffffc00
+ffffe000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+fe000000
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+3493 2047 M <1C>S 
+3536 2047 M <13>S  3576 2047 M <05>S  3605 2047 M <06>S  3633 2047 M <13>S  3673 2047 M <14>S  3712 2047 M <07>S  3754 2047 M <09>S  3773 2047 M <0A>S  3816 2047 M <07>S  3858 2047 M <09>S  3877 2047 M <11>S  3896 2047 M <16>S  3917 2047 M <07>S  3958 2047 M <0B>S  3991 2047 M <04>S  4034 2047 M <13>S 
+4074 2047 M <1A>S  4110 2047 M <07>S  4151 2047 M <09>S  
+3664 2147 M <0A>S 
+3708 2147 M <07>S  3749 2147 M <09>S  3768 2147 M <06>S  3796 2147 M <05>S  3825 2147 M <13>S  3865 2147 M <0E>S  3902 2147 M <13>S  3942 2147 M <0F>S  3961 2147 M <11>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 2751 3099 m 3501 3099 l 3501 3125 l 2751 3125 l CP 
+clip
+/ds
+<aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5155>
+ def
+2724 3072 translate
+0 32 80 { 0 32 804 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+0 setlinecap
+0 setlinejoin
+2 setmiterlimit
+25.9972 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 2739 3100 m 3489 3100 l stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 2780 2960 M <18>S 
+2821 2960 M <13>S  2861 2960 M <0F>S  2880 2960 M <11>S  2899 2960 M <11>S  2918 2960 M <07>S  2960 2960 M <09>S  2979 2960 M <07>S  3020 2960 M <06>S  3048 2960 M <09>S  3067 2960 M <1C>S  3110 2960 M <02>S  3154 2960 M <0B>S  3186 2960 M <0F>S  3206 2960 M <06>S  3233 2960 M <0F>S  3253 2960 M <02>S 
+3297 2960 M <08>S  3340 2960 M <09>S  3359 2960 M <0A>S  3403 2960 M <10>S  3447 2960 M <09>S  
+2322 VM?
+T32RsrcBegin
+
+29
+/uni0053 [38 0 3 -53 35 1 ] 
+/uni0053 [32 54 true [1 0 0 1 -3 53 ]  0 0]
+[<001ffe00
+007fffc0
+01fffff0
+03fffff8
+0ffffff8
+0ffffff8
+1ff003f8
+3fe000f8
+3fc00038
+3f800000
+7f800000
+7f000000
+7f000000
+7f000000
+7f000000
+7f800000
+7f800000
+3fc00000
+3fe00000
+3ff00000
+1ffc0000
+0ffe0000
+0fffc000
+07fff000
+01fffc00
+00ffff00
+003fff80
+001fffe0
+0003fff0
+0000fff8
+00003ffc
+00000ffc
+000007fe
+000003fe
+000001ff
+000000ff
+000000ff
+0000007f
+0000007f
+0000007f
+0000007f
+0000007f
+000000ff
+400000fe
+e00001fe
+f80003fc
+ff000ffc
+ffe03ff8
+fffffff0
+7fffffe0
+3fffffc0
+0fffff00
+03fffc00
+003fc000
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+2791 3060 M <1D>S 
+2829 3060 M <10>S  2873 3060 M <05>S  2902 3060 M <15>S  2927 3060 M <13>S  2967 3060 M <1A>S  3002 3060 M <07>S  3044 3060 M <09>S  3063 3060 M <0A>S  3106 3060 M <16>S  3127 3060 M <13>S  3167 3060 M <15>S  3192 3060 M <15>S  3218 3060 M <0F>S  3237 3060 M <1A>S  3272 3060 M <1B>S  3316 3060 M <13>S 
+3356 3060 M <14>S  3395 3060 M <07>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 1833 2250 m 2583 2250 l 2583 2276 l 1833 2276 l CP 
+clip
+/ds
+<5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+a2aa>
+ def
+1806 2223 translate
+0 32 80 { 0 32 804 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+0 setlinecap
+0 setlinejoin
+2 setmiterlimit
+25.9972 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1821 2251 m 2571 2251 l stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 1936 2211 M <12>S 
+1989 2211 M <06>S  2017 2211 M <0F>S  2036 2211 M <11>S  2055 2211 M <0F>S  2074 2211 M <0B>S  2107 2211 M <13>S  2147 2211 M <06>S  2175 2211 M <0F>S  2194 2211 M <02>S  2238 2211 M <08>S  2282 2211 M <09>S  
+6966 VM?
+T32RsrcBegin
+
+30
+/uni0033 [42 0 4 -53 37 1 ] 
+/uni0033 [33 54 true [1 0 0 1 -4 53 ]  0 0]
+[<003ffc0000
+01ffff0000
+07ffffc000
+1fffffe000
+3ffffff000
+3ffffff800
+3fc01ff800
+3e0007fc00
+380003fc00
+300003fc00
+000001fc00
+000001fe00
+000001fe00
+000001fe00
+000001fe00
+000001fc00
+000001fc00
+000003fc00
+000003fc00
+000007f800
+00000ff000
+00001ff000
+00007fe000
+03ffff8000
+03ffff0000
+03fff80000
+07ffff8000
+03ffffe000
+03fffff000
+00007ffc00
+00000ffc00
+000003fe00
+000001ff00
+000000ff00
+000000ff80
+0000007f80
+0000007f80
+0000007f80
+0000007f80
+0000007f80
+0000007f80
+0000007f80
+0000007f00
+000000ff00
+e00001ff00
+f00003fe00
+fe0007fe00
+ffc01ffc00
+fffffff800
+7ffffff000
+3fffffe000
+1fffff8000
+03fffe0000
+001fe00000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+31
+/uni0036 [42 0 4 -53 39 1 ] 
+/uni0036 [35 54 true [1 0 0 1 -4 53 ]  0 0]
+[<0000fff000
+0007fffe00
+001fffff00
+003fffff00
+00ffffff00
+01fff0ff00
+03ff000700
+03fc000000
+07f8000000
+0ff0000000
+0fe0000000
+1fc0000000
+1fc0000000
+1f80000000
+3f80000000
+3f80000000
+3f00000000
+7f00000000
+7f00000000
+7f00000000
+7f00000000
+7e03ff8000
+7e1ffff000
+7e7ffffc00
+fffffffe00
+ffffffff00
+ffff07ff00
+fff000ff80
+ffc0007fc0
+ff00003fc0
+fe00001fc0
+fe00001fc0
+fe00001fe0
+fe00001fe0
+7f00000fe0
+7f00000fe0
+7f00000fe0
+7f00000fe0
+7f00000fe0
+7f00001fe0
+7f80001fc0
+3f80001fc0
+3f80001fc0
+3fc0003f80
+1fc0007f80
+1fe000ff80
+1ff001ff00
+0ffc07fe00
+07fffffc00
+03fffff800
+01fffff000
+00ffffe000
+003fff0000
+0007f80000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+32
+/uni0030 [42 0 3 -53 39 1 ] 
+/uni0030 [36 54 true [1 0 0 1 -3 53 ]  0 0]
+[<0007ff0000
+003fffe000
+007ffff000
+01fffffc00
+03fffffe00
+07ffffff00
+07fc01ff00
+0ff000ff80
+1fe0007f80
+1fc0003fc0
+3fc0001fc0
+3f80001fc0
+3f80001fe0
+7f00000fe0
+7f00000fe0
+7f00000fe0
+7f00000ff0
+7f00000ff0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+fe000007f0
+ff000007f0
+7f00000fe0
+7f00000fe0
+7f00000fe0
+7f00000fe0
+7f80001fe0
+7f80001fc0
+3f80001fc0
+3fc0003f80
+1fc0007f80
+1fe0007f80
+0ff001ff00
+0ffc07fe00
+07fffffc00
+03fffff800
+01fffff000
+00ffffe000
+003fff8000
+0003f80000
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+2300 2211 M <1E>S 
+2343 2211 M <1F>S  2385 2211 M ( )S  
+2322 VM?
+T32RsrcBegin
+
+33
+/uni00B0 [28 0 4 -55 24 -36 ] 
+/uni00B0 [20 19 true [1 0 0 1 -4 55 ]  0 0]
+[<03fc00
+0fff00
+1fff80
+3fffc0
+3f0fe0
+7e07e0
+7c03f0
+f801f0
+f801f0
+f801f0
+f801f0
+fc03f0
+7c03e0
+7e07e0
+3fffc0
+3fff80
+1fff00
+07fe00
+00f000
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+2427 2211 M (!)S 
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0.8039 0.8039 0.8039 setrgbcolor
+NP 1921 3753 m 2671 3753 l 2671 3779 l 1921 3779 l CP 
+clip
+/ds
+<aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+4555>
+ def
+1894 3727 translate
+0 32 80 { 0 32 804 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+0 setlinecap
+0 setlinejoin
+2 setmiterlimit
+25.9972 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1909 3754 m 2659 3754 l stroke
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 2322 VM?
+T32RsrcBegin
+
+34
+/uni0078 [36 0 2 -39 34 0 ] 
+/uni0078 [32 39 true [1 0 0 1 -2 39 ]  0 0]
+[<7e00003e
+ff00007f
+7f8000fe
+7f8001fc
+3fc001fc
+1fc003f8
+1fe007f8
+0ff007f0
+07f00fe0
+07f80fe0
+03fc1fc0
+03fc3f80
+01fe3f80
+00fe7f00
+00ffff00
+007ffe00
+003ffc00
+003ffc00
+001ff800
+001ff800
+001ff800
+003ffc00
+007ffe00
+007ffe00
+00feff00
+00fe7f80
+01fc7f80
+03f83fc0
+03f81fc0
+07f01fe0
+0ff00ff0
+0fe00ff0
+1fc007f8
+3fc003fc
+3f8003fc
+7f8001fe
+7f0001fe
+fe0000ff
+fe00007f
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+1965 3714 M <1C>S 
+2008 3714 M <02>S  2052 3714 M <0B>S  2085 3714 M <0F>S  2104 3714 M <06>S  2132 3714 M <0F>S  2151 3714 M <02>S  2195 3714 M <08>S  2239 3714 M <09>S  2257 3714 M <0A>S  2301 3714 M <07>S  2343 3714 M <0B>S  2375 3714 M <09>S  2394 3714 M <06>S  2422 3714 M <07>S  2464 3714 M (")S  2500 3714 M <06>S 
+2528 3714 M <07>S  2569 3714 M <0B>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+NP 0 0 m 6417 0 l 6417 4533 l 0 4533 l CP 
+eoclip
+0.8039 0.8039 0.8039 setrgbcolor
+NP -125 3131 m 625 3131 l 625 3157 l -125 3157 l CP 
+clip
+/ds
+<5555aaaa5555aaaa5555
+aaaa5555aaaa5555aaaa
+5555aaaa5555aaaa5555
+8aaa>
+ def
+-152 3104 translate
+0 32 80 { 0 32 804 { 1 index
+gsave translate 32 32 scale 16 16 true [16 0 0 -16 0 16] ds imagemask grestore
+} for pop} for
+GSE
+GpPBeg1
+NP 0 0 m 6417 0 l 6417 4533 l 0 4533 l CP 
+eoclip
+0 setlinecap
+0 setlinejoin
+2 setmiterlimit
+25.9972 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP -137 3132 m 613 3132 l stroke
+GSE
+: N 
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Win_GdiObject 5.0 0
+/SavedCTM null d/CTMsave{/SavedCTM SavedCTM currentmatrix d}b/CTMrestore
+{SavedCTM setmatrix}b/mp null d/ADO_mxRot null d/GDIHMatrix null d
+/GDIHPatternDict 22 dict d GDIHPatternDict `/PatternType 1 d/PaintType 2 d/Reps
+L2?{1}{5}? d/XStep 8 Reps mul d/YStep XStep d/BBox[0 0 XStep YStep]d/TilingType
+1 d/PaintProc{` 1 Lw[]0 sd PaintData , exec E}b/FGnd null d/BGnd null d
+/HS_Horizontal{horiz}b/HS_Vertical{vert}b/HS_FDiagonal{fdiag}b/HS_BDiagonal
+{biag}b/HS_Cross{horiz vert}b/HS_DiagCross{fdiag biag}b/MaxXYStep XStep YStep
+gt{XStep}{YStep}? d/horiz{Reps{0 4 M XStep 0 - 0 8 +}repeat 0 -8 Reps mul + K}b
+/vert{Reps{4 0 M 0 YStep - 8 0 +}repeat 0 -8 Reps mul + K}b/biag{Reps{0 0 M
+MaxXYStep @ - 0 YStep neg M MaxXYStep @ - 0 8 +}repeat 0 -8 Reps mul + 0 YStep
+M 8 8 - K}b/fdiag{Reps{0 0 M MaxXYStep @ neg - 0 YStep M MaxXYStep @ neg - 0 8
++}repeat 0 -8 Reps mul + MaxXYStep @ M 8 -8 - K}b E/makehatch{4 -2 $/yOrg ~ d
+/xOrg ~ d GDIHPatternDict/PaintData 3 -1 $ put CTMsave GDIHMatrix setmatrix
+GDIHPatternDict matrix xOrg yOrg + mp CTMrestore ~ U ~ 2 ^ put}b/h0{/h0
+/HS_Horizontal makehatch}b/h1{/h1/HS_Vertical makehatch}b/h2{/h2/HS_FDiagonal
+makehatch}b/h3{/h3/HS_BDiagonal makehatch}b/h4{/h4/HS_Cross makehatch}b/h5{/h5
+/HS_DiagCross makehatch}b/GDIBWPatternMx null d/pfprep{save 8 1 $
+/PatternOfTheDay 8 1 $ GDIBWPatternDict `/yOrg ~ d/xOrg ~ d/PaintData ~ d/yExt
+~ d/Width ~ d/BGnd ~ d/FGnd ~ d/Height yExt RepsV mul d/mx[Width 0 0 Height 0
+0]d E build_pattern ~ !}b/pfbf{/fEOFill ~ d pfprep hbf fEOFill{O}{L}? restore}b
+/GraphInit{GDIHMatrix null eq{/SavedCTM matrix d : ADO_mxRot concat 0 0 snap +
+: 0.48 @ GDIHPatternDict ` YStep mul ~ XStep mul ~ nonzero_dsnap YStep V ~
+XStep V ~ E +S/GDIHMatrix matrix currentmatrix readonly d ; : 0.24 -0.24 +S
+GDIBWPatternDict ` Width Height E nonzero_dsnap +S/GDIBWPatternMx matrix
+currentmatrix readonly d ; ;}if}b
+%%EndResource
+%%BeginResource: file Pscript_Win_GdiObject_L1 5.0 0
+/GDIBWPatternDict 25 dict @ `/PatternType 1 d/PaintType 2 d/RepsV 6 d/RepsH 5 d
+/BBox[0 0 RepsH 1]d/TilingType 1 d/XStep 1 d/YStep 1 d/Height 8 RepsV mul d
+/Width 8 d/mx[Width 0 0 Height neg 0 Height]d/FGnd null d/BGnd null d
+/SetBGndFGnd{}b/PaintProc{` SetBGndFGnd RepsH{Width Height F mx PaintData
+imagemask Width 0 +}repeat E}b E d/GDIpattfill{@ ` BGnd null ne PaintType 2 eq
+and{: BGnd aload ! scol fEOFill{O}{L}? ; FGnd aload ! U/iCol 2 ^ put @ 0 eq{!
+2}{@ 1 eq ~ 2 eq or{4}{5}?}? -1 $}if E @ patterncalc : 4 ^/PaintType get 2 eq
+{iCol 0 eq{6 -1 $}if iCol 1 eq iCol 2 eq or{8 -3 $}if iCol 3 eq iCol 4 eq or{9
+-4 $}if iCol scol}if fEOFill{eoclip}{clip}? N patternfill ; N}b/hbf
+{GDIpattfill}b/hfMain{/fEOFill ~ d ~/iCol ~ d GDIpattfill}b/hf{: hfMain ;}b
+/mpstr 1 string d/mp{~ @ length 12 add dict copy `/PatternCTM matrix
+currentmatrix d/PatternMatrix ~ d/PatWidth XStep mpstr length mul d/PatHeight
+YStep d/FontType 3 d/Encoding 256 array d 3 string 0 1 255{Encoding ~ @ 3 ^ cvs
+cvn put}for !/FontMatrix matrix d/FontBBox BBox d/BuildChar{! @ ` XStep 0
+FontBBox aload ! setcachedevice/PaintProc , E : exec ;}b & E ~ @ 3 -1 $
+definefont}b/build_pattern{: GDIBWPatternDict ` Width Height E dsnap +S
+/GDIBWPatternMx matrix currentmatrix d ; CTMsave GDIBWPatternMx setmatrix
+GDIBWPatternDict @ ` xOrg yOrg E matrix + mp CTMrestore}b/patterncalc{` :
+PatternCTM setmatrix PatternMatrix concat BBox aload ! ! ! + pathbbox ;
+PatHeight V ceiling 4 1 $ PatWidth V ceiling 4 1 $ PatHeight V floor 4 1 $
+PatWidth V floor 4 1 $ 2 ^ sub cvi abs ~ 3 ^ sub cvi abs ~ 4 2 $ PatHeight mul
+~ PatWidth mul ~ E}b/patternfill{5 -1 $ @ ` Ji PatternCTM setmatrix
+PatternMatrix concat 0 2 ^ 2 ^ M 0 1 mpstr length 1 sub{1 ^ mpstr 3 1 $ put}for
+! 2 ^{currentpoint 5 ^{mpstr S}repeat YStep add M}repeat ! ! ! ! E}b/pbf{: 14
+dict `/fGray ~ d/fEOFill ~ d/yOrg ~ d/xOrg ~ d/PaintData ~ d/OutputBPP ~ d
+/Height ~ d/Width ~ d/mx xOrg yOrg matrix + d fGray{/PaintProc{` Width Height
+OutputBPP mx PaintData image E}b}{/PaintProc{` Width Height 8 mx PaintData F
+OutputBPP 8 idiv colorimage E}b}? pathbbox fEOFill{eoclip}{clip}?/Top ~ d/Right
+~ d/Bottom ~ d/Left ~ d Top Height neg Bottom 1 sub{Left Width Right 1 sub{1 ^
+2 copy + & PaintProc neg ~ neg ~ +}bind for !}bind for E ;}b
+%%EndResource
+end reinitialize
+0 0 M 6417 0 I 6417 4533 I 3208 4533 I 0 4533 I C 
+eoclip /DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol : 0 2913 483 101 rc 4644 VM?
+T32RsrcBegin
+
+35
+/uni0047 [52 0 4 -53 46 1 ] 
+/uni0047 [42 54 true [1 0 0 1 -4 53 ]  0 0]
+[<00001fff0000
+0000fffff000
+0003fffffc00
+000fffffff00
+003fffffff80
+007fffffffc0
+00fff000ffc0
+01ffc0001fc0
+03ff000007c0
+07fc000001c0
+0ff8000000c0
+0ff000000000
+1fe000000000
+1fe000000000
+3fc000000000
+3f8000000000
+7f8000000000
+7f8000000000
+7f0000000000
+7f0000000000
+ff0000000000
+ff0000000000
+fe0000000000
+fe0000000000
+fe0003ffff80
+fe0003ffffc0
+fe0003ffffc0
+fe0003ffffc0
+fe0003ffffc0
+fe0003ffffc0
+fe0000001fc0
+fe0000001fc0
+ff0000001fc0
+ff0000001fc0
+ff0000001fc0
+7f0000001fc0
+7f8000001fc0
+7f8000001fc0
+3fc000001fc0
+3fc000001fc0
+3fe000001fc0
+1ff000001fc0
+1ff800001fc0
+0ffc00001fc0
+07fe00001fc0
+03ff80001fc0
+01ffe0007fc0
+00fffe0fffc0
+007fffffffc0
+003fffffff80
+000fffffff00
+0003fffffc00
+0000ffffc000
+000007f80000
+>
+ ]
+/TTA10b00 AddT3T32Char
+
+36
+/uni0079 [38 0 1 -39 36 15 ] 
+/uni0079 [35 54 true [1 0 0 1 -1 39 ]  0 0]
+[<7e000007c0
+ff00000fe0
+7f00000fe0
+7f00000fe0
+7f80001fc0
+3f80001fc0
+3f80001fc0
+3fc0003f80
+1fc0003f80
+1fc0003f00
+0fe0007f00
+0fe0007f00
+0fe0007e00
+07f000fe00
+07f000fe00
+07f800fc00
+03f801fc00
+03f801fc00
+01fc01f800
+01fc03f800
+01fc03f000
+00fe07f000
+00fe07f000
+00fe07e000
+007f0fe000
+007f0fe000
+003f0fc000
+003f9fc000
+003f9fc000
+001fdf8000
+001fff8000
+001fff8000
+000fff0000
+000fff0000
+0007fe0000
+0007fe0000
+0007fe0000
+0003fc0000
+0003fc0000
+0001fc0000
+0003f80000
+0003f80000
+0007f80000
+0007f00000
+0007f00000
+000fe00000
+000fe00000
+001fe00000
+001fc00000
+001fc00000
+003fc00000
+003f800000
+003f800000
+003e000000
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+-6 2992 M (#)S 
+46 2992 M <10>S  90 2992 M <0F>S  109 2992 M <0A>S  153 2992 M <07>S  195 2992 M <09>S  213 2992 M <0A>S  257 2992 M <07>S  299 2992 M <09>S  317 2992 M <1D>S  356 2992 M <06>S  384 2992 M ($)S  421 2992 M <11>S  441 2992 M <07>S  482 2992 M <09>S  
+; ; : N 0 0 M 6417 0 I 6417 4533 I 3208 4533 I 0 4533 I C 
+eoclip /DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol : 0 3013 521 101 rc -49 3092 M <01>S 
+-5 3092 M <02>S  39 3092 M <10>S  83 3092 M <11>S  102 3092 M <07>S  143 3092 M <10>S  187 3092 M <05>S  216 3092 M <09>S  235 3092 M <07>S  277 3092 M <06>S  304 3092 M <09>S  323 3092 M <1C>S  366 3092 M <02>S  410 3092 M <11>S  429 3092 M <0F>S  448 3092 M <1A>S  484 3092 M <07>S 
+
+; ; /DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 2322 VM?
+T32RsrcBegin
+
+37
+/uni0029 [25 0 5 -58 20 14 ] 
+/uni0029 [15 72 true [1 0 0 1 -5 58 ]  0 0]
+[<3000
+fc00
+fc00
+7e00
+7e00
+3f00
+3f00
+3f80
+1f80
+1f80
+1fc0
+0fc0
+0fe0
+0fe0
+07e0
+07f0
+07f0
+03f0
+03f0
+03f8
+03f8
+03f8
+01f8
+01fc
+01fc
+01fc
+01fc
+01fc
+01fc
+01fc
+00fc
+00fe
+00fe
+00fe
+00fe
+00fe
+00fe
+00fe
+00fe
+00fe
+00fe
+00fe
+01fc
+01fc
+01fc
+01fc
+01fc
+01fc
+01fc
+01fc
+03f8
+03f8
+03f8
+03f8
+03f0
+07f0
+07f0
+07f0
+07e0
+0fe0
+0fe0
+0fc0
+1fc0
+1f80
+1f80
+3f80
+3f00
+7f00
+7e00
+fe00
+fc00
+f800
+>
+ ]
+/TTA10b00 AddT3T32Char
+T32RsrcEnd
+525 3092 M (%)S 
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+8.3324 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1204 1006 m 1316 1006 1316 873 1316 739 c 1316 589 1316 438 1635 438 c stroke
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+8.3324 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1204 1006 m 1260 1006 1280 1006 1292 1008 c 1316 1010 1316 1018 1342 1022 c 1381 1029 1476 1029 1635 1029 c stroke
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+8.3324 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1204 1006 m 1316 1006 1316 1150 1316 1293 c 1316 1456 1316 1619 1676 1619 c stroke
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+8.3324 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 4808 1006 m 4696 1006 4696 748 4514 748 c stroke
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+8.3324 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 5408 1306 m 5408 1527 5408 1843 5200 2008 c 4974 2187 4500 2187 4198 2187 c stroke
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+8.3324 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 5408 1306 m 5408 1357 5408 1425 5317 1463 c 5202 1511 4943 1511 4788 1511 c stroke
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+8.3324 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 2323 2960 m 2436 2960 2436 3100 2739 3100 c stroke
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+8.3324 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1723 2660 m 1723 2558 1723 2385 1747 2310 c 1765 2251 1797 2251 1821 2251 c stroke
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+8.3324 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1723 3260 m 1723 3383 1723 3589 1766 3680 c 1800 3754 1863 3754 1909 3754 c stroke
+GSE
+GpPBeg1
+1 setlinecap
+1 setlinejoin
+10 setmiterlimit
+8.3324 setlinewidth
+[] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 1124 2960 m 1011 2960 1011 3132 613 3132 c stroke
+GSE
+GpPBeg1
+0 setlinecap
+1 setlinejoin
+10 setmiterlimit
+2.0831 setlinewidth
+[16.6648 8.3324] 0 setdash
+0 0 0 SC
+NP 3764 748 m 3335 748 3335 1115 3335 1482 c 3335 1768 3335 2054 3395 2152 c stroke
+GSE
+GpPBeg1
+0 0 0 SC
+NP 3403 2129 m 3448 2187 l 3377 2168 l 3403 2129 l CP 
+eofill
+GSE
+GpPBeg1
+1 1 1 SC
+NP 3210 1322 m 3461 1322 l 3461 1402 l 3210 1402 l CP 
+eofill
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 37482 VM?
+/TTA11b00
+[67 0 0 0 0 0 ] 
+ 256 array 0 1 255 {1 index exch /.notdef put} for 
+[0 0 0 0 ] 
+[1 67 div 0 0 -1 67 div 0 0 ]
+/__TTA11b00
+GreNewFont
+T32RsrcBegin
+
+1
+/uni0069 [15 0 4 -43 11 0 ] 
+/uni0069 [7 43 true [1 0 0 1 -4 43 ]  0 0]
+[<7e
+fe
+fe
+fe
+7e
+7c
+00
+00
+00
+00
+00
+00
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+7c
+>
+ ]
+/TTA11b00 AddT3T32Char
+
+2
+/uni006E [35 0 5 -32 30 0 ] 
+/uni006E [25 32 true [1 0 0 1 -5 32 ]  0 0]
+[<00078000
+f83ff000
+f8fffc00
+f9fffe00
+fbfffe00
+ffe0ff00
+ff803f00
+ff001f80
+fe001f80
+fc001f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+>
+ ]
+/TTA11b00 AddT3T32Char
+
+3
+/uni0066 [20 0 1 -46 21 0 ] 
+/uni0066 [20 46 true [1 0 0 1 -1 46 ]  0 0]
+[<000fc0
+007ff0
+00fff0
+01fff0
+01fff0
+03f810
+03f000
+03e000
+03e000
+03e000
+07e000
+07e000
+07e000
+07e000
+07e000
+ffffc0
+ffffc0
+ffffc0
+ffffc0
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+07e000
+>
+ ]
+/TTA11b00 AddT3T32Char
+
+4
+/uni006C [15 0 5 -46 10 0 ] 
+/uni006C [5 46 true [1 0 0 1 -5 46 ]  0 0]
+[<70
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+f8
+>
+ ]
+/TTA11b00 AddT3T32Char
+
+5
+/uni0075 [35 0 5 -31 30 1 ] 
+/uni0075 [25 32 true [1 0 0 1 -5 31 ]  0 0]
+[<f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+f8000f80
+fc000f80
+fc001f80
+fc003f80
+7e007f80
+7f00ff80
+7f83ff80
+3fffef80
+1fffcf80
+0fff8f80
+07fe0f80
+00f00000
+>
+ ]
+/TTA11b00 AddT3T32Char
+
+6
+/uni0065 [33 0 3 -32 30 1 ] 
+/uni0065 [27 33 true [1 0 0 1 -3 32 ]  0 0]
+[<001f8000
+00fff000
+03fffc00
+07fffe00
+0ff9ff00
+1fc03f80
+3f801f80
+3f000fc0
+7e0007c0
+7e0007e0
+7c0007e0
+7c0003e0
+fc0003e0
+fc0003e0
+ffffffe0
+ffffffe0
+ffffffe0
+ffffffc0
+fc000000
+fc000000
+fc000000
+fc000000
+7c000000
+7e000000
+7e000000
+3f000000
+3f8000c0
+1fe007c0
+0fffffc0
+07ffffc0
+03ffff80
+00fffc00
+000f8000
+>
+ ]
+/TTA11b00 AddT3T32Char
+
+7
+/uni0063 [28 0 3 -32 26 1 ] 
+/uni0063 [23 33 true [1 0 0 1 -3 32 ]  0 0]
+[<001f00
+00ffe0
+03fff8
+07fffc
+0ffffe
+1fc07e
+3f801e
+3f0006
+7e0000
+7e0000
+7c0000
+fc0000
+fc0000
+fc0000
+fc0000
+fc0000
+fc0000
+fc0000
+fc0000
+fc0000
+fc0000
+fc0000
+7c0000
+7e0000
+7e0002
+3f000e
+3f801e
+1fe07e
+1ffffe
+0ffffc
+07fff8
+01ffe0
+001e00
+>
+ ]
+/TTA11b00 AddT3T32Char
+T32RsrcEnd
+F /F2 0 /0 F /TTA11b00 mF 
+/F2S43 F2 [67.188 0 0 -67.188 0 0 ] mFS
+F2S43 Ji 
+3210 1382 M <01>S 
+3225 1382 M <02>S  3260 1382 M <03>S  3281 1382 M <04>S  3296 1382 M <05>S  3331 1382 M <06>S  3364 1382 M <02>S  3399 1382 M <07>S  3427 1382 M <06>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0 setlinecap
+1 setlinejoin
+10 setmiterlimit
+2.0831 setlinewidth
+[16.6648 8.3324] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 3764 748 m 3652 748 3652 929 3652 1110 c 3652 1298 3652 1487 3975 1509 c stroke
+GSE
+GpPBeg1
+0.2509 0.2509 0.2509 SC
+NP 3970 1485 m 4038 1511 l 3968 1532 l 3970 1485 l CP 
+eofill
+GSE
+GpPBeg1
+1 1 1 SC
+NP 3529 1192 m 3780 1192 l 3780 1272 l 3529 1272 l CP 
+eofill
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 3529 1252 M <01>S 
+3545 1252 M <02>S  3580 1252 M <03>S  3600 1252 M <04>S  3615 1252 M <05>S  3650 1252 M <06>S  3684 1252 M <02>S  3719 1252 M <07>S  3747 1252 M <06>S  
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+GpPBeg1
+0 setlinecap
+1 setlinejoin
+10 setmiterlimit
+2.0831 setlinewidth
+[16.6648 8.3324] 0 setdash
+0.2509 0.2509 0.2509 SC
+NP 3489 3100 m 4310 3100 4310 2839 4310 2578 c 4310 2425 4310 2272 4256 2213 c stroke
+GSE
+GpPBeg1
+0.2509 0.2509 0.2509 SC
+NP 4252 2236 m 4198 2187 l 4270 2194 l 4252 2236 l CP 
+eofill
+GSE
+GpPBeg1
+1 1 1 SC
+NP 4107 2869 m 4358 2869 l 4358 2949 l 4107 2949 l CP 
+eofill
+GSE
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+/DeviceRGB dup setcolorspace /colspABC exch def
+0 0 0 1 scol 4107 2929 M <01>S 
+4122 2929 M <02>S  4157 2929 M <03>S  4178 2929 M <04>S  4193 2929 M <05>S  4228 2929 M <06>S  4261 2929 M <02>S  4296 2929 M <07>S  4324 2929 M <06>S  
+LH
+(%%[Page: 1]%%) = 
+%%PageTrailer
+
+%%Trailer
+%%BoundingBox: 21 54 565 824
+%%DocumentNeededResources: 
+%%DocumentSuppliedResources: 
+%%+ procset Pscript_WinNT_ErrorHandler 5.0 0
+%%+ procset Pscript_FatalError 5.0 0
+%%+ procset Pscript_Win_Basic 5.0 0
+%%+ procset Pscript_Win_Utils_L1 5.0 0
+%%+ procset Pscript_WinNT_Compat 5.0 0
+%%+ procset Pscript_Text 5.0 0
+%%+ procset Pscript_T3Hdr 5.0 0
+%%+ procset Pscript_Win_GdiObject 5.0 0
+%%+ procset Pscript_Win_GdiObject_L1 5.0 0
+Pscript_WinNT_Incr dup /terminate get exec
+%%Pages: 1
+(%%[LastPage]%%) = 
+%%EOF
+

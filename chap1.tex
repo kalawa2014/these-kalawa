@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{multicol}
+%\usepackage{glossary}
+\usepackage{makeidx}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage[francais]{minitoc}
+\usepackage{tabularx}
+
+%\usepackage{sidecap}
+%\usepackage[small,bf]{caption}
+%\usepackage{natbib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Si on crée des commandes, les ajouter ici. Exemple :
+
+\newcommand{\mapletext}[1]{
+\noindent \begin{tabular}{|p{0pt}p{5in}}
+\cline{1-1}&#1\\
+\cline{1-1}
+\end{tabular}
+\bigskip
+}
+\newtheorem{prop}{Propriété}
+\newtheorem{guide}{Guideline}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%\dominitoc
+%\faketableofcontents
+%\tableofcontentsb
+%\listoffigures
+%\listoftables
+\pagenumbering{arabic}
+%\chapter*{Acknowledgements}
+%\part{Domaine d'étude et état de l'art}
+%\chapter{Scénario de migration assistée vers une table interactive}
+\label{chap1}
+\input{chap1/chapitre1}
+
+
+\bibliographystyle{alpha}
+\bibliography{bib/biblio}
+
+\end{document}

@@ -1,0 +1,303 @@
+% LaTeX/AMS-LaTeX
+
+\documentclass{article}
+
+%%% remove comment delimiter ('%') and specify encoding parameter if required,
+%%% see TeX documentation for additional info (cp1252-Western,cp1251-Cyrillic)
+%\usepackage[cp1252]{inputenc}
+
+%%% remove comment delimiter ('%') and select language if required
+%\usepackage[english,spanish]{babel}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[dvips]{graphicx}
+%%% remove comment delimiter ('%') and specify parameters if required
+%\usepackage[dvips]{graphics}
+
+\begin{document}
+
+%%% remove comment delimiter ('%') and select language if required
+%\selectlanguage{spanish} 
+\[1\] 
+\begin{flushleft}
+
+
+ 1
+\end{flushleft}
+
+
+\title{ }\maketitle 
+
+\noindent 
+\title{Hypothèses pour migrer des applications vers une table interactive}\maketitle 
+
+
+%Un modèle de description des interactions indépendamment des
+%dispositifs matériels ou de l'environnement logiciel a pour but de faciliter
+%les correspondances entre plusieurs plateformes et d'établir des équivalences
+%entre bibliothèques graphiques et dispositifs d'interaction. La section
+%\textbf{5.2} de ce chapitre est une caractérisation des primitives d'interaction
+%qui sont des éléments d'un modèle des interactions abstraites pour les
+%composants graphiques. La section \textbf{5.3} décrit les primitives
+%d'interaction intrinsèques à un composant graphique et les règles qui permettent
+%leur identification. La section \textbf{5.4} présente une description de la
+%structure d'une UI et les interactions effectives de chaque élément de cette
+%structure. La section \textbf{5.5} est une synthèse des points forts et des
+%limites des éléments permettant la modélisation d'une vue concrète.
+
+\section{ Introduction }
+
+\noindent La migration des applications existantes d'une plateforme de départ vers une table interactive est un processus de ré-engineering comportant une phase d'extraction d'un modèle à partir de l'application de départ, une phase d'adaptation de ce modèle par rapport à la plateforme cible et une phase de génération de l'application destinée à la plateforme d'arrivée. Les applications en entrée du processus de migrations sont conçues en respectant des architectures et des modèles dans le but de faciliter leur réutilisation et leur évolution. L'adaptation du modèle extrait se fait suivant un ensemble de règles pour produire une application conformes aux critères de la plateforme d'arrivée. Dans l'objectifs de détailler les étapes du processus de la migration des applications vers une table interactive nous proposons les hypothèses sur le choix de l'architecture des applications, sur les éléments des plateformes et sur les lignes directrice de conception des UI pour la plateforme d'arrivée.
+
+\noindent Ce chapitre présente les hypothèses pour l'architecture des applications à migrer (4.1), les éléments des plateformes et les guidelines de la plateforme d'arrivée (4.2).
+
+En considérant que les applications à migrer sont décrites suivant le modèle d'architecture MVC, le processus de migration permet d'analyser et d'adapter les composants de la vue de l'application source. 
+\begin{figure}[h]
+\centering
+\includegraphics[angle=270, scale=.6]{chap4/modelmvc}
+\caption{}
+\label{fig:chp4:modelmvc}
+\end{figure}
+
+\section{ Architecture des applications à migrer}
+
+\noindent Le processus de migration dans notre contexte consiste à adapter l'interface utilisateur d'une application donnée pour une table interactive tout en respectant ses guidelines. Nous considérons que les applications fournies à l'entrée du processus sont conçues et implémentées en respectant des architectures permettant d'avoir une séparation entre la description de l'interface utilisateur (UI) et le noyau fonctionnel (NF), les modèles d'architecture tels que ARCH[], PAC[], MVC[Woolf 1995], etc. permettent d'avoir cette séparation. L'architecture MVC [Woolf 1995] permet de concevoir des application facilement adaptable à différents type de vue (V) tout en gardant le modèle (M) et le contrôleur(C). Pour la migration vers une table interactive, nous ne considérons que le modèle (M) et le contrôleur (C) seront réutilisés sans adaptation, ceci est possible par exemple dans le cas où les éléments du C et du M sont exécutable sur la plateforme d'arrivée. Cette hypothèse permet de fournir une solution adéquate à la problématique migration de l'UI décrit dans le composant vue (V). 
+
+
+\subsection{ La vue des applications à migrer}
+
+
+\subsection{ Structure}
+
+\noindent La vue permet à l'utilisateur d'interagir avec l'application à travers les éléments d'\textit{UIStructure} qui est un assemblage de composants graphiques conforme à des principes de conception. La structure d'une UI est représentée de manière abstraite par un arbre dont la racine, les nœuds et les feuilles sont des composants graphiques. Les composants graphiques d'une \textit{UIStructure} appartiennent à une bibliothèque graphique qui est spécifique à une plateforme. En Java Swing par exemple, \textit{UIStructrure} représente l'ensemble des instances des objets de type \textit{JFrame} et chaque élément de cette ensemble est un arbre qui est parcouru de manière récursive par le processus de migration dans le but d'extraire des éléments pour décrire des équivalences entre composants graphique ou pour adapter la structure de l'arbre en fonctions des guidelines. \textit{UIStructure} décrit aussi le positionnement des composants graphiques ou layout, le style de présentation de chaque composants ou groupe de composants (CSS par exemple). Le processus de migration proposé dans ce manuscrit n'a pas pour objectif d'adapter automatiquement le layout ou style d'une UI à migrer mais se propose d'assister le designer en lui proposant des options conforme aux guidelines et dans le but de réduire sa charge de travail.
+
+
+\subsection{ Les comportements}
+
+\noindent Les composants graphiques interagissent avec le C ou le M à travers les comportements qui sont décrit par \textit{UIBehaviour} qui est composé de \textit{Handlers} et \textit{d'UIBehaviourComponent.} Les \textit{Handlers} des événements sont spécifiques aux bibliothèques graphiques et sont adaptés pendant la migration, dans l'environnement .Net par exemple, les Handler sont décrits par des méthodes C\#. Le code représentant les \textit{Handlers} sont adaptés et réutilisés sur la nouvelle plateforme.
+
+\noindent Les \textit{UIBehaviourComponent} permettent de définir une interface d'accès aux composants graphiques pour C et M. Elles sont définie indépendamment des bibliothèques  par une classe abstraite qui décrit des méthodes de mise à jour. Les données en paramètres de ces méthodes sont de type indépendant des composants graphiques. Les méthodes de mise à jour de la vue sont implémentées pour chaque composant.
+
+
+\subsection{ Migration de la vue }
+
+\noindent \begin{flushleft}
+UIStructure, les Handler et les implémentations des classes abstraites \textit{UIBehaviourComponent} seront adapter à la nouvelle bibliothèque graphique
+
+\noindent Le C et M sont conservés et réutilisés sur la cible sans adaptation ceci.
+\end{flushleft}
+
+\noindent \begin{center}
+\textbf{0-1 Architecture d'une application à migrer vers une table interactive}
+\end{center}
+
+
+\section{ Plateformes}
+
+\noindent Les plateformes sont considérées comme des moyens d'interactions composées d'un ensemble de  dispositifs d'interactions et d'environnement logiciel. [Réf définition plateforme]
+
+\noindent Le processus de migration à mettre en place considère que la plateforme d'arrivée est une table interactive et les UI de départ doivent être adaptées sur cette plateforme suivant ses guidelines.  La table interactive se distingue des plateformes de départ par une bibliothèque graphique spécifiques, un moyen d'interaction tangible et des guidelines pour concevoir des interfaces utilisateurs. On considère aussi que la table interactive permet le déploiement et l'exécution des du Model et du Contrôler des applications de départ sans adaptation.
+
+
+\section{ Guideline de la table interactive}
+
+\noindent Les guidelines de conception d'UI pour les tables interactives sont identifiées et structurées en fonctions des différentes phases du processus de conception et de développement d'une UI [Vanderdonckt 1997]. Dans le cadre de la migration les guidelines liées aux phases de sélection des composants graphiques, de définition de la structure de l'UI, du choix des dispositifs d'interactions et la conception visuelle nous intéressons. Car elles permettent de d'adapter et de concrétiser l'UI à migrer. 
+
+\noindent [Todo] Rappeler que les Guidelines sont déduite à partir des règles ergonomiques de conception pour assurer l'utilisabilité
+
+
+\subsection{ Guidelines pour la sélection des composants graphiques}
+
+\noindent Cette catégorie regroupe l'ensemble des principes de conception qui permettent discriminer les composants graphiques ayant les mêmes caractéristiques dans le but d'assister le programmeur. En considérant une approche de migration basée sur un modèle pivot, les éléments du modèle pivot sont PIM  et regroupe en général plusieurs éléments du modèle PSM. Les guidelines G1, G2, G3, G4, G5, décrite au Chapitre 3.3 sont à considérer pendant cette phase.
+
+
+\subsection{ Guidelines pour la structuration de l'UI}
+
+\noindent Cette catégorie regroupe l'ensemble des principes de conception qui permettent d'adapter la structure de l'UI de départ à la nouvelle plateforme en précisant comment transformer les groupes de composants graphiques (menu, formulaire, tableau, liste, etc.). 
+
+\noindent Nous considérons les guidelines G6, G7, G8, G38, G39, G40 car elles préconisent l'adaptation de la structure de l'UI à migrer.
+
+
+\subsection{ Guidelines pour le choix des dispositifs d'interaction}
+
+\noindent \begin{flushleft}
+Cette catégorie regroupe l'ensemble des principes de conception qui précise les contextes d'utilisation des tags et des objets tangibles comme moyens d'interactions. Les guidelines  G14, G15 et G16 sont considérer dans cet ensemble.
+\end{flushleft}
+
+
+\subsection{ Guidelines pour la conception visuelle}
+
+\noindent \begin{flushleft}
+Cette catégorie regroupe l'ensemble des principes de conception qui permettent la définition du style et des mouvements des éléments visuelle de l'UI. Les guidelines G31, G32, G33, G34, G35, G36, G37, G45, G46, G47, G48, G49, G50 et G51 sont à considérer dans cet ensemble.
+\end{flushleft}
+
+
+\subsection{ Traduction des guidelines en règles concrètes}
+
+\noindent Les guidelines sont décrites suivant le modèle général de guideline proposé par [Vanderdonckt 1995], leurs traduction en règles concrètes pour l'adaptation se fait en fonction de chaque phase du processus de migration en deux étapes~: 
+
+\begin{enumerate}
+\item  d'abord identifier l'ensemble des éléments concrets qui permettent de décrire une interface utilisateur, dans le cadre d'une UI graphiques pour une table interactive, ces éléments sont les composant graphiques, les  types de données, les interactions, la structure de l'UI, le style de présentation, le layout, etc. 
+
+\item  Ensuite déterminer les différentes opérations à effectuer sur les éléments concrets identifiés à l'étape précédente. Dans le cadre de la migration d'UI, ces opérations sont~: le choix des composants graphiques, du style, du layout, des interactions ou l'adaptation des éléments de l'UI de départ.
+\end{enumerate}
+
+\noindent En considérant les guidelines décrites ci-dessus, un exemple de règle du traduite de G7 et concernant les menus est qu'ils doivent être accessibles à tous les utilisateurs autour d'une table interactive. L'application de cette règle sur l'exemple d'application décrit au chapitre1 nécessite l'identification de tous les menus, cette identification est immédiate si les menus sont représentés par des composants graphiques spécifiques. 
+
+\noindent Cependant, on se rend compte qu'un menu peut être décrit de diverses manières. Par exemple en XAML, à part le composant Menu/MenuItem, il est possible de décrire un groupe de widgets constitués de Grid qui contient des Button avec des icônes pour représenter un menu. L'un des objectifs de ces règles est de permettre l'identification et la transformation des groupes de widgets tout en conservant les interactions qu'ils implémentent. 
+
+
+\section{ Synthèses  }
+
+\begin{enumerate}
+\item \textbf{ }Un découpage de l'application qui facilite la migration
+
+\item  Une description de la vue pour permettre d'aborder les préoccupations spécifiques aux éléments de l'UI  
+
+\item  Description abstraite des guidelines à prendre en compte pendant la migration
+
+\item  N'aborde pas la migration de noyau fonctionnel, peut être mis en perspective en parlant des solutions liés a des architecture client serveur par exemple
+
+\item  Des Guidelines et des règles d'adaptation suivant ces guidelines
+\end{enumerate}
+
+\noindent \begin{flushleft}
+
+
+\noindent 
+\end{flushleft}
+
+
+
+\subsection{Méta Modèle des primitives d'interactions}
+
+\begin{figure}[ht]
+ \begin{center}
+\includegraphics[angle=270, width=380pt]{chap4/interactionmodel2}
+
+\caption{Méta Modèle des primitives d'interactions}
+\label{fig:chap4:1}
+\end{center}
+\end{figure}
+
+La figure~\ref{fig:chap4:1} décrit chaque primitive d'interaction comme des classes
+avec des attributs.\\
+La classe abstraite \textit{AbstractInteraction} décrit une
+interaction abstraite, elle peut être en entrée (\textit{InputInteraction}) ou
+en sortie (\textit{OutputInteraction}).
+Les primitives d'interactions sont des classes dérivées de la classe
+abstraite \textit{AbstractInteraction}.\\
+Les classes \textit{Navigation, WidgetSelection, WidgetResize,
+WidgetMove, WidgetRotation, DataMoveIn, DataMoveOut, DataSelection, DataEdition
+}et\textit{ Activation} sont des interactions en entrée. Elles représentent
+respectivement les primitives d'interactions \textit{Navigation, Widget
+Selection, Widget Resize, Widget Move, Widget Rotation, Data Move In, Data Move
+Out,  Data Selection, Data Edition }et \textit{Activation}.\\
+Les classes \textit{DataDisplay, WidgetDisplay} et \textit{WidgetHide}
+sont des interactions en sortie et elles représentent respectivement les
+primitives d'interactions \textit{Data Display, Widget Display} et \textit{WidgetHide}.\\
+La classe \textit{WidgetMove} décrit les différents mouvements d'un composant graphique.\\
+La classe \textit{WidgetRotation} permet de préciser si un composant graphique permet une rotation uniquement.\\
+Les classes \textit{DataSelection} et \textit{DataDisplay} ont pour attributs les types (\textit{dataType}) et la cardinalité (\textit{cardinality})
+des données sélectionnées et affichées.\\
+Les classes \textit{DataMoveIn} et \textit{DataMoveOut} ont pour attribut le type de données concerné par le déplacement. \\
+La classe \textit{DataEdition} décrit la primitive d'interaction \textit{Data Edition} avec l'attribut \textit{dataType} représentant le type de
+donnée éditée.\\
+L'énumération \textit{DataTypes} décrit les types de données. Les
+valeurs de l'attribut \textit{dataType} sont des propriétés intrinsèques aux
+composants graphiques, elles ne changent pas pendant leur utilisation effective.
+Les types de données et la cardinalité permettent de discriminer deux primitives
+d'interaction de même de la même classe.\\
+La classe \textit{Activation} décrit~la primitive d'interaction du
+même nom avec les attributs:
+
+%\begin{enumerate}
+%\item  \textit{eventName~:} le nom du comportement déclenché
+%
+%\item  \textit{handler}~: le code source du Handler correspondant. 
+%
+%\item  \textit{inputMethods}~: la liste des signatures des méthodes en entrée du
+%contrôleur (\textit{inputControler} cf. Chapitre architecture) appelées par le
+%Handler du composant graphique. 
+%\end{enumerate}
+
+Les attributs \textit{handler} et \textit{inputMethods} de la
+primitive d'interaction Activation seront utilisés par le processus de migration
+pendant l'étape de concrétisation pour la génération des nouveaux Handlers et
+pour relier la vue aux contrôleurs de l'application à migrer. 
+
+La méthode $\mathbf{isEqualTo} : AbstractInteraction \rightarrow EBoolean $ de \textit{AbstractInteraction} permet de comparer deux primitives d'interactions en prenant en compte les instances de la classe abstraite \textit{AbstractInteraction. }Cette comparaison prend aussi en compte les différents attributs de toutes les primitives d'interactions sauf dans le cas de la primitive \textit{Activation.}En effet les valeurs des attributs (\textit{handler, inputMethods}) de la primitive d'interaction \textit{Activation} dépendent d'une instance d'UI décrit dans \textit{UIBehaviour} et \textit{UIStructure. }Cette méthode est utilisée par le processus de migration pour permettre la comparaison des primitives d'interactions décrivant les composants graphiques. En effet les primitives d'interactions décrivent les interactions intrinsèques qui permettent le changement d'état des composants graphiques. 
+
+
+
+\subsection{Les limites des primitives d'interactions intrinsèque d'un composant graphique }
+
+Considérons l'artéfact d'UI décrit à la figure 4-3 qui permet de
+parcourir une liste d'image par catégorie, les catégories sont décrites dans la
+liste déroulante (\textit{ComboBox}) et les images sont affichées dans une liste
+(\textit{ListBox}). On considère aussi que~:
+
+\begin{enumerate}
+\item  la liste déroulante ne permet pas de faire du drag ou du drop,
+
+\item  la liste est utilisée uniquement pour présenter les images et aucune
+autre interaction n'est implémentée (drag, drop, clic,\dots ),
+
+\item  et enfin les autres widgets (Grid, Label) de l'artéfact n'implémentent
+aucun événement. 
+\end{enumerate}
+
+On considère aussi que l'UI est décrite en XAML et que les widgets
+\textit{Grid, Label, ComboBox }et\textit{ ListBox} ont les primitives
+d'interaction intrinsèques décrites dans le tableau ~4-1. La figure 5-4 présente
+la structure analysable de l'artéfact d'UI décrite à la figure 4-3 sous forme
+d'arbre.
+
+%\begin{tabular}{|p{1.9in}|p{2.2in}|} \hline 
+%\newline 5\textbf{-}3\textbf{ Artéfact d'UI} &
+%\newline 5\textbf{-}4\textbf{ Représentation de la structure  d'une UI} \\ 
+%\hline 
+%\end{tabular}
+
+\begin{flushleft}
+\textbf{}
+\end{flushleft}
+
+\begin{tabular}{|p{0.7in}|p{3.1in}|} \hline 
+\textbf{Widgets} & \textbf{Primitives d'interaction intrinsèques} \\ \hline 
+Grid & Widget Selection, Navigation, Widget Display, Activation \\ \hline 
+Label & Widget Selection, Navigation, Widget Display, Data Display, Activation
+\\ \hline 
+ComboBox & Widget Selection, Navigation, Widget Display, Data Selection,  Data
+Move In, Data Move Out, Data Display, Activation \\ \hline 
+ListBox & Widget Selection, Navigation, Widget Display, Data Selection,  Data
+Move In, Data Move Out, Data Display, Activation \\ \hline 
+\end{tabular}
+
+\begin{center}
+\textbf{4-1 Exemple de primitives d'interactions intrinsèques}
+\end{center}
+
+
+\subsubsection{Limites des primitives d'interactions intrinsèques.}
+
+On remarque que les primitives d'interactions intrinsèques ne
+permettent pas d'exprimer le fait que \textit{ListBox} et \textit{ComboBox}
+n'implémentent pas certaines primitives d'interactions. Pour les widgets
+appartenant à des instances d'UI, seules les primitives d'interactions effectives
+doivent être exprimées. La figure ci-dessous présente les primitives
+d'interaction effectives de l'exemple d'UI présenté ci-dessus.
+
+\begin{center}
+%  \textbf{5-2 Primitives d'interaction effectives d'une instance d'UI}
+\end{center}
+
+Les widgets tels que définis dans à la section 5.3.1 permettent
+d'exprimer les comportements et les propriétés statiques des composants
+graphiques mais elle n'exprime pas dans le cadre des instances d'UI les liens de
+contenances qui permettent d'identifier les groupes de widgets.
+\end{document}
+
+% == UNREGISTERED! == GrindEQ Word-to-LaTeX 2010 ==
+

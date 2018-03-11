@@ -1,0 +1,881 @@
+\section{Introduction}
+
+\label{sec:chap3:0}
+
+La migration des applications est une activité de déplacement et d'adaptation d'un logiciel d'un environnement source vers un environnement cible. Elle est plus globale que le portage d'application  ~\cite{Mooney1995} car elle ne se limite pas qu'au changement de langages de programmation ou au changement des systèmes d'exploitation. La migration englobe les problématiques de ré engineering, de reverse engineering, de forward engineering et de portage d'applications. McClure et al.~\cite{McClure1992} définissent le ré engineering comme une amélioration d'un système existant pour le rendre conforme aux standards. Le reverse engineering consiste à analyser un système existant pour décrire la représentation d'origine de manière plus abstraite~\cite{McClure1992}. Le forward engineering est une concrétisation de la représentation abstraite d'un système dans une implémentation. Une approche de migration d'UI vers une table interactive implique un ré engineering de l'UI source en impliquant d'abord une phase de reverse engineering de l'UI source ensuite une phase de forward engineering.
+
+Dans notre contexte, les SI à migrer ont une décomposition fonctionnelle minimale qui comprend une UI et un NF. Cette décomposition facilite la migration de l'UI en réutilisant le NF de l'application de départ par exemple. Les solutions de migration d'UI d'une application qui prennent en compte les guidelines de la plateforme cible peuvent être manuelles et spécifiques dans le cas où le concepteur se charge de transformer l'UI de départ pour la plateforme cible. Ces solutions peuvent aussi être automatisées par des processus qui se basent sur des modèles et des principes génériques pour une classe d'applications ou de plateformes. 
+
+Nous présentons dans ce chapitre des approches de migration d'UI dans le but de savoir comment sont adaptés les différents aspects des UI par ces approches de migration. Pour répondre à cette question, nous nous basons sur trois critères importants pour définir une solution réutilisable pour la migration d'UI vers les tables interactives.
+\begin{enumerate}
+\item \textbf{Les équivalences} entre les dispositifs d'interactions, les bibliothèques graphiques des plateformes source et cible. 
+\item \textbf{La modélisation} des différents aspects des UI : Structure, Interactions, Comportement, Layout, Style.
+\item La prise en compte des \textbf{Guidelines} par les mécanismes de migration d'UI pour garantir une UI conforme aux critères d'utilisabilité.
+\end{enumerate}
+
+
+Dans ce chapitre, la section~\ref{sec:chap3:1} présente les approches de migration spécifiques à des applications ou à des boîtes à outils. La section~\ref{sec:chap3:3} présente les approches de migration d'UI basées sur des modèles d'UI. La section~\ref{sec:chap3:3} fait une synthèse des différentes approches de migration d'UI et présente les objectifs de notre solution.
+
+
+\section{Approches spécifiques de migration d'UI }
+\label{sec:chap3:1}
+
+Dans cette section nous étudions les processus de migrations spécifiques à une
+application ou à une boîte à outils. Nous présentons d'abord un processus qui
+permet de migrer manuellement une application spécifique (AgilePlanner) sur une
+table interactive, ce processus identifie des guidelines pour les
+UI collaboratives et s'appuie sur une démarche structurée. Ensuite nous
+présentons une famille de mécanismes de migration d'UI des applications
+existantes sur les tables interactives sans re conception de l'UI de départ.
+
+
+\subsection{Migration de l'application AgilePlanner vers une table interactive}
+
+\label{sec:chap3:1:1}
+
+C'est un processus manuel et ad hoc mis en place pour la migration de l'application AgilePlanner\footnote{AgilePlanner est une application de planification et de gestion de projet suivant la méthode Agile. Sur une table interactive, elle est utilisée pour faire du brainstorming dans le cadre de plannings de projets par exemple} vers une table interactive~\cite{Wang2008}. Le processus mis en place était basé sur quatre phases. 
+
+La première phase consistait à analyser l'UI de l'application à migrer, elle permettait d'identifier les différentes zones (menu, légendes, zones d'interaction, espace de travail, etc.). 
+
+La deuxième phase consistait à évaluer l'UI de l'application à migrer sur une table interactive, le but de cette évaluation était de ressortir les différences entre desktop et table interactive dans le but d'en déduire des recommandations qui seront des guidelines pour le concepteur. Il en est ressorti les 7 guidelines suivantes:
+
+\begin{itemize}
+
+\item Avoir des composants d'UI de l'application déplaçables et utilisables en 360° 
+
+\item Utiliser la reconnaissance gestuelle pour les interactions utilisateurs et éviter les menus traditionnels
+
+\item Utiliser l'écriture à main levée au lieu du clavier pour la saisie des textes
+
+\item Prendre en compte les interactions concurrentes pendant la conception de l'UI
+
+\item Pouvoir utiliser des composants graphiques de taille assez grande pour faciliter les interactions tactiles
+
+\item Éviter l'utilisation des boîtes de dialogues pop up
+
+\item Permettre à l'UI de l'application de s'adapter aux différentes tailles des tables interactives.
+
+\end{itemize}
+Ces guidelines sont conformes aux guidelines pour les UI collaboratives et aux guidelines pour les interactions tactiles que nous avons présentées au chapitre précédent (cf. section~\ref{sec:chap2:3:5}).
+
+La troisième phase consistait à appliquer les guidelines de la phase précédente pour concevoir à nouveau une UI de l'application AgilePlanner utilisable sur table interactive. Certaines des guidelines telles que la rotation et le déplacement des composants graphiques, l'écriture à main levée, les reconnaissances gestuelle et vocale étaient fournies par l'environnement logiciel de certaines tables interactives.
+
+La dernière phase du processus consistait à évaluer l'UI produite en demandant aux utilisateurs finaux d'évaluer l'utilisabilité de chaque fonctionnalité migrée de l'application AgilePlanner. L'UI migrée a été modifiée par rapport aux remarques issues des évaluations. Enfin l'UI a été réévaluée à nouveau pour mesurer la satisfaction des testeurs. Les résultats de cette réévaluation ont montré que l'utilisabilité de l'écriture à main levée sur la table interactive peut être améliorée.
+
+La migration manuelle  d'une UI est un processus qui comporte plusieurs phases. Dans cette section nous avons présenté une approche qui nous permet d'identifier quatre phases importantes:
+
+\begin{enumerate}
+
+	\item Analyser l'UI de départ pour identifier la structure des éléments qui la compose et ses fonctionnalités
+	\item Identifier les guidelines qui permettront la migration: cet identification se fait en se basant sur les différences entre la plateforme de départ et celle d'arrivée
+	\item Appliquer les guidelines pour migrer l'UI de départ
+	\item Évaluer  et améliorer le résultat obtenu.
+
+\end{enumerate}
+
+
+\subsubsection{Réutilisation du processus pour d'autres applications}
+\label{sec:chap3:1:1:1}
+Les étapes du processus de migration de l'application AgilePlanner vers une table interactive et la mise en \oe{}uvre des guidelines identifiées constituent des ``savoir faire'' qu'un développeur souhaiterais réutiliser pour d'autres applications. 
+
+Les mécanismes d'adaptation de l'application AgilePlanner ne peuvent pas être réutilisés pour d'autres applications car ils sont spécifiques  à cette application. En effet, l'analyse et l'identification des différentes zones de l'UI ne s'appuient pas sur des \textbf{modèles indépendants de la plateforme}.
+
+La mise en \oe{}uvre des guidelines identifiées dans ce processus est basée sur l'\textbf{intuition}. Nous avons considéré l'UI de deux applications: l'application CBA et l'UI d'une application agenda présentée à la figure~\ref{fig:chap3:6}. En appliquant les guidelines identifiées à la section~\ref{sec:chap3:1:1} pour migrer ces deux UI. En ce qui concerne l'application agenda,  les composants graphiques représentant la barre de menu, la barre de recherche, la liste de catégorie et le tableau peuvent être tous déplaçables sur la table ou bien  l'on peut considérer la liste des catégories et le tableau de contacts comme étant ensemble. Dans le cas de l'application CBA, le choix des groupes utilisables à 360° peut se faire comme le propose la figure~\ref{fig:chap2:18} par exemple.
+ 
+Nous remarquons que l'utilisation des guidelines pour deux applications distinctes dépend de l'\textbf{interprétation} faite par les personnes en charge de la migration car ces guidelines ne précisent pas formellement comment on peut regrouper les composants graphiques déplaçables par exemple.
+
+\begin{figure}[h]
+
+\begin{center}
+
+\includegraphics[scale=1]{chap3/img-12}
+
+\caption{Application de consultation des contacts }
+
+\label{fig:chap3:6}
+
+\end{center}
+
+\end{figure}
+
+\subsubsection{Résumé}
+Les mécanismes de migration du processus décrits dans cette section, tels que les équivalences des composants graphiques ou des dispositifs d'interactions des plateformes source et cible sont manuels. Et les mécanismes de prise en compte de guidelines sont aussi manuels et basés sur les \textbf{connaissances} des personnes en charge de la migration. 
+
+\fbox{\parbox{0.9\textwidth}{
+Par ailleurs si l'on souhaite réutiliser ce mécanisme de migration d'UI, il est
+indispensable de formaliser les guidelines en s'appuyant sur des modèles indépendants des plateformes source et cible (tels qu'un menu, un formulaire, etc.) et en décrivant des règles de transformations des modèles décrivant les aspects de l'UI concernés par la migration (layout, interactions, styles, etc.)}}
+
+
+\subsection{Portage des applications existantes sur des tables interactives }
+\label{sec:chap3:1:2}
+Cette approche~\cite{Besacier2010} a pour but de réutiliser des applications pour desktop sur une table interactive sans reconception de l'UI, l'objectif est d'adapter les différents moyens d'interactions (clavier et souris) des desktops sur une table interactive DiamondTouch en utilisant plusieurs types de technologies. 
+L'approche regroupe des technologies qui prennent en compte des guidelines liées à la conception des UI collaboratives. Besacier~\cite{Besacier2010} a caractérisé six technologies qui permettent la réutilisation des applications existantes sur une table interactive.
+
+\paragraph{La capture d'écran }est une technologie qui consiste à prendre une capture de l'écran de l'UI de départ à intervalle régulier, la capture d'écran enregistre une copie exacte de l'image affichée sur l'écran du desktop dans une zone mémoire où elle peut être modifiée pour être adaptée à l'environnement de la table interactive. Cette approche se situe dans un contexte de portage des applications existantes. Elle ne permet pas de porter des interactions en entrée car l'UI portée est constituée d'images capturées et ces images ne contiennent pas de méta données. 
+\paragraph{La carte graphique virtuelle} est une amélioration de la technologie basée sur la capture d'écran. L'approche utilise le serveur Metisse~\cite{} qui stocke les fenêtres de l'application de départ sous forme d'images.  Le serveur Metisse joue un rôle de carte graphique virtuelle car il redessine les fenêtres sur l'écran de la table interactive à travers un compositeur et il redirige les événements venant d'une souris ou d'un clavier vers l'application. Cette technologie permet de porter les fenêtres des applications desktops sur une table interactive en offrant la possibilité aux utilisateurs de les manipuler facilement. Cependant les composants graphiques des fenêtres portées ne sont pas interactifs car ils restent des images de l'UI de départ.
+
+\paragraph{L'émulation du clavier et de la souris} est une technologie qui améliore les deux technologies présentées ci-dessus. Elle permet de porter aussi les interactions en entrée (du clavier et de la souris). Cette technologie se base sur des techniques qui permettent d'utiliser plusieurs pointeurs avec applications Java existante~\cite{}.  Les problèmes liés aux passages d'une UI mono utilisateur à une UI multi utilisateurs sur la table interactive sont partiellement résolus par cette approche. En effet, la technique permet de porter plusieurs applications à la fois sur une table interactive et à chaque application est associée un utilisateur avec son clavier et sa souris virtuels. Dans le cas d'une UI mono utilisateur que l'on souhaiterait utiliser en multi utilisateurs, cette technique ne permet pas de multi touches simultanées car l'interaction d'un utilisateur verrouille la table à d'autres utilisateurs d'une même application.
+
+\paragraph{Le langage de script }est une technologie qui permet de porter des UI des applications existantes sur une table interactive en résolvant les limites liées aux multi touches et multi utilisateurs de la technologie précédente. Le langage de script est spécifique à une application et consiste à écrire dans un scénario un ensemble de scripts qui font appel chacun à une fonctionnalité de l'application à porter. Les scripts sont appelés par une application de table interactive qui capture les événements en entrée de la table et les associes à un script précis. Par exemple pour afficher un fichier sur la table, l'application table interactive associe un script d'ouverture et de lecture de fichiers de l'application de départ à l'événement lancé après la pause d'une feuille de papier sur la table interactive. Cette technique n'est pas facilement réutilisable pour d'autres applications car les scripts sont écrits en fonction des applications. Les données échangées entre l'application à migrer et l'application table interactive sont décrites dans un modèle. Ce modèle de données permet de faire le mapping entre les données issues des composants graphiques de l'application à miger et les composants graphiques (DiamondSpin) de la table interactive. Les guidelines de la métaphore du papier\footnote{déplacement, rotation, redimensionnement, changement d'échelle, pliage}~\cite{Besacier2007} sont prises en compte dans l'implémentation de cette approche qui considère la bibliothèque graphique DimaondSpin de la table DiamondTouch. Cette prise en compte des guidelines dépend fortement des connaissances et de l'intuition du concepteur en charge du portage.
+
+\paragraph{Les API d'accessibilité numérique}\footnote{ Elles sont utilisées pour offrir des interfaces alternatives à des groupes d'utilisateurs spécifiques, par exemple des utilisateurs souffrant de déficience visuelle} permettent d'obtenir des informations sémantiques à propos des UI graphiques en cours d'exécution. Ces informations constituent des instances de modèles de structure d'une UI donnée (comprenant les composants graphiques, les données, les positions, etc.). Ce modèle permet de décrire une technique de migration qui segmente les images obtenues par capture d'écran de l'UI source. Les parties de l'UI de départ peuvent donc être dupliquées ou juxtaposées en se basant sur le modèle de structure et les images segmentées. Le modèle de structure et les images segmentées sont les éléments de l'UI source qui permettent de générer l'UI cible. Comparée aux technologies précédentes, cette technologie est moins réutilisable que la capture d'écran, la carte graphique virtuelle et l'émulation des dispositifs d'interactions.
+
+\paragraph{La réécriture d'une boite à outils d'interface homme machine}%\begin{itemize}
+%
+%\item Le premier axe est la structuration de données échangées entre
+%l'application et la table interactive, ces données sont structurées lorsqu'elles
+%décrivent les composants d'interfaces (fenêtres, boutons, etc.) et elle ne sont
+%pas structurées si les composants d'interfaces sont représentés à l'aide
+%d'images de type bitmap par exemple. La structuration de données concerne le
+%système représentatif des \textbf{modalités d'interactions} (cf.
+%section~\ref{sec:chap2:3:3}). Le niveau de structuration de données est un axe
+%important car la migration est aussi un changement des modalités d'interactions
+%d'une application sans concevoir à nouveau l'UI  de départ. 
+%
+%\item Le deuxième axe est la flexibilité des modifications possibles, les
+%différentes manières d'utilisation des applications existantes sur une table
+%impliquent par exemple une réorganisation libre des fenêtres de l'application à
+%migrer ou pour permettre à plusieurs personnes l'interaction en même temps avec
+%les différents éléments de l'UI. La flexibilité des modifications consiste à
+%évaluer la \textbf{prise en compte les guidelines pour les UI collaboratives}
+%par une technologie. 
+%
+%\item Le troisième axe est la performance de l'ensemble du système. La
+%performance est une caractéristique qui permet d'évaluer le résultat de la
+%migration. 
+%
+%\item Le quatrième axe est la compatibilité et la réutilisabilité. La
+%compatibilité avec les applications détermine l'intérêt global d'une
+%technologie. En effet une technologie doit permettre la migration de plusieurs
+%applications. La réutilisabilité détermine l'utilité d'un prototype. Une
+%solution
+%doit être \textbf{générique} et applicable pour plusieurs catégories
+%d'applications.
+%
+%\item Le cinquième axe est la difficulté d'implémentation d'une solution de
+%migration. Elle permet d'évaluer d'une solution par le concepteur avant de la
+%choisir.
+%
+%\end{itemize}
+%
+%Ces cinq critères ont permis d'évaluer des technologies de réutilisation des
+%applications existantes sur les tables interactives dont le résultat est
+%synthétisé sur la figure~\ref{fig:chap3:4}. La solution préconisant la
+%réécriture de la boîte à outils de l'interface homme machine(cf.
+%section~\ref{sec:chap3:1:2:1}) est à la fois la plus réutilisable et celle qui
+%permet une structuration de données élevée même si elle est difficile à mettre
+%en place.
+
+%\begin{figure}[h]
+%
+%\begin{center}
+%
+%\includegraphics[angle=270,scale=0.55]{chap3/img-10}
+%\caption{Évaluation des technologies de réutilisation des applications
+%existantes sur les tables interactives}
+%\label{fig:chap3:4}
+%
+%
+%
+%\end{center}
+%
+%\end{figure}
+
+%\subsubsection{Réécriture d'une boîte à outils d'interface homme machine}
+%\label{sec:chap3:1:2:1} 
+consiste à utiliser la boîte à outils de la table interactive à la place de celle du desktop. Le remplacement se fait en interceptant tous les appels de fonction de l'application vers les objets de la boîte à outils d'IHM de départ et en les redirigeant vers les éléments de la boîte à outils de la table interactive. L'avantage de cette approche est d'utiliser des composants graphiques respectant les guidelines de la table interactive sans une nouvelle conception de l'application de départ. Cette solution peut être implémentée en utilisant les wrappers~\cite{Bartolomei2010} par exemple, le wrapper du listing~\ref{DescriptiveLabel} permet de réécrire un \textit{JComboBox}  en DSJComboBox. 
+Cette approche ne permet pas le respect de l'ensemble des guidelines car la structure et le layout de l'UI par exemple n'est pas modifiée pendant le portage. Elle permet de choisir les composants graphiques qui ont des interactions ou des styles conformes à la table interactive. 
+%Cette solution couteuse en temps pour sa mise en place est spécifique pour les boîtes à outils mais réutilisable pour les applications d'une boîte à outils.
+
+
+%\definecolor{javared}{rgb}{0.6,0,0} % for strings
+%\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+%\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+%\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+%
+%\lstset{language=Java, basicstyle=\ttfamily,
+%keywordstyle=\color{javapurple}\bfseries, stringstyle=\color{javared},
+%commentstyle=\color{javagreen},
+%morecomment=[s][\color{javadocblue}]{/**}{*/},numbers=left,
+%numberstyle=\tiny\color{black}, stepnumber=2, numbersep=10pt, tabsize=4,
+%showspaces=false,showstringspaces=false, caption=Exemple de wrapper,
+%label=DescriptiveLabel}
+%\lstinputlisting{chap3/listing.java}
+
+
+
+\subsubsection{Résumé}
+
+%dans~\cite{Besacier2010} considère les guidelines pour la conception des UI collaboratives (cf.section~\ref{sec:chap2:3:3}) et en prenant en compte la métaphore du papier~\cite{Besacier2007}.
+
+
+%\fbox{\parbox{0.9\textwidth}{ La mise en \oe{}vre de cette solution induit la problématique de la description des \textbf{équivalences entre les éléments des bibliothèques graphiques} sources et cibles tout en préservant la nature des interactions en entrée et en sortie.}}
+
+\begin{table}[h]
+
+\begin{tabularx}{15cm}{|Y|Y|Y|Y|}
+\hline  \textbf{Approches}& \textbf{Équivalences} & \textbf{Modélisations} & \textbf{Guidelines} \\ 
+\hline \textbf{Capture d'écran }& Aucune équivalence & Aucune modélisation & Aucune prise en compte \\ 
+\hline \textbf{Carte graphique virtuelle }
+						& Aucune équivalence & Aucune modélisation  &  Aucune prise en compte\\ 
+\hline \textbf{Émulation du clavier et de la souris} & Équivalences entre les dispositifs d'interactions en entrée des plateformes source et cible définies manuellement 
+						& Aucune modélisation  & Aucune prise en compte \\ 
+\hline  \textbf{Langage de script}&
+						 Équivalence manuelle des dispositifs d'interactions 
+						 & Modélisation des données, approche non réutilisable &  Prise en compte des guidelines\\ 
+\hline \textbf{API d'accessibilité numérique }& Manuelles &  Modélisation de la structure &  Prise en compte des guidelines \\ 
+\hline \textbf{Réécriture d'une boite à outils}  & Manuelles & Aucune & Prise en compte partielle \\ 
+\hline 
+\end{tabularx} 
+\caption{Synthèse des approches de portage d'UI sur tables interactives}
+\label{tab:chap3:4}
+\end{table}
+Il existe plusieurs solutions de portage des applications existantes sur les tables interactives. Les technologies présentées ci-dessus permettent la migration à l'exécution des applications sources. Ces approches sont limitées car elles sont faiblement réutilisables avec d'autres applications ou d'autres boîtes à outils. 
+
+
+Le tableau~\ref{tab:chap3:4} présente une synthèse de ces technologies en prenant en compte les critères d'équivalences entre les éléments de la plateforme, les modèles utilisés et la prise en compte des guidelines. L'on que remarque les équivalences entre les dispositifs d'interactions sont décrites manuellement pendant la mise en \oe{}uvre de la solution. Et toutes ces approches n'utilisent une modélisation des interactions et seulement deux approches modélisent la structure de l'UI. Les prises en compte des guidelines dépendent du l'utilisation ou non de la boîte à outils cible. En effet le langage de script, les API d'accessibilité et la réécriture d'une boîte à outils permettent d'utiliser  les éléments de la boîte à outils cible. Cependant dans le cas de la réécriture d'une boîte à outils, la prise en compte est partielle car la structure et le layout de l'UI de départ ne sont pas modifiés pendant le portage.
+
+
+\section{Approches de migration basées sur les modèles de l'UI }
+\label{sec:chap3:3}
+
+Cette section présente des approches de migration basées sur des modèles pour être indépendantes des applications et des plateformes. En effet les solutions de portage d'UI sur une table interactive présentées à la section~\ref{sec:chap3:1:2} utilisent des modèles de données et de structure de l'UI de départ pour générer l'UI cible. Ces modèles comportent des informations sémantiques qui incluent pour chaque composant son nom, son rôle (bouton menu, case à cocher etc.), sa position sur l'écran et dans la hiérarchie en terme de contenant et de contenu. Cependant ces informations sont exploitées par des mécanismes non réutilisables et spécifiques à des applications car ces mécanismes sont constitués de scripts spécifiques à une fonctionnalité d'une UI. 
+
+Dans cette section nous étudions les approches de migration qui se basent sur des modèles qui décrivent les différents aspects de l'UI. D'abord l'approche MORPH\textit{ (Model Oriented Reengineering Process for HCI)}~\cite{Moore1997} qui modélise la structure et les interactions et qui décrit des mécanismes de transformations de ces modèles. Ensuite les approches basées sur les services de migration qui modélisent la structure, le layout, les interactions et le comportement des UI à migrer.
+
+
+\subsection{Migration avec MORPH}
+
+\label{sec:chap3:3:1}
+
+MORPH~\cite{Moore1997} est une solution de migration d'une UI textuelle vers une UI graphique en se
+basant sur des modèles abstraits d'UI et un support pour les transformations
+vers de nouvelles implémentations graphiques. Le processus de migration avec
+MORPH implique une reconception de l'UI textuelle en UI graphique car les UI
+graphiques de type WIMP~\cite{VanDam1997} supportent les dispositifs
+d'interactions de manipulations directes comme une souris. Cette nouvelle
+conception est aussi un \textbf{changement de modalités d'interactions} et
+l'utilisation d'une boîte à outils graphique. Nous étudions cette approche de
+migration car comme la migration d'UI vers des tables interactives, les
+modalités d'interactions des plateformes d'arrivée sont différentes des
+plateformes de départ avec des nouveaux dispositifs d'interactions.
+
+\subsubsection{Processus de migration}
+
+\label{sec:chap3:3:1:1}
+
+Il est représenté par l'ensemble des mécanismes qui permettent l'extraction du
+modèle de l'UI, sa transformation et enfin sa génération pour la plateforme
+cible. Les modèles abstraits sont utilisés pour la représentation de  l'UI.
+
+MORPH décrit un processus  de migration en trois
+étapes : la détection, la représentation et la transformation (cf. figure~\ref{fig:chap3:5}). 
+
+\begin{itemize}
+
+\item La \textbf{détection} est une activité de reverse engineering qui consiste à analyser le code source de l'application à migrer dans le but d'identifier les modèles de structure et d'interactions. 
+
+\item La \textbf{génération} est l'opération inverse de la détection qui consiste à produire le code source de l'application migrée à partir de modèles abstraits transformés.
+
+\item La \textbf{représentation} de l'UI de départ est un ensemble de modèles abstraits issu de la phase de détection. La \textbf{transformation} consiste à manipuler\footnote{Elle consiste à modifier les aspects visuels de l'UI à travers les modèles  }, augmenter\footnote{Elle consiste à ajouter des composants graphiques ou des fonctionnalités à l'UI de départ}, restructurer\footnote{Elle consiste a modifier les types de données ou la structure hiérarchique de l'UI} les modèles abstraits de l'UI source pour être utilisables dans l'environnement
+cible. 
+
+\end{itemize}
+	
+\begin{figure}[h]
+
+\begin{center}
+
+\includegraphics[ scale=1]{chap3/img-5}
+
+\caption{Processus de migration avec MORPH}
+
+\label{fig:chap3:5}
+
+\end{center}
+
+\end{figure}
+
+\subsubsection{Les modèles abstraits d'UI} 
+
+\label{sec:chap3:3:1:2}
+
+Ce sont des éléments clés du processus MORPH car ils représentent les différents
+aspects (layout, activités, etc.)
+de l'UI à migrer. Les modèles sont décrits suivant deux niveaux
+d'abstractions:
+\begin{itemize}
+\item  le  niveau des \textbf{tâches d'interactions} qui regroupe quatre interactions de base d'une UI ~\cite{Foley1990} qui sont : -la sélection dans une liste, -la quantification ou la saisie d'une donnée numérique, -l'indication de la position\footnote{Sur une UI textuelle la position est exprimée en termes de ligne et de colonne pour positionner le curseur du clavier par exemple} d'un élément sur l'écran et -la saisie d'une donnée textuelle. Ces tâches d'interactions sont identifiées pour la migration d'UI textuelle vers une UI graphique. 
+\item et le niveau d'\textbf{objet d'interactions abstraites} qui représente les éléments abstraits indépendants d'une bibliothèque graphique (tel que Button, List, Menu, etc.), ce modèle est spécifique aux UI graphiques.
+\end{itemize}
+
+Dans le cadre de la migration, les tâches d'interactions permettent de décrire les interactions des objets d'interactions abstraits indépendamment du dispositif d'interactions de départ (clavier). \\
+
+
+\fbox{\parbox{0.9\textwidth}{Les tâches d'interactions constituent un \textbf{modèle d'interactions abstraites} pour la migration d'une UI textuelle vers une UI graphique. }}\\  
+
+
+Les objets d'interactions abstraits sont raffinées à partir des attributs les différentes tâches d'interactions et en se basant sur le langage de représentation des connaissances CLASSIC~\cite{Resnick1995}. 
+
+\paragraph{Extraction des modèles abstraits\\}
+Les tâches d'interactions et les objets d'interactions abstraites sont identifiés à partir d'UI textuelles en se basant sur l'architecture de l'application à migrer et sur des \textbf{règles d'identifications}~\cite{Moore1996,Ratiu2008}. Pour identifier les tâches d'interactions Moore et al.~\cite{Moore1996} décrivent les règles d'identifications sous la forme: \[ Si\ \mathbf{Condition}\ est\ vraie;\ Alors\ identifier\ une\ \mathbf{T\hat{a}che\ d'interactions} \] où $\mathbf{Condition}$ correspond à une situation d'une instance d'UI qui représente une \textbf{Tâche d'interactions} du modèle abstrait. Cette forme de règle nécessite que l'ensemble des situation soit identifiées par un mapping entre la boîte à outils de l'UI source et les interactions abstraites. 
+
+Il existe d'autres approches pour extraire un modèle à partir d'une UI existante, par exemple Ratiu et al.~\cite{Ratiu2008} proposent une ontologie pour analyser et comprendre des API spécifiques à un domaine comme les bibliothèques graphiques. Le principe de l'approche consiste d'abord à construire une ontologie capable de représenter les concepts d'une bibliothèque graphique que l'on souhaite utiliser pour la migration; dans notre cas ce sont la structure et les interactions abstraites d'une UI. Dans notre cas l'ontologie décrirait les liens de contenance entre les composants graphiques, les données et les tâches interactions en entrée (sélection, quantification, position, édition). 
+
+Ensuite, à partir d'une UI décrite à l'aide des instances des éléments d'une bibliothèque graphique, l'on extrait grâce à l'ontologie les objets d'interactions abstraites. Cette extraction est possible grâce à un algorithme d'extraction décrit dans~\cite{Ratiu2008}. Les objets d'interactions abstraites de l'UI source sont utilisés comme pivot pour décrire l'UI cible. 
+
+Cette approche d'extraction présente un avantage par rapport aux règles d'identifications de~\cite{Moore1996} car elle ne s'appuie pas sur des situations décrivant des cas possibles dans une UI mais elle se base sur les types des éléments utilisés pour décrire l'UI et elle est plus générique. Cependant le choix de l'ontologie doit être exhaustive pour une API et pour les concepts qui sont représentés.
+
+
+%En considérant une application qui respecte une architecture ARCH et en analysant statiquement les codes sources du composant de présentation de cette application, les règles d'identification des objets d'interactions abstraites et des tâches d'interactions permettent de distinguer les menus des listes de sélection.
+
+
+\paragraph{Mécanismes de transformations et de génération de  l'UI\\ }
+
+Une fois l'UI source décrite par les tâches d'interactions et ensuite raffinée en objets d'interactions abtraites,  la représentation abstraite de l'UI de départ est transformée en modifiant manuellement le modèle d'UI. 
+
+Le \textbf{transformation} consiste d'une part à remplacer des objets d'interactions de l'UI source. Par exemple une tâche de sélections dans une liste  qui est raffinée en une liste à choix unique peut être remplacée par un menu si le nombre d'éléments est inférieur à 10. 
+
+D'autre part cette phase fait intervenir un utilisateur humain pour définir la position, la taille ou pour modifier l'UI. Le concepteur intervient manuellement sur les modèles d'UI après la transformation dans le but de placer les éléments de l'UI. En effet, l'UI textuelle de départ n'est pas structurée comme une UI graphique et les modèles de tâches d'interactions et d'objets abstraits d'interactions ne permettent pas de décrire le layout par exemple.
+
+
+La sélection des éléments de la bibliothèque graphique cible se fait en recherchant dans une bibliothèque graphique décrite par une ontologie des éléments qui correspondent le plus à un objet abstrait du modèle restructuré. 
+
+
+\fbox{\parbox{0.9\textwidth}{
+Le mapping entre objets abstraits et les éléments d'une bibliothèque graphique est fait \textbf{dynamiquement en se basant sur les ontologies}. En effet les correspondances entre les objets abstraits et les éléments de la bibliothèque graphique ne sont pas définies manuellement et de manière exhaustives à la conception de la solution, mais elles sont établies en se basant sur les attributs de chaque éléments.}}
+
+
+Les mécanismes de transformations et générations utilisés par MORPH sont basés aussi sur des ontologies. Dans le cadre de la transformation par exemple il est possible d'introduire des guidelines dans la base de connaissances, en préférant remplacer une liste en menu si elle contient moins de 10 éléments par exemple.
+
+
+\fbox{\parbox{0.9\textwidth}{La transformation utilisée par MORPH permet d'inclure les principes de conception d'UI pour la plateforme cible dans la base de connaissances~\cite{Moore1997}.}}
+
+%faite sur les attribut des tâches d'interactions. elle permet d'établir des règles d'équivalences entre les modèles abstraits sources et cibles en se basant sur les rôles. Par exemple un AWT-Choice est équivalent à un  MORPH-BASIC-MENU au nombre d'état près suivant le tableau~\ref{tab:chap3:2} et ceci indépendamment des types des tâches d'interactions.
+%Le modèle abstrait décrit à la fois les interactions de l'utilisateur (la sélection, l'édition, etc.) et les composants graphiques (bouton, liste de sélection, menu etc.) indépendamment des bibliothèques graphiques.
+
+%\begin{table}[h]
+%
+%\vspace{3pt} \noindent
+%
+%\begin{tabular}{|p{113pt}|p{85pt}|p{180pt}|}
+%
+%\hline
+%
+%\parbox{113pt}{\raggedright 
+%
+%\textbf{{\footnotesize Composants Graphiques}}
+%
+%} & \parbox{85pt}{\raggedright 
+%
+%\textbf{{\footnotesize Objets d'Interactions}}
+%
+%} & \parbox{180pt}{\raggedright 
+%
+%\textbf{{\footnotesize R\^{o}les} }
+%
+%} \\
+%
+%\hline
+%
+%\parbox{113pt}{\raggedright 
+%
+%{\footnotesize MORPH-RADIO-BUTTON}
+%
+%} & \parbox{85pt}{\raggedright 
+%
+%{\footnotesize SELECTION-OBJECT}
+%
+%} & \parbox{180pt}{\raggedright 
+%
+%{\footnotesize -action= Visible-State-Change}
+%
+%
+%
+%{\footnotesize -number-of-states=2}
+%
+%
+%
+%{\footnotesize -variability = fixed}
+%
+%
+%
+%{\footnotesize -grouping= grouped}
+%
+%} \\
+%
+%\hline
+%
+%\parbox{113pt}{\raggedright 
+%
+%{\footnotesize MORPH-BASIC-MENU}
+%
+%} & \parbox{85pt}{\raggedright 
+%
+%{\footnotesize SELECTION-OBJECT}
+%
+%} & \parbox{180pt}{\raggedright 
+%
+%{\footnotesize -action= Procedural-Action}
+%
+%
+%
+%{\footnotesize -number-of-states=(min=2, max=10)}
+%
+%
+%
+%{\footnotesize -variability = fixed}
+%
+%
+%
+%{\footnotesize -grouping= not-grouped}
+%
+%} \\
+%
+%\hline
+%
+%\parbox{113pt}{\raggedright 
+%
+%{\footnotesize AWT-Choice}
+%
+%} & \parbox{85pt}{\raggedright 
+%
+%{\footnotesize INTERACTION-OBJECT}
+%
+%} & \parbox{180pt}{\raggedright 
+%
+%{\footnotesize -action=Procedural-Action}
+%
+%
+%
+%{\footnotesize -number-of-states=(min=2, max=15)}
+%
+%
+%
+%{\footnotesize -variability = fixed}
+%
+%
+%
+%{\footnotesize -grouping= not-grouped}
+%
+%} \\
+%
+%\hline
+%
+%\end{tabular}
+%
+%\caption{Composant graphique et rôles}
+%
+%\label{tab:chap3:2}
+%
+%\end{table}
+
+%Dans le cas de la migration d'UI vers une table interactive, la description des
+%modèles d'interactions et des composants graphiques indépendamment des éléments
+%de la plateforme facilite leur mise en correspondances.
+
+
+
+
+
+\subsubsection{Comment adapter MORPH pour la migration d'UI vers les tables interactives?}
+
+La réponse à cette question passe d'abord par l'ajout de la bibliothèque graphique de la table interactive à la base de connaissances pour permettre l'extraction et la génération de l'UI finale. Ensuite, il faut décrire les modèles abstraits.  Par exemple, nous utilisons les modèles abstraits de l'approche MORPH pour représenter les interactions des éléments graphiques d'un artéfact de l'UI
+CBA cf. figure~\ref{fig:chap2:2}: 
+\begin{itemize}
+	\item le menu principal a une tâche d'interactions de type SELECTION-OBJET avec les rôles (action = \textit{Procedural-Action}, number-of-states = (2..10), variability = \textit{fixed}, grouping= \textit{not-grouped})
+	\item la liste déroulante (\textit{ComboBox}) a une tâche d'interactions de type SELECTION-OBJET avec les rôles (action= \textit{Procedural-Action}, number-of-states = (2..10), variability = \textit{fixed}, grouping = \textit{not-grouped})
+	\item la liste d'images a une tâche d'interactions de type SELECTION-OBJET avec les rôles (action = \textit{Procedural-Action},  number-of-states = (2..10), variability = \textit{fixed}, grouping = \textit{not-grouped})
+\end{itemize}
+
+Enfin, il faut mettre en place des règles de transformations des modèles abstraits en prenant en compte les guidelines. Par exemple, la prise en compte de la guideline~\ref{guide:7} d'utilisation en 306° des éléments graphiques consiste à remplacer les composants graphiques contenant d'autres avec ceux qui ont ces interactions. Les modèles abstraits doivent être capables de décrire et de sélectionner les composants graphiques conformes à une guideline.
+
+%Cette transformation pose un problème de regroupement des éléments graphiques migrés sur la table interactive. En effet sur l'exemple ci-dessous (cf figure~\ref{fig:chap3:14}), la liste déroulante et la liste d'images par exemple doivent être regroupés dans un même container car l'utilisation de ces deux composants se fait au même moment par un utilisateur.
+
+
+%La réutilisation de ce processus de migration dans le cadre de la migration vers une table interactive \textit{DiamondTouch} par exemple nécessite  un mapping entre les objets d'interactions abstraites et chaque élément de la bibliothèque graphique \textit{DiamondSpin} . 
+
+
+%\begin{figure}[h]
+%
+%\begin{center}
+%
+%\includegraphics[angle=270, scale=.4]{chap3/img-15}
+%
+%\caption{Migration vers une table interactive avec MORPH}
+%
+%\label{fig:chap3:14}
+%
+%\end{center}
+%
+%\end{figure}
+
+
+
+\subsubsection{Résumé}
+\label{sec:chap3:3:1:3}
+
+
+Cette approche propose une solution de migration réutilisable qui prend en compte une phase reverse engineering (\textbf{détection}), une phase de re engineering (\textbf{transformation}) et une phase de forward engineering (\textbf{génération}). Le tableau~\ref{tab:chap3:2} présente l'approche MORPH suivant les caractéristiques d'équivalences des éléments des plateformes, de modélisation et de prise en compte des guidelines.
+
+
+L'approche est basée sur des modèles abstraits qui décrivent la structure et les interactions (et les comportements) des UI à migrer. Le layout et le style des UI ne sont pas modélisés par cette approche, leur migration est effectué manuellement par un utilisateur humain. 
+Cependant les modèles abstraits proposés par MORPH ne sont pas adaptés pour être utilisés pour une plateforme comme une table interactive.  Le modèle de tâche d'interactions par exemple ne prend pas en compte les mouvements (rotation, déplacement, etc) des composants graphiques des tables interactives. Le modèle de tâche d'interactions permet d'établir des équivalences entre dispositifs d'interactions en se basant sur des tâches de haut niveau d'abstraction et indépendantes des plateformes. Cependant ce modèle n'est pas exhaustif.
+
+En ce qui concerne les équivalences entre les bibliothèques graphiques par exemple, elles sont basées sur les modèles de connaissances et elles sont établies dynamiquement.
+
+\fbox{\parbox{0.9\textwidth}{
+ Les équivalences dynamiques entre les bibliothèques graphiques permettent de sélectionner les composants graphiques appropriés pour chaque cas en fonction de leurs caractéristiques d'utilisation. }}
+
+
+
+Par ailleurs cette approche permet la prise en compte des guidelines à travers les transformations (remplacement des objets abstraits ou sélection des composants graphiques spécifiques). Cependant l'identification des guidelines et leur prise en compte pendant la transformation sont à décrire par le concepteur de la solution de migration sur une plateforme comme les tables interactives.
+
+\begin{table}[h]
+\begin{tabularx}{15cm}{|Y|Y|Y|Y|}
+\hline  & \textbf{Équivalences} & \textbf{Modélisations} & \textbf{Prise en compte des guidelines}  \\ 
+\hline \textbf{MORPH} & Dynamique des bibliothèques graphiques  basées sur des modèles de connaissances 
+			& Modélisation des interactions abstraites,   Modélisation de la structure 
+			& Prise en compte par les règles de transformations des modèles abstraits \\ 
+\hline 
+\end{tabularx} 
+\caption{Récapitulatif de MORPH}
+\label{tab:chap3:2}
+\end{table}
+
+
+
+\subsection{Approches de migration automatiques d'UI}
+\label{sec:chap3:3:2}
+La solution MORPH ne modélise pas tous les aspects d'une UI, ce qui implique une intervention de l'utilisateur pour la migrations des aspects non gérés. Dans cette section nous présentons les approches de migration réutilisables pour différentes plateformes en s'appuyant sur des modèles abstraits d'UI et qui ne font pas appel à des processus manuels.
+
+Ces solutions de migration d'UI sont génériques et sont utilisées par des services de migration des UI dans des contextes ubiquitaires comportant plusieurs types de plateformes. Les services de migration d'UI sont chargés d'adapter une UI pendant son exécution\footnote{C'est une migration à la volée d'une UI d'une application où l'état courant de l'UI est sauvegardé par des modèles abstraits d'UI et adapté sur une autre plateforme en permettant à l'utilisateur de continuer une tâche sans interruption~\cite{Calvary2002}} ou entre deux sessions de son utilisation\footnote{C'est une migration qui implique que l'utilisateur quitte l'application, sauvegarde son état et redémarre l'application sur la nouvelle plateforme~\cite{Calvary2002}}  pour une plateforme donnée. Nous étudions dans cette section les modèles d'UI et les mécanismes de ces approches pour la migration d'UI vers une table interactive.
+
+\subsubsection{Modèles d'UI}
+\label{sec:chap3:3:2:1}
+Les modèles abstraits permettent de décrire les UI comportant en général plusieurs niveaux d'abstraction dans l'objectif de décrire les différents aspects des UI. Le framework de référence CAMELEON (CRF)~\cite{Calvary2002} propose quatre niveaux d'abstraction pour décrire les UI: le niveau des tâches et concepts, le niveau interface abstraite (AUI), le niveau interface concrète (CUI) et le niveau interface finale (FUI). 
+
+\paragraph{Modèle de tâches et concepts} Ce modèle exprime les tâches  et les concepts d'UI dans un contexte précis tel que défini par le concepteur. 
+Ce modèle exprime les interactions de l'UI avec les utilisateurs ou le système, le comportement et les différents états des composants graphiques. Dans le cadre de la migration des UI à la volée, le modèle de tâches permet de conserver l'état d'une UI en cours d'exécution par exemple. 
+
+Dans notre cas, la migration ne se fait pas à l'exécution, mais elle se fait de manière statique et elle passe par une re conception de l'UI de départ. Le modèle de tâches peut permettre d'exprimer les interactions entre les utilisateurs et l'UI indépendamment des modalités d'interactions.
+\paragraph{Modèle AUI} Ce modèle permet de représenter les éléments d'une UI indépendamment des modalités d'interactions en exprimant leur fonctionnalité essentielle. Ce modèle concrétise les éléments du domaine utilisé par le modèle de tâches, par exemple une tâche de saisie de données correspond à un élément de type Input dans le modèle AUI (cf. figure~\ref{fig:chap3:2}). Les éléments du modèle AUI permettent en général d'exprimer les différents types d'interactions tels que l'entrée de données (Input), l'affichage d'informations (Output), l'activation d'une commande (Command). Ce modèle exprime aussi la structure d'une UI à travers les regroupements (Container) ou les types des données. 
+
+Dans notre cas, le modèle d'AUI exprime les interactions de haut niveau entre UI et NF et indépendamment des dispositifs d'interactions. Cependant ce modèle n'exprime pas les interactions sur les propriétés visuelles des composants graphiques (redimensionnement, déplacement, rotation, etc.). En effet le modèle AUI est indépendant de toute modalité, il peut être concrétisé en UI graphique, vocale, multimodale, etc.
+
+\paragraph{Modèle CUI} Ce modèle permet de décrire une représentation concrète de l'UI suivant une modalité. Dans le cadre des UI graphiques qui nous concernent par exemple, des composants graphiques sont choisies pour raffiner les éléments du modèle AUI. Ce modèle exprime la structure, le positionnement (layout) et même le style des éléments graphiques. Les composants graphiques de ce modèle sont exprimés dans un langage indépendant des bibliothèques graphiques pour garantir leur réutilisabilité. 
+
+Dans notre cas, le modèle de CUI exprime des UI de modalité graphique et l'on peut considérer la migration d'UI desktop vers une table interactive comme un changement de bibliothèque graphique qui nécessite une adaptation des interactions, de la structure, du layout et du style de l'UI de départ.
+
+Il existe plusieurs implémentations pour chacun de ces niveaux de modèle. Paternò \textit{et al}.~\cite{Paterno'2009} proposent le langage MARIA XML qui décrit les UI aux niveaux (AUI et CUI) et USIXML (User Interface eXtensible Markup Language)~\cite{Vanderdonckt2004} décrit aussi des modèles de CUI, AUI.
+
+
+%Le lien entre ces différents niveaux d'abstraction étant assuré par un modèle de mapping, le processus de développement consiste en un raffinement successif du niveau le plus abstrait pour atteindre une plateforme précise. En effet l'application est spécifiée d'abord sous forme de tâche et de concept qui seront raffinés en AUI, ensuite en CUI et enfin en FUI  (cf. figure~\ref{fig:chap3:2}).
+
+%TODO:
+%Le modèle CUI décrit la structure d'une UI: Données, le regoupement, la cardinalité de l'UI
+%Ce modèle dans certain cas décrit le layout de l'UI aussi
+\begin{figure}[ht]
+
+\begin{center}
+
+ \includegraphics[scale=.8]{chap3/img-7} 
+
+ \caption{Exemple de transformation USIXML}
+
+ \label{fig:chap3:2}
+
+\end{center}
+
+\end{figure}
+
+
+%\fbox{\parbox{0.9\textwidth}{Les modèles des niveaux d'abstractions de tâches,  d'AUI et de CUI sont utilisés par les mécanismes de migrations pour transformer l'UI de départ à la plateforme cible. }}
+
+Les différents modèles du CRF permettent de concevoir des UI multi plateformes, dans une approche de conception top down qui consiste à partir du modèle le plus abstrait (modèle de tâches et concepts), le concepteur génère les UI par raffinements successifs des modèles du CRF. Dans le cadre de la migration d'UI, ces modèles sont utilisés soit par des mécanismes de génération des UI finales pour la nouvelle plateforme à partir des modèles abstraits~\cite{Macias2006}, soit par reverse engineering de l'UI existante~\cite{Paterno2010}.
+
+\subsubsection{Mécanismes de migration d'UI top down}
+\label{sec:chap3:3:2:3}
+Nous appelons les mécanismes de migration d'UI basés sur le raffinement des modèles abtraits du CRF en migration d'UI top down. En effet, les concepteurs génèrent par exemple le modèle CUI spécifique à chaque plateforme à partir des modèles AUI et tâches. Cette approche permet de migrer les états d'UI  à l'exécution, MigriXML~\cite{Macias2006} par exemple définie grâce à ces mécanismes un environnement virtuel comprenant différentes plateformes (desktops avec différentes tailles d'écran, smartphones, etc.)
+
+La génération des modèles les moins abstraits dans cette approche est effectuée à la conception. L'approche permet d'étendre une application à d'autres plateformes en réutilisant les modèles de tâches et d'AUI dans le cas d'une nouvelle plateforme ayant des modalités différentes de la plateforme de départ. 
+Pour la migration d'une application existante par ces mécanismes, il est indispensable d'avoir les modèles du CRF associés. Cette contrainte exclue toutes les UI des applications qui ne sont pas conçues suivant le CRF.
+
+%Ces mécanismes ont pour objectif de faciliter le changement de modalités d'interactions de l'UI de départ. Kong et al.~\cite{Kong1999a} proposent à cet effet un modèle de tâches\footnote{Ce modèle de tâches est utilisé par un processus de migration générique d'une UI textuelle vers une UI graphique.} basé sur les \textit{actions des utilisateurs}, sur les \textit{écrans }et les transitions entre les différents écrans. Ce modèle identifie trois types d'actions:
+%
+%\begin{itemize}
+% \item les actions d'entrée de donnée (\textit{tell}), 
+% \item les actions d'affichage d'informations à un même endroit de l'écran (\textit{ask-standard}\footnote{Dans le cadre d'une UI textuelle, certaines zones de l'écran peuvent être utilisées pour présenter des informations de progression par exemple. }) 
+% \item et les actions d'affichage d'informations à différents endroits de l'écran(\textit{task-select}). 
+%\end{itemize}
+%
+%Les trois types d'actions permettent d'identifier les différentes informations échangées entre l'application et l'utilisateur. Les activités permettent de représenter le actions possibles de l'utilisateur à partir de l'UI textuelle dans le but de déduire le modèle d'interface abstrait. Par exemple les actions de types \textit{tell} qui manipulent les dates sont représentées par des objets graphiques qui peuvent être des calendriers.
+%
+%
+%Dans le cadre de la migration d'une UI desktop vers une table interactive, le modèle de tâches peut permettre la prise en compte de la guideline  de ``couplage tâches et utilisateurs'' (G\ref{guide:5}) et se fait en identifiant et en supprimant les activités bloquantes pour les autres utilisateurs telles que l'affichage d'une boîte de dialogue par exemple.
+%
+%
+%Par ailleurs, les trois types d'actions identifiées ci-dessus ne permettent pas de représenter toutes les activités possibles sur une UI desktop. En effet, les interactions en entrée par exemple peuvent être des saisies de données ou des commandes (déplacement, redimensionnement ou activation) avec ou sans paramètre.\\
+%
+%\fbox{\parbox{0.9\textwidth}{
+%Les modèles d'interactions abstraites permettant de représenter l'ensemble des activités possibles des plateformes sources et cibles et peuvent être utilisés pour représenter le modèle de tâches.}}
+
+\subsubsection{Mécanismes de migration d'UI bottom up}
+\label{sec:chap3:3:2:4}
+Ces mécanismes permettent la migration d'UI en utilisant les modèles du CRF et en les abstrayant à partir d'UI existantes. 
+%Les mécanismes de migration basés sur les modèles AUI et CUI sont utilisés par plusieurs solutions de migrations~\cite{Masso2006,Wong}. 
+Paternò \textit{et al}.~\cite{Paterno2010} proposent un service d'adaptation d'une page web à un téléphone portable~\ref{fig:chap3:1}   basé sur le reverse engineering et l'adaptation d'une UI existante. Ce service abstrait les pages HTML dans les modèles CUI et AUI du langage MARIA XML et transforme les modèles obtenus en fonction de ces principes:
+\begin{itemize}
+
+\item adapter les tableaux en les découpant en plusieurs tableaux pour ceux comportant plusieurs colonnes ou en réduisant les données qu'ils contiennent (si une cellule d'un tableau contient un nombre maximum de mots alors on crée un lien ``\textit{détail...}'' pour afficher les contenus en trop)
+
+\item transformer les textes longs en liens ``\textit{détail...}'' comme pour les contenus des tableaux
+
+\item transformer les images en les redimensionnant
+
+\item convertir les listes en menu drop down par exemple
+
+\item adapter la taille et la disposition des composants graphiques en les redimenssionnant et en adoptant un layout vertical par exemple
+
+\end{itemize}
+
+Le concepteur définie des mécanismes de transformations~\cite{Limbourg} pour appliquer ces principes sur les modèles de CUI et d'AUI. Dans ce cas, la migration ne change pas de bibliothèque graphique car l'UI reste toujours en HTML. Cependant le layout, la taille des composants graphiques, les données et le type de certains composants graphiques sont transformés et remplacés pendant la migration. Les transformations des instances des modèles AUI et CUI de l'UI de départ sont horizontales car elle génèrent d'autres instances de ces modèles pour la plateforme d'arrivée.
+
+L'avantage de cette approche  est que seuls les modèles indispensables pour la migration sont abstraits à partir de l'UI de départ. En effet, pour adaptation du layout par exemple, le modèle de tâche n'est pas indispensable. Dans le cadre de la migration d'UI vers les tables interactives qui implique un changement de dispositifs d'interactions, il est indispensable d'exprimer les interactions de manière abstraite par les modèles du CRF (Tâches et AUI). Cependant les modèles de tâches et AUI du CRF n'expriment pas toutes les interactions des tables interactives (cf. section~\ref{sec:chap3:3:2:1}). Ces mécanismes basées sur le reverse engineering nécessitent aussi que les applications respectent des architectures prônant la séparation entre UI et NF (telles que MVC ou ARCH).
+
+ \begin{figure}[h]
+
+ \begin{center}
+
+ \includegraphics[scale=1]{chap3/img-6} 
+
+ \caption{Service de migration d'UI}
+
+ \label{fig:chap3:1}
+
+ \end{center}
+
+ \end{figure}
+
+
+\subsubsection{Service de migration d'UI desktop vers les tables interactives}
+%L'utilisation d'un serveur de migration d'UI pour les tables interactives
+%implique la possibilité d'extraire les modèles abstraits des applications à
+%migrer et formalisation des règles de transformation des modèles de
+%l'application de départ pour la plateforme d'arrivée.\\
+
+Dans cette section nous étudions les adaptations nécessaires dans le cas d'une réutilisation du service de migration d'UI (cf. figure~\ref{fig:chap3:1}). Nous choisissons d'adapter cette solution car elle prend en compte des UI sources en retrouvant les modèles abstraits nécessaires. Nous considérons toujours  notre exemple fil rouge :l'application CBA (cf. section~\ref{sec:chap2:2:1}) à migrer sur une table interactive (Microsoft PixelSense). 
+Une adaptation du service de migration d'UI nécessite:
+\begin{itemize}
+	\item  une table d'équivalences (tableau~\ref{tab:chap3:1}) entre les éléments du langage MARIA XML, XAML et l'API Java Swing pour abstraire et concrétiser l'UI de départ
+	\item une formalisation des guidelines sur les éléments du langage MARIA XML.
+\end{itemize}
+    
+   
+
+
+\begin{table}[h]
+\caption{Table d'équivalences}
+\label{tab:chap3:1}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+
+\hline \textbf{MARIA XML}&	\textbf{Java Swing}&	\textbf{XAML Surface}\\ 
+
+\hline Activator&	JButton&	Button\\ 
+
+\hline Single choice&	JCombox&	ListBox\\ 
+
+\hline Text Edit&	JTextField&	TextBox\\ 
+
+\hline Object&	Image&	Image\\ 
+
+\hline Grouping&	JPanel&	  {\footnotesize ScatterViewItem, Grid}\\
+\hline 
+\end{tabular} 
+
+\end{center}
+\end{table}
+
+La table d'équivalence permet de décrire les correspondances entre les
+bibliothèques graphiques des plateformes sources et cibles. Le
+tableau~\ref{tab:chap3:1} par exemple décrit une correspondance entre Java Swing
+et XAML en se basant sur le langage MARIA XML. Cette correspondance est statique
+et doit être établie pour l'ensemble des composants graphiques d'une
+bibliothèque graphique.
+
+Par ailleurs, Silva \textit{et al.}~\cite{Silva2012} proposent plusieurs critères pour la
+correspondance entre bibliothèques graphiques basées sur les langages XML. Le
+premier critère est le comportement des composants graphiques car il caractérise
+les actions utilisateurs indépendamment de la représentation du composant
+graphique. Les autres critères utilisables dans le cadre de la migration sont le
+style des UI et les balises des éléments graphiques.
+
+En considérant par ailleurs la guideline d'utilisation 360° (G\ref{guide:7}),
+elle peut être traduite sur les éléments
+du langage MARIA XML, qui par exemple  donne la règle suivante: tous les
+\textit{Grouping} sont
+transformés en ScatterViewItem pour être conformes à la guideline d'utilisation
+360°de l'UI.
+
+
+%\begin{figure}[ht]
+
+%\begin{center}
+% \includegraphics[scale=.5]{chap3/img-14} 
+%  \caption{Processus de migration d'une UI Desktop vers un téléphone portable}
+%  \label{fig:chap3:3}
+ 
+%\end{center}
+
+%\end{figure}
+
+\subsubsection{Résumé}
+%Les serveurs de migration présentés dans cette section se basent sur des modèles d'UI pour leur permettre de décrire des mécanismes de migration génériques. Le modèle décrivant les actions utilisateurs et les transitions des écrans proposés par Kong et al.~\cite{Kong1999a} peut être considéré aussi comme un modèle de tâche. Dans notre contexte de migration, ce modèle permet de déduire le AUI et permet aussi  la prise en compte de guidelines pour la table interactive.
+Cette section présente des mécanismes de migration d'UI basés sur les modèles de CRF. Le modèle de CUI graphique permet de décrire la structure hiérarchique, les données et le positionnement d'une UI. Dans un mécanisme de migration d'UI vers la table interactive, le modèle de CUI est transformé pour rendre l'UI de départ conforme aux guidelines. 
+
+Le modèle d'AUI décrit à la fois le regroupement des éléments abstraits d'UI et les interactions (en entrée ou en sortie) entre l'utilisateur et le système (NF). Les modèles de tâches et de concepts décrivent les activités d'UI	 et les comportements de l'UI de façon globale dans langage de haut niveau. 
+
+\fbox{\parbox{0.9\textwidth}{
+Les interactions décrites par les modèles de tâches et AUI expriment les interactions sur une UI indépendamment des dispositifs d'interactions, mais elles n'expriment pas l'ensemble des comportements des composants graphiques nécessaires pour établir des équivalences.}}
+
+
+%La concrétisation des modèles d'UI en applications finales se fait en se basant sur des tables d'équivalences statiques ou sur des règles d'inférences.
+
+\begin{table}[h]
+\begin{tabularx}{15cm}{|Y|Y|Y|}
+\hline  \textbf{Équivalences} & \textbf{Modélisations} & \textbf{Prise en compte des guidelines} \\ 
+\hline  Statique des bibliothèques graphiques table d'équivalences   
+		& CUI: Structure et Layout\newline AUI et Tâches: Interactions utilisateurs de haut niveau   
+		& Définie dans les règles de transformation des modèles  \\ 
+%\hline    &  &  \\ 
+\hline 
+\end{tabularx} 
+\end{table}
+\section{Synthèse et objectifs}
+\label{sec:chap3:4}
+
+\subsection{Synthèse}
+
+Nous avons présenté dans le tableau~\ref{tab:chap3:3} le récapitulatif des approches de migration d'UI étudiées suivant les critères d'évaluation décrits à la section~\ref{sec:chap3:0}. Ces approches de migration d'UI nous montrent que les solutions de migration peuvent être spécifiques à une application ou à une bibliothèque graphique. Et ces solutions peuvent aussi être réutilisables en se basant sur une modélisation des différents aspects d'une UI. 
+
+Nous avons raffiné les critères d'évaluation des approches présentées. Nous avons identifié deux types d'équivalences entre les éléments des plateformes: 
+\begin{itemize}
+ \item les \textbf{équivalences statiques} entre les bibliothèques graphiques  qui sont définies par les concepteurs (à l'aide d'une table d'équivalence par exemple) 
+ \item et les \textbf{équivalences dynamiques} qui sont établies en se basant sur les caractéristiques des éléments à comparer (utiliser les inférences d'un modèle de connaissances par exemple) 
+\end{itemize}
+
+
+En ce qui concerne la prise en compte des guidelines, nous avons constaté que le concepteur peut se baser sur ses \textbf{connaissances} dans une approche manuelle pour décrire les mécanismes de transformations et d'équivalences. Pour des approches qui modélisent l'UI à migrer, les guidelines à considérer sont\textbf{ traduites en règles }de transformation des différents aspects et les guidelines permettent aussi d'établir des équivalences entre les bibliothèques graphiques par exemple.
+
+Les modélisations d'UI utilisées par les différentes approches présentées nous permettent d'affirmer que :
+\begin{itemize}
+\item les \textbf{interactions} dans un processus de migration d'UI peuvent être modélisées partiellement par les modèles de tâches et AUI~\cite{}, les tâches d'interactions~\cite{Foley1990, Kong1999a}.
+\item la \textbf{structure d'une UI} comprend à la fois les données de l'UI et les relations hiérarchiques entre les différents composants de l'UI. Cet aspect de l'UI peut être modélisé par des \textbf{méta données}~\cite{Besacier2007} ou des modèles d'UI~\cite{Vanderdonckt2004, Paterno'2009} pour décrire les composants graphiques et les données d'UI. 
+\item le \textbf{positionnement des éléments d'UI graphique} peut aussi être décrit dans un modèle indépendant d'une plateforme. Les langages de description d'UI (UIDL) tels que USIXML, MARIA, UIML permettent de décrire le layout.
+\item le \textbf{style} d'UI peut être modéliser au travers d'UIDL comme  UIML\footnote{\hyperref{http://www8.org/w8-papers/5b-hypertext-media/uiml/uiml.html}{category}{UIML}{UIML: An Appliance-Independent XML User Interface Language}}.
+\end{itemize} 
+ 
+  
+   
+
+%Dans le but de proposer une solution de migration qui permet\footnote{conformément aux problématiques identifiées au chapitre précédent.} le changement des modalités d'interactions conformément aux guidelines d'UI tactiles et tangibles, la transformation des layout et l'adaptation de la taille et du style de l'application de départ, nous évaluons les approches présentées ci-dessus suivant quatre critères:
+%\begin{itemize}
+%\item \textbf{Équivalences entre les plateformes source et cible}: ce critère permet de savoir comment une approche décrit les équivalences entre la plateforme source et cible. Dans les approches ci-dessus, les équivalences entres les plateformes se font en se basant sur les tâches, modèles AUI ou CUI et les composants graphiques. Nous avons aussi identifié deux types d'équivalence entre ces éléments des plateformes: - les équivalences statiques qui sont définies par les concepteurs (à l'aide d'une table d'équivalence par exemple) - et les équivalences dynamiques qui sont établies en se basant sur les caractéristiques des éléments à comparer (utiliser les inférences d'un modèle de connaissance par exemple) 
+%\item \textbf{Prise en compte des guidelines}: ce critère permet de savoir comment une approche permet la prise en compte des guidelines. Cette prise en
+%compte peut être basée sur l'intuition du concepteur ou être décrite formellement dans des règles. Certaines approches ne permettent pas la prise en compte de toutes les guidelines que nous avons identifiées au chapitre précédent.
+%
+%\item \textbf{Modèle d'interactions de l'UI}: ce critère nous permet de savoir comment est décrit les interactions utilisées par une approche et si le modèle peut être réutilisé dans le cadre de la migration vers les tables interactives.
+%
+%\item \textbf{Modèle de structures de l'UI}: ce critère permet de savoir si les modèles de structures d'une approche permettent de transformer l'UI de départ conformément aux guidelines pour les UI collaboratives.
+%\end{itemize}
+
+
+
+\begin{table}[h]
+
+\caption{Synthèse des approches de migration d'UI}
+\label{tab:chap3:3}
+
+\begin{tabularx}{15cm}{|Y | Y| Y |Y |}
+
+\hline \textbf{Approches}&\textbf{Équivalences } 
+						& \textbf{Prise en compte des guidelines}
+						& \textbf{Modèles} \\ 
+
+\hline Approches ad-hoc & \begin{flushleft}
+						Équivalences statiques :
+							\begin{itemize}
+							\item des bibliothèques graphiques,
+							\item des dispositifs d'interactions
+							\end{itemize}
+						\end{flushleft}
+						& \begin{center}
+						Basée sur les connaissances du concepteur
+						\end{center}
+						& 
+						\begin{flushleft}
+						Aucun modèle d'UI
+						\end{flushleft}\\ 
+\hline Portage d'UI sur table interactive& \begin{flushleft}
+						Équivalences statiques : 
+							basées sur les boîtes à outils graphiques et définies par le concepteur
+						\end{flushleft}
+						& \begin{center}
+						Toutes les guidelines ne peuvent pas être prises en compte
+						\end{center}
+						& \begin{center}
+						Modèle de structure d'UI (méta données)
+						\end{center}\\ 
+\hline MORPH  & Dynamique: basée sur un modèle de connaissances et exprimée par
+des rôles
+						& Règles de transformations basées sur les modèles abstraits
+						& Modèle de structure d'UI \& Modèle d'interactions abstraites\\
+\hline Service de migration d'UI& \begin{flushleft}
+						Statique: tables d'équivalences statiques et mapping des modèles
+						\end{flushleft}
+						& Règles de transformations des modèles
+						& \begin{flushleft}
+						Tâches, AUI et CUI
+						\end{flushleft}\\
+%b						Style définie manuellement par le concepteur\\ 
+\hline 
+
+\end{tabularx} 
+\end{table}
+
+\subsubsection{Les points forts des approches présentées}
+
+\begin{itemize}
+	\item Les solutions de migration d'UI~\cite{Wu2003, Moore1997} faisant intervenir les utilisateurs humains permettent de générer des UI migrées proche de l'attente des utilisateurs finaux. En effet ces approches permettent une re conception manuelle pendant la migration et les prises en compte des guidelines sont plus fines pour les utilisateur ayant une bonne connaissance des plateformes cibles.
+	\item Les solutions de migration basées sur les modèles permettent de décrire des mécanismes de transformations et d'équivalences réutilisables pour des applications respectant une architecture définie. 
+	
+\end{itemize}
+
+\subsubsection{Les limites}
+
+%Le tableau~\ref{tab:chap3:3} nous permet de remarquer que les modèles d'interactions utilisés par  MORPH et les serveurs de migration ne décrivent pas de manière exhaustive les interactions de chaque objet d'interactions indépendamment de modalités d'interactions car leurs objectifs sont de décrire les activités d'une UI donnée. Dans le cadre de la migration, une description des interactions de chaque composant graphique permet d'établir des équivalences entre les plateformes source et cible. Par ailleurs, les modèles de structures utilisés par les approches MORPH et les serveurs de migration peuvent être réutilisés dans le cadre de la migration vers les tables interactives.
+La réutilisation des approches basées sur des modèles d'UI dans le cadre des tables interactives  nous permet d'identifier les limites ci-dessous:
+%En réutilisant les différents modèles d'UI (interactions et structures) présentés dans les approches ci-dessus dans le cadre de la migration vers les tables interactives, nous identifions les limites suivantes. 
+\begin{itemize}
+	\item les \textbf{équivalences statiques} entre les plateformes ne sont pas exhaustives et ne facilitent pas la réutilisation de l'approche pour d'autres applications ou d'autres plateformes
+	\item la \textbf{prise en compte des guidelines} par toutes les approches décrites. % permettent pas la prise en compte de toutes les guidelines pour les tables interactives car les modèles de structures et d'interactions n'expriment pas tous les aspects des UI pour les tables interactives.
+\end{itemize}
+
+
+\subsection{Objectifs}
+%TODO: Objectifs de haut niveau cf présentation
+L'objectif principal de cette thèse est de faire de la migration des UI existantes en prenant en compte les guidelines de plateforme d'arrivée. Pour atteindre cet objectif nous choisissons de passer par le reverse engineering des UI d'abord en l'abstrayant dans des modèles abstraits. Ensuite,  notre solution transforme les modèles abstraits tout en faisant intervenir le concepteur pour personnaliser les aspects non modélisés. Et enfin  nous générerons l'UI finale à partir des modèles abstraits transformés. La solution de migration d'UI que nous proposons se base aussi sur des applications décrivant le modèle d'architecture MVC. 
+
+
+En considérant cet objectif principal, l'étude des différentes approches de migration d'UI de façon globale et aussi particulièrement la migration sur les tables interactives nous montre des modèles d'interactions qui ne facilitent pas les équivalences entre les plateformes. 
+Pour atteindre notre objectif, notre contribution dans cette thèse est de :
+\begin{itemize}
+\item proposer un modèle d'interactions qui permet le changement de modalité d'interactions et la préservation des interactions de l'UI de départ tout en prenant en compte celles de la plateforme d'arrivée
+\item permettre la prise en compte des toutes les guidelines. 
+\end{itemize}
+% solution a pour objectifs 
+
+Dans la partie suivante, nous présentons le c\oe{}ur de notre approche pour la migration des UI vers des tables interactives. En nous servant de l'étude précédente, nous proposons une approche basée sur un modèle d'interactions abstraites qui permet d'établir des équivalences dynamiques entre les  plateformes et qui permet aussi la prise en compte des guidelines pour les tables interactives.
+
+

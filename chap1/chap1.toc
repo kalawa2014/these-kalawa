@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Applications \`{a} migrer: cas de l'application CBA}{1}
+\contentsline {subsection}{\numberline {2.1}Sélection des composants graphiques}{2}
+\contentsline {subsubsection}{\numberline {2.1.1}Cas d'un groupe de composants graphiques}{2}
+\contentsline {subsubsection}{\numberline {2.1.2} Cas d'un composant graphique}{3}
+\contentsline {subsection}{\numberline {2.2}Migration de la structure de l'UI de départ}{3}
+\contentsline {subsection}{\numberline {2.3}Utilisation des objets tangibles comme moyens d'interactions}{4}
+\contentsline {subsection}{\numberline {2.4}Personnalisation des aspects visuels de l'UI de l'application CBA}{4}
+\contentsline {section}{\numberline {3}Assistance du concepteur pendant la migration}{5}
+\contentsline {subsection}{\numberline {3.1}Sélection des objets interactifs}{5}
+\contentsline {subsection}{\numberline {3.2}Placement et édition manuelle}{6}
+\contentsline {subsection}{\numberline {3.3}Discussion }{6}
+\contentsline {section}{\numberline {4}Conclusion}{7}

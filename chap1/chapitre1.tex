@@ -1,0 +1,135 @@
+\section*{Contexte}
+Le nombre grandissant de plateformes et surtout la très grandes variétés de dispositifs d'interactions dont ils disposent telles que les smartphones, les tablettes, les terminaux tactiles ou les tables
+interactives ont généralisé l'usage des applications ayant des modalités d'interactions ~\cite{NC1993} beaucoup plus sophistiquées qu'une simple utilisation du clavier et de la souris. Les tables interactives par
+exemple offrent la possibilité de mettre en \oe{}uvre des applications réellement multi-utilisateurs mêlant
+interactions tactiles et objets tangibles~\footnote{Les interfaces utilisateurs tangibles (TUI) permettent à une application de pouvoir interagir avec des objets physiques directement manipulable par les utilisateurs ~\cite{Ullmer1997}. Les objets tangibles sont ceux pouvant être manipulés par une interface utilisateur tangible} sur une surface de prêt de 1 mètre carré.
+
+Le domaine du génie logiciel pour les Interactions Homme Machine (IHM) propose plusieurs
+approches pour la conception d'une application. En particulier la tendance actuelle est de concevoir les Interfaces Utilisateurs (UI) selon les modèles du Framework de Référence Cameleon
+(CRF) ~\cite{Calvary2002} qui identifie différents niveau d'interaction. De la plus abstraite ou indépendante des dispositifs d'interactions disponibles sur la plateforme vers un niveau concret. Ceci permettant la mise en \oe{}uvre
+de l'UI selon la modalité d'interaction souhaitée et disponible sur la plateforme cible. Si l'interface utilisateur d'une application est construite selon cette approche, alors la migration de cette dernière vers des terminaux ayant des modalités différentes est abordé partiellement par ~\cite{Paterno2011}. Notre travail
+aborde la possibilité de faire migrer entre plateformes ayant des modalités d'interactions différentes
+des applications qui n'ont pas été conçues selon les modèles du framework de référence (CRF).
+
+La migration des UI est une activité de génie logiciel qui implique la transformation des différents aspects qui constituent une UI existante tels que les interactions (ou le dialogue entre l'utilisateur et le système) qu'il faut nécessairement préserver pour que l'utilisateur puisse toujours accomplir les mêmes tâches, les structures (organisations et types de données des éléments graphiques), le positionnement et les styles des composants graphiques qui doivent être adaptés pour être conformes aux spécificités de la plateforme cible et toujours satisfaire les utilisateurs finaux dans les choix de configuration qui ont put être fait sur la source.
+
+Au delà des problèmes liés à des différences possibles entre les environnements d'exécution des
+plateformes source et cible  ~\cite{TKB78}qui nécessite le portage du code, les différences des modalités d'interactions entre la source et la cible impliquent nécessairement la prise en compte des critères usuels de conception des UI. La transformation de l'UI de départ doit être guidée non seulement par les critères ergonomiques de conception mais aussi par les dispositifs d'interactions disponible sur la plateforme cible qu'il peut être intéressant d'utiliser.
+
+Évidemment, en complément de la volonté de rendre disponible des dispositifs d'interactions nouveaux, peut-être plus intuitifs, les critères ergonomiques de conception constituent un ensemble de principes à respecter pendant la mise en \oe{}uvre. Ils permettent de garantir l'utilisabilité d'une UI. Par exemple, l'utilisation d'une application pour desktop sur une table interactive sans aucune adaptation pose des problèmes d'utilisabilité, car la simulation du clavier et de la souris n'est pas le meilleur mode d'interaction en terme d'utilisabilité. Si l'application le permet, on peut même imaginer une
+utilisation multi-utilisateurs avec une nouvelle UI à déduire de l'UI d'origine.
+
+
+\section*{Enjeux de la migration}
+Dans le cadre de la migration des applications pour desktops vers les tables interactives par exemple, nous notons que les dialogues, la structure et le positionnement des éléments des UI doivent prendre en compte l'éventualité d'avoir plusieurs utilisateurs mais surtout la possibilité d'utiliser des objets tangibles. Travailler sur ces deux exemples va nous permettre d'avoir une réelle évolutivité des UI entre le terminal source et le terminal cible et permet de favoriser la collaboration dans un espace de travail co-localisé et multi-utilisateurs offert par la table interactive et donc de l'utiliser pleinement.
+
+Nous faisons l'hypothèse que le c\oe{}ur de l'application peut être migré sans modification et qu'il ne faut agir qu'au niveau de l'UI qu'il faut bien évidemment faire migrer. Cette migration, d'un terminal
+source vers un terminal cible donnée doit permettre de conserver dans la mesure du possible les
+dialogues, la structure et les positionnements relatifs des éléments de l'interface, le respect du style
+des éléments graphiques des UI de la source mais bien évidemment proposer une adaptation pour utiliser au mieux, sans perdre les utilisateurs, les nouveaux moyens d'interaction mis à la disposition des utilisateurs.
+
+La transformation des dialogues d'une UI desktop vers une cible collaborative peut-elle garantir
+à chaque utilisateur des interactions qui favorisent la collaboration? De nombreux éléments sont à
+prendre en compte. En effet, chaque dialogue ou message d'erreur ne doit pas perturber les activités
+des autres utilisateurs; par exemple les ?feedbacks? ou les messages d'erreurs destinés à un utilisateur
+ne doivent pas bloquer un autre utilisateur si une réponse est attendue. Par ailleurs la transformation
+des dialogues peut-elle assurer que chaque dialogue reste cohérent avec l'intention et les actions des
+utilisateurs ? Par exemple la modification d'une valeur par deux utilisateurs distincts peut les perturber.
+Il faut en effet décider si le résultat est la somme des deux modifications, la moyenne, le min ou le
+max. Évidemment le contexte et la nature de la valeur peuvent guider sur le choix à effectuer.
+
+La transformation des dialogues sur les UI et les fonctionnalités de l'application source peuvent
+provoquer de nombreux changements? En effet, la transformation des dialogues des UI desktops
+pour les tables interactives peuvent par exemple impliquer des modifications pour prendre en compte
+la présence de plusieurs utilisateurs ou d'objets tangibles.
+
+La transformation de la structure et du positionnement des éléments d'une UI pour desktop vers
+une table interactive consiste à assurer l'accessibilité aux différents utilisateurs des éléments graphiques pertinents~\footnote{Un menu par exemple}. Par ailleurs la transformation des aspects structurels d'une UI doit elle aussi préserver au mieux l'utilisabilité de l'UI. En effet les solutions de transformations proposées doivent
+produire des UI conformes aux spécificités de la plateforme cible et satisfaisantes pour les utilisateurs
+finaux.
+
+Pour terminer, la transformation du style a nécessairement un impact sur la collaboration ou sur
+l'utilisation des objets tangibles. Généralement, chaque application adopte une charte graphique qu'il
+faut soit respecter, soit rénover.
+
+Les questions soulevées par les transformations des différents aspects des UI lors d'une migration
+sont usuellement traitées de différentes manières. En premier lieu, il est possible d'adopter une approche manuelle ~\cite{WGM08}. Celle-ci permet d'avoir, au prix d'un travail minutieux, une UI conforme
+aux attentes des utilisateurs finaux car les transformations sont flexibles et donc la qualité de l'UI
+produite dépend directement des compétences de celui qui effectue la migration manuelle. Mais cette approche est difficilement réutilisable, à moins de la consigner dans un document, que ce soit pour
+d'autres applications ou pour d'autres personnes car elle nécessite une bonne connaissance des critères de transformation des différents aspects et des technologies des UI des plateformes source et
+cible.
+
+Il est aussi possible d'adopter une approche automatique basée ou non sur des modèles abstraits ~\cite{Besacier2010}~\cite{Paterno2010}  qui permet une transformation des différents aspects des UI. Bien que ces approches automatiques soient réutilisables, elles sont nécessairement moins flexibles car le concepteur
+qui ne peut pas intervenir pendant la transformation, adapte l'UI produite dans un second temps.
+
+
+Entre ces deux approches, il est aussi possible d'adopter une approche semi automatique~\cite{Markopoulos1997}
+qui présente de nombreux inconvénients car non seulement elle induit un travail supplémentaire pour
+la personne en charge de la migration qui guide la transformation mais en permettant plus de flexibilité,
+il est assez difficile de capitaliser sur le travail effectuer si la personne en charge de la migration
+change. Néanmoins, cette approche permet une transformation interactive des différents aspects de
+l'UI. L'intérêt d'une flexibilité dans l'approche de migration d'UI permet d'avoir des UI migrées
+proches des attentes des utilisateurs finaux.
+
+\section*{Contribution de la thèse}
+Cette thèse a pour premier objet d'étudier la migration des UI entre plateformes ayant des dispositifs d'interactions différents. Nous avons fait le choix de cibler en particulier la migration des
+UI depuis une station possédant clavier et souris vers une table interactive. Nous souhaitons que
+cette migration se fasse au moindre coût pour les concepteurs ou les développeurs tout en prenant en
+compte les spécificités de la cible et, bien évidemment, les critères ergonomiques usuels utilisés pour
+la conception des UI.
+
+La solution que nous proposons repose sur un processus semi automatique de migration d'UI.
+Celui-ci comporte plusieurs étapes interactives pour que les les concepteurs ou les développeurs
+puissent effectuer des choix conformes aux critères de conception qu'ils souhaitent privilégiés. Nous
+avons fait le choix de l'interactivité, basé sur des choix simples pour garantir simultanément la réutilisabilité, minimiser les coûts mais aussi pour accroître la flexibilité et garantir ainsi l'UI la plus
+pertinente.
+
+Il est primordial de prendre en compte, lors de la migration des interfaces utilisateurs, les critères ergonomiques de conception. Nos travaux utilisent des concepts issus de plusieurs domaines de
+recherche.
+
+Dans le domaine de l'utilisabilité, nous nous sommes intéressés aux travaux qui modélisent les
+critères ergonomiques de conception pour les traduire en règles opérationnelles et utilisables pendant
+la conception. L'objectif est de pouvoir intégrer ces règles dans la plateforme de migration dans le but
+de réduire la charge de travail des personnes en charge de la migration.
+
+Dans le domaine de l'ingénierie des modèles, nous nous sommes intéressés aux travaux permettant
+de modéliser une plateforme dans le but d'effectuer la migration à un niveau abstrait : de concept
+à concept. L'objectif est de rendre notre travail réutilisable si la source et la cible évoluent. Cette
+approche nous permet d'abstraire non seulement les UI mais aussi les interactions. Nous proposons
+ainsi un modèle d'interactions basées sur les primitives d'interactions~\cite{Kalawa2011} pour décrire les
+actions atomiques qui constituent les dialogues entre l'utilisateur et le système.
+
+
+\section*{Plan du manuscrit}
+
+Notre manuscrit est structuré de la manière suivante :
+
+Le chapitre~\ref{chap2} présente l'espace des problèmes liés à la transformations des différents aspects d'une
+UI. Il délimite le périmètre de la migration des UI d'un poste fixe vers une table interactive. Il fixe nos
+objectifs.
+
+Le chapitre~\ref{chap3} présente une étude du modèle d'interactions des tables interactives dans le but
+d'identifier les spécificités et les critères ergonomiques de conception à intégrer pour la migration
+des UI vers cette cible.
+
+Le chapitre~\ref{chap4} est un état de l'art des approches de migration des UI. Dans ce chapitre nous décrivons les critères nécessaires pour atteindre nos objectifs et nous évaluons les différentes approches à
+l'aide de ces critères. Ce chapitre se termine par une synthèse des différentes approches présentées.
+
+
+Le chapitre~\ref{chap5} propose un modèle d'UI qui prend en compte deux aspects des UI : leurs interactions
+et leur structure. Les objectifs de ce modèle d'UI sont de décrire les UI à migrer indépendamment des
+plateformes mais aussi de décrire des opérateurs d'équivalences entre les dispositifs d'interactions des
+plateformes source et cible.
+
+Le chapitre~\ref{chap6} résente les mécanismes de transformation de la structure et des interactions de l'UI
+source vers la cible. L'objectif de ce chapitre est de décrire la prise en compte effective des critères
+ergonomiques de conception sous forme de guidelines par les mécanismes de transformation.
+
+Le chapitre~\ref{chap7} présente le prototype que nous avons réalisé. Il constitue une preuve de concept des
+mécanismes proposés. Plusieurs applications ont été migrées afin de valider les éléments des différents
+modèles, mettre en évidence le respect des critères ergonomiques et surtout mettre en évidence les
+bénéfices que l'on peut retirer d'une telle approche.
+
+Le chapitre~\ref{chap8} est une conclusion. Elle rappelle les objectifs que nous souhaitions atteindre, met
+en évidence nos contributions et leurs apports. Elle donne aussi quelques éléments sur des travaux
+complémentaires qui pourraient être menés pour parfaire nos travaux.

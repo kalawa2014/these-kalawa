@@ -1,0 +1,835 @@
+\section{Introduction}
+\label{sec:chap4:1}
+\par Les approches de migration d'UI génériques et réutilisables que nous avons étudiées dans le chapitre précédent se basent sur des modèles abstraits qui décrivent indépendamment des plateformes et des applications les différents aspects\footnote{Interactions~\cite{Gellersen1995,Kong1999}, Structure, Positionnement~\cite{Paterno'2009, Vanderdonckt2004} et le Style} des UI. 
+\par La migration d'UI vers les tables interactives implique un changement de modalité d'interactions car elles offrent des nouveaux types d'interactions. L'objectif de mise en place d'un mécanisme d'équivalences dynamiques entre instruments d'interactions  des plateformes source et cible et  qui permet la prise en en compte des spécificités\footnote{Ces spécificités concernent les instruments d'interactions, les types d'UI et les guidelines associées.} de la plateforme cible. Nous nous basons sur l'idée de décrire les correspondances entre les instruments d'interactions de la source et la cible à l'aide d'un modèle d'interactions abstraites. 
+%\par Dans le cadre de la migration, l'un des objectifs est d'établir des équivalences entre les composants graphiques des plateformes source et cible. Pour atteindre cet objectif, nous nous basons sur un modèle d'interactions abstraites qui permet de décrire l'ensemble des activités possibles sur les différents composants graphiques et de manière indépendante des dispositifs d'interactions des plateformes source et cible.
+%\par Le processus de migration transforme aussi les éléments structurels d'une UI tels que la position et le regroupement des éléments d'une UI. Par exemple, la migration de l'application AgilePlanner~\cite{Wang2008} par exemple les menus sont regroupés dans des panels utilisable en 360°. 
+\par Ce chapitre propose à la section~\ref{sec:chap4:2} un modèle d'interactions abstraites qui décrit les activités atomiques possibles sur les composants graphiques dans l'objectif de décrire des équivalences. Ce modèle identifie l'ensemble des primitives d'interactions des composants graphiques, la section~\ref{sec:chap4:3} présente les primitives d'interactions par rapport aux composants graphiques instanciés dans une UI et ceux d'une bibliothèque graphique. La section~\ref{sec:chap4:4} propose un ensemble d'opérateurs d'équivalence entre les composants graphiques en se basant sur les primitives d'interactions.
+
+
+
+
+
+\section[Primitives d'interactions]{Primitives d'interactions: un modèle des interactions abstraites }
+\label{sec:chap4:2}
+
+Les modèles des systèmes interactifs~\cite{Nigay1994a, Preece2002, Wegner1997} distinguent deux types d'interactions entre les utilisateurs et une UI~\cite{W3C2003}: les interactions en entrée et les interactions en sortie. Les interactions en entrée permettent de fournir des données ou d'invoquer des fonctionnalités du NF grâce à une UI et à des dispositifs d'entrée (souris, clavier, microphone, camera de reconnaissance gestuelle, écran tactile, accéléromètre, etc.). Les interactions en sortie permettent d'effectuer des rendus des données du NF à travers des dispositifs de sortie (tel un écran, des hauts parleurs, etc.). Les interactions (en entrée ou en sortie) se déclinent en plusieurs modalités d'interactions en fonction des langages et des dispositifs d'entrée ou des dispositifs de sortie utilisés. Chaque modalité d'interaction est utilisée comme un canal de communication entre un utilisateur et une application pour transmettre ou acquérir des informations~\cite{Nigay1994}.
+
+%Les interactions utilisateurs sur une UI sont décrites
+%indépendamment d'une modalité d'interaction \textbf{[Guthrie 1995; Hans-W.
+%Gellersen 1995]}. En effet certaines actions de l'utilisateur en particulier sur
+%une UI graphique (telles que l'édition de contenu, la sélection des éléments
+%d'une liste, l'activation d'un bouton, etc.) peuvent être effectuées à l'aide de
+%dispositifs différents. Les actions utilisateurs sur des objets graphiques
+%\textbf{[Beaudouin-Lafon 2000; van Dam 1997]} dans le cadre des interfaces WIMP
+%\textbf{[van Dam 1997]} sont par exemple la sélection d'une donnée ou d'un item
+%d'une liste, le déplacement par un drag \& drop de données, le déplacement ou le
+%redimensionnent des widgets, l'activation d'une commande à travers un menu ou un
+%raccourci clavier, l'édition d'un champ dans une boîte de dialogue. 
+
+
+Une \textbf{primitive d'interaction} est une décomposition atomique d'une interactions\footnote{en entrée par l'utilisateur et en sortie par le NF} sur les composants graphiques d'une UI.
+
+
+En considérant que les composants graphiques sont caractérisés par les données qu'ils
+contiennent, leurs propriétés graphiques et leurs comportements. Et qu'Ils
+appartiennent à des bibliothèques graphiques qui permettent de décrire des UI
+graphiques 2D, des images de synthèse en 3D, jeu vidéo, des graphiques de
+données~\cite{Bowman2006, Long2010, Shreiner2003}, etc. Les interactions en entrée en modifient l'état d'un composant graphique soit à
+travers ses propriétés (données contenues, taille, position et représentation) ou par
+son comportement (tels les appels des fonctionnalités du NF et les interactions sur
+d'autres composants graphiques d'une UI, etc.). Les interactions en sortie quant à elles permettent d'afficher des données provenant du NF ou de changer les propriétés graphiques des composants graphiques de l'UI. 
+
+Les primitives d'interactions sont des interactions abstraites indépendantes des dispositifs physiques qui sont dérivés en interactions concrètes. Par exemple l'édition dans un champ de texte nécessite une sélection de ce champ de texte (\textbf{WidgetSelection} ou \textbf{Navigation}) avec une souris ou un clavier puis l'édition(\textbf{Edition}) de son contenu. 
+
+Cette section présente une caractérisation des primitives d''interactions en fonction des deux types d'interactions (entrée et sortie) ainsi qu'une méta modélisation des primitives d'interactions pour le processus de migration.
+%et en fonction de leurs impacts sur les caractéristiques des composants graphiques
+
+\subsection{Les primitives d'interactions en entrée}
+\label{sec:chap4:2:1}
+Elles décrivent de manière abstraite toutes les actions des utilisateurs ou des autres composants graphiques qui permettent de modifier l'état d'un composant graphique. Nous avons identifiés comme interactions en entrée sur les contenus l'édition (\hyperref[primitive:WDE]{\textbf{Data Edition}}), la sélection (\hyperref[primitive:WDS]{\textbf{Data Selection}}) et le déplacement (\hyperref[primitive:WMI]{\textbf{Data Move In}} et \hyperref[primitive:WMO]{\textbf{Data Move Out}}) de contenus. Elles sont indépendantes des dispositifs d'interaction en entrée et sont effectuées avec des dispositifs de manipulation directe (souris, écran tactile, reconnaissance gestuelle, etc.) ou en combinant plusieurs mode d'interaction (clavier et souris).
+
+
+\primitive{\textbf{Data Edition}}{ Elle consiste à modifier les données d'un composants graphiques qui ont des contenus. }\label{primitive:WDE}
+La modification du contenu d'un composant graphique peut se faire avec un clavier, une reconnaissance vocale, gestuelle ou de forme en fonction des plateforme. Dans le cadre des tables interactive, l'édition se fait avec un clavier virtuelle ou à main levée sur une écran tactile.
+
+\primitive {\textbf{Data Selection}}{Elle permet d'accéder aux contenus d'un composant graphique.}\label{primitive:WDS} 
+Les composants graphiques peuvent contenir plusieurs données, dans le cas des listes par exemple elle permet la sélection d'un contenu précis. Elle se fait à l'aide d'un clavier, d'une souris, d'un écran tactile, d'un dispositif de reconnaissance gestuelle, etc.
+
+\primitive { \textbf{Data Move In}}{ Elle permet de recevoir le contenu d'un autre composant graphique de type compatible. }\label{primitive:WMI}
+Les composants graphiques peuvent s'échanger des contenus, le drag et le drop permettent de déplacer un contenu à l'aide d'une souris ou d'un geste tactile. Cette interaction n'est pas que liées à une souris, elle peut être migré sur une table interactive en utilisant l'écran tactile ou émulée avec un objet tangible.
+
+\primitive{ \textbf{Data Move Out} }{Elle permet d'exporter le contenu vers un autre composant graphique.}\label{primitive:WMO}
+
+
+Cette primitive d'interaction correspond à la première action d'un drag-drop. Elle est indépendant des dispositifs physiques et peut être émulée sur une table interactive.
+
+
+%ok: Montrer que ces trois primitives peuvent décrire toutes activités sur les données des composants graphiques.
+
+Les trois primitives d''interactions en entrée sur le(s) contenu(s) des composants graphiques décrit de manière exhaustive l'ensemble des actions possible qu'un utilisateur peut faire sur un élément graphique contenant des données utilisable par le noyau fonctionnel. En effet, si nous considérons le(s) contenu(s) d'un composant graphique comme une donnée, ces primitives d''interactions permettent la création, la modification, l'accès et la suppression des données (CRUD~\cite{DHeinemeierHansson2006}) d'un composant graphique.
+
+%\subsubsection{Les primitives d'interactions concernant les composants graphiques et leurs propriétés graphiques}
+
+Par ailleurs, les actions utilisateurs sur une UI\footnote{Ces actions concerne les UI en 2D telles les GUI classiques} ne concernent pas que le contenu des composants graphiques, leurs propriétés graphiques sont modifiées aussi par soit un déplacement (\hyperref[primitive:WM]{\textbf{Widget Move}}), soit une rotation sans changement de position (\hyperref[primitive:WRt]{\textbf{Widget Rotation}}), soit un redimensionnement (\hyperref[primitive:WRs]{\textbf{Widget Resize}}). Un composant graphique peut aussi être sélectionné de manière directe (\hyperref[primitive:WS]{\textbf{Widget Selection}}) ou en naviguant à travers un container (\hyperref[primitive:WN]{\textbf{Navigation}}). Les primitives d''interactions sur ces propriétés graphiques sont indépendantes des dispositifs d'interaction en entrée. En effet elles peuvent être effectuées avec des dispositifs de manipulation directe (souris, écran tactile, reconnaissance gestuelle, etc.) ou en combinant plusieurs mode d'interaction (clavier et souris).
+
+\primitive{\textbf{Widget Move }}{Elle permet d'exprimer le changement de la position d'un composant graphique.}
+\label{primitive:WM}
+La position des composants graphiques peuvent être changée par un utilisateur à l'aide d'un dispositifs de manipulations directes ou des raccourcis d'un clavier. Cette primitive d'interaction est définie pour les composants graphiques déplaçable à l'aide.
+
+\primitive{ \textbf{Widget Rotation }}{Elle permet d'exprimer le changement d'orientation d'un composant graphique. }\label{primitive:WRt}
+L'orientation des composants graphiques est une caractéristique importante dans le cadre des UI collaboratives et co localisée. Nous considérons le changement d'orientation comme une primitive d'interaction car elle peut être définie pour des écran utilisables par plusieurs personnes tels qu'une table interactive, une tablette tactile, un ordinateur portable avec écran pliable, etc. La rotation de composant graphique n'est pas définie pour les composants graphiques de la plateforme desktop. Dans le cadre de la migration vers des plateformes multi utilisateurs cette primitive d'interaction est indispensable.
+
+\primitive{  \textbf{Widget Resize}}{Elle permet de modifier les dimensions d'un composant graphique.}
+\label{primitive:WRs}
+Les dimensions d'une composant graphique peuvent être redéfinie par un utilisateur d'une UI par une interaction. Cette action peut être effectuée avec un clavier ou une souris sur un desktop et à l'aide d'un geste tactile sur une table interactive.
+
+\primitive{  \textbf{Widget Selection}}{ Elle permet d'exprimer la sélection immédiate de composants graphiques avec un dispositif de manipulation directe. }
+\label{primitive:WS}
+
+\primitive{  \textbf{Navigation }}{Elle permet d'exprimer la sélection d'un composant graphique de manière séquentielle }
+\label{primitive:WN}
+
+Les primitives d''interactions \textbf{Widget Selection} et  \textbf{Navigation } décrivent les différents types de sélections d'un composant graphique par un utilisateur.
+
+%Todo: Montrer que ces trois primitives peuvent décrire toutes activités sur les caractéristiques graphiques des composants graphiques.
+%\fbox{\parbox{0.9\textwidth}{
+Les primitives d''interactions ci-dessus\footnote{Widget Move, Widget Rotation, Widget Resize, Widget Selection et Navigation} caractérisent les actions utilisateurs sur les propriétés graphiques(position, orientation, taille et représentation) d'un composant graphique.
+%}}
+
+
+%\subsubsection{La primitive d'interaction d'activation}
+\primitive{Activation}{Elle permet de décrire les interactions des composants graphiques avec le NF d'une applications}\label{primitive:WA}
+L'activation représente le lien entre la structure d'une UI les fonctionnalités. Concrètement, dans le cadre d'une architecture MVC, cette primitive permet de représenter une appel de méthode du contrôleur par un élément de la vue.
+
+
+\subsubsection{Résumé}
+Les primitives d''interactions en entrée caractérisent les actions possibles des utilisateurs sur le(s) contenu(s), la taille, la position, l'orientation, et la représentation des composants graphiques d'une UI.
+
+En considérant l'artéfact d'UI de l'application CBA~\ref{chap2} par exemple, la liste d'images permet aux dessinateurs de BD de sélectionner des images prédéfinies et de l'ajouter à sa BD. Les éléments de cette liste peuvent être ajoutés au canevas de dessin par une interactions de glisser-déposer (drag-drop). Le tableau~\ref{tab:chap4:1} présente les primitives d''interactions de la liste d'images et de la liste déroulante (ComboBox) de la figure~\ref{fig:chap4:2}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.6]{chap4/img-1}
+\caption{Artéfact d'UI}
+\label{fig:chap4:2}
+\end{center}
+\end{figure}
+
+
+\begin{table}[h]
+\begin{tabularx}{15cm}{|p{3cm}|Y|}
+\hline  \textbf{Composants graphiques} & \textbf{Primitives d'interaction en entrée}\\ 
+\hline Liste d'images & 
+			Widget Selection, Navigation, Widget Display, Data Selection,  Data Move Out, Activation \\ 
+\hline Liste déroulante & 
+			Widget Selection, Navigation, Data Selection, Data Display, Activation \\ 
+\hline 
+
+\end{tabularx} 
+\caption{Exemple de primitives d'interactions en entrée}
+\label{tab:chap4:1}
+\end{table}
+
+
+\subsection{Les primitives d'interactions en sortie}
+\label{sec:chap4:2:2}
+Elles décrivent de manière abstraite les feed-back, les réponses ou les réactions du NF sur les différents éléments d'une UI. Elles concernent  le(s) contenu ou la représentation d'un composant graphique. Nous avons identifiés deux primitives d'interactions en sortie: la primitive d'interactions \hyperref[primitive:DD]{\textbf{Data Display}} et la primitive d'interactions \hyperref[primitive:WD]{\textbf{Widget Display}}
+
+%\subsubsection{Primitives d'interaction concernant les données }
+\primitive{Data Display}{Elle permet d'exprimer la modification du contenu d'un élément graphique par le NF}
+\label{primitive:DD}
+Certains composants graphiques sont utilisés pour afficher des données provenant du NF, cette primitive  exprime par exemple la possibilité pour le NF de présenter des données provenant du modèle dans cas d'une architecture MVC par exemple. 
+
+%\subsubsection{Primitives d'interaction concernant les composants graphiques}
+\primitive{Widget Display}{Elle exprime les actions du NF  sur l'aspect visuel d'un composant graphique}
+\label{primitive:WD}
+Cette primitive d'interactions représente la mise à jour des propriétés graphiques (visibilité, position, taille) d'un composant graphique de la Vue par le Contrôleur ou Modèle dans le cadre d'une architecture MVC par exemple.
+
+\subsubsection{Résumé}
+Les primitives d'interactions en sortie caractérisent les réactions et les feedback du NF sur les composants graphiques d'une UI.
+
+Considérons par exemple la boîte de dialogue de la figure~\ref{fig:messagebox} de l'application CBA, elle est affichée après une demande de fermeture d'une document. La boîte de dialogue aura la primitive d'interactions \textbf{Widget Display} tels que décrit dans le tableau~\ref{tab:chap4:2}. Le message est affiché dans un label qui obtient le nom du fichier à partir du modèle, ce label aura donc la primitive d'interactions \textbf{Data Display}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[angle=270, scale=.5]{chap5/messagebox}
+\caption{Boîte de dialogue}
+\label{fig:messagebox}
+\end{figure}
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|p{3cm}|c|}
+\hline  \textbf{Composants graphiques} & \textbf{Primitives d'interactions en sortie}\\ 
+\hline Label Message & 	Data Display\\ 
+\hline Boîte de dialogue & 
+			Widget Display \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\caption{Exemple de primitives d'interactions en entrée}
+\label{tab:chap4:2}
+\end{table}
+
+\section[Composants graphiques]{Primitives d'interactions et Composants graphiques}
+\label{sec:chap4:3}
+%Cette section à pour objectif d'expliquer comment les PI des composants graphiques sont utiliser pour la migration et comment elle seront modéliser à partir d'une UI finale.
+Les composants graphiques appartiennent à des bibliothèques graphiques (ou boîtes à outils) et sont utilisés pour décrire des UI. Les composants graphiques qui constituent une UI sont des instances des composants graphiques d'une bibliothèque graphique. Les composants graphiques instanciés n'implémentent pas systématiquement toutes les interactions possibles de son type. En considérant l'illustration de la figure~\ref{fig:instanceof} du lien entre une instance et son type d'une ListBox. De manière intrinsèque, le composant ListBox définie les primitives d'interactions \textbf{Data Move Out} et \textbf{Data Move In} car il supporte l'interaction glisser-déposer (drag-drop). Cependant de manière effective, il est possible de l'instancier sans implémenter ces primitives d'interactions dans le cas d'une liste qui ne permet pas d'effectuer un glisser-déposer de son contenu.
+
+\begin{figure}[h]
+\centering
+\includegraphics[ scale=.7]{chap5/instanceof}
+\caption{Lien type-instance des composants graphiques}
+\label{fig:instanceof}
+\end{figure}
+
+%\fbox{\parbox{0.9\textwidth}{
+Nous constatons que pour des composants graphique qu'il existe des \textbf{primitives d'interactions intrinsèques} et des\textbf{ primitives d'interactions effectives}. %}}
+
+
+Dans le cadre d'un processus de migration, l'on remarque aussi que pour les primitives d'interactions des éléments de l'UI à migrer sont des \textbf{primitives d'interactions effectives} car elles sont issues des instances des composants graphiques. Les composants graphiques de l'UI cible seront instanciés à partir de la bibliothèque graphique de la plateforme d'arrivée et ces instances devront conservés au moins les même primitives d'interactions que l'UI de départ.
+
+
+Les primitives d'interactions présentées à ci-dessus(cf. section~\ref{sec:chap4:2}) sont utilisées pour décrire l'ensemble des interactions possibles sur les composants graphiques. Elles font parties des modèles abstraits d'UI avec les modèles de structures, de layout et de styles. Les primitives d'interactions ne décrivent pas les aspects structurels d'une UI tels que les types des données, la cardinalités des données ou le regroupement des composants graphiques. Dans notre processus de migration d'UI vers les tables interactives, nous nous basons sur deux modèles abstraits (les primitives d'interactions et un modèle de structure) pour décrire les mécanismes automatiques de migration. Nous résumons les différents éléments intervenants dans notre solution par la figure~\ref{fig:modelsutilises}, en effet l'UI finale est décrite par des instances des éléments d'une bibliothèque graphique. Et les composants graphiques d'une bibliothèque graphiques sont décrite par un modèle de composant graphique générique, chaque composant graphique abstrait définit des primitives d'interactions intrinsèques. Par ailleurs les éléments d'une UI finale sont modélisés à l'aide d'un modèle de structure\footnote{Le modèle de structure décrit les types de données, la cardinalité des données et le regroupement des éléments graphiques d'une UI} dont chaque instances implémente des primitives d'interactions effectives.  
+
+Cette section présente d'abord un modèle de composant graphique ainsi que les règles qui permettent d'identifier les
+\textbf{primitives d'interactions intrinsèques} à chaque composant graphique. Ensuite cette section présente un modèle de structure d'une instance d'UI ainsi que les règles d'identifications des \textbf{primitives d'interactions effectives}.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[ scale=.13]{chap5/modelsutilises-2}
+\caption{Modèles abstraits d'UI et UI finale}
+\label{fig:modelsutilises}
+\end{figure}
+
+\subsection{Un modèle abstrait de composants graphiques}
+\label{sec:chap4:3:1}
+Nous proposons dans cette section une formalisation des différentes caractéristiques d'un composant graphique dans un méta modèle(cf figure~\ref{fig:chap4:3}), ceci dans le but de faciliter la définition des règles d'identification des primitives d'interactions des composants graphiques d'une UI à migrer.
+
+\textit{``Widget is a user interface object which defines specific
+interaction behaviour and a model of information presented to the user''}~\cite{December2001} 
+
+Nous complétons cette définition en prenant en compte les caractéristiques graphiques telles que la taille, la position, l'orientation et la structure du Widget. Nous ne considérons pas les caractéristiques liées aux styles de présentation ou au layout car notre processus de migration permet aux développeurs de personnaliser l'UI pendant la migration. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.6, angle=270]{chap4/widgetmodel}
+\caption{Méta modèle de composant graphique}
+\label{fig:chap4:3}
+\end{center}
+\end{figure}
+
+\paragraph{Widget} Le méta modèle de la figure 4-2 décrit un composant graphique par la classe \textit{Widget} avec son nom (\textit{name}) et le nombre d'éléments qu'il peut contenir (\textit{cardinaltity}). Le champ \textit{name} permet de l'identifier de manière unique dans une bibliothèque graphique. La cardinalité permet quand à elle de préciser le nombre de données ou de \textit{Widget} maximal qu'il peut contenir. Un composant graphique nécessite dans certains cas d'autres composants graphiques pour ses contenus, l'association \textit{containedWidget} représente les widgets utilisés comme item. Par exemple en XAML~\cite{MicrosoftWPF2012} les ListBox nécessitent des ListBoxItem. La classe Widget correspond à tous les composants graphiques d'une bibliothèque graphique.
+
+
+\paragraph{Behaviour} Le méta modèle de la figure~\ref{fig:chap4:3} considère que les comportements des composants graphiques consistent à modifier ou à sélectionner son contenu, sa taille, sa position ou sa structure. Il considère aussi qu'un comportement fait aussi appel à des fonctionnalités. La classe \textit{Behaviour} est un attribut de \textit{Widget}, qui est caractérisée par les types de comportements (\textit{type}) et les propriétés qu'elle impacte (\textit{targetProperty}). Nous identifions trois types de comportements (\textit{BehaviorType)} parmi les caractéristiques d'un \textit{Widget}~: 
+
+\begin{enumerate}
+\item  la modification (\textit{Change}) de valeurs du contenu (\textit{Content}), des propriétés graphiques (\textit{Size, Position,
+Orientation}) 
+
+\item  la sélection (\textit{Select}) d'un contenu ou du Widget lui-même (\textit{WidgetStructure}) 
+
+\item  et l'appel d'une fonctionnalité (\textit{Call}).
+\end{enumerate}
+
+L'attribut \textit{targetProperty} de la classe \textit{Behaviour} permet de préciser le type de propriété modifiée par un comportement, dans le cas d'un comportement de type \textit{Call} alors ma propriété cible est nulle. Si un comportement est de type \textit{Select} alors la propriété cible est de type \textit{WidgetStructure} ou \textit{Content}. En effet la sélection s'effectue uniquement  sur un composant graphique ou sur son contenu. Si un comportement est de type \textit{Change} alors la propriété cible est de type \textit{Size, Position, Orientation} ou \textit{Content}. En effet, le contenu, la taille, la position ou l'orientation d'un composant graphique sont modifiés.
+
+Un comportement peut combiner plusieurs types par exemple une liste
+déroulante permet de sélectionner un item de la liste et aussi de déclencher une
+fonctionnalité. Elle aura un attribut \textit{Behaviour} avec les types
+\textit{Change} et \textit{Call} sur la propriété de type \textit{Content}. Un
+\textit{Widget} peut avoir plusieurs comportements pour exprimer toutes ses
+interactions intrinsèques, en effet les comportements décrivent l'ensemble des
+interactions possibles d'un composant graphiques, ces comportements sont
+spécifiques à une bibliothèque graphique.
+
+La classe \textit{Behaviour} est implémentée de différentes manières
+par les bibliothèques graphiques. Les comportements de type \textit{Change} et
+\textit{Select} sont identifiés en fonction des événements, des méthodes ou des
+propriétés des composants graphiques. Par exemple en Java Swing, la propriété
+\textit{isEditable} permet de dire qu'un composant graphique définit de manière
+intrinsèque un comportement pour changer son contenu. La méthode
+\textit{addActionListener} permet de dire qu'un composant graphique définit de
+manière intrinsèque un comportement pour faire appel à des fonctionnalités et la
+méthode \textit{getSelectedItem} permet de dire qu'un composant graphique défini
+de manière intrinsèque un comportement pour sélectionner son contenu. Les
+comportements de la bibliothèque graphique XAML sont identifiés à partir des
+événements et des propriétés~; par exemple l'événement \textit{SelectedText}
+permet d'exprimer le comportement de sélection d'un contenu, et la propriété
+\textit{AllowDrop} permet d'exprimer que le contenu peut être changé.
+
+Pour chaque bibliothèque graphique, une table décrivant les
+correspondances entre les types de comportement et les caractéristiques des
+composants graphiques qui permet de les identifier de manière intrinsèque est
+fournie, des exemples de cette table sont décrits de manière exhaustive pour les
+bibliothèques graphiques XAML et XAML Surface à l'annexe (réf).
+
+
+\paragraph{Property} La classe \textit{Property} (cf. figure~\ref{fig:chap4:3}) permet de décrire les attributs
+statiques des \textit{Widget}  qui sont impactés par les comportements. Les
+types des propriétés sont identifiés de manière spécifique à chaque bibliothèque
+graphique en décrivant une correspondance entre les propriétés des composants
+graphiques et les types de propriétés génériques du méta modèle de composant
+graphique. Pour chaque bibliothèque graphique, il faut fournir les différents
+noms des propriétés des composants graphiques correspondant aux différents types
+(\textit{Content, Size, Position, Orientation, WidgetStructure}).
+
+Les contenus d'un composant graphique sont de type
+booléen(\textit{Boolean}), entier (\textit{Integer}), chaîne de
+caractère(\textit{String}), image (\textit{Image}), son ou vidéo
+(\textit{MediaElement}), des classes indépendantes de la bibliothèque graphique
+(\textit{Object}), des composants graphiques (\textit{Widget}). Tout autre type
+n'est pas pris en compte par ce modèle de composant graphique. L'identification
+des types est faite à l'aide d'une table de correspondances entre les types
+spécifiques aux bibliothèques graphique et les types décrit dans notre modèle.
+L'annexe (réf) présente des exemples de cette table de manière exhaustive pour
+les bibliothèques graphiques XAML et XAML Surface.
+
+Le nom d'une propriété (tel que décrit dans la bibliothèque graphique)
+est conservé pendant la migration (\textit{name)}, pour permettre à l'UI migré
+de préserver les ressources (étiquettes des widgets, etc.) de l'UI de départ,
+ceci permet de retrouver dans la structure analysable (\textit{UIStructure}) la
+valeur de la propriété à partir de son nom.
+
+
+\subsubsection{Identification des primitives d'interactions intrinsèques}
+
+La méthode $getIntrinsicInteractions: \{ Attributs\} \longrightarrow   \{AbstractInteraction\}$ du méta
+modèle (cf. figure~\ref{fig:chap4:3}) permet d'identifier les primitives d'interactions d'intrinsèque d'un Widget. Cette méthode se base sur des règles pour identifier chaque primitive d'interaction.
+
+
+\idRule{Widget Selection et Navigation}{
+\textbf{Widget Selection} et \textbf{Navigation}~sont définies de manière intrinsèque pour tous les widgets.}
+
+\idRule{Widget Resize}{  \textbf{Widget Resize} est définie de manière intrinsèque pour tous les
+widgets qui ont un comportement de changement des propriétés de type
+\textit{Size}.\\
+\[\exists prop\in Widget.attributs, prop.type=Size\]
+\[ \bigwedge \]
+\[\exists beh\in Widget.attributs beh.type=Change\] \[\bigwedge\] \[beh.targetProperty=Size \] }
+
+
+
+\idRule{Widget Move}{ \textbf{ Widget Move} est définie de manière intrinsèque pour tous les
+widgets qui ont un comportement de changement des propriétés de type
+\textit{Move.}\\
+\[\exists prop\in Widget.attributs, prop.type=Position\] \[ \bigwedge \]
+\[\exists beh \in Widget.attributs/beh.type=Change\bigwedge beh.targetProperty=Position \] }
+
+
+
+\idRule{ Widget Rotation}{ \textbf{ Widget Rotation }est définie de manière intrinsèque pour tous les
+widgets qui ont un comportement de changement des propriétés de type
+\textit{Orientation}. 
+\[\exists prop\in Widget.attributs, prop.type=Orientation\]
+\[\bigwedge\] 
+\[\exists beh\in Widget.attributs/beh.type=Change \bigwedge evt.targetProperty=Orientation\] }
+
+
+
+\idRule{Widget Display}{ \textbf{ Widget Display }est définie de manière intrinsèque pour tous les
+widgets.}
+
+
+
+\idRule{Data Edition}{  \textbf{Data Edition} est définie de manière intrinsèque pour tous les
+widgets qui ont un comportement de changement des propriétés de type
+\textit{Content }et dont le type de données contenu n'est pas un
+\textit{Widget.} \textit{ }\textbf{}
+\[\exists prop\in Widget.attributs/prop.type=Content\] 
+\[ \bigwedge \]
+\[prop.dataType\notin \{Widget,\ Null\} \]
+\[\bigwedge \] 
+\[\exists beh\in Widget.attributs/beh.type=Change\ \bigwedge beh.targetProperty=Content\] }
+
+
+
+\idRule{Data Selection}{ \textbf{ Data Selection }est définie de manière intrinsèque pour tous les
+widgets qui ont un comportement de sélection des propriétés de type
+\textit{Content}
+\[ \exists prop\in Widget.attributs, prop.type=Content\] 
+\[\vee \] 
+\[ \exists beh\in Widget.attributs/beh.type=Select\wedge beh.targetProperty=Content \] }
+
+
+
+\idRule{Data Move In}{ \textbf{ Data Move In} est définie de manière intrinsèque pour tous les
+widgets qui ont un comportement de changement des propriétés de type
+\textit{Content}
+\[\exists prop\in Widget.attributs/prop.type=Content\] 
+\[ \bigwedge \]
+\[ \exists beh\in Widget.attributs/ beh.type=Change\bigwedge beh.targetProperty=Content\] }
+
+
+
+\idRule{Data Move Out}{ \textbf{ Data Move Out }est définie de manière intrinsèque pour tous les
+widgets qui ont un comportement de sélection et de changement des propriétés de
+type \textit{Content.} 
+\[ \left\{ \begin{array}{c}
+\exists {\mathbf \ }prop1\in Widget.attributs/\ prop1.type=Content\ \  \\ 
+\wedge  \\ 
+\exists beh1\in Widget.attibut\ /beh1.type=Select\  \\ 
+\wedge \ beh1.targetProperty=Content \end{array}
+\right\}\] 
+\[\wedge \] 
+\[\left\{ \begin{array}{c}
+\exists {\mathbf \ }prop2\in Widget.attributs,\ prop2.type=Content\ \  \\ 
+\wedge  \\ 
+\ \exists {\mathbf \ }beh2\in Widget.attributs/beh2.type=Change\  \\ 
+\wedge beh2.targetProperty=Content \end{array}
+\right\}\]
+\[ \wedge \] 
+\[ prop1.valueDataType=prop2.valueDataType\]}
+
+
+
+\idRule{Data Display}{ \textbf{ Data Display }est définie de manière intrinsèque pour tous les
+widgets qui ont des propriétés de type \textit{Content.} 
+\[\exists {\mathbf \ }prop\in Widget.attributs/\ prop.type=Content\]  }
+
+
+
+\idRule{Activation}{ \textbf{ Activation }est définie de manière intrinsèque pour tous les
+widgets qui ont des comportements de type \textit{Call} \textbf{}
+\[\exists {\mathbf \ }evt\in Widget.attributs/beh.type=Call\] }
+
+
+
+%Représentation générique de la structure analysable d'une UI
+\subsection{Un modèle de structure d'UI}
+\label{sec:chap4:4}
+
+%L'utilisation des différents modèles~\cite{Demeure2007, Vanderdonckt2004}  pour la conception et l'adaptation~\cite{Favre2008,Kong1999} des UI a pour objectif de les décrire indépendamment des plateformes~\cite{Brajnik2010} (dispositifs d'interaction en environnement
+%logiciel). Ceci évite aux concepteurs d'UI d'aborder très tôt des questions
+%liées à l'implémentation telles que le choix des bibliothèques graphiques, des
+%widgets ou du style de présentation. Dans notre contexte, la migration concerne
+%les UI de modalité graphique et permet d'adapter les UI des applications
+%existantes à d'autres bibliothèques graphiques. Les modèles d'interface concrète
+%présentés au chapitre [réf état de l'art] décrivent des interacteurs qui
+%permettent la représentation des UI de la modalité graphique indépendamment des
+%bibliothèques graphiques.
+%
+%Le processus de migration proposé dans ce manuscrit (réf processus) a
+%pour objectif d'assister les développeurs en charge d'adapter les UI sur des
+%plateformes ayant des guidelines différents. La structure analysable fournie en
+%entrée de ce processus (\textit{UIStructure}) est un arbre qui décrit l'UI à
+%l'aide des composants graphiques spécifiques à une bibliothèque graphique. Dans
+%l'objectif d'adapter l'UI de départ, nous avons extrait de la structure fournie
+%une représentation indépendante de la bibliothèque graphique qui décrit la
+%structure de l'UI à l'aide des composants graphiques instanciés que nous
+%appelons interacteurs~\cite{}. Cette représentation nous permet de préciser pour
+%chaque interacteur les primitives d'interactions réellement utilisées (primitives
+%d'interaction effectives), les différents groupes d'interacteurs et les
+%ressources de l'UI à migrer. 
+
+La structure des instances d'UI à migrer est décrite sous différents formats (XML, Archives Java, etc.) cependant tous ces formats peuvent être représentés à l'aide d'une structure arborescente. En effet, une fenêtre d'une UI peut être considérer comme la racine de l'arbre la représentant et les éléments de la fenêtre seront des n\oe{uds fils. Si un ensemble de composants graphiques est regroupé dans un container alors ils seront représentés par n\oe{}ud parent correspondant au container et des n\oe{}ud fils correspondant aux composants de l'ensemble.
+
+Les structures des UI sont modélisées au niveau CUI du CRF~\cite{Calvary2002}, les différents méta modèle du niveau CUI~\cite{W3CIncubatorGroup2010, Vanderdonckt2004, Paterno'2009} caractérisent  entre autre les liens de contenance entre les éléments d'une UI, le cardinalités  et les types de données que contiennent les composants graphiques. Les modèles de CUI caractérisent aussi le style ou layout dans le cadre des UI graphiques, par exemple le langage UsiXML a plusieurs balises de layout pour le modèle CUI  telque \textit{box, groupBox, flowBox}, etc.~\cite{Silva2012}.
+
+%\fbox{\parbox{0.9\textwidth}{
+Dans notre contexte, nous considérons qu'un modèle de CUI capable de décrire les liens de contenance, la cardinalité et les types de données d'une UI peut être utilisés. Le but d'un modèle de structure pour le processus de migration est de conserver les \textbf{données} et  les \textbf{liens entre les composants graphiques} de l'UI de départ. %}}
+
+\begin{figure}[h]
+ \begin{center}
+\includegraphics[angle=270, scale=.5]{chap4/interactormodel}
+\caption{Méta modèle de structure}
+\label{fig:chap4:4}
+\end{center}
+\end{figure}
+
+Le modèle de structure que nous utilisons pour la migration comporte des instances de composants graphiques d'une UI que nous représentons dans un modèle abstrait sous forme d'\textit{interacteurs}. Ces \textit{interacteurs} qui sont représentés par la classe abstraite \textit{Interactor} (cf. figure~\ref{fig:chap4:4}) sont caractérisées par leur identifiant unique pour une instance d'UI et leur nom qui correspond au nom du composant graphique de l'UI à migrer. Ils préservent les valeurs des données structurelles de l'UI à migrer par la classe \textit{Content} , par exemple les étiquettes des labels, des boutons, des images, etc. On distingue deux types d'instances de widgets : 
+
+\begin{itemize}
+\item  \textit{UIComponent} représentant l'ensemble des composants graphiques ne pouvant pas contenir de composant graphique. Ils sont identifiés à partir des widgets dont les contenus ne sont pas d'autres widgets,
+
+\item  et \textit{Container} représentant l'ensemble des composants graphiques pouvant contenir d'autres instances de widgets. Ils sont identifiés à partir des widgets pouvant contenir d'autres widgets. 
+\end{itemize}
+
+\subsubsection{Types de Container}
+Les Container peuvent être catégorisés en fonction des interacteurs qu'ils contiennent. Nous caractérisons dans le  tableau~\ref{tab:chap4:3} quatre types de container. Les types de containers sont identifiés à partir de la structure d'une UI de manière récursive en identifiant d'abord les types des interacteurs fils.
+
+\begin{table}[t]
+\begin{tabularx}{15cm}{|Y|Y|}
+\hline   Contenu &  Type de container \\
+\hline  $\{UIComponent\}$ & 
+  \textbf{Homogène}: données du même type \newline \textbf{Hétérogène}: données de type différents \newline \textbf{Racine}: si pas de parent  \\ 
+\hline  $\{ UIComponent\}\cup \{Container\} $ &
+\textbf{Hétérogène:} si a un parent \newline \textbf{Racine}: si pas de parent\\ 
+\hline $ \{Container\} $ & \textbf{Récursif:} si contient des containers \newline \textbf{Racine}: si pas de parent\\ 
+\hline 
+\end{tabularx} 
+\caption{Types de container}
+\label{tab:chap4:3}
+\end{table}
+
+
+%{|p{0.7in}|p{0.9in}|p{1.1in}|p{0.8in}|p{0.7in}|}
+%{|p{3.4in}|}
+%\begin{table}[h]
+%\begin{tabularx}{15cm}{|Y|Y|Y|Y|Y|} 
+%\hline 			& \multicolumn{4}{|c|}{\textbf{Types de container}} \\ 
+%\hline  \textbf{Eléments du container} 
+%				& \textbf{Table} 
+%				& \textbf{Panel} 
+%				& \textbf{Simple} 
+%				&  \textbf{Window} \\  
+%\hline \textit{$$ \left\{ UIComponent \right\} $$}
+%				& Si tous ses interacteurs ont des contenus de même type. 
+%				& \centering Si tous les interacteurs n'ont pas de contenu  Ou  Si les contenus ne sont pas de même type 
+%				& \cellcolor{green!7} Le container  n'est pas de type Simple 
+%				&    \\ \cline{1-4}
+%\cline{1-4} \textit{ $$\left\{  Container \right\}$$  } 
+%				& \cellcolor{green!7} \centering Le container  n'est pas de type Table \newline  
+%				& \cellcolor{green!7} \centering  Le container n'est pas de type Panel 
+%				& \centering Si tous ses interacteurs sont des Container  
+%				&  \\ 
+%\cline{1-4} \textit{ $$\left\{ UIComponent \right\}$$ }
+%				\newline $$\cup $$ \newline \textit{ $$ \left\{ Container \right\}$$ } 
+%				& \cellcolor{green!7}  \centering Le container  n'est pas de type Table 
+%				& \centering Si tous les interacteurs ne sont pas des Container mais des \textit{ UIComponent} aussi 
+%				&  \cellcolor{green!7} \centering Le container  n'est pas de type Simple 
+%				& \multirow{-3}{2cm}{\centering Si le container  est l'élément racine d'une UI } \\
+%\hline 
+%\end{tabularx}
+%
+%\caption{Types de container}
+%\label{tab:chap4:3}
+%\end{table}
+
+\paragraph{Container Racine}C'est la d'une structure d'UI. Il peut contenir des containers et des interacteurs simple.
+
+\paragraph{Container Récursif}C'est un container ne contenant que des \textit{Container}. Ce type permet d'identifier un regroupement de plusieurs containers sur le quel on pourra appliquer des transformations. Un container de type \textit{Récursif} ne peut donc pas contenir des interacteurs de types \textit{UIComponent}. En considérant la figure~\ref{fig:chap4:5}, le container vert de est une illustration d'un \textit{Container} de type \textit{Récursif}. 
+
+
+\paragraph{Container Homogène}C'est un container contenant uniquement des \textit{UIComponent} dont les données du même type et de même cardinalité. Un container de ce type permet de définir un groupe de composants graphique de même type (tel qu'une liste, un tableau, un menu, etc.). Le container bleu de la figure~\ref{fig:chap4:5} est une illustration d'un \textit{Container} de type \textit{Homogène}.
+
+\paragraph{Container Hétérogène}C'est un container pouvant contenir à la fois des\textit{UIComponent} et des \textit{Container}. Ce type permet d'identifier les instances de widgets pouvant contenir des données non structurées et qui sont interprétés de diverses manières pendant la migration. En considérant la figure~\ref{fig:chap4:5} Le container rouge est une illustration d'un \textit{Container} de type \textit{Hétérogène}. 
+%[width=5.01in, height=3.16in,keepaspectratio=false]
+
+\begin{figure}[h]
+ \begin{center}
+\includegraphics[scale=.8]{chap4/typecontainers}
+\caption{Illustration des types de container}
+\label{fig:chap4:5}
+\end{center}
+\end{figure}
+
+
+\subsubsection{Données des interacteurs}
+Le modèle de structure présenté à la figure~\ref{fig:chap4:4} permet de préserver les données d'une UI à migrer. Le processus de migration dans notre cas permet un changement de la modalité d'interactions mais les données contenues dans une UI ou échangées entre l'UI et NF doit être préserver car le NF est réutilisés.
+
+Le modèle de structure~\ref{fig:chap4:4} propose un ensemble de type de données classiques d'UI. \textit{DataType} est considéré comme un modèle de type de données abstrait qui sera instancié en fonction de chaque langage de programmation. Par exemple le type \textit{MediaElement}  représente un objet de type vidéo et le type \textit{Object}  désigne des types complexes.
+
+
+\subsubsection{Primitives d'interactions effectives}
+Les primitives d'interactions réellement utilisées par chaque interacteur sont identifiées à partir de la structure de l'UI de départ. Cependant pour préserver l'assemblage des composants graphiques de l'UI à migrer, on extrait au moyen d'interacteurs cette structure arborescente à l'aide du méta modèle \textit{AUIStructure}. Il décrit la structure de l'UI comme un ensemble d'arbre dont les racines sont des fenêtres, les n\oe{}uds des interacteurs et les arcs la relation de contenance entre les interacteurs. Chaque interacteur a une méthode qui permet d'identifier les primitives d'interactions effectives en fonction du n\oe{}ud correspondant dans la structure analysable de départ et du modèle de \textit{Widget}.
+
+
+On considère que l'UI de départ est une structure analysable \textit{UIStructure} qui est constitué d'un ensemble d'arbres (\textit{Tree}) qui décrit les différentes fenêtres de l'UI à migrer.
+\[UIStructure=\ \bigcup^N_{i=0}{Tree_i}\] 
+\[Tree_i=\left\langle root,\ Node,\ Contains\right\rangle \ \ \] 
+
+
+%\setcounter{idRul}{0}
+
+La méthode $getEffectiveInteractions: WidgetNode \rightarrow\ \left\{AbstractInteraction\right\} $ du méta modèle (cf. figure~\ref{fig:chap4:3}) permet d'identifier les primitives d'interactions utilisées par un interacteur. Cette
+méthode se base sur des règles effectives suivantes.
+
+%\begin{enumerate}
+
+\idRule{Widget Selection et Navigation}{
+\textbf{Widget Selection} et \textbf{Navigation}~sont définies de manière
+effective pour les interacteurs accessible dont les propriétés de type
+\textit{WidgetStructure}(cf. figure~\ref{fig:chap4:3})sont de type booléen et avec une valeur différente de
+false.\\
+\[ \exists prop \in Widget.attributs, prop.type=WidgetStructure \]
+\[\wedge\]
+\[ \exists att\in{Node}/prop.dataType=Boolean \]
+\[\wedge\]
+\[ att.name=prop.name\wedge node.value\ne False\]
+}
+
+\idRule{Widget Resize}{
+\textbf{Widget Resize} est définie de manière effective pour les
+interacteurs redimensionnables dont les propriétés de type \textit{Size} sont de
+type booléen et avec une valeur différente de false.\\
+\[\exists prop\in Widget.attributs, prop.type=Size \]  
+\[\wedge\] 
+\[\exists att\in {Node}/prop.dataType=Boolean \]
+\[\wedge \] 
+\[ att.name=prop.name\wedge node.value\ne False\ \] 
+}
+
+
+\idRule{Widget Mode}{ \textbf{ Widget Move} est définie de manière effective pour les
+interacteurs déplaçables dont les propriétés de type \textit{Move} sont de type
+booléen et avec une valeur différente de false.\\
+\[ \exists prop\in Widget.attributs, prop.type=Move\] 
+\[\wedge\] 
+\[\exists att\in{Node}/prop.dataType=Boolean\]
+\[\wedge\]
+\[ att.name=prop.name\wedge node.value\ne False \]
+}
+
+\idRule{Widget Rotation}{\textbf{ Widget Rotation }est définie de manière effective pour les
+interacteurs orientables dont les propriétés de type \textit{Orientation} sont
+de type booléen et avec une valeur différente de false.\\
+\[ \exists prop\in Widget.attributs, prop.type=Orientation\]
+\[\wedge\]
+\[ \exists att\in {Node}/prop.dataType=Boolean\] 
+\[\wedge\]
+\[ att.name=prop.name\wedge node.value\ne False\ \] }
+
+\idRule{Widget Display}{\textbf{Widget Display }est définie de manière effective pour tous les
+interacteurs.}\\
+
+
+
+\idRule{Data Edition}{\textbf{Data Edition}est définie de manière effective pour tous les interacteurs
+accessibles dont les widgets pour lesquels la primitive est définie de manière
+intrinsèque.}
+
+
+\idRule{Data Selection} {\textbf{ Data Selection }est définie de manière effective pour tous les
+interacteurs accessibles dont les widgets pour lesquels la primitive est définie
+de manière intrinsèque.}
+
+
+\idRule{Data Move In}{\textbf{ Data Move In} est définie de manière effective pour tous les
+interacteurs accessibles dont les widgets pour lesquels la primitive est définie
+de manière intrinsèque}
+
+
+\idRule{Data Move Out}{\textbf{ Data Move Out }est définie de manière effective pour tous les
+interacteurs qui définissent de manière effective \textbf{Data Selection} et
+\textbf{Data Edition}.}
+
+
+\idRule{Data Display}{\textbf{Data Display }est définie de manière effective pour tous les
+interacteurs qui ont un contenu ou dont la propriété de contenu est modifiée
+dans une méthode. \textbf{}}
+
+
+\idRule{Activation}{ \textbf{ Activation }est définie de manière effective pour tous les interacteurs qui font appel à une méthode du contrôleur (dans une architecture MVC)}}
+
+
+
+\subsection{Synthèse des modèles abstraits}
+% Faire la synthèse des modèles présenté et dire à quoi ils vont servir pour la suite dans le processus de migration
+Cette section a présenté un modèle de composants graphiques et un modèle de structure pour une instance d'UI. Le modèle de composant graphique décrit de manière abstraite tous les aspects des widgets d'une bibliothèque graphique. En effet, le méta modèle de la figure~\ref{fig:chap4:3} décrit le contenu, la cardinalité, les propriétés graphiques (position et taille), les comportements et les interactions d'un composant graphique indépendamment de sa représentation par une boîte à outils donnée.
+ 
+Par ailleurs le modèle de structure (cf. figure~\ref{fig:chap4:4}) représente les liens de contenances et les données d'une instance d'UI à migrer. Ce modèle est certes composé d'instances de composants graphiques mais il ne décrit pas tous les aspects d'une UI.
+% Nous formalisons le lien entre un modèle de composant graphique et un modèle de structure par la fonction $instanciateUIStructure:UIStructure\times \{Widget\} \to AUIStructure$ qui permet d'abstraire le modèle de structure d'une UI de départ. 
+
+Dans le cadre de la migration, les applications à migrer sont abstraits dans le modèle de structure \textit{AUIStructure} en exprimant aussi les primitives d'interactions effectives. L'application source ainsi abstrait est transformée pour être conforme aux recommandations de la plateforme cible. La section suivante présente le mécanisme de migration basée sur les primitives d'interactions et les modèles décrits dans cette section.
+ 
+
+\section[Opérateurs d'équivalences ]{Opérateurs d'équivalences des composants graphiques basés sur des primitives d'interactions}
+
+
+Les \textit{Widget} ou \textit{Interactor} sont caractérisés respectivement par leurs primitives interactions intrinsèques et effectives qui sont des sous-ensembles des primitives d'interactions. Nous définissons trois opérateurs de comparaisons de ces sous-ensembles de primitives d'interaction: l'égalité($=$), l'inclusion($\subseteq$) et la contenance($\supseteq$).
+
+\paragraph{Égalité des deux sous ensemble de primitives d'interactions\\}  
+$=:\{PrimitiveInteractions\}\times \{PrimitiveInteractions\}\to Boolean$.\\
+Si toutes les primitives d'interactions de deux sous-ensemble sont identiques.
+
+\paragraph{Inclusion des primitives d'interactions\\}
+$\subseteq:\{PrimitiveInteractions\}\times \{PrimitiveInteractions\}\to Boolean$\\
+Si toutes les primitives d'interaction du sous ensemble de gauche se retrouvent dans le sous-ensemble de droite. Ceci est possible si une instance de \textit{Widget} n'utilise pas toutes ses primitives d'interaction intrinsèques.
+
+\paragraph{Contenance des primitives d'interactions\\} 
+$\supseteq :\{PrimitiveInteractions\}\times \{PrimitiveInteractions\}\to Boolean$ \\
+Ceci est possible si la bibliothèque graphique ne contient pas de widgets avec le sous ensemble de primitives d'interaction intrinsèques équivalent à l'interacteur. Dans ces cas on considère les widgets qui n'implémentent pas les primitives d'interactions concernant les propriétés graphiques tout en conservant les autres primitives d'interactions. Les primitives d'interaction \textbf{Widget Move}, \textbf{Widget Rotation} et \textbf{Widget Resize} sont les seules qui peuvent être omis par l'opérateur de comparaison$\supseteq $.
+
+%TODO: A quoi sevent ces opérateurs?
+
+\subsection{Équivalences des interacteurs}
+
+La sélection est un processus qui permet de retrouver l'ensemble des
+widgets équivalents à un interacteur dans la bibliothèque graphique de la
+plateforme d'arrivée. Ce processus se base sur des opérateurs de comparaison qui
+permettent d'établir les équivalences entre les interacteurs et les widgets.
+Cette section présente les différents opérateurs de comparaison et l'algorithme
+de sélection des widgets équivalents.
+
+
+\subsubsection{Les opérateurs de comparaison}
+
+La comparaison entre les interacteurs et les widgets se basent sur les
+caractéristiques qui leurs sont communes telles que les primitives
+d'interactions (effectives et intrinsèques), le type et la cardinalité de
+données. 
+
+La comparaison des cardinalité est effectuée pour vérifier si les
+widgets équivalents supportent le même nombre de données que l'interacteur à
+migrer. Elle est possible grâce à la fonction $equalCard:Interactor\times Widget\to Boolean.\ \forall i\in \left\{Interactor\right\}\wedge \forall w\in \left\{Widget\right\},$
+\[equalCard\left(i,w\right)=\left\{ 
+\begin{array}{l}
+	True,\ i.content.Cardinality=w.Cardinality \\ 
+	False,\  else  
+\end{array} \right.\ \] 
+La prise en compte de la caractéristique types de données pour comparer les
+interacteurs et les widgets à pout but de vérifier si l'adaptation des widgets
+équivalents nécessite l'ajout d'un adaptateur de types de données. En effet si
+la cardinalité et les primitives d'interaction d'un \textit{Widget}
+correspondent à ceux d'un interacteur alors ce Widget sera proposé au concepteur
+comme équivalent même si son utilisation nécessite un travail supplémentaire
+(écriture du code pour adaptateur de type).
+
+La fonction $equalDataType:Interactor\times Widget\to Boolean$ permet vérifier l'égalité des types de données des interacteurs et des
+widgets. $\forall  i \in \left\{Interactor\right\},\forall w\in \left\{Widget\right\},\ $
+\[equalDataType(i ,w )=\left\{
+\begin{array}{l}
+	True, \left(\genfrac{}{}{0pt}{}{
+				\begin{array}{l}
+					\begin{array}{c}
+						\exists att\in w.attibuts,\\
+						i.Content.dataType=att.dataType\\
+					\end{array}
+				\end{array}}
+			{\begin{array}{l}
+				\begin{array}{c}
+					\vee  \\ 
+					i.Content.dataType=Null \\ 
+					\wedge  \\ 
+					\nexists att \in w.{attibuts}/{att.type=Content}\  
+				\end{array}
+			\end{array}
+		}\right) \\ 
+ 	\\ 
+	False , else  
+\end{array}
+\right.\] 
+
+
+Les opérateurs de comparaison combinent les trois caractéristiques en considérant d'abord la cardinalité des données, car il n'y a pas d'équivalence entre un interacteur et un Widget s'ils n'ont pas la même cardinalité. Ensuite, les opérateurs considèrent les types des données des interacteurs et enfin les sous-ensembles de primitives d'interaction. La combinaison des ces opérateurs des caractéristiques nous permet de relever quatre cas d'équivalences signifiant pour le processus de migration~: le cas d'une équivalence stricte suivant les trois caractéristiques ci-dessus, le cas d'une équivalence
+large , le cas d'une équivalence simple et le cas d'une équivalence faible (6.2.1.4).
+
+
+\subsubsection{Équivalence stricte }
+
+\begin{flushleft}
+Il ya une équivalence stricte entre un interacteur et un Widget s'ils ont des
+cardinalités égales, les même types de données et des primitives d'interaction
+égales. La fonction$\ {\mathbf strongEquivalent}{\rm \ }:Interactor\times
+Widget\to Boolean$\textit{ }permet de vérifier cette équivalence, $\forall \ i\
+\in \left\{Interactor\right\},\forall w\in \left\{Widget\right\},\ $
+\[ strongEquivalent (i,w ){\rm =}\left\{ 
+	\begin{array}{l}
+		True {\rm ,\ }\left(\genfrac{}{}{0pt}{}
+						{\begin{array}{c}
+							 equalCard\left(i, w\right) \\
+							 \wedge  \\ 
+							 equalDataType\left( i, w \right) \\ 
+						\end{array}}
+						{ \begin{array}{c}
+							\wedge  \\ 
+							i =w
+						\end{array}
+					}\right) \\ 
+			{\rm \ \ } \\ 
+		False, else 
+	\end{array}
+\right.\ \] 
+\end{flushleft}
+
+
+\subsubsection{Equivalence large}
+
+\begin{flushleft}
+Il y a une équivalence large entre un interacteur et un Widget s'ils ont des
+cardinalités égales,  les mêmes types de données et si les primitives
+d'interaction de l'interacteur sont incluses dans celles du Widget. La fonction
+${\mathbf largeEquivalent}{\rm \ }:Interactor\ X\ Widget\to Boolean$ permet de
+vérifier cette équivalence.$\forall \ i\ \in \left\{Interactor\right\},\forall
+w\in \left\{Widget\right\},\ $
+\[ largeEquivalent ( i,w ){\rm =}
+	\left\{ 
+		\begin{array}{l} True {\rm ,\ }
+		\left(\genfrac{}{}{0pt}{}{
+			\begin{array}{c}
+				equalCard\left(i,w \right) \\
+				\wedge  \\
+				equalDataType \left(i,w \right) \\ 
+			\end{array}}
+			{ \begin{array}{c}
+				\wedge  \\ 
+				i\subseteq w 
+			\end{array}}
+		\right) \\ 
+		{\rm \ \ } \\ 
+		False, else 
+		\end{array}
+	\right.\] 
+\end{flushleft}
+
+
+\subsubsection{Équivalence simple}
+
+\begin{flushleft}
+Il y a une équivalence simple entre un interacteur et un Widget s'ils ont des
+cardinalités égales,  les types de données différentes et si les primitives
+d'interaction de l'interacteur sont égales ou incluses dans celles du Widget. La
+fonction $simpleEquivalent \ :Interactor\ X\ Widget\to Boolean$ permet de vérifier cette équivalence. $\forall \ i\ \in
+\left\{Interactor\right\},\forall w\in \left\{Widget\right\},$
+\[ simpleEquivalent( i , w ) = \left\{ 
+			\begin{array}{l}
+				 True, \left(\genfrac{}{}{0pt}{}{
+				 	\begin{array}{c}
+						equalCard\left( i, w \right)\\
+						\wedge  \\ 
+						!equalDataType\left(i,w \right) \\ 
+						\wedge  \\ 
+					\end{array}}
+					{ \begin{array}{c}
+						\left(i \subseteq w \vee i=w \right) 
+					\end{array}}
+				\right) \\
+				\\  
+				False, else 
+			\end{array}
+\right.\] 
+
+\end{flushleft}
+
+
+\subsubsection{Équivalence faible}
+
+\begin{flushleft}
+La fonction $lowEquivalent:Interactor\ X\ Widget\to Boolean$ permet
+de vérifier cette équivalence. $\forall \ i\ \in \left\{Interactor\right\},\forall w\in \left\{Widget\right\},$
+\[ lowEquivalent (i,w) =\left\{
+			\begin{array}{l}
+				True, \left(\genfrac{}{}{0pt}{}{ 
+					\begin{array}{c}
+						equalCard ( i,w )\\
+						\wedge  \\ 
+						!equalDataType (i,w)\\ 
+						\wedge  \\ 
+					\end{array}}
+				{ \begin{array}{c}
+					( i \supseteq w ) 
+				\end{array}}
+				\right) \\ 
+				False
+			\end{array}
+\right.\] 
+\end{flushleft}
+
+
+\subsection{Correspondances entre interacteurs et composants graphiques}
+
+
+\section{Synthèse}
+\label{sec:chap4:5} \textbf{[TODO]}
+Les primitives d'interaction présentées dans ce chapitre permettent la représentation des interactions intrinsèques aux composants graphiques et effectives aux interacteurs. Cette représentation offre des éléments de comparaison entre interacteurs de l'UI à migrer et les composants graphiques de la plateforme d'arrivée. Les algorithmes d'équivalence utilisés par le processus de migration s'appuient sur les primitives d'équivalence pour la sélection des widgets correspondants aux interacteurs à migrer. 
+Les interacteurs permettent de décrire les instances d'UI et leurs interactions effectives indépendamment des bibliothèques graphiques  tout en conservant leurs ressources et les liens entre eux. La structure analysable \textit{UIStructure} fournie en entrée est représentée de manière abstraite par un ensemble d'arbre d'interacteurs. 
+
+Cette structure abstraite est utilisée par le processus de migration pour établir les équivalences avec les widgets de la plateforme cible et pour  identifier et transformer les groupes d'interacteurs en fonction des guidelines.   
+Par ailleurs cette modélisation des interactions et de la structure des éléments d'une UI ne prend pas en compte toutes les préoccupations liées à la conception des UI adaptables aux contextes d'usage telles que définies par CRF. En effet, les modélisations pour l'adaptation des styles de présentation de l'UI [réf style], du layout [réf layout] des composants graphiques ou des comportements de l'UI de façon globale [réf tâche] ne sont pas prises en compte dans la modélisation proposée dans ce chapitre. Le processus de migration que nous proposons permet aussi d'assister les développeurs pendant le choix des styles et présentation ou du layout suivant les guidelines de la plateforme d'arrivée.  
+

@@ -1,0 +1,37 @@
+\relax 
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1}Introduction}{1}{subsection.0.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.2}Approches de migration d'UI}{1}{subsection.0.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {0.2.1}Migration par l'adaptation de l'architecture ARCH}{1}{subsubsection.0.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Adaptation du niveau de l'interaction physique}}{2}{figure.1}}
+\newlabel{fig:1}{{1}{2}{Adaptation du niveau de l'interaction physique\relax }{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Adaptation du niveau de la pr\'{e}sentation logique}}{2}{figure.2}}
+\newlabel{fig:2}{{2}{2}{Adaptation du niveau de la pr\'{e}sentation logique\relax }{figure.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {0.2.2}Migration d'aI cUs\'{e}e sur un mod\`{e}le de connaissanbe}{3}{subsubsection.0.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Processus de r\'{e} engineering avec MORPH}}{4}{figure.3}}
+\newlabel{fig:3}{{3}{4}{Processus de r\'{e} engineering avec MORPH\relax }{figure.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Composant graphique et r\^{o}les}}{5}{table.1}}
+\newlabel{tbl:1}{{1}{5}{Composant graphique et r\^{o}les\relax }{table.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {0.2.3}Middleware pour la migration d'UI}{5}{subsubsection.0.2.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Exemple de transformation USIXML}}{7}{figure.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Processus de migration d'une UI Desktop vers un t\'{e}l\'{e}phone portable}}{7}{figure.5}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Table d'\'{e}quivalence}}{8}{table.2}}
+\newlabel{tbl:2}{{2}{8}{Table d'\'{e}quivalence\relax }{table.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {0.2.4}Amener les aiplpcations existanees sur lts tables interactives}{8}{subsubsection.0.2.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {0.2.5}Processus de migration de AgrlePlanner vers une table inteiactive}{8}{subsubsection.0.2.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.3}Synth\`{e}se}{9}{subsection.0.3}}

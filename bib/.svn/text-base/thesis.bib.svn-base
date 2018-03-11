@@ -1,0 +1,16 @@
+@inproceedings{Beaudouin-Lafon2000,
+address = {New York, New York, USA},
+author = {Beaudouin-Lafon, Michel},
+booktitle = {Proceedings of the SIGCHI conference on Human factors in computing systems - CHI '00},
+doi = {10.1145/332040.332473},
+isbn = {1581132166},
+keywords = {Interaction Model,WIMP interfaces,direct manipulation,instrumental interaction,interaction model,post-WIMP interfaces},
+mendeley-tags = {Interaction Model},
+month = apr,
+pages = {446--453},
+publisher = {ACM Press},
+title = {{Instrumental interaction}},
+url = {http://dl.acm.org/citation.cfm?id=332040.332473},
+year = {2000}
+}
+

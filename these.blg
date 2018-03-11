@@ -1,0 +1,77 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: these.aux
+A level-1 auxiliary file: Title.aux
+The style file: alpha.bst
+Database file #1: bib/biblio.bib
+Repeated entry---line 2309 of file bib/biblio.bib
+ : @article{Steinberg2012
+ :                       ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "MenuTangible"
+Warning--empty journal in Bartolomei2010
+Warning--empty institution in Calvary2002
+Warning--empty school in December2001
+Warning--empty journal in Foley1990
+Warning--can't use both author and editor fields in Kubicki2009
+Warning--empty booktitle in Kalawa2011
+Warning--empty institution in Krasner1988
+Warning--empty year in Limbourg
+Warning--there's a number but no volume in Markopoulos1997
+Warning--empty journal in McClure1992
+Warning--empty institution in Microsoft2011
+Warning--empty journal in Moore1996
+Warning--empty journal in Macias2006
+Warning--empty journal in Moore1997
+Warning--empty school in Nigay1994a
+Warning--empty journal in Pfaff1985
+Warning--empty journal in Paterno2011
+Warning--empty journal in Paterno2010
+Warning--empty institution in Resnick1995
+Warning--empty journal in Steinberg2012
+Warning--there's a number but no series in UIMS1992
+Warning--empty journal in Vanderdonckt1997
+Warning--empty booktitle in Vlist2011
+Warning--there's a number but no series in Vlist2011
+You've used 53 entries,
+            2543 wiz_defined-function locations,
+            877 strings with 13728 characters,
+and the built_in function-call counts, 22505 in all, are:
+= -- 2262
+> -- 1076
+< -- 46
++ -- 371
+- -- 368
+* -- 1537
+:= -- 3588
+add.period$ -- 163
+call.type$ -- 53
+change.case$ -- 346
+chr.to.int$ -- 50
+cite$ -- 77
+duplicate$ -- 959
+empty$ -- 1581
+format.name$ -- 433
+if$ -- 4679
+int.to.chr$ -- 4
+int.to.str$ -- 0
+missing$ -- 43
+newline$ -- 265
+num.names$ -- 161
+pop$ -- 403
+preamble$ -- 1
+purify$ -- 402
+quote$ -- 0
+skip$ -- 845
+stack$ -- 0
+substring$ -- 1116
+swap$ -- 235
+text.length$ -- 46
+text.prefix$ -- 18
+top$ -- 0
+type$ -- 416
+warning$ -- 24
+while$ -- 214
+width$ -- 56
+write$ -- 667
+(There was 1 error message)

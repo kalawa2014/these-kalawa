@@ -1,0 +1,322 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{FvDFH90}
+
+\bibitem[{App}95]{AppleComputerInc1995}
+{Apple Computer Inc}.
+\newblock {\em {Macintosh Human Interface Guidelines}}.
+\newblock Addison-wesley Publishing, 1995.
+
+\bibitem[BCR10]{Bartolomei2010}
+Thiago~Tonelli Bartolomei, Krzysztof Czarnecki, and L~Ralf.
+\newblock {Swing to SWT and Back : Patterns for API Migration by Wrapping}.
+\newblock 2010.
+
+\bibitem[Bes10]{Besacier2010}
+Guillaume Besacier.
+\newblock {\em {Interactions post-WIMP et applications existantes sur une table
+  interactive}}.
+\newblock PhD thesis, UNIVERSIT\'{E} PARIS-SUD 11, 2010.
+
+\bibitem[BL00]{Beaudouin-Lafon2000}
+Michel Beaudouin-Lafon.
+\newblock {Instrumental interaction}.
+\newblock In {\em Proceedings of the SIGCHI conference on Human factors in
+  computing systems - CHI '00}, pages 446--453, New York, New York, USA, April
+  2000. ACM Press.
+
+\bibitem[BRNB07]{Besacier2007}
+Guillaume Besacier, Ga\'{e}tan Rey, Marianne Najm, and St\'{e}phanie Buisine.
+\newblock {Paper Metaphor for Tabletop Interaction Design}.
+\newblock In {\em HCII'07 Human Computer Interaction International}, pages
+  758--767, 2007.
+
+\bibitem[C93]{NC1993}
+Laurence " and Jo\"{e}lle Coutaz.
+\newblock {A design space for multimodal systems}.
+\newblock In {\em Proceedings of the SIGCHI conference on Human factors in
+  computing systems - CHI '93}, pages 172--178, New York, New York, USA, May
+  1993. ACM Press.
+
+\bibitem[CCB{\etalchar{+}}02]{Calvary2002}
+Ga\"{e}lle Calvary, Jo\"{e}lle Coutaz, Laurent Bouillon, Murielle Florins,
+  Quentin Limbourg, L.~Marucci, Fabio Patern\`{o}, Carmen Santoro, N.~Souchon,
+  David Thevenin, and Jean Vanderdonckt.
+\newblock {CAMELEON Project}.
+\newblock Technical report, 2002.
+
+\bibitem[Cre01]{December2001}
+Murray Crease.
+\newblock {\em {A Toolkit Of Resource-Sensitive, Multimodal Widgets Murray
+  Crease}}.
+\newblock PhD thesis, 2001.
+
+\bibitem[DL01]{Dietz2001}
+Paul Dietz and Darren Leigh.
+\newblock {DiamondTouch}.
+\newblock In {\em Proceedings of the 14th annual ACM symposium on User
+  interface software and technology - UIST '01}, page 219, New York, New York,
+  USA, November 2001. ACM Press.
+
+\bibitem[FvDFH90]{Foley1990}
+James~D. Foley, Andries van Dam, Steven~K. Feiner, and John~F. Hughes.
+\newblock {Computer graphics: principles and practice (2nd ed.)}.
+\newblock July 1990.
+
+\bibitem[GH95]{Gellersen1995}
+Hans-w Gellersen and {Hans-W. Gellersen}.
+\newblock {Modality Abstraction : Capturing Logical Interaction Design as
+  Abstraction from "User Interfaces for All"}.
+\newblock In {\em 1st ERCIM Workshop on "User Inter- faces for All". ERCIM},
+  1995.
+
+\bibitem[IU97]{Ishii1997}
+Hiroshi Ishii and Brygg Ullmer.
+\newblock {Tangible bits}.
+\newblock In {\em Proceedings of the SIGCHI conference on Human factors in
+  computing systems - CHI '97}, pages 234--241, New York, New York, USA, March
+  1997. ACM Press.
+
+\bibitem[KKM03]{Kassoff2003}
+M.~Kassoff, D.~Kato, and W.~Mohsin.
+\newblock {Creating GUIs for web services}.
+\newblock {\em IEEE Internet Computing}, 7(5):66--73, September 2003.
+
+\bibitem[KLL{\etalchar{+}}09]{Kubicki2009}
+S\'{e}bastien Kubicki, Sophie Lepreux, Yoann Lebrun, Philippe~Dos Santos,
+  Christophe Kolski, and Jean Caelen.
+\newblock {\em {Human-Computer Interaction. Ambient, Ubiquitous and Intelligent
+  Interaction}}, volume 5612 of {\em Lecture Notes in Computer Science}.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2009.
+
+\bibitem[KOR{\etalchar{+}}11]{Kalawa2011}
+Andr\'{e} Kalawa, Audrey Occello, Michel Riveill, Nice Sophia, and Antipolis
+  Cnrs.
+\newblock {SUIT : a framework for Supporting UI Translation}.
+\newblock 2011.
+
+\bibitem[KP88]{Krasner1988}
+Glenn~E Krasner and Stephen~T Pope.
+\newblock {A Description of the Model-View-Controller User Interface Paradigm
+  in the Smalltalk-80 System}.
+\newblock Technical report, 1988.
+
+\bibitem[KSM99]{Kong1999a}
+L~Kong, E~Stroulia, and B~Matichuk.
+\newblock {Legacy interface migration: A task-centered approach}.
+\newblock {\em \ldots of the 8th International Conference on \ldots}, 1999.
+
+\bibitem[Kub11]{SebastienKubicki2011}
+Sébastien Kubicki.
+\newblock {\em {Contribution \`{a} la prise en consid\'{e}ration du contexte
+  dans la conception de tables interactives sous l'angle de l 'IHM ,
+  application \`{a} des contextes impliquant table interactive RFID et objets
+  tangibles}}.
+\newblock PhD thesis, UNIVERSIT\'{E} DE VALENCIENNES, 2011.
+
+\bibitem[LVMB]{Limbourg}
+Quentin Limbourg, Jean Vanderdonckt, Benjamin Michotte, and Laurent Bouillon.
+\newblock {USIXML: A Language Supporting Multi-path Development of User
+  Interfaces}.
+\newblock In {\em Ifip International Federation For Information Processing},
+  pages 200--220.
+
+\bibitem[Mar97]{Markopoulos1997}
+Panagiotis Markopoulos.
+\newblock {A compositional model for the formal specification of user interface
+  software}.
+\newblock {\em Doctor}, (March), 1997.
+
+\bibitem[McC92]{McClure1992}
+Carma McClure.
+\newblock {The three Rs of software automation: re-engineering, repository,
+  reusability}.
+\newblock March 1992.
+
+\bibitem[Mic11]{Microsoft2011}
+Microsoft.
+\newblock {Microsoft Surface 2 Design and Interaction Guide}.
+\newblock Technical Report July, 2011.
+
+\bibitem[Mic12a]{Microsoft2012}
+Microsoft.
+\newblock {MSDN XAML}, 2012.
+
+\bibitem[{Mic}12b]{MicrosoftWPF2012}
+{Microsoft WPF}.
+\newblock {WPF}, 2012.
+
+\bibitem[{Mic}12c]{MicrosoftXNA2012}
+{Microsoft XNA}.
+\newblock {XNA}, 2012.
+
+\bibitem[{Mit}]{MitsubishiElectricResearchLaboratoriesb}
+{Mitsubishi Electric Research Laboratoriesb}.
+\newblock {MERL }.
+
+\bibitem[Moo95]{Mooney1995}
+James~D. Mooney.
+\newblock {Portability and reusability}.
+\newblock In {\em Proceedings of the 1995 ACM 23rd annual conference on
+  Computer science - CSC '95}, pages 150--156, New York, New York, USA,
+  February 1995. ACM Press.
+
+\bibitem[Moo96]{Moore1996}
+Melody~M. Moore.
+\newblock {Rule-Based Detection for Reverse Engineering User Interfaces}.
+\newblock page~42, November 1996.
+
+\bibitem[MPC06]{Macias2006}
+Jos\'{e}~A Mac\'{\i}as, \'{A}ngel~R Puerta, and Pablo Castells.
+\newblock {Model-Based User Interface Reengineering 2 User Interface Modeling}.
+\newblock pages 155--162, 2006.
+
+\bibitem[MR97]{Moore1997}
+Melody Moore and Spencer Rugaber.
+\newblock {Using Knowledge Representation to Understand Interactive Systems}.
+\newblock pages 60--67, May 1997.
+
+\bibitem[NC94]{Nigay1994a}
+Laurence Nigay and Jo\"{e}lle Coutaz.
+\newblock {\em {Conception et mod\'{e}lisation logicielles des syst\`{e}mes
+  interactifs: application aux interfaces multimodales = Software design and
+  implementation of interactive systems: a case study of multimodal
+  interfaces}}.
+\newblock PhD thesis, 1994.
+
+\bibitem[Pfa85]{Pfaff1985}
+G.~E. Pfaff.
+\newblock {User Interface Management Systems}.
+\newblock June 1985.
+
+\bibitem[PSO11]{Paterno2011}
+Fabio Patern\`{o}, Carmen Santoro, and Rasmus Olsen.
+\newblock {Migratory Interactive Applications for Ubiquitous Environments}.
+\newblock pages 9--23, 2011.
+
+\bibitem[PSS09]{Paterno'2009}
+Fabio Patern\`{o}, Carmen Santoro, and Lucio~Davide Spano.
+\newblock {MARIA: A Universal, Declarative, Multiple Abstraction-Level Language
+  for Service-Oriented Applications in Ubiquitous Environments}.
+\newblock {\em ACM Transactions on Computer-Human Interaction}, 16(4):1--30,
+  November 2009.
+
+\bibitem[PZ10]{Paterno2010}
+Fabio Patern\`{o} and Giuseppe Zichittella.
+\newblock {Desktop-to-Mobile Web Adaptation through Customizable
+  Two-Dimensional Semantic Redesign}.
+\newblock pages 79--94, 2010.
+
+\bibitem[RBB{\etalchar{+}}95]{Resnick1995}
+Lori~Alperin Resnick, Alex Borgida, Ronald~J Brachman, Charles~L Isbell,
+  Deborah~L Mcguinness, Peter~F Patel-schneider, and Kevin~C Zalondek.
+\newblock {CLASSIC Description and Reference Manual For the COMMON LISP
+  Implementation}.
+\newblock Technical report, 1995.
+
+\bibitem[RFJ08]{Ratiu2008}
+Daniel Ratiu, Martin Feilkas, and Jan Jurjens.
+\newblock {Extracting Domain Ontologies from Domain Specific APIs}.
+\newblock {\em 2008 12th European Conference on Software Maintenance and
+  Reengineering}, 1:203--212, 2008.
+
+\bibitem[SC12]{Silva2012}
+Carlos~Eduardo Silva and Jos\'{e}~Creissac Campos.
+\newblock {Can GUI Implementation Markup Languages Be Used for Modelling ?}
+\newblock In {\em Human-Centered Software Engineering}, pages 112--129, 2012.
+
+\bibitem[Ste12]{Steinberg2012}
+Gideon Steinberg.
+\newblock {Natural User Interfaces}.
+\newblock 2012.
+
+\bibitem[SVFR04]{Shen2004}
+Chia Shen, Fr\'{e}d\'{e}ric~D. Vernier, Clifton Forlines, and Meredith Ringel.
+\newblock {DiamondSpin: an extensible toolkit for around-the-table
+  interaction}.
+\newblock In {\em Proceedings of the 2004 conference on Human factors in
+  computing systems - CHI '04}, pages 167--174, New York, New York, USA, April
+  2004. ACM Press.
+
+\bibitem[TC02]{Thevenin2002}
+David Thevenin and Jo\"{e}lle Coutaz.
+\newblock {Adaptation des IHM : Taxonomies et Archi. Logicielle}.
+\newblock In {\em IHM 2002}, pages 207--210, 2002.
+
+\bibitem[TKB78]{TKB78}
+Andrew~S. Tanenbaum, Paul Klint, and A.~P.~Wim B{\"{o}}hm.
+\newblock Guidelines for software portability.
+\newblock {\em Softw., Pract. Exper.}, 8(6):681--698, 1978.
+
+\bibitem[UI97]{Ullmer1997}
+Brygg Ullmer and Hiroshi Ishii.
+\newblock {The metaDESK : Models and Prototypes for Tangible User Interfaces}.
+\newblock In {\em UIST '97 Proceedings of the 10th annual ACM symposium on User
+  interface software and technolog}, pages 223 -- 232, 1997.
+
+\bibitem[UIM92]{UIMS1992}
+UIMS.
+\newblock {A METAMODEL FOR THE RUNTIM E ARCHITECTURE OF AN INTERACTIVE SYSTE M
+  The UIMS Tool Developers Workshop *}.
+\newblock In {\em SIGCHI Bulletin}, number January, 1992.
+
+\bibitem[Val89]{Valdes1989}
+Vald\`{e}s.
+\newblock {A Virtual Toolkit for Windows and the Mac}.
+\newblock {\em Byte}, 11(3):209--216., 1989.
+
+\bibitem[Van97]{Vanderdonckt1997}
+Jean Vanderdonckt.
+\newblock {Conception assist\'{e}e de la pr\'{e}sentation d'une interface
+  homme-machine ergonomique pour une application de gestion hautement
+  interactive}.
+\newblock 1997.
+
+\bibitem[vD97]{VanDam1997}
+Andries van Dam.
+\newblock {Post-WIMP user interfaces}.
+\newblock {\em Communications of the ACM}, 40(2):63--67, February 1997.
+
+\bibitem[VLM{\etalchar{+}}04]{Vanderdonckt2004}
+Jean Vanderdonckt, Quentin Limbourg, Benjamin Michotte, Laurent Bouillon,
+  Daniela Trevisan, and Murielle Florins.
+\newblock {USIXML : a User Interface Description Language for Specifying
+  Multimodal User Interfaces The Reference Framework used for Multi-Directional
+  UI Development}.
+\newblock {\em Language}, pages 19--20, 2004.
+
+\bibitem[VNHF11]{Vlist2011}
+Bram J J Van~Der Vlist, Gerrit Niezen, Jun Hu, and Loe M~G Feijs.
+\newblock {Interaction Primitives : Describing Interaction Capabilities of
+  Smart Objects in Ubiquitous Computing Environments}.
+\newblock Number September, pages 13--15, 2011.
+
+\bibitem[WB03]{Wu2003}
+Mike Wu and Ravin Balakrishnan.
+\newblock {Multi-finger and whole hand gestural interaction techniques for
+  multi-user tabletop displays}.
+\newblock In {\em Proceedings of the 16th annual ACM symposium on User
+  interface software and technology - UIST '03}, pages 193--202, New York, New
+  York, USA, November 2003. ACM Press.
+
+\bibitem[WGM08a]{Wang2008}
+Xin Wang, Yaser Ghanam, and Frank Maurer.
+\newblock {From Desktop to Tabletop : Migrating the User Interface of
+  AgilePlanner}.
+\newblock In {\em Engineering Interactive Systems 2008}, pages 263--270, 2008.
+
+\bibitem[WGM08b]{WGM08}
+Xin Wang, Yaser Ghanam, and Frank Maurer.
+\newblock From desktop to tabletop: Migrating the user interface of
+  agileplanner.
+\newblock In Peter Forbrig and Fabio Patern{\`o}, editors, {\em Engineering
+  Interactive Systems}, pages 263--270, Berlin, Heidelberg, 2008. Springer
+  Berlin Heidelberg.
+
+\bibitem[XSS{\etalchar{+}}04]{Xia2004}
+Steven Xia, David Sun, Chengzheng Sun, David Chen, Q~Xia, D~Sun, C~Sun, and
+  D~Chen.
+\newblock {Leveraging Single-user Applications for Multi-user Collaboration :
+  the CoWord Approach Categories and Subject Descriptors}.
+\newblock In {\em CSCW 2004}, pages 162--171, 2004.
+
+\end{thebibliography}

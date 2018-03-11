@@ -1,0 +1,12 @@
+\section{Introduction}
+\label{sec:chap6:1}
+
+Le processus de migration que nous proposons est basé sur les primitives d'interactions\footnote{Elles constituent aussi  un modèle d'interactions abstraites} et un modèle de structure de l'UI. Conformément aux approches basées sur les modèles~\cite{Moore1997,Paterno'2009} étudiées au chapitre~\ref{chap3}, notre processus de migration comporte trois grande phases: \begin{itemize}
+\item la première consiste à décrire l'application à migrer à l'aide des modèles abstraits par un processus d'abstraction.
+\item La deuxième phase consiste à transformer le modèle de structure l'application de départ pour la plateforme cible tout en prenant en compte les guidelines et en préservant au moins les interactions de départ. Les interacteurs de la structure de l'UI transformée sont des instances des composants graphiques de la plateforme cible. L'identification de ces interacteurs ce fait en \textbf{comparant les primitives d'interactions} effectives des interacteurs de l'UI source avec les primitives d'interactions des composants graphiques instanciés de la plateforme cible.
+\item La troisième consiste à produire l'UI finale de la plateforme cible en intégrant les aspects (style et layout)  qui ne sont pas pris en compte par les modèles abstraits. La génération de l'UI finale consiste d'une part à sélectionner pour chaque interacteur \textbf{le composant graphique équivalent} conformément aux guidelines, d'autre part les composants sélectionnés sont positionnés manuellement suivant les guidelines associées à la plateforme cible.
+\end{itemize}
+
+Les deux dernière phase de ce processus de migration font appels à la \textbf{comparaison entre les interacteurs} en se basant sur les primitives d'interactions et la \textbf{sélection de composant graphique} en fonction des primitives d'interactions. Ces deux notions définissent des équivalences en se basant sur les primitives d'interactions entre les interacteurs des structures des UI sources et cibles d'une part et entre les interacteurs de l'UI cible et les composants graphiques de la plateforme cible d'autre part. 
+
+Cette section se propose de définir et formaliser les opérateurs de comparaison entre les interacteurs et les composants en se basant sur les primitives d'interactions.

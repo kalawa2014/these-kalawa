@@ -1,0 +1,2410 @@
+@article{Foley1990,
+author = {Foley, James D. and van Dam, Andries and Feiner, Steven K. and Hughes, John F.},
+isbn = {0-201-12110-7},
+keywords = {UI Model},
+mendeley-tags = {UI Model},
+month = jul,
+title = {{Computer graphics: principles and practice (2nd ed.)}},
+url = {http://dl.acm.org/citation.cfm?id=83821},
+year = {1990}
+}
+@inproceedings{Masso2006,
+address = {New York, New York, USA},
+author = {Mass\'{o}, Jos\'{e} Pascual Molina and Vanderdonckt, Jean and L\'{o}pez, Pascual Gonz\'{a}lez},
+booktitle = {Proceedings of the 11th international conference on Intelligent user interfaces - IUI '06},
+doi = {10.1145/1111449.1111483},
+isbn = {1595932879},
+keywords = {UI Migration,migration,virtual environment},
+mendeley-tags = {UI Migration},
+month = jan,
+pages = {140},
+publisher = {ACM Press},
+title = {{Direct manipulation of user interfaces for migration}},
+url = {http://dl.acm.org/citation.cfm?id=1111449.1111483},
+year = {2006}
+}
+
+@misc{,
+annote = {EJSR\_80\_3\_07.pdf (application/pdf Object)},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - Unknown - Web Service Component Interface for Efficient E-Learning Services.html:html},
+keywords = {Online tutoring framework,interface,learning software component model,web services},
+title = {{Web Service Component Interface for Efficient E-Learning Services}},
+url = {http://www.europeanjournalofscientificresearch.com/ISSUES/EJSR\_80\_3\_07.pdf},
+urldate = {31/07/12}
+}
+@misc{,
+annote = {At LinkedIn, feedback is given both inline at the fields as well as at the top of the page upon erroneous data submission.
+},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - Unknown - Input Feedback linkedin.com.html:html},
+keywords = {GUI,UI Pattern,design,design inspiration,design pattern,design tips,implemenation,inspiration,interaction,interaction design,interface,screenshot collections,screenshots,software,user interface},
+mendeley-tags = {UI Pattern},
+title = {{Input Feedback: linkedin.com}},
+url = {http://ui-patterns.com/collections/input-feedback/entry/178},
+urldate = {31/07/12}
+}
+@article{,
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - 2006 - KM3 A DSL for Metamodel Specification.pdf:pdf},
+journal = {Ifip International Federation For Information Processing},
+pages = {171--185},
+title = {{KM3: A DSL for Metamodel Specification}},
+year = {2006}
+}
+@misc{,
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - Unknown - Overlay Menu - Interaction Design Pattern Library - Welie.com.html:html},
+keywords = {UI Pattern},
+mendeley-tags = {UI Pattern},
+title = {{Overlay Menu - Interaction Design Pattern Library - Welie.com}},
+url = {http://www.welie.com/patterns/showPattern.php?patternID=overlay-menu},
+urldate = {31/07/12}
+}
+@article{,
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - 2002 - Meta Object Facility (MOF) Specification.pdf:pdf},
+number = {April},
+title = {{Meta Object Facility (MOF) Specification}},
+year = {2002}
+}
+@article{,
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - Unknown - Merging models with Kermeta.pdf:pdf},
+pages = {3--3},
+title = {{Merging models with Kermeta}}
+}
+@inproceedings{Zizi1994,
+address = {New York, New York, USA},
+author = {Zizi, Mountaz and Beaudouin-Lafon, Michel},
+booktitle = {Proceedings of the 1994 ACM European conference on Hypermedia technology - ECHT '94},
+doi = {10.1145/192757.192786},
+isbn = {0897916409},
+keywords = {information retrieval,interaction paradigm,maps,navigation,visualization},
+month = sep,
+pages = {126--135},
+publisher = {ACM Press},
+title = {{Accessing hyperdocuments through interactive dynamic maps}},
+url = {http://dl.acm.org/citation.cfm?id=192757.192786},
+year = {1994}
+}
+@phdthesis{Yoann2011,
+author = {Yoann, GABILLON},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Rapports Theses/these-YoannGabillon.pdf:pdf},
+keywords = {Composition UI},
+mendeley-tags = {Composition UI},
+school = {UNIVERSIT\'{E} DE GRENOBLE},
+title = {{Composition d ' Interfaces Homme-Machine par planification automatique}},
+year = {2011}
+}
+@article{Xu,
+author = {Xu, Diana and Read, Janet C and Mazzone, Emanuela and Macfarlane, Stuart and Brown, Martin},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/TableTop/EvaluationofTUI.pdf:pdf},
+keywords = {children,evaluation,tangible user interface,tui,usability},
+pages = {1008--1017},
+title = {{Evaluation of Tangible User Interfaces ( TUIs ) for and with Children – Methods and Challenges}}
+}
+@inproceedings{Xia2004,
+author = {Xia, Steven and Sun, David and Sun, Chengzheng and Chen, David and Xia, Q and Sun, D and Sun, C and Chen, D},
+booktitle = {CSCW 2004},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/TableTop/coword.pdf:pdf},
+isbn = {1581138105},
+keywords = {Collaboratif,TableTop,all or part of,application sharing,operational transformation,or hard copies of,permission to make digital,real-time collaborative word processor,this work for,transparent adaptation},
+mendeley-tags = {Collaboratif,TableTop},
+pages = {162--171},
+title = {{Leveraging Single-user Applications for Multi-user Collaboration : the CoWord Approach Categories and Subject Descriptors}},
+year = {2004}
+}
+@inproceedings{Wu2003,
+address = {New York, New York, USA},
+author = {Wu, Mike and Balakrishnan, Ravin},
+booktitle = {Proceedings of the 16th annual ACM symposium on User interface software and technology - UIST '03},
+doi = {10.1145/964696.964718},
+isbn = {1581136366},
+keywords = {TableTop,collaborative and competitive applications,gestures,multi degree-of-freedom input,tabletop interaction},
+mendeley-tags = {TableTop},
+month = nov,
+pages = {193--202},
+publisher = {ACM Press},
+title = {{Multi-finger and whole hand gestural interaction techniques for multi-user tabletop displays}},
+url = {http://dl.acm.org/citation.cfm?id=964696.964718},
+year = {2003}
+}
+@article{Woolf1995,
+abstract = {Discusses how adaptors can be used in generated views.},
+author = {Woolf, Bobby},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Arch-PAC/SMAL0404.pdf:pdf},
+journal = {The Smalltalk Report 4},
+keywords = {Archiitecture,MVC,ui design},
+mendeley-tags = {Archiitecture,MVC,ui design},
+number = {January},
+pages = {15--16},
+title = {{Making MVC code more reusable}},
+volume = {4},
+year = {1995}
+}
+@article{Wong,
+author = {Wong, Candy and Chu, Hao-hua and Katagiri, Masaji and Experience, Seamless and Jose, San},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Wong et al. - Unknown - GUI Migration across Heterogeneous Java Profiles.pdf:pdf},
+journal = {Architecture},
+keywords = {3,4,and j2me doja profile,e,g,j2me,java 2 micro edition,notebook pcs,pcs,personal,pocket,profile,thin clients,which is targeted for},
+title = {{GUI Migration across Heterogeneous Java Profiles}}
+}
+@inproceedings{WigdorD.ShenC.ForlinesC.Balakrishnan2006,
+author = {{Wigdor, D., Shen, C., Forlines, C., Balakrishnan}, R.},
+booktitle = {Proceedings of CHI'06,},
+pages = {309-- 318},
+title = {{Effects of display position and control space orientation on user preference and performance.}},
+year = {2006}
+}
+@article{Whittle,
+author = {Whittle, Jon and Jayaraman, Praveen},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Whittle, Jayaraman - Unknown - MATA A Tool for Aspect-Oriented Modeling based on Graph Transformation.pdf:pdf},
+journal = {Language},
+number = {1},
+title = {{MATA: A Tool for Aspect-Oriented Modeling based on Graph Transformation}}
+}
+@article{Wendler2012,
+author = {Wendler, Stefan and Ammon, Danny and Kikova, Teodora and Philippow, Ilka},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Implementation/patterns\_2012\_2\_50\_70052.pdf:pdf},
+isbn = {9781612082219},
+keywords = {MDE UI,UI Model,development,graphical user interface,model driven software,uiml,user interface patterns,usixml},
+mendeley-tags = {MDE UI,UI Model},
+number = {c},
+pages = {57--66},
+title = {{Development of Graphical User Interfaces based on User Interface Patterns}},
+year = {2012}
+}
+@misc{Wegner1997,
+author = {Wegner, Peter},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/IDM-IHM/ficacm.ps:ps},
+keywords = {IS},
+mendeley-tags = {IS},
+title = {{Why Interaction Is More Powerful Than Algorithms}},
+year = {1997}
+}
+@inproceedings{Wang2008,
+author = {Wang, Xin and Ghanam, Yaser and Maurer, Frank},
+booktitle = {Engineering Interactive Systems 2008},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/TableTop/10.1.1.160.1291.pdf:pdf},
+keywords = {agile,desktop computer,digital tabletop,user interface design},
+pages = {263--270},
+title = {{From Desktop to Tabletop : Migrating the User Interface of AgilePlanner}},
+year = {2008}
+}
+@article{W.KEITHEDWARDS,
+author = {{W. KEITH EDWARDS} and {MARK W. NEWMAN} and {JANA Z. SEDIVY and TREVOR F. SMITH}},
+title = {{Experiences with Recombinant Computing:
+Exploring Ad Hoc Interoperability in Evolving
+Digital Networks}},
+url = {http://www.cc.gatech.edu/~keith/pubs/tochi-speakeasy.pdf}
+}
+@article{Vlist,
+author = {Vlist, Bram J J Van Der and Niezen, Gerrit and Hu, Jun and Feijs, Loe M G},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Primitives Interactions/Metis244252.pdf:pdf},
+keywords = {Primitives interactions,product semantics,smart home,user interaction},
+mendeley-tags = {Primitives interactions},
+title = {{Design semantics of connections in a smart home environment}}
+}
+@inproceedings{Vlist2011,
+author = {Vlist, Bram J J Van Der and Niezen, Gerrit and Hu, Jun and Feijs, Loe M G},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Primitives Interactions/2011-AFRICON-InteractionPrimitives.pdf:pdf},
+isbn = {9781612849935},
+keywords = {Primitives interactions},
+mendeley-tags = {Primitives interactions},
+number = {September},
+pages = {13--15},
+title = {{Interaction Primitives : Describing Interaction Capabilities of Smart Objects in Ubiquitous Computing Environments}},
+year = {2011}
+}
+@article{Vanderdonckt2004,
+author = {Vanderdonckt, Jean and Limbourg, Quentin and Michotte, Benjamin and Bouillon, Laurent and Trevisan, Daniela and Florins, Murielle},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Vanderdonckt et al. - 2004 - USIXML a User Interface Description Language for Specifying Multimodal User Interfaces The Reference Framework used for Multi-Directional UI Develop.pdf:pdf},
+institution = {Citeseer},
+journal = {Language},
+keywords = {Modalit\'{e},UI Model,UIDL,context sensitive user interface,dependence,device independence,ing independence,modality,model driven architecture,model model transformation,render,user interface description language},
+mendeley-tags = {Modalit\'{e},UI Model,UIDL},
+pages = {19--20},
+publisher = {Citeseer},
+title = {{USIXML : a User Interface Description Language for Specifying Multimodal User Interfaces The Reference Framework used for Multi-Directional UI Development}},
+url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.6826\&amp;rep=rep1\&amp;type=pdf},
+year = {2004}
+}
+@inproceedings{Vanderdonckt1993,
+address = {New York, New York, USA},
+author = {Vanderdonckt, Jean and Bodart, Fran\c{c}ois},
+booktitle = {Proceedings of the SIGCHI conference on Human factors in computing systems - CHI '93},
+doi = {10.1145/169059.169340},
+isbn = {0897915755},
+keywords = {automatic user interface generation,decision tree,intelligent user interface,interaction objects,rule-based system},
+month = may,
+pages = {424--429},
+publisher = {ACM Press},
+title = {{Encapsulating knowledge for intelligent automatic interaction objects selection}},
+url = {http://dl.acm.org/citation.cfm?id=169059.169340},
+year = {1993}
+}
+@article{VANDERDONCKT,
+author = {Vanderdonckt, Jean and Bodart, Fran\c{c}ois},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/VANDERDONCKT - Unknown - Widget standardisation through.pdf:pdf},
+journal = {Direct},
+keywords = {Abstract Interaction Objects,Computer Systems,Presentation,Standardisation,System Development,User Interface Design,Visual Performance},
+title = {{Widget standardisation through}}
+}
+@article{Vanderdonckt1997,
+author = {Vanderdonckt, Jean},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Vanderdonckt - 1997 - Conception assist\'{e}e de la pr\'{e}sentation d'une interface homme-machine ergonomique pour une application de gestion hautement interactive.pdf:pdf},
+keywords = {Model UI,Top down UI design},
+title = {{Conception assist\'{e}e de la pr\'{e}sentation d'une interface homme-machine ergonomique pour une application de gestion hautement interactive}},
+year = {1997}
+}
+@article{Vanderdonckt1995,
+author = {Vanderdonckt, Jean},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Vanderdonckt - 1995 - Accessing guidelines information with Sierra.pdf:pdf},
+journal = {Proc. of IFIP Conf. on Human-Computer Interaction \ldots},
+keywords = {Guidelines},
+mendeley-tags = {Guidelines},
+title = {{Accessing guidelines information with Sierra}},
+url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.6440\&rep=rep1\&type=pdf},
+year = {1995}
+}
+@article{Vanderdonckt1999,
+abstract = {Several tools for working with guidelines already exist, both as commercial products as well as within research and development. As these tools frequently manipulate guidelines during many development steps of a user interface of an interactive application, they can overthrow any approach followed to develop this application. They also raise the fundamental question of to what extent can we trust these tools. To answer this question, we introduce five development milestones through which we must pass to produce a high quality tool for working with guidelines: 1.An initial unstructured but comprehensive set of guidelines is formed by collecting, gathering, merging, compiling guidelines from all available world-wide ergonomic sources.2.The initial set is sorted and classified within a single organising framework.3.A methodology, paying particular attention to finding and applying relevant guidelines is developed for grounding interactive applications on the organised set of guidelines.4.The structured guidelines and the supporting methodology are given computational representations for manipulation by computer-based tools.5.The methodology developed in (3) is further modified to optimise the effectiveness of computer-assisted user interface design. In this paper, we define these milestones and their associated goals, specify a general procedure and discuss some problems raised at each milestone. We then deliver an analytic synthesis of various experiences acquired to solve these problems and we discuss the validity of these experiences from the point of view of completeness, consistency and correctness. From these experiences, we finally draw some lessons useful for any future usage and development of a tool for working with guidelines.},
+author = {Vanderdonckt, Jean},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/1-s2.0-S0953543899000193-main.pdf:pdf},
+issn = {09535438},
+journal = {Interacting with Computers},
+keywords = {Guidelines,computer-aided design of user interfaces,development methodology,ergonomic algorithm,evaluation,guidelines,human–computer interaction,interactive application,software development methodologies,software engineering,software ergonomics,standard,style guide,tools for working with guidelines,usability,user interface},
+mendeley-tags = {Guidelines},
+month = nov,
+number = {2},
+pages = {81--118},
+title = {{Development milestones towards a tool for working with guidelines}},
+url = {http://dx.doi.org/10.1016/S0953-5438(99)00019-3},
+volume = {12},
+year = {1999}
+}
+@article{VanDam1997,
+author = {van Dam, Andries},
+doi = {10.1145/253671.253708},
+issn = {00010782},
+journal = {Communications of the ACM},
+keywords = {Interaction Design,WIMP},
+mendeley-tags = {Interaction Design,WIMP},
+month = feb,
+number = {2},
+pages = {63--67},
+title = {{Post-WIMP user interfaces}},
+url = {http://dl.acm.org/citation.cfm?id=253671.253708},
+volume = {40},
+year = {1997}
+}
+@article{Valdes1989,
+author = {Vald\`{e}s},
+journal = {Byte},
+number = {3},
+pages = {209--216.},
+title = {{A Virtual Toolkit for Windows and the Mac}},
+volume = {11},
+year = {1989}
+}
+@inproceedings{UIMS1992,
+author = {UIMS},
+booktitle = {SIGCHI Bulletin},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Arch-PAC/p32-hefley.pdf:pdf},
+number = {January},
+title = {{A METAMODEL FOR THE RUNTIM E ARCHITECTURE OF AN INTERACTIVE SYSTE M The UIMS Tool Developers Workshop *}},
+year = {1992}
+}
+@article{Tools,
+author = {Tools, Eclipse Modeling and Bachmann, Serge},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Tools, Bachmann - Unknown - Eclipse Modeling Tools (Galileo) Edition Graphique d'un m\'{e}ta-mod\`{e}le Ecore.pdf:pdf},
+pages = {1--16},
+title = {{Eclipse Modeling Tools (Galileo): Edition Graphique d'un m\'{e}ta-mod\`{e}le "Ecore"}}
+}
+@article{Thevenin1913,
+author = {Thevenin, David and Limbourg, Quentin and Bouillon, Laurent and Vanderdonckt, Jean},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Thevenin et al. - 1913 - A unifying reference framework for multi-target user interfaces.pdf:pdf},
+journal = {Context},
+pages = {1--21},
+title = {{A unifying reference framework for multi-target user interfaces}},
+year = {1913}
+}
+@inproceedings{Thevenin2002,
+abstract = {La plupart des taxonomies sur l'adaptation des IHM per- mettent de raisonner sur le probl\`{e}me de l'adaptation \`{a} l'utilisateur, mais ne couvrent pas l'adaptation \`{a} plusieurs cibles (plates-formes, environnements). R\'{e}cemment, des taxonomies traitent le multicible sans pr\'{e}ciser la nature des constituants logiciels impliqu\'{e}s dans le processus d'adaptation. Dans cet article, nous visons \`{a} combler cette lacune en proposant un axe compl\'{e}mentaire fond\'{e} sur la d\'{e}composition fonctionnelle du mod\`{e}le Arch.},
+author = {Thevenin, David and Coutaz, Jo\"{e}lle},
+booktitle = {IHM 2002},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Thevenin - 2002 - Adaptation des IHM Taxonomies et Archi. Logicielle.pdf:pdf},
+keywords = {ARCH,Architecture,adaptation,arch model,human computer interac-,software architecture,taxonomy,tion},
+mendeley-tags = {ARCH,Architecture},
+pages = {207--210},
+title = {{Adaptation des IHM : Taxonomies et Archi. Logicielle}},
+year = {2002}
+}
+@article{Thevenin1999,
+author = {Thevenin, David},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Thevenin - 1999 - Plasticity of User Interfaces Framework and Research Agenda.pdf:pdf},
+journal = {Agenda},
+keywords = {development process,plasticity,usability,user interface,user interface adaptation},
+pages = {1--10},
+title = {{Plasticity of User Interfaces: Framework and Research Agenda}},
+year = {1999}
+}
+@phdthesis{Thevenin2001,
+author = {Thevenin, David},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Thevenin et al. - 2001 - Adaptation en Interaction Homme-Machine le cas de la Plasticit\'{e}.pdf:pdf},
+keywords = {UI Adaptation},
+mendeley-tags = {UI Adaptation},
+title = {{Adaptation en Interaction Homme-Machine : le cas de la Plasticit\'{e}}},
+year = {2001}
+}
+@misc{TheMendeleySupportTeam2011a,
+abstract = {A quick introduction to Mendeley. Learn how Mendeley creates your personal digital library, how to organize and annotate documents, how to collaborate and share with colleagues, and how to generate citations and bibliographies.},
+address = {London},
+author = {{The Mendeley Support Team}},
+booktitle = {Mendeley Desktop},
+file = {:C$\backslash$:/Program Files/Mendeley Desktop/FAQ.pdf:pdf;:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/The Mendeley Support Team - 2010 - Getting Started with Mendeley.pdf:pdf},
+keywords = {Mendeley,how-to,user manual},
+pages = {1--16},
+publisher = {Mendeley Ltd.},
+title = {{Getting Started with Mendeley}},
+url = {http://www.mendeley.com},
+year = {2011}
+}
+@article{Terrenghi2009,
+author = {Terrenghi, Lucia and Quigley, Aaron and Dix, Alan},
+doi = {10.1007/s00779-009-0244-5},
+issn = {1617-4909},
+journal = {Personal and Ubiquitous Computing},
+keywords = {Display ecosystem scale,Display systems,Gesture,Human computer interaction,Interaction design,Social interaction,Surface interfaces,TableTop,Tabletop},
+mendeley-tags = {TableTop},
+month = jun,
+number = {8},
+pages = {583--598},
+title = {{A taxonomy for and analysis of multi-person-display ecosystems}},
+url = {http://dl.acm.org/citation.cfm?id=1644246.1644265},
+volume = {13},
+year = {2009}
+}
+@article{TanenbaumS.1978,
+author = {{Tanenbaum S.}, Andrew and Klint, Paul and Bohm, Wim},
+doi = {10.1002/spe.4380080604},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/11053.pdf:pdf},
+issn = {00380644},
+journal = {Software-Practice And Experience},
+keywords = {Portabilit\'{e}},
+mendeley-tags = {Portabilit\'{e}},
+month = nov,
+number = {6},
+pages = {681--698},
+title = {{Guidelines for Software Portability}},
+url = {http://doi.wiley.com/10.1002/spe.4380080604},
+volume = {8},
+year = {1978}
+}
+@article{Steinberg2012,
+author = {Steinberg, Gideon},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/natural\_user\_interfaces\_gste097.pdf:pdf},
+isbn = {9781450310154},
+keywords = {NUI},
+mendeley-tags = {NUI},
+title = {{Natural User Interfaces}},
+year = {2012}
+}
+@article{Snowdon1999,
+author = {Snowdon, Dave},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Primitives Interactions/theseCD09.pdf:pdf},
+keywords = {Primitives interactions},
+mendeley-tags = {Primitives interactions},
+title = {{l ' Universit\'{e} des Sciences et Technologies de Lille Docteur en Informatique C\'{e}dric Dumas Un mod\`{e}le d ' interaction 3D : Interactions homme-machine et homme-machine-homme dans les interfaces 3D pour le TCAO synchrone}},
+year = {1999}
+}
+@techreport{Smith1986,
+abstract = {This report offers guidelines for design of user interface software in six functional areas: data entry, data display, sequence control, user guidance, data transmission, and data protection. This report revises and extends previous compilations of design guidelines (cf. Smith and Mosier, 1984a). If you are a teacher, a student, a human factors practitioner or researcher, these guidelines can serve as a starting point for the development and application of expert knowledge. But that is not the primary objective of this compilation. The guidelines are proposed here as a potential tool for designers of user interface software. If you are a system analyst, you can review these guidelines to establish design requirements. If you are a software designer, you can consult these guidelines to derive the specific design rules appropriate for your particular system application. That translation from general guidelines to specific rules will help focus attention on critical user interface design questions early in the design process. If you are a manager responsible for user interface software design, you may find in these guidelines a means to make the design process more efficient. Guidelines can help establish rules for coordinating individual design contributions, can help to make design decisions just once rather than leaving them to be made over and over again by individual designers, can help to define detailed design requirements and to evaluate user interface software in comparison with those requirements. The design of user interface software will often involve a considerable investment of time and effort. Design guidelines can help ensure the value of that investment.},
+author = {Smith, Sidney L and Mosier, Jane N},
+booktitle = {Guidelines for Designing User Interface Software},
+editor = {{HCIBib Org}},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Smith, Mosier - 1986 - Guidelines for Designing User Interface Software.pdf:pdf},
+institution = {MITRE},
+number = {ESD-TR-86-278},
+pages = {0},
+publisher = {The MITRE Corporation},
+title = {{Guidelines for Designing User Interface Software}},
+url = {http://www.userlab.com/Downloads/Smith\_Mosier\_guideline\_.pdf},
+volume = {ESD-TR-86-},
+year = {1986}
+}
+@article{Silva2010,
+author = {Silva, J C},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Silva - 2010 - The GUISurfer Tool Towards a Language Independent Approach to Reverse Engineering GUI Code.pdf:pdf},
+isbn = {9781450300834},
+journal = {Human Factors},
+keywords = {2,adequate,case,de facto standard,do not cater,even so,interactive computing systems,modeling software,modeling user interfaces,still,uml},
+pages = {181--186},
+series = {2nd ACM SIGCHI Symposium on Engineering Interactive Computing Systems, EICS'10},
+title = {{The GUISurfer Tool : Towards a Language Independent Approach to Reverse Engineering GUI Code}},
+url = {http://www.scopus.com/inward/record.url?eid=2-s2.0-77955120634\&partnerID=40\&md5=742e7d8eb16f27cedad81e7ab19a9065},
+year = {2010}
+}
+@inproceedings{Silva,
+author = {Silva, Carlos and Campos, Creissac},
+booktitle = {3rd International Workshop on Metamodels, Schemas, Grammars, and Ontologies (ateM 2006) for Reverse Engineering,},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/jcsilva06.pdf:pdf},
+keywords = {Reverse Engineering},
+mendeley-tags = {Reverse Engineering},
+title = {{Models for the Reverse Engineering of Java / Swing Applications}},
+year = {2006}
+}
+@book{Shreiner2003,
+abstract = {long awaited revision of the definitive guide to Open GL, the defacto standard for all developers creating graphics applications Fully updated for OpenGL Versions 1.3 and 1.4, with many new example programs and color slides Introduces the new shading technologies, including the ARB vertex and fragment program extension Written under the auspices of the OpenGL Architectural Review Board, the previous edition alone has sold more than 40,000 copies OpenGL is a powerful software interface used to produce high-quality computer graphics. The OpenGL Programming Guide provides definitive and comprehensive information on OpenGL and the OpenGL Utility Library. The previous edition covered OpenGL through version 1.2. This fourth edition of the bestselling guide will describe all of the latest features of OpenGL versions 1.3 and 1.4, as well as the important OpenGL ARB extensions. Some of the new features in the core library include cube-mapped texture mapping, multi-texturing, multi-sampled anti-aliasing, depth-texturing and shadows, and advanced texture application modes. Most importantly, the ARB vertex and fragment program extension (commonly referred to as "shaders") will be introduced. Many new example programs and color slides have been incorporated as well. As with all of the previous editions, this one was developed under the auspices of the OpenGL Architecture Review Board, and industry consortium responsible for guiding the evolution of OpenGL, and written by some of the most influential developers in the field. Any developer incorporating graphics into his or her programs will want a copy of this authoritative.},
+author = {Shreiner, Dave and Woo, Mason and Neider, Jackie and Davis, Tom},
+edition = {4th Ed},
+keywords = {API GUI,Open GL},
+mendeley-tags = {API GUI},
+pages = {760},
+title = {{OpenGL programming guide : the official guide to learning openGL, version 1.4}},
+year = {2003}
+}
+@inproceedings{Shen2004,
+address = {New York, New York, USA},
+author = {Shen, Chia and Vernier, Fr\'{e}d\'{e}ric D. and Forlines, Clifton and Ringel, Meredith},
+booktitle = {Proceedings of the 2004 conference on Human factors in computing systems - CHI '04},
+doi = {10.1145/985692.985714},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IDM/Model Transformations/diamondspin.pdf:pdf},
+isbn = {1581137028},
+keywords = {GUI API,TableTop,tabletop toolkit},
+mendeley-tags = {GUI API,TableTop},
+month = apr,
+pages = {167--174},
+publisher = {ACM Press},
+title = {{DiamondSpin: an extensible toolkit for around-the-table interaction}},
+url = {http://dl.acm.org/citation.cfm?id=985692.985714},
+year = {2004}
+}
+@incollection{Seffah2003,
+address = {Chichester, UK},
+author = {Seffah, Ahmed and Javahery, Homa},
+booktitle = {Multiple User Interfaces},
+doi = {10.1002/0470091703.ch2},
+editor = {Seffah, Ahmed and Javahery, Homa},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - 2003 - Multiple User Interfaces.html:html},
+keywords = {Graphical User Interface (GUI),Handheld User Interface (HUI),Multiple User Interface (MUI),UI Migration,Web-based User Interface (WUI),context-aware UI development,cross-platform consistency,interaction styles,pattern hierarchies,server-side services},
+mendeley-tags = {UI Migration},
+month = nov,
+pages = {11----26},
+publisher = {John Wiley \& Sons, Ltd},
+title = {{Multiple User Interfaces: Cross-Platform Applications and Context-Aware Interfaces}},
+url = {http://dx.doi.org/10.1002/0470091703.ch2},
+year = {2005}
+}
+@phdthesis{SebastienKubicki2011,
+author = {Sébastien Kubicki},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Rapports Theses/These\_Kubicki\_2011\_Table\_Interactive\_Contexte.pdf:pdf},
+keywords = {TableTop,tabletop interaction,tangible interaction},
+mendeley-tags = {TableTop},
+school = {UNIVERSIT\'{E} DE VALENCIENNES},
+title = {{Contribution \`{a} la prise en consid\'{e}ration du contexte dans la conception de tables interactives sous l'angle de l 'IHM , application \`{a} des contextes impliquant table interactive RFID et objets tangibles}},
+year = {2011}
+}
+@article{Science2006,
+abstract = {Wide usage of model transformation in the Information Systems has resulted in a number of transformation approaches recently. In order to provide an insight into the existing transformation approaches, to draw out the practicability and analyze the strengths and weaknesses of these approaches a multidimensional classification is required. In this paper, a classification framework is proposed which provides a multidimensional, faceted and measure based viewpoint to give a clear and better insight into the existing model transformation approaches},
+author = {Science, Computer and Publications, Science},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Science, Publications - 2006 - No Title.pdf:pdf},
+journal = {Journal of Computer Science},
+keywords = {classification framework,genericity,transformation technique},
+number = {2},
+pages = {166--170},
+title = {{The classification Framework for Model Transformation}},
+volume = {2},
+year = {2006}
+}
+@inproceedings{Schwartz1991,
+author = {Schwartz, R and Park, Regency},
+booktitle = {CHI '91 Proceedings of the SIGCHI conference on Human factors in computing systems: Reaching through technology},
+doi = {10.1145/108844.108936},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/tetzlaff-guidelines.pdf:pdf},
+keywords = {Guidelines},
+mendeley-tags = {Guidelines},
+pages = {329--333},
+title = {{The use of guidelines in interface design}},
+volume = {5},
+year = {1991}
+}
+@book{Schneider-Hufschmidt1993,
+author = {Schneider-Hufschmidt, M and Malinowski, U and Kuhme, T},
+isbn = {0444815457},
+keywords = {Adaptive UI},
+mendeley-tags = {Adaptive UI},
+title = {{Adaptive user interfaces: Principles and practice}},
+url = {http://dl.acm.org/citation.cfm?id=562719},
+year = {1993}
+}
+@article{Santoro2008,
+author = {Santoro, Carmen and Scorcia, Antonio and Moruzzi, Via G},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Santoro, Scorcia, Moruzzi - 2008 - User Interface Migration between Mobile Devices and Digital TV.pdf:pdf},
+journal = {Ifip International Federation For Information Processing},
+keywords = {adaptation to the interaction,platform,ubiquitous environments,user interface migration},
+pages = {287--292},
+title = {{User Interface Migration between Mobile Devices and Digital TV}},
+year = {2008}
+}
+@article{Sandor,
+author = {Sandor, Christian},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Sandor - Unknown - CUIML A Language For the Generation of Multimodal Human-Computer Interfaces.pdf:pdf},
+title = {{CUIML: A Language For the Generation of Multimodal Human-Computer Interfaces}}
+}
+@article{Salminen,
+author = {Salminen, Timo and Hosio, Simo and Riekki, Jukka},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Salminen, Hosio, Riekki - Unknown - Middleware Based User Interface Migration Implementation and Evaluation.pdf:pdf},
+journal = {Human Factors},
+pages = {1--6},
+title = {{Middleware Based User Interface Migration : Implementation and Evaluation}}
+}
+@article{D.SalberL.1994,
+author = {Salber, Daniel and Nigay, Laurence and Coutaz, Jo\"{e}lle},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/D., Salber, L. - 1994 - The AMODEUS Project.pdf:pdf},
+journal = {Esprit},
+keywords = {Architecture,UI Model},
+mendeley-tags = {Architecture,UI Model},
+number = {Cci},
+title = {{The AMODEUS Project}},
+year = {1994}
+}
+@inproceedings{Salber1995,
+author = {Salber, Daniel},
+booktitle = {Young},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Salber - 1995 - Four easy pieces for assessing the usability of multimodal interaction the care properties.pdf:pdf},
+keywords = {and equivalence that may,and use,assessing aspects of multimodal,assignment,complementarity,definition of these properties,in a multimodal user,interaction,interface,multimodal interaction,occur between the interaction,redundancy,techniques available,the complementarity,we provide a formal},
+number = {June},
+pages = {1--7},
+title = {{Four easy pieces for assessing the usability of multimodal interaction: the care properties}},
+year = {1995}
+}
+@inproceedings{Ryall2004,
+address = {New York, New York, USA},
+author = {Ryall, Kathy and Forlines, Clifton and Shen, Chia and Morris, Meredith Ringel},
+booktitle = {Proceedings of the 2004 ACM conference on Computer supported cooperative work - CSCW '04},
+doi = {10.1145/1031607.1031654},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/TableTop/table\_size.pdf:pdf},
+isbn = {1581138105},
+pages = {284},
+publisher = {ACM Press},
+title = {{Exploring the effects of group size and table size on interactions with tabletop shared-display groupware}},
+url = {http://portal.acm.org/citation.cfm?doid=1031607.1031654},
+year = {2004}
+}
+@article{Roudaut2010,
+author = {Roudaut, Anne},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Roudaut - 2010 - Anne Roudaut.pdf:pdf},
+keywords = {Evaluation,Interaction Mobile},
+mendeley-tags = {Evaluation,Interaction Mobile},
+title = {{Conception et Evaluation de Techniques d'Interaction pour Dispositifs Mobiles}},
+year = {2010}
+}
+@article{Rossi,
+author = {Rossi, Gustavo and Ginzburg, Jeronimo and Urbieta, Matias and Distante, Damiano},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Rossi et al. - Unknown - Transparent Interface Composition in Web Applications.pdf:pdf},
+journal = {Technology},
+pages = {1--15},
+title = {{Transparent Interface Composition in Web Applications}}
+}
+@article{Rosenthal2005,
+author = {Rosenthal, Peter and Valduriez, Patrick and Group, Atlas},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Rosenthal, Valduriez, Group - 2005 - Modeling in the Large and Modeling in the Small.pdf:pdf},
+journal = {Architecture},
+pages = {33 -- 46},
+title = {{Modeling in the Large and Modeling in the Small *}},
+year = {2005}
+}
+@misc{Rigole2005,
+author = {Rigole, Peter and VANDERVELPEN, Chris and LUYTEN, Kris and Vandewoude, Yves and CONINX, Karin and Berbers, Yolande},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Rigole et al. - 2005 - A Component-Based Infrastructure for Pervasive User Interaction.pdf:pdf;:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Rigole et al. - 2005 - A Component-Based Infrastructure for Pervasive User Interaction.html:html},
+keywords = {Proceedings Paper,UI Model},
+language = {en},
+mendeley-tags = {UI Model},
+title = {{A Component-Based Infrastructure for Pervasive User Interaction}},
+url = {https://uhdspace.uhasselt.be/dspace/handle/1942/7933},
+year = {2005}
+}
+@techreport{Resnick1995,
+author = {Resnick, Lori Alperin and Borgida, Alex and Brachman, Ronald J and Isbell, Charles L and Mcguinness, Deborah L and Patel-schneider, Peter F and Zalondek, Kevin C},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/Process/Classic.pdf:pdf},
+keywords = {Knowledge,UI Model},
+mendeley-tags = {Knowledge,UI Model},
+title = {{CLASSIC Description and Reference Manual For the COMMON LISP Implementation}},
+year = {1995}
+}
+@article{RemiBastide,
+author = {{R\'{e}mi Bastide}, Philippe Palanque},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/R\'{e}mi Bastide - Unknown - Validationg Interactive System design through the verification of formal task ans system models.gz:gz},
+title = {{Validationg Interactive System design through the verification of formal task ans system models}}
+}
+@article{RemiBastide1095,
+author = {{R\'{e}mi Bastide}, Philippe Palanque},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/R\'{e}mi Bastide - 1095 - A Petri Net Based Environement for the Desing of Event-Driven Interfaces.gz:gz},
+keywords = {Computer tools for nets,Design,Petri Net,User Interface},
+title = {{A Petri Net Based Environement for the Desing of Event-Driven Interfaces}},
+year = {1095}
+}
+@article{Reiter2007,
+author = {Reiter, Thomas and Altmanninger, Kerstin and Retschitzegger, Werner},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Reiter, Altmanninger, Retschitzegger - 2007 - LNCS 4364 - Think Global, Act Local Implementing Model Management with Domain-Specific Integration Languages.pdf:pdf},
+journal = {Technology},
+pages = {263--276},
+title = {{Think Global, Act Local: Implementing Model Management with Domain-Specific Integration Languages}},
+year = {2007}
+}
+@article{Reed1999,
+author = {Reed, P. and Holdaway, K. and Isensee, S. and Buie, E. and Fox, J. and Williams, J. and Lund, A.},
+doi = {10.1016/S0953-5438(99)00008-9},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/1-s2.0-S0953543899000089-main.pdf:pdf},
+issn = {09535438},
+journal = {Interacting with Computers},
+keywords = {Guidelines,and development,software ergonomics in design,software ergonomics standards,software usability,standards,tools for work-,usability conformance assessment,user interface design,user interface guidelines},
+mendeley-tags = {Guidelines},
+month = nov,
+number = {2},
+pages = {119--142},
+title = {{User interface guidelines and standards: progress, issues, and prospects}},
+url = {http://linkinghub.elsevier.com/retrieve/pii/S0953543899000089},
+volume = {12},
+year = {1999}
+}
+@article{Rauf,
+author = {Rauf, Rehan and Antkiewicz, Michał and Czarnecki, Krzysztof},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Rauf, Antkiewicz, Czarnecki - Unknown - Logical Structure Extraction from Software Requirements Documents.pdf:pdf},
+title = {{Logical Structure Extraction from Software Requirements Documents}},
+volume = {10}
+}
+@article{Ratiu2008,
+abstract = {Domain specific APIs offer their clients ready-to-use implementations of domain concepts. Beside being interfaces between the worlds of humans and computers, domain specific APIs contain a considerable amount of domain knowledge. Due to the big abstraction gap between the real world and today's programming languages, in addition to the knowledge about their domain, these APIs are cluttered with a considerable amount of noise in form of implementation detail. Furthermore, an API offers a particular view on its domain and different APIs regard their domains from different perspectives. In this paper we propose an approach for building domain ontologies by identifying commonalities between domain specific APIs that target the same domain. Besides our ontology extraction algorithm, we present a methodology for eliminating the noise and we sketch possible usage-scenarios of the ontologies for program analysis and understanding. We evaluate our approach through a set of case-studies on extracting domain ontologies from well-known domain specific APIs.},
+author = {Ratiu, Daniel and Feilkas, Martin and Jurjens, Jan},
+doi = {10.1109/CSMR.2008.4493315},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IDM/Model Transformations/csmr08.pdf:pdf},
+institution = {IEEE},
+isbn = {9781424421572},
+issn = {15345351},
+journal = {2008 12th European Conference on Software Maintenance and Reengineering},
+keywords = {Ontologie,Reverse Engineering,UI Model},
+mendeley-tags = {Ontologie,Reverse Engineering,UI Model},
+pages = {203--212},
+publisher = {Ieee},
+series = {Software Maintenance and Reengineering, 2008. CSMR 2008. 12th European Conference on},
+title = {{Extracting Domain Ontologies from Domain Specific APIs}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4493315},
+volume = {1},
+year = {2008}
+}
+@inproceedings{RIannella1994,
+author = {{R Iannella}},
+booktitle = {roceedings of the Second Annual CHISIG (Queensland) Symposium - QCHI ‘94, Bond Univ},
+keywords = {Guidelines},
+mendeley-tags = {Guidelines},
+title = {{HyperSAM: A Practical User Interface Guidelines Management System}},
+url = {http://130.203.133.150/showciting;jsessionid=BA807320C964DFCE5BB56770EBC28467?cid=1589026},
+year = {1994}
+}
+@article{Quassi2005,
+author = {Quassi, Master},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IDM/Model Transformations/ATL.pdf:pdf},
+title = {{Les transformations de mod\`{e}les - ATL}},
+year = {2005}
+}
+@book{Preece2002,
+abstract = {This book discusses the design of current and next generation interactive technologies, such as the Web, mobile, embedded and wearable devices. These exciting new technologies bring additional challenges for designers and developers – challenges that require careful thought and an interdisciplinary approach. Written for students and practitioners, this book covers a wide range of issues, topics and paradigms that go beyond the traditional scope of human-computer interaction (HCI). A central focus is how to design interactive products that enhance and extend the way people communicate, interact and work with and via technology.},
+author = {Preece, Jenny and Helen, Sharp and Rogers, Yvonne},
+edition = {Chichester},
+keywords = {IS},
+mendeley-tags = {IS},
+title = {{Interaction Design: Beyond Human-Computer Interaction}},
+url = {http://www.id-book.com/},
+year = {2002}
+}
+@article{Pfaff1985,
+author = {Pfaff, G. E.},
+isbn = {038713803X},
+keywords = {ARCH},
+mendeley-tags = {ARCH},
+month = jun,
+title = {{User Interface Management Systems}},
+url = {http://dl.acm.org/citation.cfm?id=583657},
+year = {1985}
+}
+@misc{Perrier,
+author = {Perrier, Guy},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Modalit\'{e}/grammaire d'interaction.pdf:pdf},
+keywords = {Primitives interactions},
+mendeley-tags = {Primitives interactions},
+title = {{Grammaire d'interaction}}
+}
+@article{Paterno2010,
+author = {Patern\`{o}, Fabio and Zichittella, Giuseppe},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/DesktopToMobile.pdf:pdf},
+keywords = {Approches,adaptation,multi-device environments,ubiquitous applications},
+mendeley-tags = {Approches},
+pages = {79--94},
+title = {{Desktop-to-Mobile Web Adaptation through Customizable Two-Dimensional Semantic Redesign}},
+year = {2010}
+}
+@article{Paterno'2009,
+author = {Patern\`{o}, Fabio and Santoro, Carmen and Spano, Lucio Davide},
+doi = {10.1145/1614390.1614394},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Patern\`{o}, Santoro, Spano - 2009 - Maria.pdf:pdf},
+issn = {10730516},
+journal = {ACM Transactions on Computer-Human Interaction},
+month = nov,
+number = {4},
+pages = {1--30},
+title = {{MARIA: A Universal, Declarative, Multiple Abstraction-Level Language for Service-Oriented Applications in Ubiquitous Environments}},
+url = {http://portal.acm.org/citation.cfm?doid=1614390.1614394},
+volume = {16},
+year = {2009}
+}
+@article{Paterno2011,
+address = {London},
+author = {Patern\`{o}, Fabio and Santoro, Carmen and Olsen, Rasmus},
+doi = {10.1007/978-0-85729-250-6},
+editor = {Patern\`{o}, Fabio},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/01\_state of art.pdf:pdf},
+isbn = {978-0-85729-249-0},
+pages = {9--23},
+publisher = {Springer London},
+series = {Human-Computer Interaction Series},
+title = {{Migratory Interactive Applications for Ubiquitous Environments}},
+url = {http://www.springerlink.com/index/10.1007/978-0-85729-250-6},
+year = {2011}
+}
+@article{Parra2011,
+author = {Parra, Carlos},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IDM/Model Transformations/thesis-parra.pdf:pdf},
+title = {{Towards Dynamic Software Product Lines : Unifying Design and Runtime Adaptations par}},
+year = {2011}
+}
+@misc{P.Dillenbourg,
+author = {{P. Dillenbourg}},
+booktitle = {FPSE, Universit\'{e} de Gen\`{e}ve},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - Unknown - Espace de Conception.html:html},
+keywords = {Espace de conception},
+mendeley-tags = {Espace de conception},
+title = {{Espace de Conception}},
+url = {http://tecfa.unige.ch/tecfa/teaching/staf12/polycop/part1.htm},
+urldate = {06/08/12}
+}
+@book{P.Brusilovski1998,
+author = {{P. Brusilovski}, A. Kobsa and Vassileva., J.},
+publisher = {Hypermedia. Kluwer Academic Publishers},
+title = {{Adaptive Hypertext and}},
+year = {1998}
+}
+@misc{Ostrem2003,
+author = {Ostrem, Jean},
+booktitle = {Technical Report 3101001HW PalmSource Inc Sunnyvale CA USA URL},
+number = {April 1},
+publisher = {PalmSource, Inc},
+title = {{Palm OS User Interface Guidelines}},
+url = {http://www.palmos.com/dev/support/docs/ui/UIGuide\_Front.html},
+volume = {2005},
+year = {2003}
+}
+@article{Omg2004,
+author = {Omg, This and Adopted, Draft and Final, O M G and Specification, Adopted and Recommendation, The F T F and Catalog, O M G Specifications},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Omg et al. - 2004 - Meta Object Facility (MOF) 2.0 Core Specification.pdf:pdf},
+journal = {Meta},
+title = {{Meta Object Facility (MOF) 2.0 Core Specification}},
+year = {2004}
+}
+@article{Olivo2011,
+author = {Olivo, Paolo and Marchal, Damien and Roussel, Nicolas},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Olivo, Marchal, Roussel - 2011 - Software requirements for a ( more ) manageable multi-touch ecosystem.pdf:pdf},
+journal = {Engineering},
+pages = {1--5},
+title = {{Software requirements for a ( more ) manageable multi-touch ecosystem}},
+year = {2011}
+}
+@inproceedings{Ohnemus1997,
+address = {New York, New York, USA},
+author = {Ohnemus, Kenneth R.},
+booktitle = {Proceedings of the 15th annual international conference on Computer documentation - SIGDOC '97},
+doi = {10.1145/263367.263392},
+isbn = {0897918614},
+keywords = {Guidelines,World Wide Web,human computer interaction,style guide},
+mendeley-tags = {Guidelines},
+month = oct,
+pages = {189--197},
+publisher = {ACM Press},
+title = {{Web style guides}},
+url = {http://dl.acm.org/citation.cfm?id=263367.263392},
+year = {1997}
+}
+@article{Occello,
+author = {Occello, Audrey and Joffroy, Cedric},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Occello, Joffroy - Unknown - Model Driven Composition of User Interfaces.pdf:pdf},
+keywords = {metamodel design,model trans-,user interface composition},
+title = {{Model Driven Composition of User Interfaces}}
+}
+@article{Occello2008,
+author = {Occello, Audrey and Dery-Pinna, Anne-Marie and Riveill, Michel and Kniesel, G\"{u}nter},
+doi = {10.1109/ECBS.2008.10},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Occello et al. - 2008 - Managing Model Evolution Using the CCBM Approach.pdf:pdf},
+isbn = {978-0-7695-3141-0},
+journal = {15th Annual IEEE International Conference and Workshop on the Engineering of Computer Based Systems (ecbs 2008)},
+keywords = {mde,model evolution,model integration},
+month = mar,
+pages = {453--462},
+publisher = {Ieee},
+title = {{Managing Model Evolution Using the CCBM Approach}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4492427},
+year = {2008}
+}
+@article{Nunes,
+author = {Nunes, Nuno Jardim and Engenharia, Faculdade De},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Nunes, Engenharia - Unknown - Towards a UML Profile for Interaction Design The Wisdom Approach.pdf:pdf},
+pages = {101--116},
+title = {{Towards a UML Profile for Interaction Design: The Wisdom Approach}}
+}
+@phdthesis{Nigay1994a,
+author = {Nigay, Laurence and Coutaz, Jo\"{e}lle},
+keywords = {Concepci\'{o}n sistema,Conception syst\`{e}me,Ejecuci\'{o}n,IS,Impl\'{e}mentation,Interactive system,Interface utilisateur,Interfase usuario,Man machine relation,Relaci\'{o}n hombre m\'{a}quina,Relation homme machine,Sistema conversacional,System design,Syst\`{e}me conversationnel,User interface},
+mendeley-tags = {IS},
+title = {{Conception et mod\'{e}lisation logicielles des syst\`{e}mes interactifs: application aux interfaces multimodales = Software design and implementation of interactive systems: a case study of multimodal interfaces}},
+url = {http://cat.inist.fr/?aModele=afficheN\&cpsidt=160308},
+year = {1994}
+}
+@inproceedings{"1993,
+address = {New York, New York, USA},
+author = {", Laurence and Coutaz, Jo\"{e}lle},
+booktitle = {Proceedings of the SIGCHI conference on Human factors in computing systems - CHI '93},
+doi = {10.1145/169059.169143},
+isbn = {0897915755},
+keywords = {Modality,concurrency,data fusion,design space,modality,multimodal interaction,software architecture,taxonomy},
+mendeley-tags = {Modality},
+month = may,
+pages = {172--178},
+publisher = {ACM Press},
+title = {{A design space for multimodal systems}},
+url = {http://dl.acm.org/citation.cfm?id=169059.169143},
+year = {1993}
+}
+@article{Nigay,
+author = {Nigay, Laurence},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Nigay - Unknown - Espaces conceptuels pour multim\'{e}dia et multimodale.pdf:pdf},
+journal = {Synthese},
+title = {{Espaces conceptuels pour multim\'{e}dia et multimodale}}
+}
+@phdthesis{Nigay1994,
+abstract = {Cette th\`{e}se s'inscrit dans le domaine de l'ing\'{e}nierie des Interfaces Homme-Machine. Elle a pour th\`{e}me la conception et la r\'{e}alisation des syst\`{e}mes interactifs. Parmi ces syst\`{e}mes, nous \'{e}tudions les interfaces utilisateur qui int\`{e}grent les aspects innovants de la technologie actuelle en communication homme-machine: les syst\`{e}mes \`{a} caract\'{e}ristiques multiples. L'approche adopt\'{e}e s'appuie sur une analyse conceptuelle des syst\`{e}mes \`{a} caract\'{e}ristiques multiples en prenant en compte \`{a} la fois les activit\'{e}s du syst\`{e}me et de l'utilisateur. Cette \'{e}tude nous conduit \`{a} distinguer des \'{e}tapes dans les m\'{e}canismes d'abstraction et de concr\'{e}tisation des informations \'{e}chang\'{e}es entre l'utilisateur et le syst\`{e}me que nous organisons en un canevas: l'espace Pipe-Line. De l'espace pipe-line, canevas int\'{e}grateur des activit\'{e}s de l'utilisateur et du syst\`{e}me, nous d\'{e}rivons une m\'{e}thode de raisonnement et de classification des syst\`{e}mes en fonction de leurs utilisations: la m\'{e}thode UOM. En adoptant comme fondement l'espace pipe-line, nous identifions les besoins pour la r\'{e}alisation logicielle. Nous proposons un mod\`{e}le d'architecture logicielle, PAC-Amodeus qui r\'{e}pond \`{a} ces besoins. Ce mod\`{e}le est compl\'{e}t\'{e} d'un guide d'application constitu\'{e} d'un ensemble de r\`{e}gles heuristiques que nous avons concr\'{e}tis\'{e}es par un syst\`{e}me expert PAC-Expert. En symbiose avec PAC-Amodeus, nous proposons un moteur de fusion des informations sp\'{e}cifi\'{e}es par l'utilisateur. De part ses crit\`{e}res et sa technique de repr\'{e}sentation des informations, le moteur est g\'{e}n\'{e}rique. PAC-Amodeus corr\'{e}l\'{e} au moteur de fusion constitue une plate-forme pour la r\'{e}alisation logicielle de syst\`{e}mes \`{a} caract\'{e}ristiques multiples},
+author = {Nigay, Laurence},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Nigay - 1994 - Conception et mod\'{e}lisation logicielles des syst•mes interactifs application aux interfaces multimodales.pdf:pdf;:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Arch-PAC/THESE1994\_Nigay.pdf:pdf},
+school = {UNIVERSIT\'E JOSEPH FOURIER - GRENOBLE 1},
+title = {{Conception et mod\'{e}lisation logicielles des syst\`{e}mes interactifs : application aux interfaces multimodales}},
+year = {1994}
+}
+@inproceedings{Nielsen1990,
+address = {New York, New York, USA},
+author = {Nielsen, Jakob and Molich, Rolf},
+booktitle = {Proceedings of the SIGCHI conference on Human factors in computing systems Empowering people - CHI '90},
+doi = {10.1145/97243.97281},
+isbn = {0201509326},
+keywords = {Crit\`{e}res Ergonomique},
+mendeley-tags = {Crit\`{e}res Ergonomique},
+month = mar,
+pages = {249--256},
+publisher = {ACM Press},
+title = {{Heuristic evaluation of user interfaces}},
+url = {http://dl.acm.org/citation.cfm?id=97243.97281},
+year = {1990}
+}
+@article{NielsOleBernsen;1994,
+author = {{Niels Ole Bernsen;}},
+journal = {Interacting with Computers},
+keywords = {Modalit\'{e},Niels Ole Bernsen},
+mendeley-tags = {Modalit\'{e}},
+pages = {347--371},
+title = {{Foundations of Multimodal Representations: A Taxonomy of Representational Modalities.}},
+url = {http://arnetminer.org/publication/foundations-of-multimodal-representations-a-taxonomy-of-representational-modalities-948082.html\#.UE3m2nWGDSY.mendeley},
+year = {1994}
+}
+@article{Nemati,
+author = {Nemati, Farhang},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Nemati - Unknown - Using Reengineering for Migration to or Evolution of Component Based Software Systems 2 . Component Based Software Engineering ( CBSE ).pdf:pdf},
+journal = {Engineering},
+title = {{Using Reengineering for Migration to or Evolution of Component Based Software Systems 2 . Component Based Software Engineering ( CBSE )}}
+}
+@article{Myers2000,
+author = {Myers, Brad and Hudson, Scott E. and Pausch, Randy},
+issn = {10730516},
+journal = {ACM Transactions on Computer-Human Interaction},
+keywords = {Widget,event languages,interface builders,scripting languages,toolkits,user interface development environments,user interface software},
+mendeley-tags = {Widget},
+month = mar,
+number = {1},
+pages = {3--28},
+title = {{Past, present, and future of user interface software tools}},
+url = {http://dl.acm.org/citation.cfm?id=344949.344959},
+volume = {7},
+year = {2000}
+}
+@article{Muller2005,
+author = {Muller, Pierre-alain and Fleurey, Franck},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Muller, Fleurey - 2005 - Weaving Executability into Object-Oriented Meta-languages.pdf:pdf},
+pages = {264--278},
+title = {{Weaving Executability into Object-Oriented Meta-languages}},
+year = {2005}
+}
+@article{Muller2005a,
+author = {Muller, Alexis and Caron, Olivier and Vanwormhoudt, Gilles},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Muller, Caron, Vanwormhoudt - 2005 - On Some Properties of Parameterized Model Application.pdf:pdf},
+pages = {130--144},
+title = {{On Some Properties of Parameterized Model Application}},
+year = {2005}
+}
+@article{Mueller2004,
+author = {Mueller, W. and Schaefer, R. and Bleul, S.},
+doi = {10.1109/HICSS.2004.1265674},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Mueller, Schaefer, Bleul - 2004 - Interactive multimodal user interfaces for mobile devices.pdf:pdf},
+isbn = {0-7695-2056-1},
+journal = {37th Annual Hawaii International Conference on System Sciences, 2004. Proceedings of the},
+number = {C},
+pages = {10 pp.},
+publisher = {Ieee},
+title = {{Interactive multimodal user interfaces for mobile devices}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1265674},
+volume = {00},
+year = {2004}
+}
+@misc{Moravcsik1988a,
+annote = {
+        From Duplicate 1 ( 
+        
+          Citation Context Classification of a Citation Classic Concerning Citation Context Classification
+        
+         - Moravcsik, M. J. )
+
+        
+        
+
+        
+
+        
+
+      },
+author = {Moravcsik, M. J.},
+booktitle = {Social Studies of Science},
+doi = {10.1177/030631288018003005},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Moravcsik - 1988 - Citation Context Classification of a Citation Classic Concerning Citation Context Classification.cfm:cfm},
+issn = {0306-3127},
+month = aug,
+number = {3},
+pages = {515--521},
+title = {{Citation Context Classification of a Citation Classic Concerning Citation Context Classification}},
+url = {http://sss.sagepub.com/cgi/doi/10.1177/030631288018003005},
+volume = {18},
+year = {1988}
+}
+@article{Moore1997,
+author = {Moore, Melody and Rugaber, Spencer},
+doi = {10.1109/WPC.1997.601265},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/morph\_wpc97.pdf:pdf},
+isbn = {0-8186-7993-X},
+keywords = {Migration UI,knowledge bases,manual reengineering of the,migration,reengineering,reverse engineering,since,system remain the same,tional requirements of the,user interface,user interface is costly},
+mendeley-tags = {Migration UI},
+month = may,
+pages = {60--67},
+publisher = {IEEE Comput. Soc. Press},
+title = {{Using Knowledge Representation to Understand Interactive Systems}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=601265 http://dl.acm.org/citation.cfm?id=523511.837888},
+year = {1997}
+}
+@article{Moore1996,
+author = {Moore, Melody M.},
+isbn = {0-8186-7674-4},
+keywords = {Reverse Engineering},
+mendeley-tags = {Reverse Engineering},
+month = nov,
+pages = {42},
+title = {{Rule-Based Detection for Reverse Engineering User Interfaces}},
+url = {http://dl.acm.org/citation.cfm?id=525595.836966},
+year = {1996}
+}
+@article{Moore,
+author = {Moore, Melody M},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/IssuesUIMigration.pdf:pdf},
+keywords = {Migration UI},
+mendeley-tags = {Migration UI},
+title = {{Issues in User Interface Migration}}
+}
+@article{Mooney1988,
+author = {Mooney, James D.},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/DevelopingPortableSoftware.pdf:pdf},
+number = {1988},
+title = {{Developing portable software}},
+year = {1988}
+}
+@inproceedings{Mooney1995,
+address = {New York, New York, USA},
+author = {Mooney, James D.},
+booktitle = {Proceedings of the 1995 ACM 23rd annual conference on Computer science - CSC '95},
+doi = {10.1145/259526.259550},
+isbn = {0897917375},
+keywords = {Portabilit\'{e}},
+mendeley-tags = {Portabilit\'{e}},
+month = feb,
+pages = {150--156},
+publisher = {ACM Press},
+title = {{Portability and reusability}},
+url = {http://dl.acm.org/citation.cfm?id=259526.259550},
+year = {1995}
+}
+@article{Moonen2009,
+author = {Moonen, Leon and Systa, Tarja},
+doi = {10.1109/WCRE.2009.52},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/rem2009-proceedings.pdf:pdf},
+isbn = {978-0-7695-3867-9},
+journal = {2009 16th Working Conference on Reverse Engineering},
+number = {Wcre},
+pages = {323--324},
+publisher = {Ieee},
+title = {{R.E.M. 2009 - International Workshop on Reverse Engineering Models from Software Artifacts}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5328707},
+year = {2009}
+}
+@article{Models,
+author = {Models, Task},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Models - Unknown - Concurrent Task Trees.pdf:pdf},
+journal = {Image (Rochester, N.Y.)},
+pages = {1--26},
+title = {{Concurrent Task Trees}}
+}
+@misc{MitsubishiElectricResearchLaboratoriesb,
+author = {{Mitsubishi Electric Research Laboratoriesb}},
+file = {::},
+keywords = {Electric,Laboratories,MERL,Mitsubishi,Research,TableTop,publications,reports,technology},
+mendeley-tags = {TableTop},
+title = {{MERL }},
+url = {http://www.merl.com/},
+urldate = {28/09/12}
+}
+@misc{MicrosoftXNA2012,
+author = {{Microsoft XNA}},
+title = {{XNA}},
+url = {http://msdn.microsoft.com/en-us/centrum-xna.aspx},
+year = {2012}
+}
+@misc{MicrosoftWPF2012,
+author = {{Microsoft WPF}},
+title = {{WPF}},
+url = {http://msdn.microsoft.com/en-us/library/ms754130.aspx},
+urldate = {29/08/2012},
+year = {2012}
+}
+@misc{Microsoft2012a,
+author = {Microsoft},
+keywords = {TableTop},
+mendeley-tags = {TableTop},
+title = {{Surface SDK}},
+url = {http://msdn.microsoft.com/en-us/library/ee804845(v=surface.10)},
+urldate = {20/08/2012},
+year = {2012}
+}
+@misc{Microsoft2012,
+author = {Microsoft},
+keywords = {Guidelines},
+mendeley-tags = {Guidelines},
+title = {{MSDN XAML}},
+url = {http://msdn.microsoft.com/fr-fr/library/cc189054(v=VS.95).aspx},
+year = {2012}
+}
+@misc{Microsoft2009,
+abstract = {This Microsoft Surface User Experience Guidelines aim to help the developer and designer create Surface applications and user experiences that best exploit multitouch interaction principles through quality, multitouch-oriented design. The second chapter of this document describes the core principles for optimal user-interaction paradigms in multitouch applications developed for Microsoft Surface, and provides basic guidelines for when and how to employ those principles. Subsequent chapters provide the principles for visual and textual design along with practical guidelines for implementing them.},
+author = {Microsoft},
+booktitle = {Text},
+pages = {1--77},
+publisher = {Microsoft},
+title = {{Microsoft Surface User Experience Guidelines}},
+url = {http://www.microsoft.com/downloads/en/confirmation.aspx?FamilyID=38CC76F1-4A16-4C13-9740-C34DBB5C3012\&amp;displaylang=en},
+year = {2009}
+}
+@techreport{Microsoft2011,
+author = {Microsoft},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/TableTop/Microsoft Surface 2 0 Design and Interaction Guide.pdf:pdf},
+keywords = {Guidelines,TableTop},
+mendeley-tags = {Guidelines,TableTop},
+number = {July},
+pages = {70},
+title = {{Microsoft Surface 2 Design and Interaction Guide}},
+url = {http://www.microsoft.com/en-us/download/confirmation.aspx?id=26713},
+year = {2011}
+}
+@article{Mens,
+author = {Mens, Tom and Gorp, Pieter Van},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Mens, Gorp - Unknown - A Taxonomy of Model Transformation and its Application to Graph Transformation.pdf:pdf},
+journal = {Transformation},
+pages = {1--27},
+title = {{A Taxonomy of Model Transformation and its Application to Graph Transformation}}
+}
+@inproceedings{Mehta2000,
+address = {New York, New York, USA},
+author = {Mehta, Nikunj R. and Medvidovic, Nenad and Phadke, Sandeep},
+booktitle = {Proceedings of the 22nd international conference on Software engineering - ICSE '00},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IDM/Collaborative Approach/mehta-connector00.pdf:pdf},
+keywords = {Adaptator,Connector,classification,software architecture,software connector,taxonomy},
+mendeley-tags = {Adaptator,Connector},
+month = jun,
+pages = {178--187},
+publisher = {ACM Press},
+title = {{Towards a taxonomy of software connectors}},
+url = {http://dl.acm.org/citation.cfm?id=337180.337201},
+year = {2000}
+}
+@phdthesis{Mcroy2005,
+author = {Mcroy, Susan and Channarukul, Songsak and Ali, Syed S},
+booktitle = {Architecture},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Mcroy, Channarukul, Ali - 2005 - Multimodal Content Adaptations for Heterogeneous Devices ∗.pdf:pdf},
+pages = {1--34},
+school = {University of Wisconsin at Milwaukee Milwaukee, WI, USA ©2005},
+title = {{Multimodal Content Adaptations for Heterogeneous Devices ∗}},
+url = {http://dl.acm.org/citation.cfm?id=1144716},
+year = {2005}
+}
+@article{McClure1992,
+author = {McClure, Carma},
+keywords = {Migration UI},
+mendeley-tags = {Migration UI},
+month = mar,
+title = {{The three Rs of software automation: re-engineering, repository, reusability}},
+url = {http://dl.acm.org/citation.cfm?id=128912},
+year = {1992}
+}
+@article{Markopoulos1997,
+author = {Markopoulos, Panagiotis},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Markopoulos - 1997 - A compositional model for the formal specification of user interface software.pdf:pdf},
+journal = {Doctor},
+number = {March},
+title = {{A compositional model for the formal specification of user interface software}},
+year = {1997}
+}
+@incollection{Mariage1999,
+author = {Mariage, C\'{e}line and Vanderdonckt, Jean and Pribeanu, Costin},
+booktitle = {THE HANDBOOK OF HUMAN FACTORS IN WEB DESIGN},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/10.1.1.58.4494.pdf:pdf},
+keywords = {Guidelines,Usability},
+mendeley-tags = {Guidelines,Usability},
+pages = {688----700},
+title = {{State of the Art of Web Usability Guidelines}},
+year = {2004}
+}
+@article{Mancebo2002,
+author = {Mancebo, David Escudero},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Mancebo - 2002 - From HTML to VoiceXML A First Approach.pdf:pdf},
+journal = {Management},
+pages = {441--444},
+title = {{From HTML to VoiceXML: A First Approach}},
+year = {2002}
+}
+@article{Manca2010,
+abstract = {While multimodal interfaces are becoming more and more used and supported, their development is still difficult and there is a lack of authoring tools for this purpose. The goal of this work is to discuss how multimodality can be specified in model-based languages and apply such solution to the com- position of graphical and vocal interactions. In particular, we show how to pro- vide structured support that aims to identify the most suitable solutions for modelling multimodality at various detail levels. This is obtained using, amongst other techniques, the well-known CARE properties in the context of a model-based language able to support service-based applications and modern Web 2.0 interactions. The method is supported by an authoring environment, which provides some specific solutions that can be modified by the designers to better suit their specific needs, and is able to generate implementations of mul- timodal interfaces in Web environments. An example of modelling a multimo- dal application and the corresponding, automatically generated, user interfaces is reported as well.},
+author = {Manca, Marco and Patern\`{o}, Fabio},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Manca, Fabio - 2010 - Supporting Multimodality in Service-Oriented Model- Based Development Environments.pdf:pdf},
+journal = {Ifip International Federation For Information Processing},
+keywords = {authoring tools,model-based design,multimodal interfaces},
+pages = {135--148},
+title = {{Supporting Multimodality in Service-Oriented Model- Based Development Environments}},
+year = {2010}
+}
+@article{Malinowski1992,
+annote = {Permet d'introduire la migration assist\~{A}©e qui est un adaptation semi automatique
+      },
+author = {Malinowski, U and K\"{u}hme, T},
+journal = {PEOPLE AND  \ldots},
+keywords = {Adaptive UI},
+mendeley-tags = {Adaptive UI},
+title = {{A taxonomy of adaptive user interfaces}},
+url = {http://books.google.fr/books?hl=fr\&lr=\&id=J83pppQhUbkC\&oi=fnd\&pg=PA391\&dq=State+of+the+Art+in+Adaptive+User+Interfaces+Dieterich\&ots=Z-kB-bz0W\_\&sig=X8yONKFD8AnCKhPwc2ggA9YgbCE},
+year = {1992}
+}
+@techreport{Maillard,
+author = {Maillard, Vincent},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Maillard - Unknown - Tutorial VoiceXML.pdf:pdf},
+title = {{Tutorial VoiceXML}}
+}
+@article{Macias2006,
+author = {Mac\'{\i}as, Jos\'{e} A and Puerta, \'{A}ngel R and Castells, Pablo},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/IDM-IHM/fulltext.pdf:pdf},
+keywords = {Migration UI,Reverse Engineering,UI Model},
+mendeley-tags = {Migration UI,Reverse Engineering,UI Model},
+pages = {155--162},
+title = {{Model-Based User Interface Reengineering 2 User Interface Modeling}},
+year = {2006}
+}
+@phdthesis{Long2010,
+author = {Long, Nguyen Hoang},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/3D UI/hoang.pdf:pdf},
+keywords = {API GUI,PHP pChart},
+mendeley-tags = {API GUI},
+school = {INTERNATIONAL INSTITUTE FOR GEO-INFORMATION SCIENCE AND EARTH OBSERVATION ENSCHEDE, THE NETHERLANDS},
+title = {{Web Visualization of Trajectory Data using Web Open Source Visualization Libraries Web Visualization of Trajectory Data using Web Open Source Visualization Library}},
+year = {2010}
+}
+@inproceedings{Limbourg,
+author = {Limbourg, Quentin and Vanderdonckt, Jean and Michotte, Benjamin and Bouillon, Laurent},
+booktitle = {Ifip International Federation For Information Processing},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Limbourg et al. - Unknown - USIXML A Language Supporting Multi-path Development of User Interfaces.pdf:pdf},
+keywords = {context-sensitive user interface,development processes,independence,modality,model-driven architecture,model-to-model transformation,multi-path development,rendering independence,user interface description},
+pages = {200--220},
+title = {{USIXML: A Language Supporting Multi-path Development of User Interfaces}}
+}
+@article{Limbourg2003,
+author = {Limbourg, Quentin and Vanderdonckt, Jean},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Limbourg, Vanderdonckt - 2003 - Comparing Task Models for User Interface Design.pdf:pdf},
+journal = {Cognitive Psychology},
+title = {{Comparing Task Models for User Interface Design}},
+year = {2003}
+}
+@article{Lepreux2011,
+address = {London},
+author = {Lepreux, Sophie and Kubicki, S\'{e}bastien and Kolski, Christophe and Caelen, Jean},
+doi = {10.1007/978-1-4471-2271-5},
+editor = {Gallud, Jos\'{e} A. and Tesoriero, Ricardo and Penichet, Victor M.R.},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/TableTop/fulltext.pdf:pdf},
+isbn = {978-1-4471-2270-8},
+keywords = {TableTop,c,distributed interactive surfaces,distribution of tangible and,f-59000 lille,france,interactive table,kolski,kubicki,lepreux,s,tangible interaction,tangisense,universit\'{e} lille nord de,virtual objects},
+mendeley-tags = {TableTop},
+publisher = {Springer London},
+series = {Human-Computer Interaction Series},
+title = {{Distributed User Interfaces}},
+url = {http://www.springerlink.com/index/10.1007/978-1-4471-2271-5},
+year = {2011}
+}
+@article{Lepreux,
+author = {Lepreux, Sophie and Hariri, Anas and Tabary, Dimitri and Kolski, Christophe},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Lepreux et al. - Unknown - Towards Multimodal User Interfaces Composition based on UsiXML and MBD principles.pdf:pdf},
+keywords = {abstract user interface,aui,multimodal user interfaces,user interfaces design,usixml,vocal user interfaces},
+number = {1},
+pages = {1--10},
+title = {{Towards Multimodal User Interfaces Composition based on UsiXML and MBD principles}}
+}
+@book{Kubicki2009,
+address = {Berlin, Heidelberg},
+author = {Kubicki, S\'{e}bastien and Lepreux, Sophie and Lebrun, Yoann and Santos, Philippe Dos and Kolski, Christophe and Caelen, Jean},
+doi = {10.1007/978-3-642-02580-8},
+editor = {Jacko, Julie A.},
+isbn = {978-3-642-02579-2},
+keywords = {TableTop},
+mendeley-tags = {TableTop},
+pages = {446--455},
+publisher = {Springer Berlin Heidelberg},
+series = {Lecture Notes in Computer Science},
+title = {{Human-Computer Interaction. Ambient, Ubiquitous and Intelligent Interaction}},
+url = {http://link.springer.com/chapter/10.1007/978-3-642-02580-8\_49},
+volume = {5612},
+year = {2009}
+}
+@article{Krueger1992,
+author = {Krueger, Charles W.},
+doi = {10.1145/130844.130856},
+issn = {03600300},
+journal = {ACM Computing Surveys},
+keywords = {Reuse,abstraction,cognitive distance,software reuse},
+mendeley-tags = {Reuse},
+month = jun,
+number = {2},
+pages = {131--183},
+title = {{Software reuse}},
+url = {http://dl.acm.org/citation.cfm?id=130844.130856},
+volume = {24},
+year = {1992}
+}
+@techreport{Krasner1988,
+author = {Krasner, Glenn E and Pope, Stephen T},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Arch-PAC/mvc-krasner-pope.pdf:pdf},
+keywords = {Archiitecture,MVC},
+mendeley-tags = {Archiitecture,MVC},
+title = {{A Description of the Model-View-Controller User Interface Paradigm in the Smalltalk-80 System}},
+year = {1988}
+}
+@inproceedings{Kortuem2005,
+address = {New York, New York, USA},
+author = {Kortuem, Gerd and Kray, Christian and Gellersen, Hans},
+booktitle = {Proceedings of the 18th annual ACM symposium on User interface software and technology - UIST '05},
+doi = {10.1145/1095034.1095049},
+isbn = {1595932712},
+keywords = {Abstract Interactions,context-aware computing,location systems,mobile computing,spatial relations,spatially-aware interfaces},
+mendeley-tags = {Abstract Interactions},
+month = oct,
+pages = {93},
+publisher = {ACM Press},
+title = {{Sensing and visualizing spatial relations of mobile devices}},
+url = {http://dl.acm.org/citation.cfm?id=1095034.1095049},
+year = {2005}
+}
+@article{Kong1999,
+author = {Kong, Lanyan and Stroulia, Eleni and Matichuk, Bruce},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/10.1.1.32.4231.pdf:pdf},
+keywords = {Migration UI,Task Model,UI Adaptation},
+mendeley-tags = {Migration UI,Task Model,UI Adaptation},
+title = {{Legacy Interface Migration : A Task − Centered Approach}},
+year = {1999}
+}
+@article{Klein2008,
+author = {Klein, Jacques and Fleurey, Franck},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Klein, Fleurey - 2008 - Weaving Multiple Aspects in Sequence Diagrams.pdf:pdf},
+journal = {Development},
+pages = {167--199},
+title = {{Weaving Multiple Aspects in Sequence Diagrams}},
+year = {2008}
+}
+@article{Kienzle2009,
+address = {New York, New York, USA},
+author = {Kienzle, J\"{o}rg and {Al Abed}, Wisam and Jacques, Klein},
+doi = {10.1145/1509239.1509252},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Kienzle, Al Abed, Jacques - 2009 - Aspect-oriented multi-view modeling.pdf:pdf},
+isbn = {9781605584423},
+journal = {Proceedings of the 8th ACM international conference on Aspect-oriented software development - AOSD '09},
+keywords = {aspect dependencies,aspect-oriented modeling,binding,class diagrams,in-,jacques,klein,lu,quence diagrams,se-,stantiation,state diagrams,uni},
+pages = {87},
+publisher = {ACM Press},
+title = {{Aspect-oriented multi-view modeling}},
+url = {http://portal.acm.org/citation.cfm?doid=1509239.1509252},
+year = {2009}
+}
+@article{Karanam2009,
+author = {Karanam, Madhavi and Akepogu, Anandrao},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Karanam, Akepogu - 2009 - Model-Driven Software Evolution The Multiple Views.pdf:pdf},
+journal = {Computer},
+title = {{Model-Driven Software Evolution: The Multiple Views}},
+volume = {I},
+year = {2009}
+}
+@article{Kappel2006,
+author = {Kappel, Karin and Tomitsch, Martin and K\"{o}ltringer, Thomas and Grechenig, Thomas},
+doi = {10.1145/1125451.1125490},
+journal = {CHI 06 extended abstracts on Human factors in computing systems CHI 06},
+keywords = {design,dvd menu,usability,user interface guidelines},
+pages = {177},
+publisher = {ACM Press},
+title = {{Developing user interface guidelines for DVD menus}},
+url = {http://portal.acm.org/citation.cfm?doid=1125451.1125490},
+year = {2006}
+}
+@inproceedings{kammer_taxonomy_2010,
+abstract = {Multi-touch hardware has only recently entered the mainstream of information technology. Interaction designers, product developers and users have been influenced by this development. In order to build multitouch applications, programmers have created various reusable frameworks. To obtain an overview of this diversity, we present a list of criteria to classify, evaluate, and select multi-touch frameworks. Our main contribution consists in a taxonomy that we have elaborated out of a vast list of existing projects, of which we present nine freely available ones here. To promote the development of multi-touch frameworks, our list of criteria reveals four main areas for future work.},
+address = {Berlin},
+author = {Kammer, Dietrich and Freitag, Georg and Keck, Mandy and Wacker, Markus},
+booktitle = {Workshop on Engineering Patterns for Multitouch Interfaces},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Kammer et al. - 2010 - Taxonomy and Overview of Multi-touch Frameworks Architecture, Scope and Features.pdf:pdf},
+title = {{Taxonomy and Overview of Multi-touch Frameworks: Architecture, Scope and Features}},
+url = {http://www.vi-c.de/vic/sites/default/files/Taxonomy\_and\_Overview\_of\_Multi-touch\_Frameworks.pdf},
+year = {2010}
+}
+@inproceedings{Kalawa2011,
+author = {Kalawa, Andr\'{e} and Occello, Audrey and Riveill, Michel and Sophia, Nice and Cnrs, Antipolis},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Publications/TOOLS2012/articleTools2012-finale.pdf:pdf},
+keywords = {guidelines,interactive tables,primitive of interactions,ui design,user interface portability},
+title = {{SUIT : a framework for Supporting UI Translation}},
+year = {2011}
+}
+@inproceedings{Kalawa,
+author = {Kalawa, Andr\'{e}},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Publications/XXX2012/kse2012.pdf:pdf},
+keywords = {-user interface reuse,ii,in this paper requires,p rocess of ui,primitives of interactions,reusing,the reusing process proposed,ui design guidelines},
+title = {{Reusing User Interface across Devices with Different Design Guidelines}}
+}
+@article{Kacmar1995,
+author = {Kacmar, Charles J},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/Process/ep128cjk.pdf:pdf},
+keywords = {conversion,hypermedia,hypertext,migration,retrofit},
+number = {January},
+pages = {31--48},
+title = {{A process approach for providing hypermedia services to existing , non-hypermedia applications}},
+volume = {8},
+year = {1995}
+}
+@article{Jr2009,
+author = {Jr, John Gerdes},
+doi = {10.1002/smr},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/UIMigrationMicrosoft.pdf:pdf},
+keywords = {API Approach,Migration UI,TableTop,api,graphical comparison,graphical user interfaces,migration},
+mendeley-tags = {API Approach,Migration UI,TableTop},
+number = {February},
+pages = {171--187},
+title = {{User Interface Migration of Microsoft Windows}},
+year = {2009}
+}
+@article{Johansson2009,
+author = {Johansson, Andreas and Svensson, Jonas and Persson, Mia},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/techniques\_for\_software\_portability\_in\_mobile\_development.pdf:pdf},
+number = {January},
+title = {{Techniques for Software Portability in Mobile Development}},
+year = {2009}
+}
+@phdthesis{JOFFROY2011,
+author = {JOFFROY, C\'{e}dric},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Rapports Theses/manuscrit\_Cedric.pdf:pdf},
+keywords = {Composition UI},
+mendeley-tags = {Composition UI},
+school = {UNIVERSIT\'{E} DE NICE–SOPHIA ANTIPOLIS—UFR Sciences},
+title = {{COMPOSITION D'APPLICATIONS ET DE LEURS INTERFACES HOMME-MACHINE DIRIG\'{E}E PAR LA COMPOSITION FONCTIONNELLE}},
+year = {2011}
+}
+@article{Izadi,
+author = {Izadi, Shahram and Brignull, Harry and Rodden, Tom and Rogers, Yvonne and Underwood, Mia},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/Process/10.1.1.101.6235.pdf:pdf},
+keywords = {TableTop,collaboration,exchange,large interactive surfaces,multi-user interfaces,sharing},
+mendeley-tags = {TableTop},
+title = {{Dynamo : A public interactive surface supporting the cooperative sharing and exchange of media}}
+}
+@inproceedings{Ishii1997,
+address = {New York, New York, USA},
+author = {Ishii, Hiroshi and Ullmer, Brygg},
+booktitle = {Proceedings of the SIGCHI conference on Human factors in computing systems - CHI '97},
+doi = {10.1145/258549.258715},
+isbn = {0897918029},
+keywords = {TUI,TableTop,ambient media,augmented reality,center and periphery,foreground and background,graspable user interface,tangible user interface,ubiquitous computing},
+mendeley-tags = {TUI,TableTop},
+month = mar,
+pages = {234--241},
+publisher = {ACM Press},
+title = {{Tangible bits}},
+url = {http://dl.acm.org/citation.cfm?id=258549.258715},
+year = {1997}
+}
+@article{Interface,
+author = {Interface, Portable User},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/PortableUI.pdf:pdf},
+title = {{Portable User Interface}},
+volume = {4}
+}
+@article{Interaction2009,
+author = {Interaction, User and Microsoft, Creating and Applications, Surface},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/TableTop/Microsoft Surface User Experience Guidelines.pdf:pdf},
+keywords = {Guidelines},
+mendeley-tags = {Guidelines},
+pages = {1--77},
+title = {{User Experience Guidelines}},
+year = {2009}
+}
+@misc{Inc2010,
+author = {Inc, Google},
+booktitle = {Android Developer},
+title = {{Android User Interface Guidelines}},
+url = {http://developer.android.com/guide/practices/ui\_guidelines/index.html},
+year = {2010}
+}
+@article{Huang2003,
+address = {New York, New York, USA},
+author = {Huang, Elaine M. and Mynatt, Elizabeth D.},
+doi = {10.1145/642621.642622},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/Process/10.1.1.103.6102.pdf:pdf},
+isbn = {1581136307},
+journal = {Proceedings of the conference on Human factors in computing systems - CHI '03},
+keywords = {about group members,and foster coordination and,collaboration,effective medium for making,information from other,to be a potentially,we have found them},
+number = {5},
+pages = {49},
+publisher = {ACM Press},
+title = {{Semi-public displays for small, co-located groups}},
+url = {http://portal.acm.org/citation.cfm?doid=642611.642622},
+year = {2003}
+}
+@article{Henninger2000,
+abstract = {This paper presents a methodology and an associated technology to create context-specific usability guidelines. The objective is to transform usability guidelines into a proactive resource that software developers can employ early and often in the development process. The methodology ensures conformance with established guidelines, but has the flexibility to use design experiences to adapt the guidelines to meet the emergent and diverse requirements of modern user interface design. Case-based and organizational learning technology is used to support the methodology and provide valuable resources for software developers.},
+author = {Henninger, S},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/1-s2.0-S0953543899000132-main.pdf:pdf},
+issn = {09535438},
+journal = {Interacting with Computers},
+keywords = {Crit\`{e}res ergonomics,Guidelines,guidelines,human–computer interaction,software development methodologies,software engineering,standards,tools for working with guidelines,usability},
+mendeley-tags = {Crit\`{e}res ergonomics,Guidelines},
+month = jan,
+number = {3},
+pages = {225--243},
+title = {{A methodology and tools for applying context-specific usability guidelines to interface design}},
+url = {http://dx.doi.org/10.1016/S0953-5438(99)00013-2},
+volume = {12},
+year = {2000}
+}
+@article{Hein2009,
+author = {Hein, Christian and Ritter, Tom and Wagner, Michael},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Hein, Ritter, Wagner - 2009 - Model-Driven Tool Integration with ModelBus 1.pdf:pdf},
+journal = {Development},
+title = {{Model-Driven Tool Integration with ModelBus 1}},
+year = {2009}
+}
+@article{Harrison2010,
+author = {Harrison, Chris and Hudson, Scott E},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Harrison, Hudson - 2010 - Minput Enabling Interaction on Small Mobile Devices with High-Precision, Low-Cost, Multipoint Optical Tracking.pdf:pdf},
+keywords = {gestures,input,mobile devices,optical tracking,pointing,sensors,spatially aware displays,touch screens},
+pages = {1661--1664},
+title = {{Minput: Enabling Interaction on Small Mobile Devices with High-Precision, Low-Cost, Multipoint Optical Tracking}},
+year = {2010}
+}
+@article{Hanacek1993,
+author = {Han\'{a}\v{c}ek, Petr},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Primitives Interactions/SOF93.pdf:pdf},
+keywords = {Primitives interactions,communication,message passing,parallel computing,shared memory,synchronization},
+mendeley-tags = {Primitives interactions},
+title = {{The Common Model for the Communication and Synchronization Primitives}},
+year = {1993}
+}
+@article{Guthrie1995,
+author = {Guthrie, Wade},
+doi = {10.1145/202642.202657},
+issn = {07366906},
+journal = {ACM SIGCHI Bulletin},
+keywords = {Portabilit\'{e}},
+mendeley-tags = {Portabilit\'{e}},
+month = jan,
+number = {1},
+pages = {55--69},
+title = {{An overview of portable GUI software}},
+url = {http://dl.acm.org/citation.cfm?id=202642.202657},
+volume = {27},
+year = {1995}
+}
+@inproceedings{Guerrero-Garcia2009,
+author = {Guerrero-Garcia, Josefina and Gonzalez-Calleros, Juan Manuel and Vanderdonckt, Jean and Munoz-Arteaga, Jaime},
+booktitle = {2009 Latin American Web Congress},
+doi = {10.1109/LA-WEB.2009.40},
+isbn = {978-0-7695-3856-3},
+keywords = {Extensible Markup Language,UIDL,User Interface Description Language,User Interface extensible Markup Language,User interfaces},
+mendeley-tags = {UIDL},
+month = nov,
+pages = {36--43},
+publisher = {IEEE},
+title = {{A Theoretical Survey of User Interface Description Languages: Preliminary Results}},
+url = {http://dl.acm.org/citation.cfm?id=1681519.1683227},
+year = {2009}
+}
+@article{Grolaux2007,
+author = {Grolaux, Donatien and Lobelle, Marc},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/Grolaux-PhD2007.pdf:pdf},
+keywords = {Migration UI,UI Model,UIDL},
+mendeley-tags = {Migration UI,UI Model,UIDL},
+pages = {1--159},
+title = {{Transparent Migration and Adaptation in a Graphical User Inter- face Toolkit}},
+year = {2007}
+}
+@article{Grilo,
+author = {Grilo, Andr\'{e} M P and Paiva, Ana C R and Faria, Jo\~{a}o Pascoal},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/paper\_39.pdf:pdf},
+keywords = {Reverse Engineering,UI Model,gui modelling,gui testing,reverse engineering},
+mendeley-tags = {Reverse Engineering,UI Model},
+title = {{Reverse Engineering of GUI Models}}
+}
+@article{Griffiths1999,
+author = {Griffiths, T. and Barclay, P.J. and McKirdy, J. and Paton, N.W. and Gray, P.D. and Kennedy, J. and Cooper, R. and Goble, C.a. and West, a. and Smyth, M.},
+doi = {10.1109/UIDIS.1999.791465},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Griffiths et al. - 1999 - Teallach a model-based user interface development environment for object databases.pdf:pdf},
+isbn = {0-7695-0262-8},
+journal = {Proceedings User Interfaces to Data Intensive Systems},
+pages = {86--96},
+publisher = {Ieee},
+title = {{Teallach: a model-based user interface development environment for object databases}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=791465},
+volume = {14},
+year = {1999}
+}
+@article{Gobbo2008,
+author = {Gobbo, Federico and Vaccari, Matteo},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Implementation/The Pomodoro Technique.pdf:pdf},
+keywords = {Programming Technics,UI Pattern},
+mendeley-tags = {Programming Technics,UI Pattern},
+pages = {180--184},
+title = {{The Pomodoro Technique for Sustainable Pace in Extreme Programming Teams}},
+year = {2008}
+}
+@article{Glitia2010,
+author = {Glitia, Calin and Polytech, E P U and Antipolis, Sophia},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Glitia, Polytech, Antipolis - 2010 - Transformation de mod` eles.pdf:pdf},
+journal = {Transformation},
+title = {{Transformation de mod` eles :}},
+year = {2010}
+}
+@inproceedings{Gellersen1995,
+author = {Gellersen, Hans-w and {Hans-W. Gellersen}},
+booktitle = {1st ERCIM Workshop on "User Inter- faces for All". ERCIM},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Modalit\'{e}/gellersen.pdf:pdf},
+keywords = {Modality Abstracting User Interfaces},
+title = {{Modality Abstraction : Capturing Logical Interaction Design as Abstraction from "User Interfaces for All"}},
+url = {http://ui4all.ics.forth.gr/UI4ALL-95/gellersen.pdf},
+year = {1995}
+}
+@article{Garlan2002,
+author = {Garlan, David and Siewiorek, Daniel P and Smailagic, Asim and Steenkiste, Peter},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Garlan et al. - 2002 - Toward Distraction-Free Pervasive Computing.pdf:pdf},
+title = {{Toward Distraction-Free Pervasive Computing}},
+year = {2002}
+}
+@inproceedings{Garc2005,
+author = {Garc, Alejandro J and Tucat, Mariano and Simari, Guillermo R},
+booktitle = {7º Simposio Argentino de Inteligencia Artificial - ASAI2005 Rosario},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Primitives Interactions/10.1.1.91.3950.pdf:pdf},
+keywords = {Primitives interactions},
+mendeley-tags = {Primitives interactions},
+pages = {29--30},
+title = {{Interaction Primitives for Implementing Multi-agent Systems}},
+year = {2005}
+}
+@article{France2010,
+author = {France, Technology},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/France - 2010 - UsiXML 2010.pdf:pdf},
+journal = {Program},
+keywords = {TableTop},
+mendeley-tags = {TableTop},
+title = {{UsiXML 2010}},
+year = {2010}
+}
+@article{Framework2010,
+author = {Framework, Eclipse Modeling and Combemale, Benoit},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Combemale - 2010 - M\'{e}tamod\'{e}liser avec Eclipse Modeling Framework.pdf:pdf;:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Framework - 2010 - M\'{e}tamod\'{e}liser avec Eclipse Modeling Framework.pdf:pdf},
+journal = {Framework},
+title = {{M\'{e}tamod\'{e}liser avec Eclipse Modeling Framework}},
+year = {2010}
+}
+@article{Fleurey2007,
+author = {Fleurey, Franck and Breton, Erwan and Baudry, Benoit and Nicolas, Alain},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IDM/Model Transformations/ModelDrivenMigration.pdf:pdf},
+pages = {482--497},
+title = {{Model-Driven Engineering for Software Migration in a Large Industrial Context}},
+year = {2007}
+}
+@phdthesis{FERRY2011,
+author = {FERRY, Nicolas},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Rapports Theses/these Nicola Ferry.pdf:pdf},
+school = {UNIVERSIT\'{E} DE NICE - SOPHIA ANTIPOLIS},
+title = {{Adaptations dynamiques au contexte en informatique ambiante : propri\'{e}t\'{e}s logiques et temporelles}},
+year = {2011}
+}
+@article{Favre2008a,
+author = {Favre, Jean-marie and Tarpin-bernard, M Franck and Winckler, M Marco and Vanderdonckt, Jean},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Favre et al. - 2008 - Mega-IHM Mall\'{e}abilit\'{e} des Interfaces Homme-Machine Dirig\'{e}e par les Mod\`{e}les.pdf:pdf},
+title = {{Mega-IHM : Mall\'{e}abilit\'{e} des Interfaces Homme-Machine Dirig\'{e}e par les Mod\`{e}les}},
+year = {2008}
+}
+@article{Favre2008,
+author = {Favre, Jean-marie},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Favre - 2008 - A Model-Driven Engineering Approach for the Usability of Plastic User Interfaces.pdf:pdf},
+journal = {Ifip International Federation For Information Processing},
+keywords = {MDE UI,UI Adaptation,UI Model,adaptation,context of use,mapping,meta-model,model,plasticity,transformation,usability},
+mendeley-tags = {MDE UI,UI Adaptation,UI Model},
+pages = {140--157},
+title = {{A Model-Driven Engineering Approach for the Usability of Plastic User Interfaces}},
+year = {2008}
+}
+@article{Dzida1993,
+author = {Dzida, Wolfgang},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/1-s2.0-0920548993E0069E-main.pdf:pdf},
+keywords = {Guidelines},
+mendeley-tags = {Guidelines},
+title = {{Standards for user-interfaces}},
+volume = {17},
+year = {1993}
+}
+@article{Document2011,
+author = {Document, O M G},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Document - 2011 - Meta Object Facility (MOF) 2.0 QueryView Transformation Specification.pdf:pdf},
+journal = {Transformation},
+number = {January},
+title = {{Meta Object Facility (MOF) 2.0 Query/View/ Transformation Specification}},
+year = {2011}
+}
+@inproceedings{Dietz2001,
+address = {New York, New York, USA},
+author = {Dietz, Paul and Leigh, Darren},
+booktitle = {Proceedings of the 14th annual ACM symposium on User interface software and technology - UIST '01},
+doi = {10.1145/502348.502389},
+isbn = {158113438X},
+keywords = {DiamondTouch,TableTop,collaborative input,multi-user,single display groupware,touch},
+mendeley-tags = {TableTop},
+month = nov,
+pages = {219},
+publisher = {ACM Press},
+title = {{DiamondTouch}},
+url = {http://dl.acm.org/citation.cfm?id=502348.502389},
+year = {2001}
+}
+@article{Dieterich1993,
+author = {Dieterich, HM and K\"{u}hme, U and Schneider-Hufschmidt, T},
+journal = {Adaptive user interfaces: Principles and \ldots},
+keywords = {Adaptive UI},
+mendeley-tags = {Adaptive UI},
+title = {{State of the Art in Adaptive User Interfaces}},
+url = {http://scholar.google.fr/scholar?q=State+of+the+Art+in+Adaptive+User+Interfaces+Dieterich\&btnG=\&hl=fr\&as\_sdt=0,5\#8},
+year = {1993}
+}
+@article{Deursen,
+author = {Deursen, Arie Van and Visser, Eelco and Warmer, Jos},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Deursen, Visser, Warmer - Unknown - Model-Driven Software Evolution A Research Agenda.pdf:pdf},
+journal = {Challenges},
+title = {{Model-Driven Software Evolution: A Research Agenda}}
+}
+@article{Deng2006,
+author = {Deng, Gan and Schmidt, Douglas C and Gokhale, Aniruddha and Gray, Jeff and Lin, Yuehua and Lenz, Gunther},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Deng et al. - 2006 - Evolution in Model-Driven Software Product-line Architectures.pdf:pdf},
+journal = {Work},
+pages = {1--22},
+title = {{Evolution in Model-Driven Software Product-line Architectures}},
+year = {2006}
+}
+@article{Demeurea,
+author = {Demeure, Alexandre and Vanderdonckt, Jean},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Demeure, Vanderdonckt - Unknown - s Inspector Towards Run Time Plasticity Control based on a Semantic Network.pdf:pdf},
+journal = {Concrete},
+keywords = {abstract user interface,active model,ambient intelligence,comet,concrete user interface,language,model-based approach,network,plasticity,semantic,task modeling,user interface extensible markup},
+title = {{s Inspector: Towards Run Time Plasticity Control based on a Semantic Network}}
+}
+@article{Demeure,
+author = {Demeure, Alexandre and Coninx, Karin},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Demeure, Coninx - Unknown - COMET(s), A Software Architecture Style and an Interactors Toolkit for Plastic User Interfaces.pdf:pdf},
+keywords = {Interacteurs,Widget,adaptation,context of use,design alternatives,explora-,interactors,plasticity,style sheets,tailored uis,tion},
+mendeley-tags = {Interacteurs,Widget},
+pages = {225 -- 237},
+title = {{COMET(s), A Software Architecture Style and an Interactors Toolkit for Plastic User Interfaces}}
+}
+@article{Demeure2007,
+author = {Demeure, Alexandre},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Demeure - 2007 - Mod\`{e}les et outils pour la conception et l'ex\'{e}cution d'Interfaces Homme-Machine Plastiques.pdf:pdf},
+keywords = {Interacteurs,MDE UI,Widget},
+mendeley-tags = {Interacteurs,MDE UI,Widget},
+title = {{Mod\`{e}les et outils pour la conception et l'ex\'{e}cution d'Interfaces Homme-Machine Plastiques}},
+year = {2007}
+}
+@article{Deacon2009,
+author = {Deacon, John and Systems, Computer},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Arch-PAC/MVC.pdf:pdf},
+number = {Mvc},
+pages = {1--6},
+title = {{Model-View-Controller ( MVC ) Architecture}},
+year = {2009}
+}
+@misc{Deacon2010,
+abstract = {Although the MVC architecture (or pattern or idiom) has been around for a long time, and although it is important and widely used, much of the information regarding the idiom is available only as folklore rather than from textbooks. This note gives a short guide to MVC.},
+author = {Deacon, John},
+keywords = {Archiitecture,MVC},
+mendeley-tags = {Archiitecture,MVC},
+title = {{MVC}},
+url = {http://www.jdl.co.uk/briefings/mvc.html},
+year = {2010}
+}
+@misc{Daniel,
+author = {Daniel, Sinnig},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/MQ91116.pdf:pdf},
+keywords = {Architecture,MDE UI,Patterns},
+mendeley-tags = {Architecture,MDE UI,Patterns},
+title = {{The Complicity of Patterns And Model-Based UI Development}}
+}
+@article{Czarneckia,
+author = {Czarnecki, Krzysztof and Helsen, Simon},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Czarnecki, Helsen - Unknown - Classification of Model Transformation Approaches.pdf:pdf},
+journal = {Architecture},
+pages = {1--17},
+title = {{Classification of Model Transformation Approaches}}
+}
+@article{Czarnecki,
+author = {Czarnecki, Krzysztof and Helsen, Simon},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Czarnecki, Helsen - Unknown - Classification des approches de transformation de mod\`{e}les.pdf:pdf},
+journal = {Transformation},
+pages = {1--55},
+title = {{Classification des approches de transformation de mod\`{e}les}}
+}
+@phdthesis{December2001,
+author = {Crease, Murray},
+booktitle = {Philosophy},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/December - 2001 - A Toolkit Of Resource-Sensitive, Multimodal Widgets Murray Crease.pdf:pdf},
+keywords = {Widget,Widget Toolkit},
+mendeley-tags = {Widget,Widget Toolkit},
+number = {December},
+title = {{A Toolkit Of Resource-Sensitive, Multimodal Widgets Murray Crease}},
+year = {2001}
+}
+@article{Cr2006,
+author = {Cr, Xavier and Pantel, Marc},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IDM/Model Transformations/IDM-ATL\_v1.1.pdf:pdf},
+pages = {1--41},
+title = {{Transformation de Mod ` eles Benoˆ Sommaire}},
+year = {2006}
+}
+@article{Coutaz2007,
+author = {Coutaz, Jo\"{e}lle and Balme, Lionel and Alvaro, X and Calvary, Ga\"{e}lle and Demeure, Alexandre and Sottet, Jean-Sebastien},
+journal = {Access},
+keywords = {context use,mde,meta ui,model driven engineering,service oriented architecture,soa,ui adaptation,user interface plasticity},
+pages = {63--72},
+title = {{An MDE-SOA Approach to Support Plastic User}},
+year = {2007}
+}
+@article{Coutaz,
+author = {Coutaz, Jo\"{e}lle and Balme, Lionel and Alvaro, X and Calvary, Ga\"{e}lle and Demeure, Alexandre},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Coutaz et al. - Unknown - An MDE-SOA Approach to Support Plastic User Interfaces in Ambient Spaces.pdf:pdf},
+journal = {Concrete},
+keywords = {context of use,mde,meta-ui,model-driven engineering,service oriented architecture,soa,ui adaptation,user interface plasticity},
+title = {{An MDE-SOA Approach to Support Plastic User Interfaces in Ambient Spaces}}
+}
+@article{Coutaz2007a,
+abstract = {In this article, we propose the concept of meta-User Interface (meta-UI) as the set of functions (along with their user interfaces) that are necessary and sufficient to control and evaluate the state of interactive ambient spaces. This set is meta-, since it serves as an umbrella beyond the domain-dependent services that support human activities in an ambient interactive space. They are User Interface-oriented since their role is to help the user to control and evaluate the state of this space. We present a dimension space to classify, compare, and contrast disparate research efforts in the area of meta-UIs. We then exploit the generative power of our design space to suggest directions for future research.},
+author = {Coutaz, Jo\"{e}lle},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Coutaz - 2007 - Meta-User Interfaces for Ambient Spaces.pdf:pdf},
+isbn = {9783540708155},
+journal = {Task Models and Diagrams for Users Interface Design},
+keywords = {ambient interactive spaces,design space,gui desktop,meta ui,taxonomy,ubiquitous computing},
+pages = {1--15},
+publisher = {Springer},
+title = {{Meta-User Interfaces for Ambient Spaces}},
+url = {http://www.springerlink.com/index/yp57478202660l2q.pdf},
+volume = {9},
+year = {2007}
+}
+@article{Cottenier,
+author = {Cottenier, Thomas and Elrad, Tzilla},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Cottenier, Elrad - Unknown - The Motorola.pdf:pdf},
+journal = {Architecture},
+keywords = {core business units at,motorola,of aspect-,oriented software development technologies,the networks and enterprise,the successful initial adoption,this paper reports on,within one of the},
+title = {{The Motorola}}
+}
+@article{Consortium2007,
+author = {Consortium, Usixml},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Consortium - 2007 - UsiXML, USer Interface eXtensible Markup Language.pdf:pdf},
+journal = {Language},
+number = {February},
+pages = {1--121},
+title = {{UsiXML, USer Interface eXtensible Markup Language}},
+year = {2007}
+}
+@misc{Connolly2002,
+author = {Connolly, J H and Phillips, I W},
+booktitle = {Working Conference on Organizational Semiotics Evolving a Science of Information Systems},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Connolly, Phillips - 2002 - UserSystem Interface Design.pdf:pdf},
+isbn = {1402071892},
+number = {30th March},
+pages = {119},
+publisher = {Kluwer Academic Pub},
+title = {{User/System Interface Design}},
+url = {http://theomandel.com/docs/mandel-encyclopedia.pdf},
+volume = {2006},
+year = {2002}
+}
+@inproceedings{Collins2007,
+abstract = {This paper presents the design of two tabletop file system interfaces: OriTop, a novel associative access approach to file system interaction, where users navigate multiple file systems by selecting focus files; and the Browser, a hierarchical interface that is based upon the same mental model as conventional desktop file system access. We report a qualitative study with ten users to explore both approaches. OnTop was found to better facilitate collaboration on file access and use, while the more familiar hierarchical model of the Browser was found to be more natural on very early use and has a clear role-particularly in cases where the associative approach fails.},
+author = {Collins, Anthony and Apted, Trent and Kay, Judy},
+booktitle = {Second Annual IEEE International Workshop on Horizontal Interactive Human-Computer Systems (TABLETOP'07)},
+doi = {10.1109/TABLETOP.2007.22},
+isbn = {0-7695-3013-3},
+keywords = {TableTop},
+mendeley-tags = {TableTop},
+month = oct,
+pages = {113--120},
+publisher = {IEEE},
+title = {{Tabletop File System Access: Associative and Hierarchical Approaches}},
+url = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=4384119},
+year = {2007}
+}
+@article{Cnrs,
+author = {Cnrs, R\'{e}f\'{e}rence and Bqsd, D S I and Guidergo, Ergonomie},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/guidergo.pdf:pdf},
+title = {{GUIDE DE RECOMMANDATIONS ERGONOMIQUES POUR LA CONCEPTION ET L'EVALUATION D'INTERFACES GRAPHIQUES}}
+}
+@article{Clavreul2009a,
+author = {Clavreul, M},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Clavreul - 2009 - Model composition with Kermeta Kompose.pdf:pdf},
+title = {{Model composition with Kermeta : Kompose}},
+year = {2009}
+}
+@article{Clavreul2009,
+author = {Clavreul, M},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Clavreul - 2009 - ` Composition de mod eles avec Kermeta.pdf:pdf},
+title = {{` Composition de mod eles avec Kermeta}},
+year = {2009}
+}
+@article{Cette,
+author = {Cette, I and Process, Java Community and Interface, Java Metadata and Java, A P I},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Cette et al. - Unknown - Manipuler des mod\`{e}les avec JMI et EMF.pdf:pdf},
+title = {{Manipuler des mod\`{e}les avec JMI et EMF}}
+}
+@article{Calvary2010,
+author = {Calvary, Ga\"{e}lle and Dery-Pinna, Anne-Marie and Occello, Audrey and Renievier-Gonin, Philippe},
+doi = {10.3166/tsi.29.479-503},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Calvary et al. - 2010 - A la crois\'{e}e de l'ing\'{e}nierie de l'interaction homme-machine et de l'ing\'{e}nierie dirig\'{e}e par les mod\`{e}les.pdf:pdf},
+issn = {07524072},
+journal = {Techniques et sciences informatiques},
+month = may,
+number = {4-5},
+pages = {479--503},
+title = {{A la crois\'{e}e de l'ing\'{e}nierie de l'interaction homme-machine et de l'ing\'{e}nierie dirig\'{e}e par les mod\`{e}les}},
+url = {http://tsi.revuesonline.com/article.jsp?articleId=14832},
+volume = {29},
+year = {2010}
+}
+@inproceedings{Calvary1996,
+abstract = {Cet article a pour th\`{e}me la mod\'{e}lisation d'architecture logicielle applicable aux syst\`{e}mes multi-utilisateurs. Apr\`{e}s une analyse synth\'{e}tique des probl\`{e}mes de la conception des architectures logicielles en g\'{e}n\'{e}ral, nous abordons le cas particulier des syst\`{e}mes multi- utilisateurs. L'analyse de l'\'{e}tat de l'art et l'identification des lacunes en la mati\`{e}re nous conduisent \`{a} une nouvelle proposition : PAC+3 . PAC+3 concilie, d'une part, la d\'{e}composition fonctionnelle du tr\`{e}fle des collecticiels et d'autre part, l'ind\'{e}pendance entre les trois facettes du mod\`{e}le PAC. Le mod\`{e}le est illustr\'{e} par un exemple fond\'{e} sur une extension imagin\'{e}e au syst\`{e}me SASSE. MOTS CL\'{E}S: mod\`{e}le d},
+author = {Calvary, Ga\"{e}lle and Coutaz, Jo\"{e}lle and Nigay, Laurence and Salber, Daniel},
+booktitle = {Huiti\`{e}mes Journ\'{e}es sur l'Ing\'{e}nierie de l'Interaction Homme-Machine IHM'96},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Arch-PAC/ihm1996b.pdf:pdf},
+keywords = {Archiitecture,PAC},
+mendeley-tags = {Archiitecture,PAC},
+pages = {125--130},
+title = {{PAC+3 : un mod\`{e}le d'architecture g\'{e}n\'{e}rique pour syst\`{e}mes multi-utilisateurs}},
+year = {1996}
+}
+@techreport{Calvary2002,
+author = {Calvary, Ga\"{e}lle and Coutaz, Jo\"{e}lle and Bouillon, Laurent and Florins, Murielle and Limbourg, Quentin and Marucci, L. and Patern\`{o}, Fabio and Santoro, Carmen and Souchon, N. and Thevenin, David and Vanderdonckt, Jean},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/CAMELEON D1.1RefFramework.pdf:pdf},
+title = {{CAMELEON Project}},
+year = {2002}
+}
+@inproceedings{Calvary2003,
+author = {Calvary, Ga\"{e}lle and Coutaz, Jo\"{e}lle},
+booktitle = {, Actes des deuxi\`{e}mes Assises nationales du GDR I3},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Placticit\'{e}/14-PlasticiteDesInterfaces.pdf:pdf},
+title = {{Plasticit\'{e} des interfaces : une n\'{e}cessit\'{e} !}},
+year = {2003}
+}
+@article{Caelen,
+author = {Caelen, Jean},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Caelen - Unknown - Interaction multimodale.pdf:pdf},
+pages = {1--40},
+title = {{Interaction multimodale}}
+}
+@article{CStephanidis1999,
+author = {{C Stephanidis} and {D Akoumianakis}},
+keywords = {Guidelines},
+mendeley-tags = {Guidelines},
+title = {{Accessibility Guidelines and Scope of Formative HCI Design Input: Contrasting two Perspectives, User Interfaces for All}},
+url = {http://ui4all.ics.forth.gr/UI4ALL-99/Stephanidis\_l.pdf},
+year = {1999}
+}
+@article{Brajnik2010,
+author = {Brajnik, Giorgio},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Brajnik - 2010 - Is the UML appropriate for Interaction Design.pdf:pdf},
+keywords = {PIM,PSM,UI Model},
+mendeley-tags = {PIM,PSM,UI Model},
+title = {{Is the UML appropriate for Interaction Design?}},
+year = {2010}
+}
+@article{Bowman2006,
+author = {Bowman, Doug A and Chen, Jian and Wingrave, Chadwick A and Lucas, John and Ray, Andrew and Polys, Nicholas F and Li, Qing and Haciahmetoglu, Yonca and Kim, Seonho and Boehringer, Robert and Ni, Tao},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/3D UI/new\_directions.pdf:pdf},
+journal = {The International Journal of Virtual Reality},
+keywords = {3d interaction,3d user interfaces,API GUI,usability,user interface design},
+mendeley-tags = {API GUI},
+number = {0106},
+pages = {1--30},
+title = {{New Directions in 3D User Interfaces}},
+year = {2006}
+}
+@phdthesis{Bourguet1992,
+abstract = {En m\^{e}me temps qu'augmente la complexit\'{e} des syst\`{e}mes informatis\'{e}s, une croissance comparable des capacit\'{e}s d'\'{e}change entre ces syst\`{e}mes et leurs utilisateurs doit s'op\'{e}rer. L'exploration de voies nouvelles doit \^{e}tre entreprise pour faciliter la communication entre l'homme et l'ordinateur, la communication multimodale, qui donne le cadre de notre \'{e}tude, est l'une d'entre elles. Id\'{e}alement un syst\`{e}me multimodal doit permettre \`{a} l'usager d'utiliser le ou les modes d'interaction les plus avantageux et les mieux adapt\'{e}s \`{a} ses pr\'{e}f\'{e}rences, \`{a} son degr\'{e} d'habilet\'{e} et \`{a} la nature de la t\^{a}che \`{a} accomplir. Pour cela, un syst\`{e}me multimodal doit disposer des connaissances propres \`{a} chaque modalit\'{e} de communication et pouvoir faire le lien entre les informations qui contribuent au sens d'un message. En effet, r\'{e}soudre un probl\`{e}me de communication multimodale ne consiste pas en la simple juxtaposition des diff\'{e}rentes modalit\'{e}s mais plut\^{o}t en leur coop\'{e}ration au cours d'un m\^{e}me \'{e}change avec la machine. D\`{e}s l'instant o\`{u} un syst\`{e}me a pour mission d'accepter les modalit\'{e}s naturelles de la communication, il est n\'{e}cessaire d'identifier le langage employ\'{e} par l'utilisateur et de d\'{e}terminer les conditions qui le conduisent au choix d'une combinaison de modalit\'{e}s particuli\`{e}res. Pour cela nous avons choisi d'adopter une approche exp\'{e}rimentale en limitant notre champ d'\'{e}tude \`{a} l'association de la parole avec des gestes de d\'{e}signation en entr\'{e}e d'un syst\`{e}me graphique. A travers la conception et la r\'{e}alisation de deux interfaces de dialogue multimodales, nous exposons plus particuli\`{e}rement les probl\`{e}mes de la co-r\'{e}f\'{e}rence entre les modes, du parall\'{e}lisme des m\'{e}dia, de la fusion des informations et du contr\^{o}le d'un dialogue multimodal dans le cadre d'une application d\'{e}termin\'{e}e},
+author = {Bourguet, Marie-Luce},
+keywords = {Comprensi\'{o}n lingu\'{\i}stica,Compr\'{e}hension linguistique,Dialogue homme machine,Di\'{a}logo hombre m\'{a}quina,Graphical system,Interface utilisateur,Interfase usuario,Man machine dialogue,Man machine relation,Modalit\'{e},Relaci\'{o}n hombre m\'{a}quina,Relation homme machine,Sentence comprehension,Sistema gr\'{a}fico,Syst\`{e}me graphique,User interface},
+mendeley-tags = {Modalit\'{e}},
+title = {{Conception et r\'{e}alisation d'une interface de dialogue personne-machine multimodale = Conception and implementation of a multimodal human-computer dialogue interface}},
+url = {http://cat.inist.fr/?aModele=afficheN\&cpsidt=153706},
+year = {1992}
+}
+@article{Bouillon,
+author = {Bouillon, Laurent and Vanderdonckt, Jean},
+doi = {10.1109/WCRE.2002.1173091},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Bouillon, Vanderdonckt - Unknown - Retargeting Web pages to other computing platforms with VAQUITA.pdf:pdf},
+isbn = {0-7695-1799-4},
+journal = {Ninth Working Conference on Reverse Engineering, 2002. Proceedings.},
+keywords = {Migration UI,Reverse Engineering,UI Model,analysis,approach,bases,forward engineering,heuristics,interface migration,knowledge,mapping rules,model-based,presentation model,reverse engineering,static,web page,wml,xhtml,xml},
+mendeley-tags = {Migration UI,Reverse Engineering,UI Model},
+pages = {339--348},
+publisher = {IEEE Comput. Soc},
+title = {{Retargeting Web pages to other computing platforms with VAQUITA}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1173091}
+}
+@inproceedings{Bouchet,
+author = {Bouchet, Jullien and Nigay, Laurence and Ganille, Thierry},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Bouchet, Nigay, Ganille - Unknown - The ICARE Component-Based Approach for Multimodal Input Interaction Application to real-time military aircraft cockpits.pdf:pdf},
+keywords = {Modalit\'{e},UI Model},
+mendeley-tags = {Modalit\'{e},UI Model},
+title = {{The ICARE Component-Based Approach for Multimodal Input Interaction: Application to real-time military aircraft cockpits}}
+}
+@misc{BornheimerKarinBensheim2011,
+abstract = {This disclosure provides various embodiments for generating reports relating to UI models' compliance with a set of UI style guide rules. A digital UI model is parsed to determine whether a user interface, in a plurality of user interfaces within a software environment, satisfies at least one UI style guide rule in a plurality of UI style guide rules associated with the software environment. The digital UI model defines a plurality of attributes of the user interface. At least one statistical measure is calculated relating to compliance with UI style guide rules. The calculation of the statistical measure is based at least in part on the determination of whether the user interface satisfies the at least one UI style guide rule. A report is then generated identifying the at least one statistical measure, the report configured for presentation on a user interface of a computing device},
+author = {{Bornheimer, Karin (Bensheim}, DE) and {Haug, Tobias (Rellingen}, DE) and {Uhl, Thomas (Hanhofen}, DE) and {Brandt, Carsten (Mannheim}, DE)},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/US20120198364A1.pdf:pdf},
+keywords = {Style Guide,UI Model},
+mendeley-tags = {Style Guide,UI Model},
+title = {{USER INTERFACE STYLE GUIDE COMPLIANCE REPORTING}},
+url = {http://www.freepatentsonline.com/y2012/0198364.html},
+year = {2011}
+}
+@article{Blouin2010a,
+address = {New York, New York, USA},
+annote = {
+        From Duplicate 2 ( 
+        
+          Improving modularity and usability of interactive systems with Malai
+        
+         - Blouin, Arnaud; Beaudoux, Olivier )
+
+        
+        
+
+        
+
+        
+
+      },
+author = {Blouin, Arnaud and Beaudoux, Olivier},
+doi = {10.1145/1822018.1822037},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Blouin, Beaudoux - 2010 - Improving modularity and usability of interactive systems with Malai.pdf:pdf},
+isbn = {9781450300834},
+journal = {Proceedings of the 2nd ACM SIGCHI symposium on Engineering interactive computing systems - EICS '10},
+keywords = {Evaluation,Interaction Model,MDE UI,UI Model,action,instrument,interac-,interaction,user interface},
+mendeley-tags = {Evaluation,Interaction Model,MDE UI,UI Model},
+pages = {115},
+publisher = {ACM Press},
+title = {{Improving modularity and usability of interactive systems with Malai}},
+url = {http://portal.acm.org/citation.cfm?doid=1822018.1822037},
+year = {2010}
+}
+@article{Block2012,
+author = {Block, Florian and Wigdor, Daniel and Phillips, BC},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/TableTop/FlowBlocks2012.pdf:pdf},
+title = {{FlowBlocks: A Multi-Touch UI for Crowd Interaction}},
+url = {http://tidal.sesp.northwestern.edu/wp-content/uploads/2012/06/FlowBlocks2012.pdf},
+year = {2012}
+}
+@article{Betermieux2009,
+author = {Betermieux, Stefan and Bomsdorf, Birgit},
+doi = {10.1007/978-1-84882-206-1},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Betermieux, Bomsdorf - 2009 - Task-Driven Composition of Web User Interfaces.pdf:pdf},
+journal = {Interfaces},
+keywords = {Composition UI,Task Model},
+mendeley-tags = {Composition UI,Task Model},
+pages = {233--244},
+title = {{Task-Driven Composition of Web User Interfaces}},
+year = {2009}
+}
+@inproceedings{Besacier2007,
+author = {Besacier, Guillaume and Rey, Ga\'{e}tan and Najm, Marianne and Buisine, St\'{e}phanie},
+booktitle = {HCII'07 Human Computer Interaction International},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/TableTop/HCII07-2.pdf:pdf},
+keywords = {TableTop,interaction design,paper metaphor,tabletop},
+mendeley-tags = {TableTop},
+pages = {758--767},
+title = {{Paper Metaphor for Tabletop Interaction Design}},
+year = {2007}
+}
+@phdthesis{Besacier2010,
+author = {Besacier, Guillaume},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Rapports Theses/these-besacier-lowres.pdf:pdf},
+keywords = {Approches,Migration UI,TableTop},
+mendeley-tags = {Approches,Migration UI,TableTop},
+school = {UNIVERSIT\'{E} PARIS-SUD 11},
+title = {{Interactions post-WIMP et applications existantes sur une table interactive}},
+year = {2010}
+}
+@article{Besacier,
+author = {Besacier, Guillaume},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/TableTop/09-besacier-eics-talk.pdf:pdf},
+pages = {1--21},
+title = {{Toward User Interface Virtualization : Legacy Applications and Innovative Interaction Systems}}
+}
+@article{Berti2006,
+author = {Berti, Silvia and Patern\`{o}, Fabio and Santoro, Carmen},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Berti, Patern\`{o}, Santoro - 2006 - LNCS 3941 - A Taxonomy for Migratory User Interfaces.pdf:pdf},
+journal = {Framework},
+keywords = {Migration UI,Modalit\'{e},UI Model},
+mendeley-tags = {Migration UI,Modalit\'{e},UI Model},
+pages = {149 -- 160},
+title = {{A Taxonomy for Migratory User Interfaces}},
+year = {2006}
+}
+@inproceedings{BentleyR.Dourish1995,
+author = {{Bentley, R., Dourish}, P.},
+booktitle = {Proceedings of ECSCW'95, pp. 133–148.},
+title = {{Medium versus mechanism: Supporting collaboration through customisation.}},
+year = {1995}
+}
+@book{Beck2000,
+abstract = {The problem. Risk: The basic problem. A development episode. Economics of software development. Four variables. Cost of change. Learning to drive. Four values. Basic principles. Back to basics. The solution. Quick overview. How could this work? Management strategy. Facilities strategy. Splitting business and technical responsability. Planning strategy. Development strategy. Design strategy. Testing strategy. Implementing XP. Adopting XP. Retroffiting XP. Lifecycle of an ideal XP project. Roles for people. 20-80 rule. What makes XP hard. When you shouldn't try XP. XP at work. Conclusion.},
+author = {Beck, Kent},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Beck - 2000 - Extreme Programming Explained Embrace Change.html:html},
+keywords = {Programming Technics},
+mendeley-tags = {Programming Technics},
+pages = {190},
+publisher = {Addison-Wesley Professional},
+title = {{Extreme Programming Explained: Embrace Change}},
+url = {http://books.google.com/books?id=G8EL4H4vf7UC\&pgis=1},
+year = {2000}
+}
+@article{Beaudoux2009,
+author = {Beaudoux, Olivier},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Beaudoux - 2009 - Active transformation within Kermeta.pdf:pdf},
+journal = {Transformation},
+title = {{Active transformation within Kermeta}},
+year = {2009}
+}
+@inproceedings{Beaudouin-Lafon1997,
+author = {Beaudouin-Lafon, Michel},
+booktitle = {Actes des Neuvi\`{e}mes Journ\'{e}es sur l'Interaction Homme-Machine, IHM'97.},
+title = {{Interaction instrumentale : de la manipulation directe \`{a} la r\'{e}alit\'{e} augment\'{e}e.}},
+year = {1997}
+}
+@inproceedings{Beaudouin-Lafon2004,
+address = {New York, New York, USA},
+author = {Beaudouin-Lafon, Michel},
+booktitle = {Proceedings of the working conference on Advanced visual interfaces - AVI '04},
+doi = {10.1145/989863.989865},
+isbn = {1581138679},
+keywords = {Interaction Model,design principles,instrumental interaction,interaction architecture,interaction model,interaction paradigm,situated interaction},
+mendeley-tags = {Interaction Model},
+month = may,
+pages = {15},
+publisher = {ACM Press},
+title = {{Designing interaction, not interfaces}},
+url = {http://dl.acm.org/citation.cfm?id=989863.989865},
+year = {2004}
+}
+@inproceedings{Beaudouin-Lafon2000,
+address = {New York, New York, USA},
+author = {Beaudouin-Lafon, Michel},
+booktitle = {Proceedings of the SIGCHI conference on Human factors in computing systems - CHI '00},
+doi = {10.1145/332040.332473},
+isbn = {1581132166},
+keywords = {Interaction Model,WIMP interfaces,direct manipulation,instrumental interaction,interaction model,post-WIMP interfaces},
+mendeley-tags = {Interaction Model},
+month = apr,
+pages = {446--453},
+publisher = {ACM Press},
+title = {{Instrumental interaction}},
+url = {http://dl.acm.org/citation.cfm?id=332040.332473},
+year = {2000}
+}
+@article{Bastien1995,
+abstract = {The usefulness of a set of ergonomic criteria for the evaluation of user interfaces was assessed using a mixed two?factors experimental design. Two groups of usability specialists (control, criteria) were asked to evaluate the interface of a musical database management system in two phases. In the first phase of the experiment, all the participants relied solely on their expertise; in the second phase they were instructed to evaluate the management system again but this time through the replay of their previous exploration: Participants in the criteria group used a set of ergonomic criteria whereas the participants in the control group did not. In the first phase, the two groups did not differ in terms of: (a) the number of usability problems detected, and (b) the proportions of usability problems uncovered as well as the proportion of usability problems found in common, with respect to the number of single evaluations (one by participant) that were computed into combined evaluations (i.e., aggregates). In the second phase, however, the participants in the criteria group had better performances than those in the control group: They uncovered more new problems, and the proportion of problems uncovered as well as the proportion of problems found in common was greater as a function of the number of evaluators in the aggregates. To sum up, the criteria increased the evaluation performance of the experts. The usefulness of a set of ergonomic criteria for the evaluation of user interfaces was assessed using a mixed two?factors experimental design. Two groups of usability specialists (control, criteria) were asked to evaluate the interface of a musical database management system in two phases. In the first phase of the experiment, all the participants relied solely on their expertise; in the second phase they were instructed to evaluate the management system again but this time through the replay of their previous exploration: Participants in the criteria group used a set of ergonomic criteria whereas the participants in the control group did not. In the first phase, the two groups did not differ in terms of: (a) the number of usability problems detected, and (b) the proportions of usability problems uncovered as well as the proportion of usability problems found in common, with respect to the number of single evaluations (one by participant) that were computed into combined evaluations (i.e., aggregates). In the second phase, however, the participants in the criteria group had better performances than those in the control group: They uncovered more new problems, and the proportion of problems uncovered as well as the proportion of problems found in common was greater as a function of the number of evaluators in the aggregates. To sum up, the criteria increased the evaluation performance of the experts.},
+author = {Bastien, J. M. Christian and Scapin, Dominique L.},
+issn = {1044-7318},
+journal = {International Journal of Human-Computer Interaction},
+keywords = {Crit\`{e}res ergonomics},
+mendeley-tags = {Crit\`{e}res ergonomics},
+month = apr,
+number = {2},
+pages = {105--121},
+publisher = {Taylor \& Francis},
+title = {{Evaluating a user interface with ergonomic criteria}},
+url = {http://dx.doi.org/10.1080/10447319509526114 http://hal.inria.fr/docs/00/07/43/48/PDF/RR-2326.pdf},
+volume = {7},
+year = {1995}
+}
+@article{Baskinger2010,
+author = {Baskinger, Mark and Gross, Mark},
+issn = {10725520},
+journal = {interactions},
+keywords = {Primitives interactions},
+mendeley-tags = {Primitives interactions},
+month = jan,
+number = {1},
+pages = {6},
+title = {{COVER STORYTangible interaction = form + computing}},
+url = {http://dl.acm.org/ft\_gateway.cfm?id=1649477\&type=html},
+volume = {17},
+year = {2010}
+}
+@article{Bartolomei,
+author = {Bartolomei, Thiago Tonelli and Derakhshanmanesh, Mahdi and Fuhr, Andreas and Koch, Peter and Konrath, Mathias and Ralf, L},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Bartolomei et al. - Unknown - Combining Multiple Dimensions of Knowledge in API Migration.pdf:pdf},
+keywords = {-software migration,10,9,Migration UI,acknowledgement we are grateful,api analy-,api migration,mining software repositories,of,providing,sis,to daniel ratiu for,to the programming ontology,us with data related,wrapping},
+mendeley-tags = {Migration UI},
+title = {{Combining Multiple Dimensions of Knowledge in API Migration}}
+}
+@article{Bartolomei2010,
+author = {Bartolomei, Thiago Tonelli and Czarnecki, Krzysztof and Ralf, L},
+file = {:C$\backslash$:/Users/kalawa/Documents/Perso/SwingToSWT.pdf:pdf},
+isbn = {9781424486281},
+keywords = {Migration UI},
+mendeley-tags = {Migration UI},
+title = {{Swing to SWT and Back : Patterns for API Migration by Wrapping}},
+year = {2010}
+}
+@article{Baron,
+author = {Baron, M},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Baron - Unknown - D\'{e}marche de Mod\'{e}lisation d'IHM3 avec B SP 3 LOT 2 LISIENSMA.pdf:pdf},
+title = {{D\'{e}marche de Mod\'{e}lisation d'IHM3 avec B SP 3 LOT 2 LISI/ENSMA}}
+}
+@article{Bandelloni,
+author = {Bandelloni, Renata and Santoro, Carmen},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Bandelloni, Santoro - Unknown - Reverse Engineering Cross-Modal User Interfaces for Ubiquitous Environments.pdf:pdf},
+journal = {Work},
+keywords = {Migration UI,Modalit\'{e},UI Model,cross-modal user interfaces,model-based,reverse engineering},
+mendeley-tags = {Migration UI,Modalit\'{e},UI Model},
+title = {{Reverse Engineering Cross-Modal User Interfaces for Ubiquitous Environments}}
+}
+@article{Bandellonia,
+author = {Bandelloni, Renata and Berti, Silvia},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Bandelloni, Berti - Unknown - Mixed-Initiative, Trans-Modal Interface Migration.pdf:pdf},
+journal = {Work},
+keywords = {Migration UI,Modalit\'{e},UI Model},
+mendeley-tags = {Migration UI,Modalit\'{e},UI Model},
+title = {{Mixed-Initiative, Trans-Modal Interface Migration}}
+}
+@article{Balme,
+author = {Balme, Lionel and Demeure, Alexandre and Barralon, Nicolas},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Balme, Demeure, Barralon - Unknown - CAMELEON-RT a Software Architecture Reference Model for Distributed, Migratable, and Plastic User Interfaces.pdf:pdf},
+journal = {Interfaces},
+keywords = {Migration UI,UI Model},
+mendeley-tags = {Migration UI,UI Model},
+title = {{CAMELEON-RT: a Software Architecture Reference Model for Distributed, Migratable, and Plastic User Interfaces}}
+}
+@article{Badashian2008,
+author = {Badashian, Ali Sajedi and Mahdavi, Mehregan and Pourshirmohammadi, Amir and Nejad, Minoo Monajjemi},
+doi = {10.1109/ICCSA.2008.45},
+isbn = {9780769532431},
+journal = {2008 International Conference on Computational Sciences and Its Applications},
+pages = {106--113},
+publisher = {Ieee},
+series = {\{ICCSA\} '08},
+title = {{Fundamental Usability Guidelines for User Interface Design}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4561210},
+year = {2008}
+}
+@book{AppleComputerInc1995,
+author = {{Apple Computer Inc}},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Portabilit\'{e}/Apple\_HIGuidelines.pdf:pdf},
+isbn = {0201622165},
+keywords = {guidelines},
+publisher = {Addison-wesley Publishing},
+title = {{Macintosh Human Interface Guidelines}},
+year = {1995}
+}
+@techreport{Apers2010,
+author = {Apers, Chris and Paterson, Daniel},
+booktitle = {Strategies},
+institution = {Apple},
+isbn = {9781430230458},
+pages = {56},
+publisher = {Apress},
+title = {{iPad Human Interface Guidelines - User Experience}},
+url = {http://www.springerlink.com/content/p84227t871371822/},
+year = {2010}
+}
+@book{Ambone2007,
+abstract = {Ce document vous pr\'{e}sente le mod\`{e}le d'architecture PAC cr\'{e}\'{e} par Jo\"{e}lle Coutaz. Dans un premier temps, nous pr\'{e}sentons en quelques mots les origines et les buts poursuivis par ce mod\`{e}le. Dans un second temps, nous d\'{e}taillons la brique de base sur laquelle est fond\'{e}e l'architecture PAC. Suite \`{a} cela, nous agen\c{c}ons les briques de bases pour b\^{a}tir l'int\'{e}gralit\'{e} d'une architecture d'application. Nous pr\'{e}cisons alors les crit\`{e}res Qualit\'{e} obtenus lorsque ce mod\`{e}le est suivi. Enfin nous concluons par un exemple d'utilisation du mod\`{e}le pour une application de type industriel. 3. Table des mati\`{e}res},
+author = {Ambone, Gilles},
+keywords = {Archiitecture,PAC,ui design},
+mendeley-tags = {Archiitecture,PAC,ui design},
+pages = {25},
+title = {{Mod\`{e}le d'architecture logicielle P.A.C. : Des concepts \`{a} l'impl\'{e}mentation}},
+year = {2007}
+}
+@article{Aldazabal,
+author = {Aldazabal, Aitor and Baily, Terry and Nanclares, Felix and Sadovykh, Andrey and Hein, Christian and Ritter, Tom},
+file = {:C$\backslash$:/Users/kalawa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Aldazabal et al. - Unknown - Automated Model Driven Development Processes.pdf:pdf},
+journal = {Development},
+keywords = {automation,modeling,process enactment,tool integration},
+pages = {1--13},
+title = {{Automated Model Driven Development Processes}}
+}
+@article{Steinberg2012,
+author = {Steinberg, Gideon},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/natural\_user\_interfaces\_gste097.pdf:pdf},
+isbn = {9781450310154},
+keywords = {NUI},
+mendeley-tags = {NUI},
+title = {{Natural User Interfaces}},
+year = {2012}
+}
+@article{alias2009,
+author = {{Marie Dery,Pinna,C\'{e}dric Joffroy,Philippe Renevier,Michel Riveill,Christophe Vergoni}},
+keywords = {Model UI},
+mendeley-tags = {Model UI},
+title = {{ALIAS: A Set of Abstract Languages for User Interface Assembly}},
+url = {http://www.researchgate.net/publication/228578714\_ALIAS\_A\_Set\_of\_Abstract\_Languages\_for\_User\_Interface\_Assembly}
+}
+
+@article{Caramel2009,
+author = {Caramel, B and Joffroy, C and Laguerre, M},
+journal = {Proceedings of the 21st International  \ldots},
+keywords = {Composition UI},
+mendeley-tags = {Composition UI},
+title = {{De la composition de services \`{a} la composition d'interfaces homme-machine}},
+url = {http://dl.acm.org/citation.cfm?id=1629838},
+year = {2009}
+}
+@article{Kassoff2003,
+author = {Kassoff, M. and Kato, D. and Mohsin, W.},
+doi = {10.1109/MIC.2003.1232520},
+issn = {1089-7801},
+journal = {IEEE Internet Computing},
+keywords = {GUIs,Web services,WebService,forms,stylesheets},
+mendeley-tags = {WebService},
+month = sep,
+number = {5},
+pages = {66--73},
+title = {{Creating GUIs for web services}},
+url = {http://dl.acm.org/citation.cfm?id=942587.942677},
+volume = {7},
+year = {2003}
+}
+
+
+@inproceedings{Ullmer1997,
+author = {Ullmer, Brygg and Ishii, Hiroshi},
+booktitle = {UIST '97 Proceedings of the 10th annual ACM symposium on User interface software and technolog},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/TableTop/uist97-desk.pdf:pdf},
+isbn = {0897918819},
+keywords = {TUI,TableTop,augmented reality,haptic,input,input devices,tangible user interfaces,ubiquitous computing},
+mendeley-tags = {TUI,TableTop},
+pages = {223 -- 232},
+title = {{The metaDESK : Models and Prototypes for Tangible User Interfaces}},
+year = {1997}
+}
+
+
+@article{Kong1999a,
+author = {Kong, L and Stroulia, E and Matichuk, B},
+file = {::},
+journal = {\ldots  of the 8th International Conference on  \ldots},
+keywords = {UI Model},
+mendeley-tags = {UI Model},
+title = {{Legacy interface migration: A task-centered approach}},
+url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.32.4231\&rep=rep1\&type=pdf},
+year = {1999}
+}
+@inproceedings{Silva2012,
+author = {Silva, Carlos Eduardo and Campos, Jos\'{e} Creissac},
+booktitle = {Human-Centered Software Engineering},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/UsiXML/chp\%3A10.1007\%2F978-3-642-34347-6\_7.pdf:pdf},
+keywords = {UI Model,markup languages,modelling,user interfaces},
+mendeley-tags = {UI Model},
+pages = {112--129},
+title = {{Can GUI Implementation Markup Languages Be Used for Modelling ?}},
+year = {2012}
+}
+
+@misc{W3C2003,
+author = {W3C},
+keywords = {Modalit\'{e} d'interactions},
+mendeley-tags = {Modalit\'{e} d'interactions},
+pages = {http://www.w3.org/TR/mmi--framework/},
+title = {{W3C Multimodal Interaction Framework}},
+year = {2003}
+}
+
+@misc{DHeinemeierHansson2006,
+author = {{D. Heinemeier Hansson}},
+booktitle = {RailsConf 2006 Keynote Presentation.},
+pages = {http://www.scribemedia.org/2006/07/09/dhh/},
+title = {{World of Resource}},
+year = {2006}
+}
+
+
+@misc{W3CIncubatorGroup2010,
+abstract = {This Report provides a summary of the work and results obtained by the Model-Based User Interfaces Incubator Group (MBUI-XG). The MBUI-XG hopes to enable a new generation of Web authoring tools and runtimes that will make it much easier to create tomorrow's Web applications and to tailor them for a wide range of user preferences, device capabilities and environments. To achieve this, the MBUI-XG has evaluated research on MBUI as a framework for authoring Web applications and with a view to proposing work on related standards.},
+author = {{W3C Incubator Group}},
+pages = {http://www.w3.org/2005/Incubator/model--based--ui/XG},
+title = {{Model-Based UI XG Final Report}},
+year = {2010}
+}
+
+@inproceedings{Masso2006,
+address = {New York, New York, USA},
+author = {Mass\'{o}, Jos\'{e} Pascual Molina and Vanderdonckt, Jean and L\'{o}pez, Pascual Gonz\'{a}lez},
+booktitle = {Proceedings of the 11th international conference on Intelligent user interfaces - IUI '06},
+doi = {10.1145/1111449.1111483},
+file = {:C$\backslash$:/Users/kalawa/Documents/These/Articles/IHM/Modele de tache/molina-iui2006.pdf:pdf},
+isbn = {1595932879},
+keywords = {UI Migration,migration,virtual environment},
+mendeley-tags = {UI Migration},
+month = jan,
+pages = {140},
+publisher = {ACM Press},
+title = {{Direct manipulation of user interfaces for migration}},
+url = {http://dl.acm.org/citation.cfm?id=1111449.1111483},
+year = {2006}
+}

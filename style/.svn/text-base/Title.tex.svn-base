@@ -1,0 +1,46 @@
+\begin{titlepage}
+\begin{center}
+\noindent {\large \textbf{UNIVERSITÉ DE NICE - SOPHIA ANTIPOLIS}} \\
+\vspace*{0.3cm}
+\noindent {\LARGE \textbf{ÉCOLE DOCTORALE STIC}} \\
+\noindent \textbf{SCIENCES ET TECHNOLOGIES DE L'INFORMATION \\ ET DE LA COMMUNICATION} \\
+\vspace*{0.5cm}
+\noindent \Huge \textbf{T H È S E} \\
+\vspace*{0.3cm}
+\noindent \large {pour obtenir le titre de} \\
+\vspace*{0.3cm}
+\noindent \LARGE \textbf{Docteur en Sciences} \\
+\vspace*{0.3cm}
+\noindent \Large de l'Université de Nice - Sophia Antipolis \\
+\noindent \Large \textbf{Mention : \textsc{Informatique}}\\
+\vspace*{0.4cm}
+\noindent \large {Présentée et soutenue par\\}
+\noindent \LARGE Nicolas \textsc{Ferry} \\
+\vspace*{0.8cm}
+\noindent {\Huge \textbf{Adaptations dynamiques au contexte en informatique ambiante : propriétés logiques et temporelles }} \\
+\vspace*{0.8cm}
+\noindent \Large Thèse dirigée par Michel \textsc{Riveill} \\
+\vspace*{0.2cm}
+\noindent \Large préparée au sein du laboratoire I3S, Equipe \textsc{Rainbow} \\
+\vspace*{0.2cm}
+\noindent \large soutenue le 07 décembre 2011 \\
+\vspace*{0.5cm}
+\end{center}
+\noindent \large \textbf{Jury :} \\
+\begin{center}
+\noindent \large 
+\begin{tabular}{llcl}
+      \textit{Rapporteurs :} 	& 	Yves \textsc{Denneulin}	& - & Professeur, INPG Grenoble \\
+				& 	Philippe \textsc{Roose}	& - & Docteur H.D.R., IUT de Bayonne\\
+      \textit{Directeur :}	& Michel \textsc{Riveill}		& - & Professeur, Université de Nice\\
+      \textit{Co-Directeur :}	& Stéphane \textsc{Lavirotte}		& - & Docteur, Université de Nice\\
+      \textit{Président :}	& 	Pascal \textsc{Estrailler}	& - & Professeur, Université de La Rochelle\\
+      \textit{Examinateur :}  &  Jean-Michel \textsc{Bruel}   & - & Professeur, Université de Toulouse\\
+      \textit{Invité :}		& Jean-Yves \textsc{Tigli}		& - & Docteur, Université de Nice\\
+      \textit{Invité :}		& Eric \textsc{Pascual}		& - & Ingénieur, CSTB\\
+\end{tabular}
+\end{center}
+\end{titlepage}
+\sloppy
+
+\titlepage

@@ -1,0 +1,262 @@
+\documentclass [twoside, a4paper, 11pt] {StyleThese}% {theseUL} % [phd]Pour les Phd, remplacer "msc" par "phd"
+\usepackage[ansinew]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{graphicx}
+\usepackage{a4wide, eurosym , graphics, graphicx, tabularx, pifont, colortbl, fancyhdr, fancybox}
+\usepackage[table]{xcolor}
+\usepackage{multicol}
+%\usepackage{glossary}
+\usepackage{makeidx}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage[francais]{minitoc}
+\usepackage{tabularx}
+\usepackage{listings}
+%
+%\usepackage{a4wide, eurosym , graphics, graphicx, tabularx, pifont, colortbl, fancyhdr, fancybox}
+\usepackage[francais]{layout}
+\usepackage{lscape}
+%\usepackage[pdftex,linkbordercolor={1 .8 .8},citebordercolor={.7 1 .5}]{hyperref}  
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+\usepackage{subfig}
+\usepackage{multirow}
+%\usepackage{wrapfig}
+\usepackage{pifont}
+\usepackage{amsmath,amssymb,lettrine}
+\usepackage{pslatex}
+%\usepackage{fancybox}
+\usepackage{xcolor}
+\usepackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%LES CATEGORIES DE BIBLIOGRAPHIE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\bibliography{these}
+%\defbibheading{AOP}{\section*{Bibliographie programmation orientée aspects}}
+%\defbibheading{FOP}{\section*{Bibliographie programmation orientée feature}}
+%\defbibheading{Contexte}{\section*{Bibliographie Contexte}}
+%\defbibheading{iam}{\section*{Bibliographie informatique ambiante : visions et challenges}}
+%\defbibheading{intergiciels}{\section*{Bibliographie intergiciels adaptatifs et sensibles au contexte}}
+%%\defbibheading{ihm}{\section*{Bibliographie Interactions Hommes Machines}}
+%\defbibheading{robotics}{\section*{Bibliographie Robotique et Systèmes réactifs}}
+%\defbibheading{models}{\section*{Bibliographie Modèles}}
+%\defbibheading{autres}{\section*{Bibliographie Autres}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%LA FORME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\addtolength{\topmargin}{-1cm}
+%\addtolength{\oddsidemargin}{+1.1cm}
+%\addtolength{\evensidemargin}{-1.8cm}
+%\addtolength{\textwidth}{1.1cm}
+%\addtolength{\textheight}{2cm}
+
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%LES ENVIRONNEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{changemargin}[2]%
+{\begin{list}{}{%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+}\item }%
+{\end{list}}
+
+%\newcommand{\mycite}[1]{\cite{#1}\footcite{#1}}
+\newcommand{\mycite}[1]{\cite{#1}}
+
+%\newcommand{\lettrine}[1]{%
+%\creerlettrine#1/%
+%\addtolength{\indletB}{3pt}% pour avoir un peu d’espace
+%\setlength{\larligH}{\textwidth-\indletH}%
+%\setlength{\larligB}{\textwidth-\indletB}%
+%\parshape=3%
+%\indletH\larligH\indletB\larligB0cm\textwidth%
+%\noindent\hspace{-\indletH}%
+%\raisebox{-\baselineskip}[0pt][0pt]{\usebox{\lalettrine}}}
+
+%\definecolor{rougepourri}{rgb}{0.9,0.1,0.0}
+%\definecolor{rougepourri}{rgb}{0,0,0}
+\newcommand{\todo}[1]{\textcolor{rougepourri}{#1}}
+
+%\newcounter{def}
+%\newcommand{\definition}[2][ ]{\refstepcounter{def}\begin{center}
+%\shadowbox{
+%\begin{minipage}{0.8\textwidth}
+%\textbf{Définition \thedef\ : #1} \par \hspace{1.5em}
+%#2
+%\end{minipage} } \end{center} }
+
+\newcommand{\langAA}[0]{
+\lstset{basicstyle=\small,columns=fullflexible,frame=leftline,language=lisp,
+numbers=left,numberstyle=\tiny,stepnumber=3,numbersep=10pt,
+emph=[1]{Pointcut,Advice,if,else,call,del,for,nop,;,do,done,in},emphstyle=[1]\bf,
+xleftmargin=.1\textwidth
+% literate={->}{{$\rightarrow$}}1
+}}
+
+%\newsavebox{\nomepigraphe}
+\newenvironment{epigraphe}[1]
+{% clause begin
+%\vspace*{-1.5cm}%
+\small\sffamily% mise en évidence
+\savebox{\nomepigraphe}{#1}% une boîte pour sauvegarder
+% l’ origine de la citation
+\slshape% tout est penché
+\begin{changemargin}{0pt}{-1cm}% on se met au large
+\begin{flushright}}% tout est poussé à droite
+{% clause end
+\\[4pt]\usebox{\nomepigraphe}.% insertion de l’origine
+\end{flushright}%
+\end{changemargin}\par\vspace*{0.6cm}}
+
+% pour avoir les subsubsection numérotées et dans la toc :
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+\newenvironment{narrow}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}}%
+\item[]}{\end{list}}
+
+
+\newcommand{\mapletext}[1]{
+\noindent \begin{tabular}{|p{0pt}p{5in}}
+\cline{1-1}&#1\\
+\cline{1-1}
+\end{tabular}
+\bigskip
+}
+\newcolumntype{Y}{>{\small\centering\arraybackslash}X}
+\newenvironment{tabvcenter}{\null\vfill}{\vfill}
+\newenvironment{tabcenter}{\null\vfill}{\vfill}{\centering}
+
+
+\newtheorem{prop}{Propriété}
+\newtheorem{guide}{Guideline}
+
+
+\newcounter{def}
+\setcounter{def}{0}
+\newcommand{\primitive}[2]{\refstepcounter{def}
+
+\begin{center}
+\shadowbox{
+\begin{minipage}{0.8\textwidth}
+\textbf{Primitive d'interaction \thedef\ : #1} \par \hspace{1.5em}
+#2
+\end{minipage} } \end{center} }
+
+\newcounter{idrul}
+\setcounter{idrul}{0}
+
+\newcommand{\idRule}[2]{\stepcounter{idrul}
+
+\fbox{\parbox{0.9\textwidth}{
+\textbf{Règle \theidrul\ : #1} \par 
+#2
+}}}
+%\fbox{\parbox{0.9\textwidth}{
+
+\hypersetup{
+    %bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat?s bookmarks
+    pdftoolbar=true,        % show Acrobat?s toolbar?
+    pdfmenubar=true,        % show Acrobat?s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+%\hypersetup{tex4ht}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\enlargethispage{5cm}
+	\include{Title}
+	
+	
+	%\label{resume}
+	%\input{resume/abstract}
+	\date{}
+	%\cleardoublepage
+
+	%\section*{Remerciements}
+	%\dominitoc
+	%\faketableofcontents
+	%\tableofcontentsb
+	%\listoffigures
+	%\listoftables
+	\pagenumbering{arabic}
+	%\chapter*{Acknowledgements}
+	
+	
+	\part{Introduction}
+	\chapter{Introduction}
+	\label{chap1}
+	\input{chap1/chapitre1}
+	
+	\part{Domaine d'étude et état de l'art}
+	
+	\chapter{Migration des applications}
+	%\label{chap2}
+	%\minitoc
+	%\input{chap2/chapitre2}
+	
+	\chapter{Tables interactives et Migration des UI}
+	%\label{chap3}
+	%\minitoc
+	%\input{chap3/chapitre3}
+	\part{Contributions}
+	
+	\chapter{Approches de migration des UI }
+	%\label{chap4}
+	%\minitoc
+	%\input{chap4/chapitre4}
+	%
+	\chapter{Modélisation des UI }
+	%\label{chap5}
+	%\minitoc
+	%%\input{chap5/chapitre5}
+	%
+	\chapter{Mécanismes de migration des UI}
+	%\label{chap6}
+	%\minitoc
+	%\input{chap6/chapitre6}
+	
+	\chapter{Validations du processus}
+	%\label{chap7}
+	%\minitoc
+	%\input{chap7/chapitre7}
+	%
+	\part{Conclusion et Perspectives}
+	\chapter{Conclusions et perspectives}
+	%\label{chap8}
+	%\minitoc
+	%%\input{chap8/chapitre8}
+	
+	
+	%\bibliographystyle{alpha}
+	%\bibliography{bib/biblio}
+	
+\end{document}

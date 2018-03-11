@@ -1,0 +1,1264 @@
+\section{Introduction}
+\label{sec:chap5:1}
+La solution de migration assistée que nous proposons est constituée de
+trois phase~: la phase d'extraction à partir de la structure analysable
+(\textit{UIStruture}) d'une représentation (\textit{AUIStructure})  qui est
+décrite dans le chapitre précédent, la phase d'adaptation de la structure de
+l'UI aux règles ergonomiques de la table interactive et enfin la phase de
+projection du modèle d'UI adapté, cette phase permet aussi aux concepteurs de
+personnaliser l'UI finale.   
+
+
+\section{Adaptation de la structure de l'UI }
+
+Cette phase a pour finalité la production d'une structure d'UI adaptée
+aux règles ergonomiques de  la table interactive. L'adaptation du modèle de
+structure (\textit{AUIStructure}) extraite de l'UI à migrer se fait en fonction
+des règles ergonomiques que nous présentons à la section 6.2.1.  La section
+6.2.2 présente une formalisation des règles d'adaptation de la structure et
+enfin la section 6.2.3 est une synthèse du processus d'adaptation de la
+structure.
+
+
+\subsection{Règles ergonomiques pour l'adaptation du modèle AUIStructure}
+
+
+\subsubsection{Règles ergonomique pour l'adaptation des groupes d'interacteurs}
+
+Les guidelines G1, G38, G39 et G40 sont rattachées de G18 qui
+préconise de prendre en compte le nombre d'utilisateur et le partage de l'écran 
+pendant la mise en ?uvre de l'UI. En effet ce principe impact la structuration
+des groupes d'interacteurs (G38, G38, G40) en  fonction de leur contenu, elle
+impacte aussi l'accessibilité de ces groupes qui doivent être 360${}^\circ$
+utilisable (G1). Les règles d'adaptations relatives à ces principes doivent
+considérer les types de Container (\textit{Window, Simple, Panel }et\textit{
+Table}). 
+
+
+\subsubsection{Guidelines d'utilisation des objets tangibles}
+
+Les guidelines G15, G16 et G18 sont rattachées à G5 préconise la
+considération des objets physiques comme moyen d'interaction. Elles précisent
+les cadres d'utilisation des  objets tagués ou non. Les règles associées à ces
+guidelines ne sont pas appliquées dans tous les pendant cet étape du processus,
+le concepteur doit préciser dans s'il souhaite les appliquer avant la génération
+de l'UI proposée.
+
+
+\subsection{Identification des règles d'adaptation}
+
+Les règles identifiées dans cette section permettent de générer la
+structure de l'UI pour la table interactive, cette structure est décrite par
+l'ensemble $TargetUIStructure$ à l'aide des widgets de la plateforme cible.
+
+
+\subsubsection{Règles d'adaptation des containers de type Table}
+
+Les containers de type \textit{Table} sont composés des
+\textit{UIComponent} ayant des données du même type (cf. chapitre 5.4.2.4), ils
+décrivent un groupe d'interacteurs permettant de structurer des ressources de
+l'UI. Ce groupe se concrétise en menu, ensemble de raccourcis ou en liste de
+données de type (texte, image, etc.) sur une table interactive. La guideline G40
+préconise de garder le regroupement des données structurée  pour facilité son
+utilisation (la recherche d'information par exemple), en la combinant à la
+guideline G1 qui préconise l'utilisation des composants graphiques en
+360${}^\circ$, nous déduisons les règles d'adaptation 1 et 2 pour adapter les
+containers de type \textit{Table} ayant des contenu que l'on souhaite rendre
+accessible à tous les utilisateurs de la table. 
+
+La règle 1 concerne le cas où les interacteurs fils d'un container de
+type \textit{Table} contiennent des données de type \textit{Images, MediaElement
+ou Object} alors chaque interacteur fils doit être accessible à tout le monde
+(contenus dans un Widget ayant les primitives d'interactions intrinsèques
+\textbf{Widget Move }et \textbf{Widget Rotation).}
+
+\textbf{Règle 1~:}$\ \forall \ container\ \in AUIStructure\wedge
+container.ty??e=Table,$
+\[\forall i\in container.contains\wedge\]
+\[ \left(i.content.dataType\in \left\{ \begin{array}{c} Image,\  \\ 
+	MediaElement, \\ 	
+	Object \end{array} \right\} 
+	\right)\] \[ \wedge \ \exists {\mathbf w}{\mathbf '}\in EquivalentWidget\]
+	\[ \left(i\right)\wedge \left\{ \begin{array}{c}
+			Widget\ Move, \\ 
+			Widget\ Rotation\  \end{array}
+\right\}\in {\mathbf w'}.getIntrinsicInteraction()\] 
+\[ \ \wedge \ \exists
+{\mathbf w}\in EquivalentWidget\left(container\right)\wedge \left\{
+\begin{array}{c}
+Widget\ Move, \\ 
+Widget\ Rotation\  \end{array}
+\right\}\notin {\mathbf w}.getIntrinsicInteraction()\ \] 
+\[{\mathbf w}{\mathbf '}:est\ le\ widget\ à\ choisir\ pour\ concrétiser\ les\
+fils\ de\ container\] 
+\[{\mathbf w}:est\ le\ widget\ à\ choisir\ pour\ concrétiser\ le\ container\ de\
+type\ Table\] 
+\[container:{est\ l}^ interacteur à\ considérer\ pendant\ la\ génération\ de\
+TargetAUIStructure\] 
+
+La règle 2 permet d'adapter les containers de type \textit{Table} contenant des
+interacteurs activable quelques soit le type de données des interacteurs fils.
+Si tous les interacteurs fils ont les primitives d'interactions~effectives
+\textbf{Widget Selection ou Navigation, Widget Display, Activation,} alors
+choisir un Widget qui permet de rendre le container accessible à tout le monde
+(\textbf{Widget Move }et \textbf{Widget Rotation).} 
+
+\textbf{Règle 2~:} $\forall container\in AUIStructure\wedge
+container.type=Table$
+\[\wedge \forall i\in container.contains\] 
+\[\exists {\mathbf w}\in EquivalentWidget\left(container\ \right)\wedge \left\{
+\begin{array}{c}
+Widget\ Move, \\ 
+Widget\ Rotation\  \end{array}
+\right\}\in {\mathbf w}.getIntrinsicInteraction()\wedge \ \exists {{\mathbf
+w}}^{{\mathbf '}}\in EquivalentWidget\left(i\ \right)\wedge \left\{
+\begin{array}{c}
+Widget\ Move, \\ 
+Widget\ Rotation\  \end{array}
+\right\}\notin {{\mathbf w}}^{{\mathbf '}}.getIntrinsicInteraction()\ \] 
+\[{\mathbf w}:est\ le\ widget\ à\ choisir\ pour\ concrétiser\ le\ container\ de\
+type\ Table\] 
+\[{{\mathbf w}}^{{\mathbf '}}:est\ le\ widget\ à\ choisir\ pour\ concrétiser\
+les\ fils\ de\ container\] 
+\[container:{est\ l}^ interacteur à\ considérer\ pendant\ la\ génération\ de\
+TargetAUIStructure\] 
+La règle 3 permet d'associer un objet physique à un container de type
+\textit{Table}. Cette règle permet d'activer un menu par un objet ou un tag par
+exemple conformément aux guidelines G5, G15 et G16. Elle est optionnelle et
+dépend du concepteur car tous les menus peuvent ne pas être activés par un objet
+physique.
+
+\textbf{Règle 3~:} $\forall \ container\ \in AUIStructure,\ \
+container.type=Table$
+
+\begin{flushleft}
+Associer le Table à un objet physique pour l'afficher sur la table pendant la
+concrétisation de \textit{container}.
+\end{flushleft}
+
+
+\subsubsection{Règles d'adaptation des containers de type Panel}
+
+Les containers de type \textit{Panel} représentent un groupe
+d'interacteurs qui est composé que des \textit{UIComponent} avec des types de
+données différentes ou composé à la fois de \textit{Container} et
+d'\textit{UIComponent}. Sur la table interactive, nous considérons qu'un
+\textit{Panel} est groupe qui contient des interacteurs destinés à un
+utilisateur et le concepteur peut décider de l'afficher par un objet physique
+par exemple. De manière concrète un container de type Panel peut être un
+formulaire, une description d'un objet ou un ensemble de commandes pour accéder
+à des fonctionnalités. Les Guidelines G1, G40  et G5 permettent d'écrire la
+règle 4 et la règle 5. La règle 5 est optionnelle et ne s'applique que lorsque
+le concepteur le souhaite.
+
+\textbf{Règle 4~:} $\forall container\in AUIStructure\wedge
+container.type=Panel$
+\[\wedge \forall \ i\ \in container.contains\] 
+\[\ \exists {\mathbf w}\in EquivalentWidget\left(container\right)\wedge \left\{
+\begin{array}{c}
+Widget\ Move, \\ 
+Widget\ Rotation\  \end{array}
+\right\}\in {\mathbf w}.getIntrinsicInteraction()\ \] 
+\[\wedge \exists {{\mathbf w}}^{{\mathbf '}}\in
+EquivalentWidget\left(i\right)\wedge \left\{ \begin{array}{c}
+Widget\ Move, \\ 
+Widget\ Rotation\  \end{array}
+\right\}\notin {{\mathbf w}}^{{\mathbf '}}.getIntrinsicInteraction()\] 
+\[{\mathbf w}:est\ le\ widget\ à\ choisir\ pour\ concrétiser\ le\ container\ de\
+type\ Panel\] 
+\[{{\mathbf w}}^{{\mathbf '}}:est\ le\ widget\ à\ choisir\ pour\ concrétiser\
+les\ fils\ de\ container\] 
+\[container:{est\ l}^ interacteur à\ considérer\ pendant\ la\ génération\ de\
+TargetAUIStructure\] 
+\textbf{Règle 5~:}$\ \forall \ container\in AUIStructure,\ \
+container.type=Panel$
+
+\begin{flushleft}
+Associer le panel à un objet physique pour l'afficher sur la table pendant la
+concrétisation de \textit{container}.
+
+\textbf{Exception~5:} Dans le cas où un ou plusieurs \textit{Panel}
+est fils d'un autre Panel, seuls le \textit{Panel} le plus proche de la racine
+est considéré par les règles 4 et 5.
+\end{flushleft}
+
+
+\subsubsection{Règle d'adaptation des containers de type Simple}
+
+Les containers de type \textit{Simple} ne contiennent que des
+containers, ils doivent être transformés pour que chaque container puisse être
+utilisé par tous les utilisateurs suivant la guideline G1. 
+
+Cependant dans le cas où tous les containers fils est de type Simple,
+ils sont supprimés et leurs fils sont considérés comme fils du container
+courant, et récursivement. Cette exception permet de considérer que les groupes
+d'interacteurs pouvant être manipulés par les utilisateurs de l'UI sur la table
+interactive.
+
+\textbf{Règle 6~: }$\forall \ container\ \in AUIStructure\wedge
+container.type=Simple$
+\[\forall \ i\in container.contains\ \wedge i.type\ne Simple\wedge \exists
+{{\mathbf w}}^\in EquivalentWidget\left(i\right),\ \ \left\{ \begin{array}{c}
+Widget\ Move, \\ 
+Widget\ Rotation\  \end{array}
+\right\}\in {{\mathbf w}}^.getIntrinsic??nteraction()\wedge \exists {\mathbf
+w}\in EquivalentWidget\left(container\right)\wedge \left\{ \begin{array}{c}
+Widget\ Move, \\ 
+Widget\ Rotation\  \end{array}
+\right\}\notin {\mathbf w}.getIntrinsicInteraction()\] 
+\[{\mathbf w}:est\ le\ widget\ à\ choisir\ pour\ concrétiser\ le\ container\ de\
+type\ Simple\] 
+\[{{\mathbf w}}^{{\mathbf '}}:est\ le\ widget\ à\ choisir\ pour\ concrétiser\
+les\ fils\ de\ container\] 
+\[container:{est\ l}^interacteurà\ considérer\ pendant\ la\ génération\ de\
+TargetAUIStructure\] 
+\begin{flushleft}
+\textbf{Exception 6~: }$\forall \ container\ \in AUIStructure,\ \
+container.type=Simple$
+
+Si $\forall \ i\in container.contains\ \wedge i.type=Simple\ $Alors
+remplacer les containers i par leur fils, si l'un des fils n'est pas un
+\textit{Container} alors \textit{container.type=Panel} et appliquer la règle 4 
+éventuellement la règle 5 en fonction des préférences du concepteur.
+
+La figure ci-dessous illustre le cas traité par l'exception à la règle
+6
+
+
+\end{flushleft}
+
+
+\subsubsection{Règle d'adaptation des containers de type Window}
+
+Les containers de type \textit{Window} sont les racines du modèle
+\textit{AUIStructure}. La fenêtre principale d'une UI est adaptée à la table
+interactive pour que les différents éléments qui la compose puis être utilisés
+en respectant G1. Tous fils immédiats d'une fenêtre principale doivent être
+conformes à G1. 
+
+Les autres fenêtres d'une UI (boîte de dialogue, formulaire, etc.) qui
+sont représentés par les containers de types \textit{Window} sont transformés en
+un groupe non dissociable mais conforme à G1.
+
+La règle 7 s'applique pour les fenêtres principales des applications à
+migrer, elle permet rendre accessible tous les fils conforme à G1. Cette règle
+modifie le modèle de structure de l'UI à migrer, le modèle de structure d'UI
+pour la table surface doit avoir qu'un seul container de type \textit{Window}
+après l'application de cette règle. 
+
+\textbf{Règle 7~}:      
+\[\forall \ container\ \in AUIStructure,\ container.type=Window\wedge
+container={\mathbf MainWindow}\ \] 
+\[\forall \ i\in container.contains\wedge \] 
+\[{\mathbf Si}\left\{ \begin{array}{c}
+\left(\genfrac{}{}{0pt}{}{ \begin{array}{c}
+i.type=Table\  \\ 
+\vee  \\ 
+i.type=Panel \\ 
+\vee  \end{array}
+}{i.type=Simple}\right)\ {\mathbf Alor}{\mathbf s}\ appliquer\ les\ règles\
+associées\ à\ chaque\ container \\ 
+i\ est\ UIComponent\ {\mathbf Alors}\left(\genfrac{}{}{0pt}{}{ \begin{array}{c}
+\exists {\mathbf w}\in \{Widget\},\ \  \end{array}
+}{\left\{ \begin{array}{c}
+Widget\ Move, \\ 
+Widget\ Rotation\  \end{array}
+\right\}\in {\mathbf w}.getIntrinsicInteraction()}\right) \end{array}
+\right.\] 
+\begin{flushleft}
+
+
+\textbf{Exception~7: }$\forall \ container\ \in AUIStructure,\ \
+container.type=Window\wedge container\ne {\mathbf MainWindow}$ 
+\[\exists {\mathbf w}\in EquivalentWidget\left(container\right)\wedge \left\{
+\begin{array}{c}
+Widget\ Move, \\ 
+Wi??get\ Rotation\  \end{array}
+\right\}\in {\mathbf w}.getIntrinsicInteraction()\] 
+\[{\mathbf w}{\mathbf \ }est\ le\ widget\ à\ choisir\ pour\ concrétiser\ le\
+container\ de\ type\ Window.\] 
+\end{flushleft}
+\textit{container} est placé comme fils de la fenêtre principale dans
+\textit{TargetAUIStructure et }$container.type=Panel.$
+
+La figure ci-dessous illustre un exemple de cas traité par l'exception
+à la règle 7.
+
+
+
+
+\subsubsection{Adaptation des interacteurs de type UIComponent }
+
+Tous les interacteurs de type UIComponent non concerné par les règles
+ci-dessus sont réutilisés dans \textit{TargetAUIStructure} et concrétisés en
+choisissant le \textit{Widget} proposé par la fonction de classement des widgets
+équivalents$\ {\mathbf BestEquivalentWid}{\mathbf get}$\textbf{.}
+
+
+\subsubsection{Adaptation d'AUIStructure en TargetAUIStructure}
+
+Les règles ci-dessus modifient le modèle de structure de l'UI de
+départ en supprimant des interacteurs (cf. Règle 6) ou en changeant la position
+des interacteurs dans l'arbre de structure (cf. Règle 7). L'algorithme récursif
+${\mathbf AdapteInteractor}:Interactor\ \to Interactor$ permet l'adaptation de
+chaque interacteur appartenant à \textit{AUIStructure} pour générer le modèle
+\textit{TargetAUIStructure}. Cet algorithme utilise les Règles 1, 2, 4, 6 et 7
+pour adapter les containers. 
+
+
+
+
+
+\begin{flushleft}
+\textbf{\underbar{Algorithme} }${\mathbf \ }{\mathbf
+AdapteInteractor}$\textbf{\underbar{ }}
+
+\textbf{\underbar{Entrée}}~:
+\end{flushleft}
+
+\begin{enumerate}
+\item   $interactor\ \in AUIStructure$
+\end{enumerate}
+
+\begin{flushleft}
+\textbf{\underbar{Sortie}}~:
+\end{flushleft}
+
+\begin{enumerate}
+\item  $targetInteractor\ \in TargetAUIStructure$
+\end{enumerate}
+
+\begin{flushleft}
+\textbf{\underbar{Début}}
+
+\textbf{\underbar{Si}} $interactor\in \left\{Container\right\}$
+\textbf{\underbar{Alors}}
+
+ \textbf{\underbar{Si}} $\left(Exception\ 6\right)$ \textbf{\underbar{Alors}}
+
+${\mathbf Si}$ ${\rm \ }\forall {\rm \ }{cont}_{{\rm child}}\in {\rm
+container.contains}\wedge {\rm \ }\forall {\rm \ }i\in {\rm con}{{\rm t}}_{{\rm
+child}}$ \textbf{\underbar{Alors}}
+\[\ interactor.contains\leftarrow \left\{i\right\}\] 
+
+\textbf{\underbar{Si}} $\exists {\rm \ }i^\in {\rm con}{{\rm t}}_{{\rm
+child}}.contains\wedge i^\in \left\{UIComponent\right\}$
+\textbf{\underbar{Alors}}
+\[interactor.type=Panel\] 
+\[targetInteractor=interactor\] 
+
+\textbf{\underbar{Sinon Si}} $\left(Exception\ 7{\rm \ }\right)$
+\textbf{\underbar{Alors}}
+
+\textbf{\underbar{Si}}$\ \exists {\rm \ }i.type=Window\wedge i\ne {\mathbf
+MainWindow}$\textbf{ \underbar{Alors}}
+\[interactor.contains\leftarrow \left\{i\right\}\ \] 
+\[\ \ targetInteractor=interactor\] 
+
+\textbf{\underbar{Sinon }}
+\[{\rm targetInteractor=}interactor\] 
+\[\forall {\rm i}\in {\rm container.contains}\] 
+\[{\rm targetInteractor}.contains={\mathbf \ }{\mathbf AdapteInteractor}{\mathbf
+(}{\mathbf i}{\mathbf )\ }\] 
+\textbf{\underbar{Sinon Si} }${\mathbf interactor}\in \left\{{\mathbf
+UIComponent}\right\}$\textbf{ \underbar{Alors}}
+\[{\rm targetInteractor=}{\mathbf interactor}\] 
+\textbf{\underbar{Return} }$targetInteractor$
+
+\textbf{\underbar{Fin}}
+
+Le modèle \textit{TargetAUIStructure }obtenu à l'issue de cette phase
+d'adaptation respect ont les propriétés suivantes~:
+\end{flushleft}
+
+\begin{enumerate}
+\item  Il n'existe qu'un seul container de type \textit{Window} appartenant à
+\textit{TargetAUIStructure}
+
+\item  Tous les containers de type \textit{Simple}  sont des fils du container
+racine de type \textit{Window} ou fils d'un container de type \textit{Panel}.
+
+\item  Aucun container de type \textit{Simple} n'est fils d'un container de type
+\textit{Simple}
+\end{enumerate}
+
+
+\subsection{Génération de l'UI proposée}
+
+L'UI proposée est décrite par sa structure \textit{TargetUIStructure}
+et son comportement \textit{TargetUIBehavior} qui sont générer à partir du
+modèle de structure adapté \textit{TargetAUIStructure }et de \textit{UIBehavior
+}(cf. Chapitre 4)\textit{. }La concrétisation du modèle\textit{
+TargetAUIStructure} en structure exécutable \textit{TargetUIStructure} se fait
+en utilisant les règles d'adaptation ci-dessus. Les règles (Règle 3 \& Règle 5)
+permettant l'utilisation des objets tangibles comme moyen d'interactions sont
+appliquées pendant cette phase. En laissant le choix aux concepteurs d'appliquer
+ou non les règles 3 et 5, le processus de génération de
+\textit{TargetUIStructure} parcours l'arbre \textit{TargetAUIStructure } et pour
+chaque interacteurs retrouve les widgets équivalents de la table interactive. 
+
+La structure exécutable générer est constituée des widgets de la table
+interactive et elle est affichée à l'écran mais non utilisable car les
+composants graphiques ne sont pas placés suivant un layout précis, les
+ressources de l'UI de ne sont pas définies, et elle n'est pas reliée aux
+contrôleurs.
+
+Les Handler du composant \textit{TargetUIBehavior }sont générer à
+partir des primitives d'interactions effectives des interacteurs du modèle de
+structure. 
+
+Le composant \textit{TargetUIBehaviorComponent }qui décrit les
+méthodes permettant la mise jour de la vue est adapté aux widgets équivalents
+choisis pendant la génération en modifiant automatiquement les méthodes de type
+«\textit{inputContainer}».
+
+
+\subsubsection{Exemple d'applications de règles d'adaptation}
+
+La figure ci-dessous présente une illustration de l'application des
+règles définies à la section 6.4.2 pour la migration d'une UI Desktop vers une
+UI Table surface. Cette figure montre les types de containers de l'UI de départ
+et les règles qui permettent leur adaptation sur la table interactive. En
+appliquant les règles 2 et 3 sur un container de type Table par exemple, on
+obtient un container de type Table et activable par un Tag (ou un objet
+physique). 
+
+\begin{flushleft}
+
+\end{flushleft}
+
+
+\section{Projection de la structure de l'UI adapté}
+
+
+\subsection{Sélection des widgets}
+
+La sélection est un processus qui permet de retrouver l'ensemble des
+widgets équivalents à un interacteur dans la bibliothèque graphique de la
+plateforme d'arrivée. Ce processus se base sur des opérateurs de comparaison qui
+permettent d'établir les équivalences entre les interacteurs et les widgets.
+Cette section présente les différents opérateurs de comparaison et l'algorithme
+de sélection des widgets équivalents.
+
+
+\subsubsection{Les opérateurs de comparaison}
+
+La comparaison entre les interacteurs et les widgets se basent sur les
+caractéristiques qui leurs sont communes telles que les primitives
+d'interactions (effectives et intrinsèques), le type et la cardinalité de
+données. 
+
+La comparaison des cardinalité est effectuée pour vérifier si les
+widgets équivalents supportent le même nombre de données que l'interacteur à
+migrer. Elle est possible grâce à la fonction ${\mathbf
+equalCard}:Interactor\times Widget\to Boolean.\ \forall i\in
+\left\{Interactor\right\}\wedge \forall w\in \left\{Widget\right\},$
+\[{\mathbf equalCard}\left(i,w\right)=\left\{ \begin{array}{c}
+{\mathbf True},\ {\mathbf \ }i.content.Cardinality=w.Cardinality \\ 
+{\mathbf False},\ \ else\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \  \end{array}
+\right.\ \] 
+La prise en compte de la caractéristique types de données pour comparer les
+interacteurs et les widgets à pout but de vérifier si l'adaptation des widgets
+équivalents nécessite l'ajout d'un adaptateur de types de données. En effet si
+la cardinalité et les primitives d'interaction d'un \textit{Widget}
+correspondent à ceux d'un interacteur alors ce Widget sera proposé au concepteur
+comme équivalent même si son utilisation nécessite un travail supplémentaire
+(écriture du code pour adaptateur de type).~
+
+La fonction ${\mathbf equalDataType}:Interactor\times Widget\to
+Boolean$ permet vérifier l'égalité des types de données des interacteurs et des
+widgets. $\forall \ i\ \in \left\{Interactor\right\},\forall w\in
+\left\{Widget\right\},\ $
+\[{\mathbf equalDataType}{\mathbf (}{\mathbf i},{\mathbf w}{\mathbf )=}\left\{
+\begin{array}{c}
+{\mathbf True}{\mathbf ,\ \ \ }\left(\genfrac{}{}{0pt}{}{\exists att\in
+w.attibuts/i.Content.dataType=att.dataType}{ \begin{array}{c}
+ \begin{array}{c}
+\vee  \\ 
+\ i.Content.dataType=Null \\ 
+\wedge  \\ 
+\nexists att^\in w.{attibuts}/{att^.type=Content}\  \end{array}
+ \end{array}
+}\right) \\ 
+ \\ 
+{\mathbf False}{\mathbf ,\ \ \ }else\  \end{array}
+\right.\] 
+La prise en compte des primitives d'interaction par les opérateurs implique la
+comparaison des sous-ensembles des primitives d'interactions qui permettent de
+caractériser respectivement les interactions intrinsèques des widgets et les
+interactions effectives des interacteurs. Nous définissons trois opérateurs de
+comparaisons de ces sous-ensembles de primitives d'interaction: 
+
+\begin{enumerate}
+\item  l'égalité des deux sous ensemble: $\ {\mathbf =}:Interactor\times
+Widget\to Boolean,\ $si toutes les primitives d'interaction effectives de
+l'interacteur se retrouvent dans le sous-ensemble des primitives effectives du
+Widget et si les deux sous ensembles de primitives d'interactions ont la même
+cardinalité. Ceci est possible si une instance de \textit{Widget} utilise toutes
+ses primitives d'interaction intrinsèques.
+
+\item  l'inclusion des primitives d'interaction effective d'un interacteur dans
+le sous-ensemble des primitives d'interaction d'un \textit{Widget: }$\subseteq
+:Interactor\times Widget\to Boolean,\ $si toutes les primitives d'interaction du
+sous ensemble de gauche se retrouvent dans le sous-ensemble de droite. Ceci est
+possible si une instance de \textit{Widget} n'utilise pas toutes ses primitives
+d'interaction intrinsèques.
+
+\item  l'inclusion des primitives d'interaction intrinsèque d'un \textit{Widget}
+dans le sous-ensemble des primitives d'interaction effective d'un interacteur$:\
+\supseteq :Interactor\times Widget\to Boolean$. Ceci est possible si la
+bibliothèque graphique ne contient pas de widgets avec le sous ensemble de
+primitives d'interaction intrinsèques équivalent à l'interacteur. Dans ces cas
+on considère les widgets qui n'implémentent pas les primitives d'interactions
+concernant les propriétés graphiques tout en conservant les autres primitives
+d'interactions. Les primitives d'interaction \textbf{Widget Move},
+\textbf{Widget Rotation} et \textbf{Widget Resize} sont les seules qui peuvent
+être omis par l'opérateur de comparaison$\supseteq $.
+\end{enumerate}
+
+Les opérateurs de comparaison combinent les trois caractéristiques en
+considérant d'abord la cardinalité des données, car il n'y a pas d'équivalence
+entre un interacteur et un Widget s'ils n'ont pas la même cardinalité. Ensuite,
+les opérateurs considèrent les types des données des interacteurs et enfin les
+sous-ensembles de primitives d'interaction. La combinaison des ces opérateurs
+des caractéristiques nous permet de relever  quatre cas d'équivalences
+signifiant pour le processus de migration~: le cas d'une équivalence stricte
+(6.2.1.1) suivant les trois caractéristiques ci-dessus, le cas d'une équivalence
+large (6.2.1.2), le cas d'une équivalence simple (6.2.1.3) et le cas d'une
+équivalence faible (6.2.1.4).
+
+
+\subsubsection{Equivalence stricte }
+
+\begin{flushleft}
+Il ya une équivalence stricte entre un interacteur et un Widget s'ils ont des
+cardinalités égales, les même types de données et des primitives d'interaction
+égales. La fonction$\ {\mathbf strongEquivalent}{\rm \ }:Interactor\times
+Widget\to Boolean$\textit{ }permet de vérifier cette équivalence, $\forall \ i\
+\in \left\{Interactor\right\},\forall w\in \left\{Widget\right\},\ $
+\[{\mathbf strongEquivalent}{\mathbf \ (}{\mathbf i},{\mathbf w}{\mathbf )}{\rm
+=}\left\{ \begin{array}{c}
+{\mathbf True}{\rm ,\ }\left(\genfrac{}{}{0pt}{}{{\mathbf
+equalCard}\left({\mathbf i},{\mathbf w}\right)}{ \begin{array}{c}
+\wedge  \\ 
+{\mathbf equalDataType}\left({\mathbf i},{\mathbf w}\right) \\ 
+\wedge  \\ 
+{\mathbf i}{\mathbf =}{\mathbf w} \end{array}
+}\right) \\ 
+{\rm \ \ } \\ 
+{\mathbf False}{\mathbf ,\ }else \end{array}
+\right.\ \] 
+\end{flushleft}
+
+
+\subsubsection{Equivalence large}
+
+\begin{flushleft}
+Il y a une équivalence large entre un interacteur et un Widget s'ils ont des
+cardinalités égales,  les mêmes types de données et si les primitives
+d'interaction de l'interacteur sont incluses dans celles du Widget. La fonction
+${\mathbf largeEquivalent}{\rm \ }:Interactor\ X\ Widget\to Boolean$ permet de
+vérifier cette équivalence.$\forall \ i\ \in \left\{Interactor\right\},\forall
+w\in \left\{Widget\right\}{\mathbf ,\ }$
+\[{\mathbf largeEquivalent}{\mathbf (}{\mathbf i},{\mathbf w}{\mathbf )}{\rm
+=}\left\{ \begin{array}{c}
+{\mathbf True}{\rm ,\ }\left(\genfrac{}{}{0pt}{}{{\mathbf
+equalCard}\left({\mathbf i},{\mathbf w}\right)}{ \begin{array}{c}
+\wedge  \\ 
+{\mathbf equalDataType}\left({\mathbf i},{\mathbf w}\right) \\ 
+\wedge  \\ 
+{\mathbf i}\subseteq {\mathbf w} \end{array}
+}\right) \\ 
+{\rm \ \ } \\ 
+{\mathbf False}{\mathbf ,\ }else \end{array}
+\right.\] 
+\end{flushleft}
+
+
+\subsubsection{Equivalence simple}
+
+\begin{flushleft}
+Il y a une équivalence simple entre un interacteur et un Widget s'ils ont des
+cardinalités égales,  les types de données différentes et si les primitives
+d'interaction de l'interacteur sont égales ou incluses dans celles du Widget. La
+fonction ${\mathbf simple}{\mathbf Equivalent}{\rm \ }:Interactor\ X\ Widget\to
+Boolean$  permet de vérifier cette équivalence. $\forall \ i\ \in
+\left\{Interactor\right\},\forall w\in \left\{Widget\right\}{\mathbf ,\
+}$
+\[{\mathbf simpleEquivalent}{\rm \ }{\mathbf (}{\mathbf i},{\mathbf w}{\mathbf
+)}{\rm =}\left\{ \begin{array}{c}
+{\mathbf True}{\rm ,\ }\left(\genfrac{}{}{0pt}{}{{\mathbf
+equalCard}\left({\mathbf i},{\mathbf w}\right)}{ \begin{array}{c}
+\wedge  \\ 
+{\mathbf !}{\mathbf equalDataType}\left({\mathbf i},{\mathbf w}\right) \\ 
+\wedge  \\ 
+\left({\mathbf i}\subseteq {\mathbf w}\vee {\mathbf i}{\mathbf =}{\mathbf
+w}\right) \end{array}
+}\right) \\ 
+{\rm \ \ } \\ 
+{\mathbf False}{\mathbf ,\ }else \end{array}
+\right.\] 
+
+\end{flushleft}
+
+
+\subsubsection{Equivalence faible}
+
+\begin{flushleft}
+La fonction ${\mathbf lowEquivalent}:Interactor\ X\ Widget\to Boolean$  permet
+de vérifier cette équivalence. $\forall \ i\ \in
+\left\{Interactor\right\},\forall w\in \left\{Widget\right\}{\mathbf ,\
+}$
+\[{\mathbf lowEquivalent}{\mathbf (}i,w{\mathbf )}{\rm =}\left\{
+\begin{array}{c}
+{\mathbf True}{\rm ,\ }\left(\genfrac{}{}{0pt}{}{{\mathbf equalCard}{\mathbf
+(}{\mathbf i},{\mathbf w}{\mathbf )}}{ \begin{array}{c}
+\wedge  \\ 
+{\mathbf !}{\mathbf equalDataType}{\mathbf (}{\mathbf i},{\mathbf w}{\mathbf )}
+\\ 
+\wedge  \\ 
+{\mathbf (}{\mathbf i}\supseteq {\mathbf w}{\mathbf )} \end{array}
+}\right){\rm \ \ } \\ 
+{\mathbf False} \end{array}
+\right.\] 
+\end{flushleft}
+
+
+\subsection{Le processus de sélection des widgets équivalents}
+
+L'algorithme utilisé par ce processus à pour objectif de retrouver les
+widgets équivalents à chaque interacteur appartenant à \textit{AUIStructure} en
+se basant sur les quatre opérateurs décrit ci-dessus. Les Widgets équivalents
+sont placés dans le tableau de Widget équivalent qui à quatre
+colonnes~représentant les différents opérateurs utilisés pour la recherche. La
+colonne \textbf{strong} qui contient la liste des widgets strictement
+équivalents,  la colonne \textbf{large} qui contient la liste des widgets
+d'équivalence large, la colonne \textbf{simple} qui contient la liste des
+widgets d'équivalence simple et la colonne \textbf{low }contient la liste des
+widgets d'équivalence faible. Les widgets de ce tableau seront classés en
+fonction des guidelines et du coût qu'ils impliquent pour le concepteur en
+charge de migration. Le processus de sélection parcourt pour chaque interacteur
+d'\textit{AUIStructure} l'ensemble des \textit{Widgets} d'une bibliothèque
+graphique.
+
+
+\subsubsection{Algorithme de sélection}
+
+$TargetGUILib=\left\{Widget\right\}~$: Bibliothèque graphique d'une
+table interactive
+
+$EquivalentWidget:\ $Le tableau de Widget équivalent
+\[\forall \ interactor_i\in ATree_i,\ \] 
+\[\exists \ widget_{equivalent}\in TargetGUILib,\ \] 
+Si ${\mathbf
+strongEquivalent}\left(interactor_i,widget_{equivalent}\right)$\textbf{ }Alors
+\[{\mathbf
+EquivalentWidget}\left[interactor_i\right]\left[strong\right]\leftarrow
+widget_{equivalent}\] 
+Sinon Si ${\mathbf
+largeEquivalent}\left(interactor_i,widget_{equivalent}\right)$\textbf{ }Alors
+\[{\mathbf
+EquivalentWidget}\left[interactor_i\right]\left[large\right]\leftarrow
+widget_{equivalent}\] 
+Sinon Si ${\mathbf
+simpleEquivalent}\left(interactor_i,widget_{equivalent}\right)$\textbf{ }Alors
+\[{\mathbf
+EquivalentWidget}\left[interactor_i\right]\left[simple\right]\leftarrow
+widget_{equivalent}\] 
+Sinon Si $\ \left( \begin{array}{c}
+{\mathbf EquivalentWidget}\left[interactor_i\right]\left[strong\right]=\emptyset
+ \\ 
+\wedge  \\ 
+{\mathbf EquivalentWidget}\left[interactor_i\right]\left[large\right]=\emptyset 
+\\ 
+\wedge  \\ 
+{\mathbf EquivalentWidget}\left[interactor_i\right]\left[simple\right]=\emptyset
+ \\ 
+\wedge  \\ 
+{\mathbf lowEquivalent}\left(interactor_i,widget_{equivalent}\right) \end{array}
+\right)$\textbf{ }Alors
+\[{\mathbf EquivalentWidget}\left[interactor_i\right]\left[low\right]\leftarrow
+widget_{equivalent}\] 
+
+
+
+\subsubsection{Exemple de sélection}
+
+Considérons quelques widgets appartenant à cette interface~utilisateur
+de l'application décrit dans le scénario du chapitre 1. La figure présente~: un
+container décrivant le menu principale (\textit{File, Edition, etc.)}, un
+container contenant les widgets pour décrire la liste d'image à utiliser, et une
+liste contenant les images utilisable pour la conception des bande dessinées.
+
+\begin{center}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{chap4/image6}
+\caption{Artéfact d'UI}
+\label{fig:image6}	
+\end{figure}
+\end{center}
+
+
+Pour chaque interacteur correspondant aux Widgets décrits ci-dessus,
+nous appliquons l'algorithme décrit à la section 6.2.2.1 pour rechercher les
+widgets équivalents dans la bibliothèque graphique XAML Surface (cf. annexe). Le
+tableau des widgets équivalents obtenu correspond au tableau. Ce tableau nous
+montre que~:
+
+\begin{enumerate}
+\item  le container \textit{gridImage} est strictement équivalent à
+\textit{Grid}, le \textit{Widget} \textit{ScatterViewItem} a en plus les
+primitives d'interaction \textbf{Widget Move} et \textbf{Widget Resize}.
+L'opérateur \textbf{\textit{simpleEquivalent}} ne trouve rien de plus que
+l'opérateur \textbf{\textit{largeEquivalent}} car l'interacteur de départ
+(\textit{gridImage}) ne contient pas de données~; par conséquent il n'a pas de
+type de donnée. L'opérateur \textbf{\textit{lowEquivalent}} ne trouve rien car
+les autres colonnes du tableau ne sont pas vides. 
+
+\item  L'interacteur \textit{listBox} n'a pas de Widget strictement équivalent
+dans la bibliothèque XAML Surface car il n'implémente pas la primitive
+d'interaction \textbf{Data Move In}  qui est intrinsèque à une \textit{ListBox}.
+L'opérateur \textbf{\textit{largeEquivalent}} retrouve \textit{SurfaceListBox}
+car il décrit des primitives d'interactions en plus. L'opérateur
+simpleEquivalent permet de retrouver des widgets qui supportent d'autres types
+de données. L'opérateur \textbf{\textit{lowEquivalent}} ne trouve rien car les
+autres colonnes du tableau ne sont pas vides.
+
+\item  Le container contenant les éléments du menu principal (\textit{mainMenu})
+est strictement équivalent à un \textit{Grid}, il a une équivalence large avec
+un \textit{ScatterViewItem} (qui implémente les primitives d'interaction
+\textbf{Widget Move} et \textbf{Widget Resize} en plus), et n'as pas de widgets
+équivalent simplement ou d'une équivalence faible. Le choix du
+\textit{ScatterViewItem} permettra d'avoir un menu déplaçable et utilisable
+partout sur la table interactive. L'opérateur \textbf{\textit{lowEquivalent}} ne
+trouve rien car les autres colonnes du tableau ne sont pas vides.
+
+\item  Les éléments du menu (\textit{menuItemFile, menuItemEdit}) ont des
+widgets équivalents suivants les opérateurs d'équivalence stricte, large ou
+simple. L'opérateur \textbf{\textit{lowEquivalent}} ne trouve rien car les
+autres colonnes du tableau ne sont pas vides.
+\end{enumerate}
+\begin{table} %{|p{1.1in}|p{0.9in}|p{0.9in}|p{0.8in}|p{0.3in}|}
+\begin{tabularx}{15cm}{|Y|Y|Y|Y|p{0.3in}|} 
+\hline  \textbf{Interactor Id/Name} 
+		& \textbf{Strong} 
+		& \textbf{Large} 
+		& \textbf{Simple}
+		& \textbf{Low} \\ 
+\hline Id=5, Name=gridImage 
+		& Grid 
+		& ScatterViewItem 
+		&  
+		&  \\ 
+\hline Id=6, Name=listBox 
+		&  
+		& SurfaceListBox 
+		& LibraryContainer, LibraryBar 
+		&  \\ 
+\hline Id=1, Name=mainMenu 
+		& Grid 
+		& ScatterViewItem 
+		&  
+		&  \\ 
+\hline Id=2, Name=menuItemFile 
+		& ElementMenu, Grid 
+		& ScatterViewItem 
+		& LibraryContainer, LibraryBar 
+		&  \\ 
+\hline Id=3, Name=menuItemOpen 
+		& ElementMenuItem, Button 
+		&  
+		& Image 
+		&  \\
+\hline Id=4, Name=menuItemClose 
+		& ElementMenuItem, Button 
+		&  
+		& Image 
+		& \\ 
+\hline 
+\end{tabularx}
+\caption {Equivalent Widget}
+\label{tab:chap5:1}
+\end{table}
+L'algorithme de sélection permet d'avoir l'ensemble des widgets
+équivalents pour un interacteur donné dans le tableau des widgets équivalents.
+L'utilisation des éléments de cet ensemble pour la migration est guidée par les
+guidelines de la plateforme d'arrivée qui permettra d'abord de classer les
+widgets équivalents, ensuite de proposer une version d'UI migrée et enfin pour
+faciliter la personnalisation de cette proposition.
+
+
+\subsection{Classement des widgets}
+
+Le processus de classement des widgets à pour but d'assister les
+développeurs dans le choix des widgets de la plateforme d'arrivée. Ce processus
+détermine les `\textit{meilleurs widgets'} de la classe d'équivalence d'un
+interacteur à l'aide d'une fonction qui prend en compte deux critères~: les
+principes du guidelines et la charge de travail pour le programmeur. Cette
+fonction permet de considérer le classement des widgets équivalents à un
+interacteur comme une instance d'un problème d'optimisation qui consiste à
+trouver les widgets qui sont conformes aux principes des guidelines (maximiser
+les critères conformes aux guidelines) et qui réduit la charge de travail pour
+le développeur (minimiser la charge de travail). 
+
+Cette section décrit la prise en compte des guidelines (6.3.1) et la
+charge de travail pour le programmeur (6.3.2) comme critère pour le classement
+des widgets utilisée par l'algorithme de classement (6.3.3).
+
+
+\subsubsection{Prise en compte des guidelines}
+
+La prise en compte des guidelines se fait en se basant sur les
+primitives d'interactions intrinsèques et les types de données qui caractérisent
+les widgets de manière indépendante des bibliothèques graphiques. Elle se fait
+d'abord en traduisant ses principes sous formes de règles appliquées sur les
+caractéristiques des composants graphiques dans le but de les classer. Ensuite
+en calculant la conformité de chaque widgets aux principes des guidelines
+formalisées en règles.
+
+
+\subsubsection{Traduction des principes du guidelines en règles de classement des widgets équivalents.}
+
+Les principes des guidelines à considérer par le processus de
+classement sont celles qui facilitent le choix des widgets équivalents. En
+considérant les 2 premiers principes décrits par le chapitre 4~:
+
+\begin{enumerate}
+\item  \textbf{G1}:\textit{``Provide a 360-Degree User Interface''}
+
+\item  \textbf{G2}\textit{:`` Make Experiences Natural and Better than Real''} 
+\end{enumerate}
+
+La traduction de ces deux principes pour le processus de classement
+des widgets équivalents conformément aux deux étapes présentés  à la section
+\eqref{GrindEQ__4_3_5_} se fait en identifiant les éléments de l'UI qui
+permettront de faciliter le choix des widgets ensuite nous préciseront comment
+ces éléments faciliterons le classement des widgets équivalents.
+
+\textbf{G1} s'applique sur les primitives d'interactions car en
+privilégiant les widgets qui ont des primitives d'interactions interaction
+\textbf{Widget Move }et \textbf{Widget Rotation,} tous les utilisateurs auront
+aux widgets qui l'ont indépendamment de leur orientation ou de leur position
+autour de la table interactive. 
+
+\textbf{Règle 1}: Les primitives d'interaction \textbf{Widget Move }et
+\textbf{Widget Rotation} sont privilégiés pour les containers.
+
+\textbf{G2}  s'applique sur les types des données car le choix des
+widgets ayant des types de données  images, son ou vidéo permet de révéler leur
+contenu à l'utilisateur. 
+
+\textbf{Règle 2}: Les types \textbf{Image}, \textbf{MediaElement et
+Object} sont mieux considérés pour widgets ayant des contenus sur une table
+interactive.
+
+Ces deux règles précisent les éléments du modèle des primitives
+d'interaction sur les quels peuvent s'appliquer les guidelines G1 et G2 des
+guidelines de la table interactive. La conformité par rapport à ces règles est
+déterminée par les fonctions décrites ci-dessous.
+
+
+\subsubsection{Conformité des widgets aux principes du guideline}
+
+Pour marquer l'importance de certaines caractéristiques (primitives
+d'interaction et type de données) par rapport à d'autres, un poids est attribué
+à celles qui sont conforme aux principes du guidelines. Le choix de la valeur du
+poids se fait par le programmeur avant la migration et ce choix permet de
+déterminer s'il préfère maximiser la conformité aux principes du guidelines par
+rapport à la charge de travail ou s'il préfère l'inverse. 
+
+L'ensemble des poids des primitives d'interactions d'un Widget est
+déterminé par la fonction$\ {\mathbf Interactions}{\mathbf Weight}{\mathbf
+:}{\mathbf Widget}\to {\mathbf \ }\left\{Interger\right\}{\mathbf \ }$ en
+utilisant le tableau ci-dessous.
+
+L'ensemble des poids des types des données d'un Widget est déterminé
+par la fonction ${\mathbf DataType}{\mathbf Weight}{\mathbf :}{\mathbf
+Widget}\to {\mathbf \ }\left\{Interger\right\}$ en utilisant le tableau
+ci-dessous.
+
+Ce tableau précise un poids non nul pour  les primitives
+d'interactions et les types de données conformes aux Règle 1 et 2 ci-dessus. 
+
+\begin{tabular}{|p{1.9in}|p{1.5in}|p{0.3in}|} \hline 
+\textbf{Primitive d'interaction} & \textbf{Type de données} & \textbf{Poids} \\
+\hline 
+Widget Move, Widget Rotation & Image, Médialement, Object & P$>$0 \\ \hline 
+Toutes les autres primitives d'interaction  & Tous les autres types de données &
+0 \\ \hline 
+\end{tabular}
+
+
+
+Nous formalisons le calcul de la conformité d'un Widget aux principes
+des guidelines par la fonction$\ {\mathbf guidelinesRate}{\mathbf :}Widget\to
+Integer$. Cette fonction est la somme des fonctions représentant les
+caractéristiques  suivantes prises en compte pour déterminer la conformité aux
+principes des guidelines~:
+
+\begin{enumerate}
+\item  la prise en compte des primitives d'interaction se fait par la
+fonction${\mathbf \ }{\mathbf interactionRate}{\mathbf :}Widget\to Integer$,
+elle permet de faire la somme des poids des primitives d'interaction
+intrinsèques qui sont conformes aux principes des guidelines. Les widgets
+équivalents à un interacteur sont identifiés par le processus dans la table
+\textbf{\textit{EquivalentWidget}}.
+\[\ \forall w\in {\mathbf EquivalentWidget},\ \ {\mathbf
+interactionRate}\left({\mathbf w}\right){\mathbf =}\sum{{{\mathbf P}}_{{\mathbf
+i}}}{\mathbf ,\ }{{\mathbf P}}_{{\mathbf i}}\in {\mathbf Interactions}{\mathbf
+Weight}{\mathbf (}w{\mathbf )}\] 
+
+\item  La prise en compte des types de données est effectuée par la fonction$\
+{\mathbf dataTypeRate}{\mathbf :}Widget\to Integer$, cette fonction fait la
+somme des poids des types de données des widgets équivalents à un interacteur.
+\[\forall w\in {\mathbf EquivalentWidget},\ \ {\mathbf
+dataTypeRate}\left({\mathbf w}\right){\mathbf =}\sum{{{\mathbf P}}_{{\mathbf
+i}}}{\mathbf ,\ }{{\mathbf P}}_{{\mathbf i}}\in {\mathbf DataType}{\mathbf
+Weight}{\mathbf (}w{\mathbf )}\] 
+\end{enumerate}
+La fonction ${\mathbf guidelinesRate}\left(w_{{\mathbf i}}\right){\mathbf
+=}{\mathbf interactionRate}\left(w_i\right){\mathbf +\ }{\mathbf
+dataTypeRate}{\mathbf (}w_i{\mathbf )}$\textbf{ }pour tout $w_{{\mathbf
+i}}$\textbf{ }appartenant à la classe des widgets équivalents à un interacteur.
+
+
+\subsection{Charge de travail du programmeur}
+
+Le choix d'un Widget conforme aux principes des guidelines peut
+entrainer soit l'ajout d'un connecteur pour l'adaptation de type de données,
+soit l'ajout des nouvelles données pour l'interface utilisateur , soit l'ajout
+de codes supplémentaires pour la prise en compte des nouvelles primitives
+d'interactions. L'ajout d'un connecteur [Mehta, Medvidovic, and Phadke 2000]
+consiste à générer un code qui permet de faire un changement de type entre le
+type de données de l'interacteur et le type de données supporté par les widgets
+équivalents, cette tâche est automatisable pour l'ensemble des types de données
+d'une bibliothèque graphique, elle n'entraine pas  une charge de travail pour le
+programmeur.
+
+Cependant, l'ajout des données supplémentaires engendré par le choix
+d'un Widget n'est pas automatisable car l'utilisateur doit trouver ou créer ces
+données et ensuite faire le `\textit{mapping'} avec les types de données départ.
+Par exemple le remplacement d'un menu classique dont les étiquettes sont des
+chaines de caractères avec un menu dont les étiquettes sont des icones (Images)
+nécessite la recherche ou la création de ces icônes. 
+
+Par ailleurs, l'ajout de code supplémentaire pour la prise en compte
+des nouvelles primitives d'interaction est une tâche manuelle car les codes à
+ajouter dépendent des primitives d'interactions intrinsèques à implémentées.
+
+
+\subsubsection{Calcule de la charge de travail}
+
+Les critères permettant le calcul de la charge de travail engendrée
+par le choix d'un Widget sont~: la différence entre le type de données de
+l'interacteur et celui des widgets équivalent, et les primitives d'interaction
+intrinsèques en plus des widgets équivalents. A chacun de ces critères, le
+programmeur associe un coût en se basant sur ses compétences pour réaliser une
+tâche. L'estimation de ce coût peut se faire en se basant sur la technique
+\textit{Pomodoro} [Gobbo and Vaccari 2008] qui est utilisée en \textit{Extreme
+Programming} [Beck 2000] pour permettre aux programmeurs d'optimiser leur temps
+de programmation en évaluant au mieux le temps de différentes tâches à
+effectuer.
+
+La fonction$\ {\mathbf workLoad}{\mathbf :}{\mathbf
+Interactor}{\mathbf \times }{\mathbf Widget}\to {\mathbf I}??{\mathbf
+teger}$\textbf{, }calcule la charge de travail engendrée par le choix d'un
+widget équivalent à un interacteur. C'est une somme des coûts de chaque critère
+vérifié par le widget à choisir. Les critères sont~:
+
+\begin{enumerate}
+\item  la nécessité des données supplémentaires à la suite d'un changement de
+type. Ce critère est vérifié si l'interacteur et le widget à choisir n'ont pas
+le même type de données et si le type de données du widget est \textbf{Image},
+\textbf{MediaElement }ou \textbf{Object.~}Le coût de ce critère est donné par la
+fonction${\mathbf \ }{\mathbf DataTypeCost}~{\mathbf :\ }{\mathbf
+Interactor}{\mathbf \times }{\mathbf Widget}\to {\mathbf Integer}$ à l'aide du
+tableau ci-dessous qui permet aussi au programmeur de préciser avant la
+migration le coût de chaque opétation.
+
+\item  L'utilisation des primitives d'interactions intrinsèques des widgets
+équivalent. Ce critère est calculé par la fonction${\mathbf \ }{\mathbf
+InteractionCost}{\mathbf :}{\mathbf Interactor}{\mathbf \times }{\mathbf
+Widget}\to {\mathbf Integer}$ en utilisant le tableau ci-dessous. 
+\end{enumerate}
+
+Dans ce tableau, le coût de chaque tâche manuelle est estimé par le
+programmeur avant de commencer une migration. De nouvelles opérations manuelles
+peuvent être définies, cette liste n'est pas exhaustive.
+
+\begin{tabular}{|p{2.4in}|p{1.6in}|} \hline 
+\textbf{Operations Manuelles} & \textbf{Coût estimé par le programmeur} \\
+\hline 
+Nouvelles ressources de type Image  & C${}_{1}$$>$0 \\ \hline 
+Nouvelles ressources de type Media Element & C${}_{2}$$>$0 \\ \hline 
+Nouvelles ressources de type Object & C${}_{3}$$>$0 \\ \hline 
+Code de redimensionnement des widgets d'un container & C${}_{2}$$>$0 \\ \hline 
+Code permettant de faire un Drop & C${}_{4}$$>$0 \\ \hline 
+Code permettant de faire un Drag & C${}_{5}$$>$0 \\ \hline 
+\end{tabular}
+
+La charge de travail est calculée par la fonction~:
+\[{\mathbf workLoad}\left({\mathbf interactor}{\mathbf ,\ }{\mathbf
+widget}\right){\mathbf =\ }\sum{{{\mathbf C}}_{{\mathbf i}}}{\mathbf ,\ \
+}{{\mathbf C}}_{{\mathbf i}}\in {\mathbf DataTypeCost}\left({\mathbf
+interactor},{\mathbf widget}\right)\cup {\mathbf InteractionCost}\left({\mathbf
+interactor},{\mathbf widget}\right)\] 
+
+
+\subsection{Algorithme de classement }
+
+L'algorithme de classement détermine le rang de chaque widget de la
+classe d'équivalence d'un interacteur en faisant la différence entre la
+conformité aux guidelines et le charge de travail. La fonction$\ F:{\mathbf
+Interactor}{\mathbf \times }{\mathbf Widget}\to {\mathbf Integer}{\mathbf \
+}$détermine la valeur de l'objectif d'un widget appartenant à une classe
+d'équivalence. Cette valeur permet de classer le widget dans la classe
+d'équivalence de l'interacteur.$\ \forall \ i\in \left\{Interactor\right\},\
+\forall w\in {\mathbf EquivalentWidget}\left({\mathbf i}\right),$\textbf{ }
+\[{\mathbf F}{\mathbf (}{\mathbf i},{\mathbf w}{\mathbf )=}{\mathbf
+gu}??{\mathbf delinesRate}\left({\mathbf w}\right){\mathbf -}{\mathbf
+workLoad}{\mathbf (}{\mathbf i},{\mathbf w}{\mathbf )}.\] 
+Le `\textit{meilleurs widget'} en considérant les principes du guidelines est
+celui qui a le max de la fonction$\ {\mathbf F};;$
+\[{\mathbf BestEquivalentWidget}\left({\mathbf i}{\mathbf ,\ }{\mathbf
+EquivalentWidget}\right){\mathbf =}max\left(\bigcup_{\forall \ w\in {\mathbf
+EquivalentWidget}\left(i\right)}{\left({\mathbf F}{\mathbf (}{\mathbf
+i},{\mathbf w}\right)}\right)\ .\] 
+
+
+\subsubsection{Exemple de classement}
+
+Considérons les interacteurs \textit{id=6} et \textit{id=1} de
+l'exemple décrit à la section 6.2.2.2 et les widgets de leurs classes
+d'équivalence. 
+
+Considérons que le programmeur souhaite utilisés les widgets les plus
+conformes aux principes des guidelines et pour cela fixe la valeur du poids des
+primitives d'interactions à P=2 et les coûts C${}_{i }$=1, 0$<$i$<$6
+
+ Le widget \textit{SurfaceListBox} de la classe d'équivalence de
+l'interacteur id=6 a pour type de données \textit{String.} 
+\[guidelines\left(offSurfaceListBox\right)=interactionRate\left(SurfaceListBox\right)+dataType\left(SurfaceListBox\right)=0+0=0\]
+
+\[\ workload\left(listBox,SurfaceListBox\right)=0+0+0+0+0\] 
+\[F\ (listBox,\
+SurfaceListBox)=guidelines\left(offSurfaceListBox\right)-workload\left(listBox,SurfaceLi??tBox\right)=0-0=0\]
+
+%\begin{flushleft}
+% Les widgets \textit{LibraryContainer }et\textit{ LibraryBar} ont pour type de
+%données \textit{Object}.
+%\[guidelines\left(offLibraryContainer\
+%\right)=interactionRate\left(LibraryContainer\
+%\right)+dataType\left(LibraryContain??r\ \right)=0+2=2\] 
+%\[\ workload\left(listBox,SurfaceListBox\right)=0+0+1+0+0\] 
+%\[F\ (listBox,\
+%SurfaceListBox)=guidelines\left(offSurfaceListBox\right)-workload\left(listBox,SurfaceListBox\right)=2-1=1\]
+%
+%Le widget ScatterView a en plus les primitives d'interactions Widget Rotation et
+%Widget Move.
+%\[guidelines\left(offScatterView{\rm \
+%}\right)=interactionRate\left(ScatterView{\rm \
+%}\right)+dataType\left(ScatterView{\rm \ }\right)=4+0=4\] 
+%\[\ workload\left(main??enu,ScatterView{\rm \ }\right)=0+0+0+0+0\] 
+%\[F\ (mainMenu,\ ScatterView{\rm \ })=guidelines\left(offScatterView{\rm \
+%}\right)-workload\left(mainMenu,ScatterView{\rm \ }\right)=4-0=4\] 
+%Le widget Grid n'a pas de primitives d'interactions en plus ou  des type de
+%données différents
+%\[guidelines\left(offGrid{\rm \ }\right)=interactionRate\left(Grid{\rm \
+%}\right)+dataType\left(Grid{\rm \ }\right)=0+0=0\] 
+%\[\ workload\left(mainMenu,Grid{\rm \ }\right)=0+0+0+0+0\] 
+%\[F\ (mainMenu,\ Grid{\rm \ })=guidelines\left(offGrid{\rm \
+%}\right)-workload\left(mainMenu,Grid{\rm \ }\right)=0-0=0\] 
+%\end{flushleft}
+%
+%\begin{tabular}{|p{0.7in}|p{0.8in}|p{1.7in}|p{0.3in}|} \hline 
+%\textbf{Interacteur\newline Id/ Name} & \textbf{Widget \newline Equivalent} &
+%${\mathbf F}\left({\mathbf i},{\mathbf w}\right){\mathbf =}$\textbf{\newline
+%}${\mathbf guidelinesRate}\left({\mathbf w}\right){\mathbf -}{\mathbf
+%workLoad}{\mathbf (}{\mathbf i},{\mathbf w}{\mathbf )}$ & \textbf{Rang}
+%\\ \hline 
+%Id=6\newline Name=listBox & SurfaceListBox & 0 & 3 \\ \hline 
+% & LibraryContainer & 1 & 1${}^{*}$ \\ \hline 
+% & LibraryBar & 1 & 1${}^{*}$ \\ \hline 
+%Id=1\newline Name=mainMenu & Grid & 0 & 0 \\ \hline 
+% & ScatterView & 4 & 1${}^{*}$ \\ \hline 
+%\end{tabular}
+%
+%\begin{flushleft}
+%\textit{${}^{*}$Les `meilleurs' widgets}
+%\end{flushleft}
+%
+Le classement des widgets équivalents facilite leur choix pour la
+prochaine étape du processus de migration. Cette étape consiste à proposer à aux
+concepteurs une  première version d'UI pour la table interactive. La mise en
+?uvre de cette première version se fait utilisant le classement proposé à cette
+étape et en considérant les principes des guidelines relatives à la structure de
+l'UI et aux interactions. 
+
+
+\section{Personnalisation de l'UI proposée}
+
+La personnalisation de l'UI migrée sur la table interactive à pour
+objectifs de produire une UI finale conforme aux attentes des concepteurs et qui
+respecte les critères ergonomiques liés aux tables interactives. Cette étape
+fait intervenir les concepteurs pour modifier et façonner la structure, les
+interactions et l'aspect visuel de l'UI générer automatiquement à la phase
+précédente. Le processus de personnalisation assiste les concepteurs pour chaque
+action de modification de l'UI proposée. Cette section présente les différentes
+actions des concepteurs et l'assistance apportée par le processus à l'aide des
+guidelines.
+
+
+\subsection{Opérations de modification de la structure}
+
+La personnalisation de la structure d'UI proposée permet aux
+concepteurs de remplacer, repositionner, redimensionner les composants
+graphiques\textit{.} Elle permet aussi d'effectuer les opérations manuelles
+décrite à la section 6.3.2.1 telles que l'ajout de nouvelles ressources d'UI,
+l'ajout de code par exemple. Cette étape permet enfin l'édition des aspects
+visuels de l'UI (couleurs, taille, police, etc.) grâce à un éditeur graphique.
+Les opérations manuelles de personnalisation de l'UI sont évaluées par rapport à
+leurs conformités aux des guidelines de la table interactive. 
+
+
+\subsubsection{Remplacer des composants}
+
+Cette opération permet de changer un ou plusieurs composants
+graphiques choisis pendant la phase précédente. Cette opération utilise les
+règles de classements des widgets équivalents pour évaluer la conformité aux
+guidelines (G1 et G2) et la charge de travail. 
+
+
+\subsubsection{Supprimer un composant graphique}
+
+Cette opération permet de réduire les composants graphiques dans le
+but de bloquer l'accès à des fonctionnalités non désirées par l'utilisateur sur
+la table interactive. La guideline G19 justifie cette opération car elle
+préconise la réduction des fonctionnalités~; le choix des fonctionnalités à
+conserver dépend des applications à migrer et des objectifs de concepteur. Les
+composants graphiques supprimés dans la structure \textit{TargetUIStructure}
+sont aussi supprimés dans le modèle de structure \textit{TargetAUIStructure.}
+
+L'assistance permet à l'utilisateur de vérifier si deux interacteurs
+activent la même méthode du contrôleur. En effet les primitives d'interactions
+effectives du modèle \textit{TargetAUIStructure} permettent  de retrouver
+l'ensemble des interacteurs qui permettent d'activer la même méthode du
+Contrôleur. La  ${\mathbf findInterac}??{\mathbf orByMethods}$\textbf{
+}ci-dessous est utilisée par les concepteurs avant la suppression d'un composant
+graphique pour retrouver les composants graphiques activants les mêmes
+fonctionnalités.
+%\[{\mathbf findInteractorByMethods}:MethodSignature\times TargetAUIStructure\to
+%\ \left\{Interactor\right\}\] 
+%\[\forall \ interactor\in TargetAUIStructure\wedge \exists \ activation\in
+%interactor.getEffectiveInteraction\left(off\right)\wedge
+%typeOf\left(activation\right)={\mathbf Activation}\] 
+%\textbf{Si}$\ \left( \begin{array}{c}
+%\exists interactor \in TargetAUIStructure\wedge interactor  \ne interactor  \\
+%
+%\wedge \exists \ activation  \in interactor .getEffectiveInteraction() \\ 
+%\wedge typeOf \left(activation  \right)={\mathbf Activation} \\ 
+%\wedge \exists methodSignture\in activation.inputMethods \\ 
+%\wedge methodSignture\in activation'.inputMethods \end{array}
+%\right)$ 
+%
+%\textbf{Alors}${\mathbf \ }interactor \in {\mathbf
+%findInteractorByMethods}\left(methodSignture,TargetAUIStructure\right)$
+
+
+\subsubsection{Dupliquer un groupe de composants graphiques}
+
+Cette opération à pour objectifs multiplier les composants graphiques
+pour permettre à tous les utilisateurs autour de la table d'y avoir accès
+facilement. Elle est préconisée par les guidelines G7, G8 et G18. La duplication
+concerne les containers de type \textit{Panel} ou \textit{Table} et leurs fils
+car ils peuvent être concrétisés comme des menus, ou des groupes permettant la
+consultation des contenus. Les composants graphiques dupliqués dans la structure
+\textit{TargetUIStructure} sont aussi dupliqués dans le modèle de structure
+\textit{TargetAUIStructure.}
+
+L'assistance pour la duplication permet aux concepteurs de
+sélectionner les interacteurs représentant des menus ou des contenus à
+dupliquer.
+
+\begin{enumerate}
+\item  Les menus sont décrits à l'aide des \textit{Container} de type Table et
+qui contiennent des \textit{UIComponent} ayant que les primitives d'interactions
+effectives de cet ensemble $\left\{Widget\ Selection,\ \ Navigation,\
+Activation,\ WidgetDisplay\right\}$ 
+
+\item  Les groupes de composant permettant la consultation des contenus sont
+décrits à l'aides des \textit{Container} de type Table ou Panel qui contiennent
+des \textit{UIComponent} avec des contenu ($UIComponent.Content!=Null$) et
+n'ayant les primitives d'interaction effective$\ Data\ Edition\ et\ Activation$.
+\end{enumerate}
+
+
+\subsubsection{Opérations de personnalisation des interactions}
+
+Cette catégorie regroupe les opérations qui permettent de définir
+l'utilisation des dispositifs d'interactions et les opérations manuelles
+imposées par le choix des widgets équivalents. 
+
+
+\subsubsection{Associer un objet physique à un groupe de widgets }
+
+Cette opération permet l'utilisation des objets tangibles comme moyens
+d'interaction pour afficher des composants graphiques ou pour activer. En effet
+les recommandations des guidelines G15 et G16 permet d'utiliser les objets
+physiques pour afficher un menu ou un formulaire. Elle concerne que les
+\textit{Container} de type \textit{Table} et de type \textit{Panel.}
+
+
+\subsubsection{Compléter les codes }
+
+\begin{flushleft}
+Cette opération permet aux concepteurs de compléter les codes non générer
+automatiquement à la phase de génération de \textit{TargetUIStructure}.
+\end{flushleft}
+
+
+\subsection{Opérations de personnalisation de l'aspect visuelle de l'UI}
+
+L'ensemble des opérations de personnalisation de l'aspect visuelle de
+l'UI pour permettre une utilisation naturelle de l'UI. 
+
+
+\subsubsection{Définir un layout}
+
+Cette opération permet de placer  les éléments d'un \textit{Container}
+de type \textit{Panel} car ils sont empilés ou disposés aléatoirement en
+fonction du l'implémentation du générateur de l'UI proposée. Le concepteur doit
+définir le layout de chaque container de type \textit{Panel} manuellement. Elle
+est conforme à la guideline G40 qui préconise de structurer les widgets d'un
+container qui est conforme à G1.
+
+
+\subsubsection{Ajouter les ressources de l'UI}
+
+Cette opération permet aux concepteurs d'ajouter des icônes, des
+images ou d'autres ressources pour permettre une utilisation naturelle de l'UI,
+elle s'inspire de G4 qui préconise l'utilisation des composants graphiques ayant
+des contenus qui facilitent l'interaction.
+
+
+\subsubsection{Définir le style de textes et les couleurs}
+
+Ces opérations permettent la personnalisation des textes descriptifs
+(étiquettes, info-bulles, etc.). Elles sont  d'être conformes aux guidelines
+G34, G35, G36, G45, G46, G47, G48, G50, G51.
+
+
+\subsection{Synchronisation du modèle  TargetAUIStructure et TargetUIStructure}
+
+Les opérations décrites ci-dessus sont effectuées par le concepteur
+sur l'UI permettent  d'abord de modifier \textit{TargetUIStructure, }cependant
+les opérations de personnalisation de la structure ont ensuite un impacte sur le
+modèle de structure\textit{ TargetAUIStructure.} La synchronisation du modèle et
+sa concrétisation permettent de garder une cohérence pour les opérations de
+modifications suivantes.
+
+
+\section{Synthèse }

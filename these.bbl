@@ -1,10 +1,20 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{{Mic}12b}
+\begin{thebibliography}{KOR{\etalchar{+}}11}
 
 \bibitem[{App}95]{AppleComputerInc1995}
 {Apple Computer Inc}.
 \newblock {\em {Macintosh Human Interface Guidelines}}.
 \newblock Addison-wesley Publishing, 1995.
+
+\bibitem[Bar88]{Bar88}
+Marie~F Barthet.
+\newblock {Logiciels interactifs et ergonomie}.
+\newblock pages 101--116, 1988.
+
+\bibitem[BC10]{Bartolomei10swingto}
+Thiago~Tonelli Bartolomei and Krzysztof Czarnecki.
+\newblock Swing to swt and back: patterns for api migration by wrapping, in.
+\newblock In {\em Proc. ICSM}, 2010.
 
 \bibitem[Bes10]{Besacier2010}
 Guillaume Besacier.
@@ -12,18 +22,20 @@ Guillaume Besacier.
   interactive}}.
 \newblock PhD thesis, UNIVERSIT\'{E} PARIS-SUD 11, 2010.
 
-\bibitem[BL00]{Beaudouin-Lafon2000}
-Michel Beaudouin-Lafon.
-\newblock {Instrumental interaction}.
-\newblock In {\em Proceedings of the SIGCHI conference on Human factors in
-  computing systems - CHI '00}, pages 446--453, New York, New York, USA, April
-  2000. ACM Press.
+\bibitem[BPS08]{10.1007/978-3-540-92698-6_18}
+Renata Bandelloni, Fabio Patern{\`o}, and Carmen Santoro.
+\newblock Reverse engineering cross-modal user interfaces for ubiquitous
+  environments.
+\newblock In Jan Gulliksen, Morton~Borup Harning, Philippe Palanque, Gerrit~C.
+  van~der Veer, and Janet Wesson, editors, {\em Engineering Interactive
+  Systems}, pages 285--302, Berlin, Heidelberg, 2008. Springer Berlin
+  Heidelberg.
 
-\bibitem[BRNB07]{Besacier2007}
-Guillaume Besacier, Ga\'{e}tan Rey, Marianne Najm, and St\'{e}phanie Buisine.
-\newblock {Paper Metaphor for Tabletop Interaction Design}.
-\newblock In {\em HCII'07 Human Computer Interaction International}, pages
-  758--767, 2007.
+\bibitem[BV02]{1173091}
+L.~Bouillon and J.~Vanderdonckt.
+\newblock Retargeting web pages to other computing platforms with vaquita.
+\newblock In {\em Ninth Working Conference on Reverse Engineering, 2002.
+  Proceedings.}, pages 339--348, Nov 2002.
 
 \bibitem[C93]{NC1993}
 Laurence " and Jo\"{e}lle Coutaz.
@@ -39,44 +51,23 @@ Ga\"{e}lle Calvary, Jo\"{e}lle Coutaz, Laurent Bouillon, Murielle Florins,
 \newblock {CAMELEON Project}.
 \newblock Technical report, 2002.
 
-\bibitem[Cre01]{December2001}
-Murray Crease.
-\newblock {\em {A Toolkit Of Resource-Sensitive, Multimodal Widgets Murray
-  Crease}}.
-\newblock PhD thesis, 2001.
+\bibitem[GPF10]{5556690}
+A.~M.~P. Grilo, A.~C.~R. Paiva, and J.~P. Faria.
+\newblock Reverse engineering of gui models for testing.
+\newblock In {\em 5th Iberian Conference on Information Systems and
+  Technologies}, pages 1--6, June 2010.
 
-\bibitem[DL01]{Dietz2001}
-Paul Dietz and Darren Leigh.
-\newblock {DiamondTouch}.
-\newblock In {\em Proceedings of the 14th annual ACM symposium on User
-  interface software and technology - UIST '01}, page 219, New York, New York,
-  USA, November 2001. ACM Press.
-
-\bibitem[GH95]{Gellersen1995}
-Hans-w Gellersen and {Hans-W. Gellersen}.
-\newblock {Modality Abstraction : Capturing Logical Interaction Design as
-  Abstraction from "User Interfaces for All"}.
-\newblock In {\em 1st ERCIM Workshop on "User Inter- faces for All". ERCIM},
-  1995.
-
-\bibitem[IU97]{Ishii1997}
-Hiroshi Ishii and Brygg Ullmer.
-\newblock {Tangible bits}.
-\newblock In {\em Proceedings of the SIGCHI conference on Human factors in
-  computing systems - CHI '97}, pages 234--241, New York, New York, USA, March
-  1997. ACM Press.
+\bibitem[JOF11]{JOFFROY2011}
+C\'{e}dric JOFFROY.
+\newblock {\em {COMPOSITION D'APPLICATIONS ET DE LEURS INTERFACES HOMME-MACHINE
+  DIRIG\'{E}E PAR LA COMPOSITION FONCTIONNELLE}}.
+\newblock PhD thesis, UNIVERSIT\'{E} DE NICE–SOPHIA ANTIPOLIS—UFR Sciences,
+  2011.
 
 \bibitem[KKM03]{Kassoff2003}
 M.~Kassoff, D.~Kato, and W.~Mohsin.
 \newblock {Creating GUIs for web services}.
 \newblock {\em IEEE Internet Computing}, 7(5):66--73, September 2003.
-
-\bibitem[KLL{\etalchar{+}}09]{Kubicki2009}
-S\'{e}bastien Kubicki, Sophie Lepreux, Yoann Lebrun, Philippe~Dos Santos,
-  Christophe Kolski, and Jean Caelen.
-\newblock {\em {Human-Computer Interaction. Ambient, Ubiquitous and Intelligent
-  Interaction}}, volume 5612 of {\em Lecture Notes in Computer Science}.
-\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2009.
 
 \bibitem[KOR{\etalchar{+}}11]{Kalawa2011}
 Andr\'{e} Kalawa, Audrey Occello, Michel Riveill, Nice Sophia, and Antipolis
@@ -98,45 +89,28 @@ Sébastien Kubicki.
   tangibles}}.
 \newblock PhD thesis, UNIVERSIT\'{E} DE VALENCIENNES, 2011.
 
+\bibitem[LL09]{Lim:2009:MMU:1695973}
+Kee~Yong Lim and John~B. Long.
+\newblock {\em The Muse Method for Usability Engineering}.
+\newblock Cambridge University Press, New York, NY, USA, 2009.
+
 \bibitem[Mar97]{Markopoulos1997}
 Panagiotis Markopoulos.
 \newblock {A compositional model for the formal specification of user interface
   software}.
 \newblock {\em Doctor}, (March), 1997.
 
-\bibitem[Mic11]{Microsoft2011}
-Microsoft.
-\newblock {Microsoft Surface 2 Design and Interaction Guide}.
-\newblock Technical Report July, 2011.
-
-\bibitem[Mic12a]{Microsoft2012}
-Microsoft.
-\newblock {MSDN XAML}, 2012.
-
-\bibitem[{Mic}12b]{MicrosoftWPF2012}
-{Microsoft WPF}.
-\newblock {WPF}, 2012.
-
-\bibitem[{Mic}12c]{MicrosoftXNA2012}
-{Microsoft XNA}.
-\newblock {XNA}, 2012.
-
-\bibitem[{Mit}]{MitsubishiElectricResearchLaboratoriesb}
-{Mitsubishi Electric Research Laboratoriesb}.
-\newblock {MERL }.
-
-\bibitem[NC94]{Nigay1994a}
-Laurence Nigay and Jo\"{e}lle Coutaz.
+\bibitem[Nig94]{Nigay1994}
+Laurence Nigay.
 \newblock {\em {Conception et mod\'{e}lisation logicielles des syst\`{e}mes
-  interactifs: application aux interfaces multimodales = Software design and
-  implementation of interactive systems: a case study of multimodal
-  interfaces}}.
-\newblock PhD thesis, 1994.
+  interactifs : application aux interfaces multimodales}}.
+\newblock PhD thesis, UNIVERSIT\'E JOSEPH FOURIER - GRENOBLE 1, 1994.
 
-\bibitem[Pfa85]{Pfaff1985}
-G.~E. Pfaff.
-\newblock {User Interface Management Systems}.
-\newblock June 1985.
+\bibitem[NM90]{Nielsen:1990:HEU:97243.97281}
+Jakob Nielsen and Rolf Molich.
+\newblock Heuristic evaluation of user interfaces.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, CHI '90, pages 249--256, New York, NY, USA, 1990. ACM.
 
 \bibitem[PSO11]{Paterno2011}
 Fabio Patern\`{o}, Carmen Santoro, and Rasmus Olsen.
@@ -149,18 +123,10 @@ Fabio Patern\`{o} and Giuseppe Zichittella.
   Two-Dimensional Semantic Redesign}.
 \newblock pages 79--94, 2010.
 
-\bibitem[Ste12]{Steinberg2012}
-Gideon Steinberg.
-\newblock {Natural User Interfaces}.
-\newblock 2012.
-
-\bibitem[SVFR04]{Shen2004}
-Chia Shen, Fr\'{e}d\'{e}ric~D. Vernier, Clifton Forlines, and Meredith Ringel.
-\newblock {DiamondSpin: an extensible toolkit for around-the-table
-  interaction}.
-\newblock In {\em Proceedings of the 2004 conference on Human factors in
-  computing systems - CHI '04}, pages 167--174, New York, New York, USA, April
-  2004. ACM Press.
+\bibitem[Sca86]{scapin:inria-00070083}
+Dominique~L. Scapin.
+\newblock {Guide ergonomique de conception des interfaces homme-machine}.
+\newblock Technical Report RT-0077, {INRIA}, October 1986.
 
 \bibitem[TC02]{Thevenin2002}
 David Thevenin and Jo\"{e}lle Coutaz.
@@ -171,6 +137,12 @@ David Thevenin and Jo\"{e}lle Coutaz.
 Andrew~S. Tanenbaum, Paul Klint, and A.~P.~Wim B{\"{o}}hm.
 \newblock Guidelines for software portability.
 \newblock {\em Softw., Pract. Exper.}, 8(6):681--698, 1978.
+
+\bibitem[TS99]{806947}
+K.~Tucker and R.~E.~K. Stirewalt.
+\newblock Model based user-interface reengineering.
+\newblock In {\em Sixth Working Conference on Reverse Engineering (Cat.
+  No.PR00303)}, pages 56--63, Oct 1999.
 
 \bibitem[UI97]{Ullmer1997}
 Brygg Ullmer and Hiroshi Ishii.
@@ -184,23 +156,12 @@ UIMS.
   The UIMS Tool Developers Workshop *}.
 \newblock In {\em SIGCHI Bulletin}, number January, 1992.
 
-\bibitem[Val89]{Valdes1989}
-Vald\`{e}s.
-\newblock {A Virtual Toolkit for Windows and the Mac}.
-\newblock {\em Byte}, 11(3):209--216., 1989.
-
 \bibitem[Van97]{Vanderdonckt1997}
 Jean Vanderdonckt.
 \newblock {Conception assist\'{e}e de la pr\'{e}sentation d'une interface
   homme-machine ergonomique pour une application de gestion hautement
   interactive}.
 \newblock 1997.
-
-\bibitem[VNHF11]{Vlist2011}
-Bram J J Van~Der Vlist, Gerrit Niezen, Jun Hu, and Loe M~G Feijs.
-\newblock {Interaction Primitives : Describing Interaction Capabilities of
-  Smart Objects in Ubiquitous Computing Environments}.
-\newblock Number September, pages 13--15, 2011.
 
 \bibitem[WGM08]{WGM08}
 Xin Wang, Yaser Ghanam, and Frank Maurer.
@@ -210,11 +171,12 @@ Xin Wang, Yaser Ghanam, and Frank Maurer.
   Interactive Systems}, pages 263--270, Berlin, Heidelberg, 2008. Springer
   Berlin Heidelberg.
 
-\bibitem[XSS{\etalchar{+}}04]{Xia2004}
-Steven Xia, David Sun, Chengzheng Sun, David Chen, Q~Xia, D~Sun, C~Sun, and
-  D~Chen.
-\newblock {Leveraging Single-user Applications for Multi-user Collaboration :
-  the CoWord Approach Categories and Subject Descriptors}.
-\newblock In {\em CSCW 2004}, pages 162--171, 2004.
+\bibitem[YFS14]{10.1007/978-3-319-07668-3_21}
+Enes Yigitbas, Holger Fischer, and Stefan Sauer.
+\newblock Model-based user interface development for adaptive self-service
+  systems.
+\newblock In Aaron Marcus, editor, {\em Design, User Experience, and Usability.
+  Theories, Methods, and Tools for Designing the User Experience}, pages
+  206--213, Cham, 2014. Springer International Publishing.
 
 \end{thebibliography}

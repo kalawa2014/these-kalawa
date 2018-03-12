@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.23)  12 MAR 2018 00:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.23)  12 MAR 2018 23:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -695,20 +695,7 @@ Package hyperref Info: Option `pdffitwindow' set `false' on input line 189.
 Package hyperref Info: Option `pdfnewwindow' set `true' on input line 189.
 Package hyperref Info: Option `colorlinks' set `false' on input line 189.
 
-(./these.aux (./Title.aux)
-
-LaTeX Warning: Label `sec:chap2:3' multiply defined.
-
-
-LaTeX Warning: Label `fig:chap2:1' multiply defined.
-
-
-LaTeX Warning: Label `sec:chap2:3:1' multiply defined.
-
-
-LaTeX Warning: Label `sec:chap2:3:2' multiply defined.
-
-)
+(./these.aux (./Title.aux))
 \openout1 = `these.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
@@ -720,7 +707,8 @@ LaTeX Font Info:    ... okay on input line 194.
 LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 194.
 LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 19
 4.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
 LaTeX Font Info:    ... okay on input line 194.
@@ -1011,16 +999,19 @@ Package epstopdf Info: Source file: <chap1/img-3.eps>
 (epstopdf)                    size: 140142 bytes
 (epstopdf)             Command: <repstopdf --outfile=chap1/img-3-eps-converted-
 to.pdf chap1/img-3.eps>
-(epstopdf)             \includegraphics on input line 33.
+(epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
-<chap1/img-3-eps-converted-to.pdf, id=213, 528.97626pt x 472.76625pt>
+<chap1/img-3-eps-converted-to.pdf, id=204, 528.97626pt x 472.76625pt>
 File: chap1/img-3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use chap1/img-3-eps-converted-to.pdf>
-Package pdftex.def Info: chap1/img-3-eps-converted-to.pdf used on input line 33
+Package pdftex.def Info: chap1/img-3-eps-converted-to.pdf used on input line 32
 .
 (pdftex.def)             Requested size: 264.48747pt x 236.38254pt.
+
+Underfull \vbox (badness 2564) has occurred while \output is active []
+
  [10 <./chap1/img-3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <chap1/img-1.eps>
 (epstopdf)                    date: 2016-03-19 02:29:46
@@ -1030,28 +1021,21 @@ Package epstopdf Info: Source file: <chap1/img-1.eps>
 (epstopdf)                    size: 114302 bytes
 (epstopdf)             Command: <repstopdf --outfile=chap1/img-1-eps-converted-
 to.pdf chap1/img-1.eps>
-(epstopdf)             \includegraphics on input line 50.
+(epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
- <chap1/img-1-eps-converted-to.pdf, id=224, 416.55624pt x 312.16624pt>
+
+<chap1/img-1-eps-converted-to.pdf, id=215, 416.55624pt x 312.16624pt>
 File: chap1/img-1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use chap1/img-1-eps-converted-to.pdf>
-Package pdftex.def Info: chap1/img-1-eps-converted-to.pdf used on input line 50
+Package pdftex.def Info: chap1/img-1-eps-converted-to.pdf used on input line 49
 .
 (pdftex.def)             Requested size: 413.0pt x 309.51709pt.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 62.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 58.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [11 <./chap1/img-1-eps-converted-to.pdf>] [12]
-
-LaTeX Warning: Reference `sec:chap2:2:2' on page 13 undefined on input line 147
-.
-
-
-LaTeX Warning: Reference `sec:chap2:2:1' on page 13 undefined on input line 148
-.
-
+) [11 <./chap1/img-1-eps-converted-to.pdf>] [12] [13]
 Package epstopdf Info: Source file: <chap1/img-2.eps>
 (epstopdf)                    date: 2016-03-19 02:29:46
 (epstopdf)                    size: 154991 bytes
@@ -1060,360 +1044,51 @@ Package epstopdf Info: Source file: <chap1/img-2.eps>
 (epstopdf)                    size: 33923 bytes
 (epstopdf)             Command: <repstopdf --outfile=chap1/img-2-eps-converted-
 to.pdf chap1/img-2.eps>
-(epstopdf)             \includegraphics on input line 156.
+(epstopdf)             \includegraphics on input line 188.
 Package epstopdf Info: Output file is already uptodate.
-<chap1/img-2-eps-converted-to.pdf, id=254, 435.6275pt x 188.705pt>
+
+<chap1/img-2-eps-converted-to.pdf, id=256, 435.6275pt x 188.705pt>
 File: chap1/img-2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use chap1/img-2-eps-converted-to.pdf>
-Package pdftex.def Info: chap1/img-2-eps-converted-to.pdf used on input line 15
-6.
+Package pdftex.def Info: chap1/img-2-eps-converted-to.pdf used on input line 18
+8.
 (pdftex.def)             Requested size: 432.0pt x 187.13237pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13] [14 <./chap1/img-2-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <chap2/img-1.eps>
-(epstopdf)                    date: 2016-03-19 02:29:50
-(epstopdf)                    size: 477710 bytes
-(epstopdf)             Output file: <chap2/img-1-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-28 23:21:29
-(epstopdf)                    size: 86154 bytes
-(epstopdf)             Command: <repstopdf --outfile=chap2/img-1-eps-converted-
-to.pdf chap2/img-1.eps>
-(epstopdf)             \includegraphics on input line 178.
-Package epstopdf Info: Output file is already uptodate.
-
-<chap2/img-1-eps-converted-to.pdf, id=287, 363.3575pt x 93.34875pt>
-File: chap2/img-1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use chap2/img-1-eps-converted-to.pdf>
-Package pdftex.def Info: chap2/img-1-eps-converted-to.pdf used on input line 17
-8.
-(pdftex.def)             Requested size: 360.0pt x 92.48817pt.
-Package epstopdf Info: Source file: <chap2/img-10.eps>
-(epstopdf)                    date: 2016-03-19 02:29:50
-(epstopdf)                    size: 385949 bytes
-(epstopdf)             Output file: <chap2/img-10-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-28 23:21:29
-(epstopdf)                    size: 29952 bytes
-(epstopdf)             Command: <repstopdf --outfile=chap2/img-10-eps-converted
--to.pdf chap2/img-10.eps>
-(epstopdf)             \includegraphics on input line 193.
-Package epstopdf Info: Output file is already uptodate.
-
-<chap2/img-10-eps-converted-to.pdf, id=293, 361.35pt x 488.82625pt>
-File: chap2/img-10-eps-converted-to.pdf Graphic file (type pdf)
-
-<use chap2/img-10-eps-converted-to.pdf>
-Package pdftex.def Info: chap2/img-10-eps-converted-to.pdf used on input line 1
-93.
-(pdftex.def)             Requested size: 144.53743pt x 195.52702pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[15 <./chap2/img-1-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation `MenuTangible' on page 16 undefined on input line 204.
-
-<chap2/img-12.png, id=339, 417.81094pt x 152.82094pt>
-File: chap2/img-12.png Graphic file (type png)
- <use chap2/img-12.png>
-Package pdftex.def Info: chap2/img-12.png used on input line 207.
-(pdftex.def)             Requested size: 417.80992pt x 152.82054pt.
-
-[16 <./chap2/img-10-eps-converted-to.pdf>] [17 <./chap2/img-12.png>]
-Package epstopdf Info: Source file: <chap2/img-16.eps>
-(epstopdf)                    date: 2016-03-19 02:29:50
-(epstopdf)                    size: 4797787 bytes
-(epstopdf)             Output file: <chap2/img-16-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-28 23:21:31
-(epstopdf)                    size: 298167 bytes
-(epstopdf)             Command: <repstopdf --outfile=chap2/img-16-eps-converted
--to.pdf chap2/img-16.eps>
-(epstopdf)             \includegraphics on input line 236.
-Package epstopdf Info: Output file is already uptodate.
-
-<chap2/img-16-eps-converted-to.pdf, id=362, 573.14125pt x 763.85374pt>
-File: chap2/img-16-eps-converted-to.pdf Graphic file (type pdf)
-
-<use chap2/img-16-eps-converted-to.pdf>
-Package pdftex.def Info: chap2/img-16-eps-converted-to.pdf used on input line 2
-36.
-(pdftex.def)             Requested size: 573.13985pt x 763.85187pt.
-Package epstopdf Info: Source file: <chap2/img-4.eps>
-(epstopdf)                    date: 2016-03-19 02:29:50
-(epstopdf)                    size: 141208 bytes
-(epstopdf)             Output file: <chap2/img-4-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-28 23:21:31
-(epstopdf)                    size: 23028 bytes
-(epstopdf)             Command: <repstopdf --outfile=chap2/img-4-eps-converted-
-to.pdf chap2/img-4.eps>
-(epstopdf)             \includegraphics on input line 244.
-Package epstopdf Info: Output file is already uptodate.
-
-<chap2/img-4-eps-converted-to.pdf, id=367, 202.7575pt x 126.4725pt>
-File: chap2/img-4-eps-converted-to.pdf Graphic file (type pdf)
-
-<use chap2/img-4-eps-converted-to.pdf>
-Package pdftex.def Info: chap2/img-4-eps-converted-to.pdf used on input line 24
-4.
-(pdftex.def)             Requested size: 200.0pt x 124.75658pt.
- [18 <./chap2/img-16-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 251--253
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-
- []
-
-
-Underfull \hbox (badness 1383) in paragraph at lines 264--265
-[]\T1/ptm/m/n/10.95 Dans cette sec-tion nous abor-dons la prob-lé-ma-tique liée
- aux change-ments des modal-ités
- []
-
-[19 <./chap2/img-4-eps-converted-to.pdf>] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 335--337
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
-
- []
-
-[22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
-<chap2/img-22.png, id=471, 465.23813pt x 528.47438pt>
-File: chap2/img-22.png Graphic file (type png)
- <use chap2/img-22.png>
-Package pdftex.def Info: chap2/img-22.png used on input line 414.
-(pdftex.def)             Requested size: 465.23698pt x 528.47308pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25]
-<chap2/img-13.png, id=484, 310.15875pt x 161.10187pt>
-File: chap2/img-13.png Graphic file (type png)
- <use chap2/img-13.png>
-Package pdftex.def Info: chap2/img-13.png used on input line 430.
-(pdftex.def)             Requested size: 310.15799pt x 161.10147pt.
-
-[26 <./chap2/img-22.png> <./chap2/img-13.png>]
-Package epstopdf Info: Source file: <chap1/img-12.eps>
-(epstopdf)                    date: 2016-03-19 02:29:46
-(epstopdf)                    size: 90004 bytes
-(epstopdf)             Output file: <chap1/img-12-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-28 23:21:31
-(epstopdf)                    size: 38304 bytes
-(epstopdf)             Command: <repstopdf --outfile=chap1/img-12-eps-converted
--to.pdf chap1/img-12.eps>
-(epstopdf)             \includegraphics on input line 461.
-Package epstopdf Info: Output file is already uptodate.
-
-<chap1/img-12-eps-converted-to.pdf, id=500, 147.55125pt x 152.57pt>
-File: chap1/img-12-eps-converted-to.pdf Graphic file (type pdf)
-
-<use chap1/img-12-eps-converted-to.pdf>
-Package pdftex.def Info: chap1/img-12-eps-converted-to.pdf used on input line 4
-61.
-(pdftex.def)             Requested size: 118.04114pt x 122.05615pt.
-Package epstopdf Info: Source file: <chap1/img-13.eps>
-(epstopdf)                    date: 2016-03-19 02:29:46
-(epstopdf)                    size: 810624 bytes
-(epstopdf)             Output file: <chap1/img-13-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-28 23:21:31
-(epstopdf)                    size: 23061 bytes
-(epstopdf)             Command: <repstopdf --outfile=chap1/img-13-eps-converted
--to.pdf chap1/img-13.eps>
-(epstopdf)             \includegraphics on input line 461.
-Package epstopdf Info: Output file is already uptodate.
-
-<chap1/img-13-eps-converted-to.pdf, id=501, 320.19624pt x 385.44pt>
-File: chap1/img-13-eps-converted-to.pdf Graphic file (type pdf)
-
-<use chap1/img-13-eps-converted-to.pdf>
-Package pdftex.def Info: chap1/img-13-eps-converted-to.pdf used on input line 4
-61.
-(pdftex.def)             Requested size: 320.19545pt x 385.43906pt.
- [27 <./chap1/img-12-eps-converted-to.pdf> <./chap1/img-13-eps-converted-to.pdf
->]
-Package epstopdf Info: Source file: <chap2/img-23-1.eps>
-(epstopdf)                    date: 2016-03-19 02:29:50
-(epstopdf)                    size: 68354 bytes
-(epstopdf)             Output file: <chap2/img-23-1-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-28 23:21:32
-(epstopdf)                    size: 91416 bytes
-(epstopdf)             Command: <repstopdf --outfile=chap2/img-23-1-eps-convert
-ed-to.pdf chap2/img-23-1.eps>
-(epstopdf)             \includegraphics on input line 482.
-Package epstopdf Info: Output file is already uptodate.
-
-<chap2/img-23-1-eps-converted-to.pdf, id=523, 568.1225pt x 334.24875pt>
-File: chap2/img-23-1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use chap2/img-23-1-eps-converted-to.pdf>
-Package pdftex.def Info: chap2/img-23-1-eps-converted-to.pdf used on input line
- 482.
-(pdftex.def)             Requested size: 568.1211pt x 334.24792pt.
-
-Overfull \hbox (7.38443pt too wide) in paragraph at lines 482--483
- [] 
- []
-
-
-LaTeX Warning: Float too large for page by 177.52948pt on input line 486.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Package epstopdf Info: Source file: <chap2/img-7.eps>
-(epstopdf)                    date: 2016-03-19 02:29:50
-(epstopdf)                    size: 108001 bytes
-(epstopdf)             Output file: <chap2/img-7-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-28 23:21:32
-(epstopdf)                    size: 44347 bytes
-(epstopdf)             Command: <repstopdf --outfile=chap2/img-7-eps-converted-
-to.pdf chap2/img-7.eps>
-(epstopdf)             \includegraphics on input line 501.
-Package epstopdf Info: Output file is already uptodate.
-<chap2/img-7-eps-converted-to.pdf, id=531, 343.2825pt x 160.6pt>
-File: chap2/img-7-eps-converted-to.pdf Graphic file (type pdf)
-
-<use chap2/img-7-eps-converted-to.pdf>
-Package pdftex.def Info: chap2/img-7-eps-converted-to.pdf used on input line 50
-1.
-(pdftex.def)             Requested size: 340.0pt x 159.0631pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28]
-Package epstopdf Info: Source file: <chap2/img-2.eps>
-(epstopdf)                    date: 2016-03-19 02:29:50
-(epstopdf)                    size: 335557 bytes
-(epstopdf)             Output file: <chap2/img-2-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-28 23:21:32
-(epstopdf)                    size: 75654 bytes
-(epstopdf)             Command: <repstopdf --outfile=chap2/img-2-eps-converted-
-to.pdf chap2/img-2.eps>
-(epstopdf)             \includegraphics on input line 528.
-Package epstopdf Info: Output file is already uptodate.
- <chap2/img-2-eps-converted-to.pdf, id=551, 435.6275pt x 275.0275pt>
-File: chap2/img-2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use chap2/img-2-eps-converted-to.pdf>
-Package pdftex.def Info: chap2/img-2-eps-converted-to.pdf used on input line 52
-8.
-(pdftex.def)             Requested size: 432.0pt x 272.73549pt.
- [29]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[30]
-Package epstopdf Info: Source file: <chap2/img-5.eps>
-(epstopdf)                    date: 2016-03-19 02:29:50
-(epstopdf)                    size: 87480 bytes
-(epstopdf)             Output file: <chap2/img-5-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-08-28 23:21:33
-(epstopdf)                    size: 37949 bytes
-(epstopdf)             Command: <repstopdf --outfile=chap2/img-5-eps-converted-
-to.pdf chap2/img-5.eps>
-(epstopdf)             \includegraphics on input line 557.
-Package epstopdf Info: Output file is already uptodate.
- <chap2/img-5-eps-converted-to.pdf, id=574, 356.33125pt x 221.82875pt>
-File: chap2/img-5-eps-converted-to.pdf Graphic file (type pdf)
-
-<use chap2/img-5-eps-converted-to.pdf>
-Package pdftex.def Info: chap2/img-5-eps-converted-to.pdf used on input line 55
-7.
-(pdftex.def)             Requested size: 353.0pt x 219.76343pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[31]) [32] [33 <./chap2/img-23-1-eps-converted-to.pdf>] [34 <./chap2/img-7-eps-
-converted-to.pdf> <./chap2/img-2-eps-converted-to.pdf>] [35 <./chap2/img-5-eps-
-converted-to.pdf>] [36
-
-]
+[14] [15 <./chap1/img-2-eps-converted-to.pdf>] [16] [17] [18] [19]) [20]
 Chapter 3.
-[37] [38
+[21
 
-] [39] [40]
+] [22
+
+] [23] [24]
 Chapter 4.
-[41
+[25
 
-] [42
+] [26
 
 ]
 Chapter 5.
-[43] [44
+[27] [28
 
 ]
 Chapter 6.
-[45] [46
+[29] [30
 
 ]
 Chapter 7.
-[47] [48
+[31] [32
 
-] [49] [50]
+] [33] [34]
 Chapter 8.
-(./these.bbl [51
+(./these.bbl [35
 
-] [52
+] [36
 
-] [53] [54])
+] [37])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the these.maf file.
@@ -1431,45 +1106,36 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the these.log file.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
-[55]
+[38]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
  (./these.aux (./Title.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
 Package rerunfilecheck Info: File `these.out' has not changed.
-(rerunfilecheck)             Checksum: 6F5B33E1DADA8329D8DD0D38F901A89F;2062.
+(rerunfilecheck)             Checksum: EB4562F60B6E997DA709A411F72C72B7;1872.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 262.
  ) 
 Here is how much of TeX's memory you used:
- 11516 strings out of 494506
- 165786 string characters out of 6172961
- 271868 words of memory out of 5000000
- 14243 multiletter control sequences out of 15000+600000
+ 11335 strings out of 494506
+ 162431 string characters out of 6172961
+ 268894 words of memory out of 5000000
+ 14145 multiletter control sequences out of 15000+600000
  108228 words of font info for 139 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 44i,20n,43p,1454b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on these.pdf (59 pages, 1212442 bytes).
+ 44i,10n,43p,980b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
+mr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on these.pdf (42 pages, 419543 bytes).
 PDF statistics:
- 786 PDF objects out of 1000 (max. 8388607)
- 625 compressed objects within 7 object streams
- 194 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 483 PDF objects out of 1000 (max. 8388607)
+ 404 compressed objects within 5 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 

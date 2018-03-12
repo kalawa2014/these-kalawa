@@ -6,58 +6,31 @@
 \contentsline {chapter}{\numberline {2}Migration des applications}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Motivations}{9}{section.2.1}
 \contentsline {section}{\numberline {2.2}Probl\`emes li\'es \`a la migration des UI vers une table interactive}{10}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Cas d?une application desktop}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Cas d'une application desktop}{11}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Probl\`emes li\'es \`a la migration du dialogue}{12}{subsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.1}Utilisation des objets tangibles comme moyen d?interactions}{12}{subsubsection.2.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Utilisation des objets tangibles comme moyen d'interactions}{12}{subsubsection.2.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2.2}\'Equivalences des interactions entre la source et de la cible pendant la migration}{13}{subsubsection.2.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.3}Transformation du dialogue de la source pour une plateforme multi-utilisateurs et co-localis\'ee}{13}{subsubsection.2.2.2.3}
-\contentsline {subsection}{\numberline {2.2.3}Probl\'ematiques li\'ees \`a la migration d'UI vers une table interactive}{13}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Sp\'ecificit\'es de la migration d'UI vers les tables interactives}{14}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Mod\`ele d'interactions d'une table interactive}{15}{subsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.1.1}Les dispositifs mat\'eriels d'interaction d'une table interactive}{15}{subsubsection.2.3.1.1}
-\contentsline {paragraph}{DiamondTouch}{15}{section*.11}
-\contentsline {paragraph}{metaDESK}{16}{section*.13}
-\contentsline {paragraph}{Microsoft PixelSense }{16}{section*.15}
-\contentsline {paragraph}{R\'esum\'e}{17}{section*.16}
-\contentsline {subsubsection}{\numberline {2.3.1.2}Biblioth\`eques graphiques des tables interactives}{18}{subsubsection.2.3.1.2}
-\contentsline {paragraph}{DiamondSpin}{18}{section*.17}
-\contentsline {paragraph}{Surface SDK 1.0 et 2.0}{18}{section*.19}
-\contentsline {paragraph}{R\'esum\'e}{19}{section*.21}
-\contentsline {subsubsection}{\numberline {2.3.1.3}Modalit\'es d'interactions}{19}{subsubsection.2.3.1.3}
-\contentsline {paragraph}{Changement de modalit\'e d'interaction}{20}{section*.22}
-\contentsline {paragraph}{\'Equivalences des modalit\'es d'interactions}{21}{section*.23}
-\contentsline {subsection}{\numberline {2.3.2}Propri\'et\'es caract\'eristiques du mod\`ele d'interactions des tables interactives }{21}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}Dispositifs d'interactions en entr\'ee }{21}{subsubsection.2.3.2.1}
-\contentsline {subsubsection}{\numberline {2.3.2.2}Dispositifs d'interactions en sortie }{22}{subsubsection.2.3.2.2}
-\contentsline {subsubsection}{\numberline {2.3.2.3}Utilisateurs des tables interactives }{22}{subsubsection.2.3.2.3}
-\contentsline {subsection}{\numberline {2.3.3}Principes de conception d'UI pour les tables interactives}{23}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}Corpus des principes de conception d'UI pour Microsoft PixelSense}{23}{subsubsection.2.3.3.1}
-\contentsline {subsubsection}{\numberline {2.3.3.2}Guidelines pour TUI}{23}{subsubsection.2.3.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3.3}Guidelines pour UI collaborative}{24}{subsubsection.2.3.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.4}Autres guidelines pour les UI sur surface}{26}{subsubsection.2.3.3.4}
-\contentsline {paragraph}{Guidelines pour les interactions tactiles}{27}{section*.26}
-\contentsline {paragraph}{Guidelines pour le styles }{27}{section*.27}
-\contentsline {subsubsection}{\numberline {2.3.3.5}Synth\`ese des guidelines pour la migration d'UI vers les tables interactives}{27}{subsubsection.2.3.3.5}
-\contentsline {section}{\numberline {2.4}Concepts pour la migration d'UI}{28}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Architecture des applications \`a migrer}{28}{subsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.1.1}ARCH}{28}{subsubsection.2.4.1.1}
-\contentsline {paragraph}{Migration d'une application respectant une architecture ARCH}{28}{section*.31}
-\contentsline {paragraph}{Prise en compte des principes de conceptions}{29}{section*.32}
-\contentsline {subsubsection}{\numberline {2.4.1.2}MVC}{29}{subsubsection.2.4.1.2}
-\contentsline {paragraph}{Migration d'une application respectant une architecture MVC}{29}{section*.33}
-\contentsline {subsubsection}{\numberline {2.4.1.3}R\'esum\'e}{30}{subsubsection.2.4.1.3}
-\contentsline {subsection}{\numberline {2.4.2}Mod\`ele d'interactions abstraites}{30}{subsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.2.1}Mod\`ele de Vlist}{30}{subsubsection.2.4.2.1}
-\contentsline {subsubsection}{\numberline {2.4.2.2}Mod\`ele de Gellersen}{31}{subsubsection.2.4.2.2}
-\contentsline {subsubsection}{\numberline {2.4.2.3}R\'esum\'e}{31}{subsubsection.2.4.2.3}
-\contentsline {section}{\numberline {2.5}Conclusion}{32}{section.2.5}
-\contentsline {chapter}{\numberline {3}Tables interactives et Migration des UI}{37}{chapter.3}
-\contentsline {part}{III\hspace {1em}Contributions}{39}{part.3}
-\contentsline {xpart}{Contributions}{41}{part.3}
-\contentsline {chapter}{\numberline {4}Approches de migration des UI }{41}{chapter.4}
-\contentsline {chapter}{\numberline {5}Mod\'elisation des UI }{43}{chapter.5}
-\contentsline {chapter}{\numberline {6}M\'ecanismes de migration des UI}{45}{chapter.6}
-\contentsline {chapter}{\numberline {7}Validations du processus}{47}{chapter.7}
-\contentsline {part}{IV\hspace {1em}Conclusion et Perspectives}{49}{part.4}
-\contentsline {xpart}{Conclusion et Perspectives}{51}{part.4}
-\contentsline {chapter}{\numberline {8}Conclusions et perspectives}{51}{chapter.8}
+\contentsline {subsection}{\numberline {2.2.3}Probl\`emes li\'es \`a la migration de la structure et du positionnement}{14}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}\'Equivalences entre les \'el\'ements graphiques}{14}{subsubsection.2.2.3.1}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Favoriser la collaboration par un regroupement et un positionnement ad\'equat des \'el\'ements graphiques}{14}{subsubsection.2.2.3.2}
+\contentsline {subsection}{\numberline {2.2.4}Probl\`emes li\'es \`a la migration du style}{15}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Coh\'erence globale du style des UI migr\'ees}{16}{subsubsection.2.2.4.1}
+\contentsline {subsection}{\numberline {2.2.5}Espace des probl\`emes li\'es la migration vers les tables interactives}{16}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}P\'erim\`etres de la migration des UI vers les tables interactives}{17}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Hypoth\`ese de travail}{18}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Pistes de migration}{18}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Nouvelle conception de l'UI}{18}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}D\'eduction de l'UI \`a partir du NF}{19}{subsubsection.2.3.2.2}
+\contentsline {subsubsection}{\numberline {2.3.2.3}Adaptation de l'UI par recherche d'\'equivalences}{19}{subsubsection.2.3.2.3}
+\contentsline {section}{\numberline {2.4}Objectifs de la migration des UI vers les tables interactives}{20}{section.2.4}
+\contentsline {chapter}{\numberline {3}Tables interactives et Migration des UI}{21}{chapter.3}
+\contentsline {part}{III\hspace {1em}Contributions}{23}{part.3}
+\contentsline {xpart}{Contributions}{25}{part.3}
+\contentsline {chapter}{\numberline {4}Approches de migration des UI }{25}{chapter.4}
+\contentsline {chapter}{\numberline {5}Mod\'elisation des UI }{27}{chapter.5}
+\contentsline {chapter}{\numberline {6}M\'ecanismes de migration des UI}{29}{chapter.6}
+\contentsline {chapter}{\numberline {7}Validations du processus}{31}{chapter.7}
+\contentsline {part}{IV\hspace {1em}Conclusion et Perspectives}{33}{part.4}
+\contentsline {xpart}{Conclusion et Perspectives}{35}{part.4}
+\contentsline {chapter}{\numberline {8}Conclusions et perspectives}{35}{chapter.8}
